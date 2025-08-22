@@ -20,14 +20,14 @@ namespace Legno.Api.Controllers
 
         // GET: /api/search/projects?q=park&take=20
         [HttpGet("projects")]
-        public async Task<IActionResult> SearchProjects([FromQuery] string q, [FromQuery] int take = 20)
+        public async Task<IActionResult> SearchProjects([FromQuery] string q)
         {
             try
             {
                 if (string.IsNullOrWhiteSpace(q))
                     return BadRequest(new { StatusCode = 400, Error = "Sorğu boş ola bilməz." });
 
-                var data = await _search.SearchAsync(q, take);
+                var data = await _search.SearchAsync(q);
                 return Ok(new { StatusCode = 200, Data = data });
             }
             catch (GlobalAppException ex)

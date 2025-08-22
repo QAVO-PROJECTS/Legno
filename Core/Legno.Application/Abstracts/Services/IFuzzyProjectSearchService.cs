@@ -7,6 +7,6 @@ namespace Legno.Application.Abstracts.Services
 {
     public interface IFuzzyProjectSearchService
     {
-        Task<List<ProjectDto>> SearchAsync(string query, int take = 20);
+        Task<List<ProjectDto>> SearchAsync(string query);
     }
 }

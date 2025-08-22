@@ -36,7 +36,7 @@ namespace Legno.Persistence.Concreters.Services
             _mapper = mapper;
         }
 
-        public async Task<List<ProjectDto>> SearchAsync(string query, int take = 20)
+        public async Task<List<ProjectDto>> SearchAsync(string query)
         {
             if (string.IsNullOrWhiteSpace(query))
                 throw new GlobalAppException("Axtarış sorğusu boş ola bilməz.");
@@ -88,7 +88,7 @@ namespace Legno.Persistence.Concreters.Services
             }
 
             var resultEntities = ranked
-                .Take(Math.Max(1, take))
+             
                 .Select(x => x.Project)
                 .ToList();
 
