@@ -111,37 +111,37 @@ namespace Legno.WebApi.Controllers
         /// <summary>
         /// Admin istifadəçisini silmə
         /// </summary>
-        [HttpDelete("delete-all")]
-        public async Task<IActionResult> DeleteAllAdmins()
-        {
-            try
-            {
-                await _adminService.DeleteAllAdminsAsync();
-                return Ok(new
-                {
-                    StatusCode = StatusCodes.Status200OK,
-                    Message = "Bütün adminlər uğurla silindi!"
-                });
-            }
-            catch (GlobalAppException ex)
-            {
-                _logger.LogError(ex, "Bütün adminlər silinərkən xəta baş verdi!");
-                return BadRequest(new
-                {
-                    StatusCode = StatusCodes.Status400BadRequest,
-                    Error = ex.Message
-                });
-            }
-            catch (Exception ex)
-            {
-                _logger.LogError(ex, "Bütün adminlər silinərkən gözlənilməz xəta baş verdi!");
-                return StatusCode(StatusCodes.Status500InternalServerError, new
-                {
-                    StatusCode = StatusCodes.Status500InternalServerError,
-                    Error = "Gözlənilməz xəta baş verdi. Zəhmət olmasa, yenidən cəhd edin!"
-                });
-            }
-        }
+        //[HttpDelete("delete-all")]
+        //public async Task<IActionResult> DeleteAllAdmins()
+        //{
+        //    try
+        //    {
+        //        await _adminService.DeleteAllAdminsAsync();
+        //        return Ok(new
+        //        {
+        //            StatusCode = StatusCodes.Status200OK,
+        //            Message = "Bütün adminlər uğurla silindi!"
+        //        });
+        //    }
+        //    catch (GlobalAppException ex)
+        //    {
+        //        _logger.LogError(ex, "Bütün adminlər silinərkən xəta baş verdi!");
+        //        return BadRequest(new
+        //        {
+        //            StatusCode = StatusCodes.Status400BadRequest,
+        //            Error = ex.Message
+        //        });
+        //    }
+        //    catch (Exception ex)
+        //    {
+        //        _logger.LogError(ex, "Bütün adminlər silinərkən gözlənilməz xəta baş verdi!");
+        //        return StatusCode(StatusCodes.Status500InternalServerError, new
+        //        {
+        //            StatusCode = StatusCodes.Status500InternalServerError,
+        //            Error = "Gözlənilməz xəta baş verdi. Zəhmət olmasa, yenidən cəhd edin!"
+        //        });
+        //    }
+        //}
 
     }
 }
