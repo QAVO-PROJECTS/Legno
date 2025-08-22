@@ -47,25 +47,25 @@ namespace Legno.Api.Controllers
                 return StatusCode(500, new { StatusCode = 500, Error = $"Xəta baş verdi: {ex.Message}" });
             }
         }
-        [Authorize(Roles = "Admin")]
-        // ✅ Tək abunəçini ID ilə gətir (email qaytarır)
-        [HttpGet("get-subscriber/{subscriberId}")]
-        public async Task<IActionResult> GetSubscriber(string subscriberId)
-        {
-            try
-            {
-                var email = await _subscriberService.GetSubscriberAsync(subscriberId);
-                return Ok(new { StatusCode = 200, Data = email });
-            }
-            catch (GlobalAppException ex)
-            {
-                return BadRequest(new { StatusCode = 400, Error = ex.Message });
-            }
-            catch (Exception ex)
-            {
-                return StatusCode(500, new { StatusCode = 500, Error = $"Xəta baş verdi: {ex.Message}" });
-            }
-        }
+        //[Authorize(Roles = "Admin")]
+        //// ✅ Tək abunəçini ID ilə gətir (email qaytarır)
+        //[HttpGet("get-subscriber/{subscriberId}")]
+        //public async Task<IActionResult> GetSubscriber(string subscriberId)
+        //{
+        //    try
+        //    {
+        //        var email = await _subscriberService.GetSubscriberAsync(subscriberId);
+        //        return Ok(new { StatusCode = 200, Data = email });
+        //    }
+        //    catch (GlobalAppException ex)
+        //    {
+        //        return BadRequest(new { StatusCode = 400, Error = ex.Message });
+        //    }
+        //    catch (Exception ex)
+        //    {
+        //        return StatusCode(500, new { StatusCode = 500, Error = $"Xəta baş verdi: {ex.Message}" });
+        //    }
+        //}
         [Authorize(Roles = "Admin")]
         // ✅ Bütün abunəçilərin email-larını gətir
         [HttpGet("get-all-subscribers")]
@@ -83,12 +83,12 @@ namespace Legno.Api.Controllers
         }
         [Authorize(Roles = "Admin")]
         // ✅ Abunəçini sil (soft delete)
-        [HttpDelete("delete-subscriber/{subscriberId}")]
-        public async Task<IActionResult> DeleteSubscriber(string subscriberId)
+        [HttpDelete("delete-subscriber/{subscriberName}")]
+        public async Task<IActionResult> DeleteSubscriber(string subscriberName)
         {
             try
             {
-                await _subscriberService.DeleteSubscriberAsync(subscriberId);
+                await _subscriberService.DeleteSubscriberAsync(subscriberName);
                 return Ok(new { StatusCode = 200, Message = "Abunəçi silindi." });
             }
             catch (GlobalAppException ex)

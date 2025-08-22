@@ -93,14 +93,14 @@ namespace Legno.Persistence.Concreters.Services
 
         public async Task DeleteSubscriberAsync(string subscriberId)
         {
-            var sub = await _subscriberReadRepository.GetByIdAsync(subscriberId, EnableTraking: true);
+            var sub = await _subscriberReadRepository.GetAsync(x=>x.Email==subscriberId);
             if (sub == null || sub.IsDeleted)
                 throw new GlobalAppException("Abunəçi tapılmadı.");
 
             sub.IsDeleted = true;
             sub.DeletedDate = DateTime.UtcNow;
             sub.LastUpdatedDate = DateTime.UtcNow;
-
+            
             await _subscriberWriteRepository.UpdateAsync(sub);
             await _subscriberWriteRepository.CommitAsync();
         }
