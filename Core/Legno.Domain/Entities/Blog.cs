@@ -19,6 +19,7 @@ namespace Legno.Domain.Entities
         public string AuthorName { get; set; }
         public string AuthorNameEng { get; set; }
         public string AuthorNameRu { get; set; }
+        public string AuthorProfession { get; set; }
 
         public string AuthorImage { get; set; }
 

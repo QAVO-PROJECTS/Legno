@@ -19,3 +19,4 @@ C:\Users\gulco\source\repos\Legno\Infrastructure\Legno.Persistence\obj\Debug\net
 C:\Users\gulco\source\repos\Legno\Infrastructure\Legno.Persistence\obj\Debug\net8.0\Legno.Persistence.pdb
 C:\Users\gulco\source\repos\Legno\Infrastructure\Legno.Persistence\obj\Debug\net8.0\Legno.Persistence.genruntimeconfig.cache
 C:\Users\gulco\source\repos\Legno\Infrastructure\Legno.Persistence\obj\Debug\net8.0\ref\Legno.Persistence.dll
+C:\Users\gulco\source\repos\Legno\Infrastructure\Legno.Persistence\obj\Debug\net8.0\Legno.Persistence.sourcelink.json

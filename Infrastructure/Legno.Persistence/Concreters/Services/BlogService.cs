@@ -129,6 +129,8 @@ namespace Legno.Persistence.Concreters.Services
             if (dto.AuthorName != null) blog.AuthorName = dto.AuthorName;
             if (dto.AuthorNameEng != null) blog.AuthorNameEng = dto.AuthorNameEng;
             if (dto.AuthorNameRu != null) blog.AuthorNameRu = dto.AuthorNameRu;
+            if (dto.AuthorProfession != null) blog.AuthorProfession = dto.AuthorProfession;
+
 
             // Şəkil dəyişimi
             if (dto.BlogImage != null)

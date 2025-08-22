@@ -15,3 +15,4 @@ C:\Users\gulco\source\repos\Legno\Core\Legno.Application\obj\Debug\net8.0\refint
 C:\Users\gulco\source\repos\Legno\Core\Legno.Application\obj\Debug\net8.0\Legno.Application.pdb
 C:\Users\gulco\source\repos\Legno\Core\Legno.Application\obj\Debug\net8.0\Legno.Application.genruntimeconfig.cache
 C:\Users\gulco\source\repos\Legno\Core\Legno.Application\obj\Debug\net8.0\ref\Legno.Application.dll
+C:\Users\gulco\source\repos\Legno\Core\Legno.Application\obj\Debug\net8.0\Legno.Application.sourcelink.json

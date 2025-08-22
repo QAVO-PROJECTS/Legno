@@ -12,3 +12,4 @@ C:\Users\gulco\source\repos\Legno\Core\Legno.Domain\obj\Debug\net8.0\refint\Legn
 C:\Users\gulco\source\repos\Legno\Core\Legno.Domain\obj\Debug\net8.0\Legno.Domain.pdb
 C:\Users\gulco\source\repos\Legno\Core\Legno.Domain\obj\Debug\net8.0\Legno.Domain.genruntimeconfig.cache
 C:\Users\gulco\source\repos\Legno\Core\Legno.Domain\obj\Debug\net8.0\ref\Legno.Domain.dll
+C:\Users\gulco\source\repos\Legno\Core\Legno.Domain\obj\Debug\net8.0\Legno.Domain.sourcelink.json

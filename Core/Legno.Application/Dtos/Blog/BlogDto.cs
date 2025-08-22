@@ -22,5 +22,6 @@ namespace Legno.Application.Dtos.Blog
         public string AuthorNameRu { get; set; }
         public string CreatedDate {  get; set; }
         public string AuthorImage { get; set; }
+        public string AuthorProfession { get; set; }
     }
 }

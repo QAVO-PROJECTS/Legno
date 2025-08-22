@@ -174,3 +174,4 @@ C:\Users\gulco\source\repos\Legno\Presentation\Legno.WebApi\obj\Debug\net8.0\Leg
 C:\Users\gulco\source\repos\Legno\Presentation\Legno.WebApi\obj\Debug\net8.0\Legno.WebApi.genruntimeconfig.cache
 C:\Users\gulco\source\repos\Legno\Presentation\Legno.WebApi\obj\Debug\net8.0\ref\Legno.WebApi.dll
 C:\Users\gulco\source\repos\Legno\Presentation\Legno.WebApi\bin\Debug\net8.0\Legno.WebApi.staticwebassets.runtime.json
+C:\Users\gulco\source\repos\Legno\Presentation\Legno.WebApi\obj\Debug\net8.0\Legno.WebApi.sourcelink.json

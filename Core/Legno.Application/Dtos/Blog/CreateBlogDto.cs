@@ -20,6 +20,7 @@ namespace Legno.Application.Dtos.Blog
         public string AuthorName { get; set; }
         public string AuthorNameEng { get; set; }
         public string AuthorNameRu { get; set; }
+        public string AuthorProfession { get; set; }
 
         public IFormFile AuthorImage { get; set; }
     }

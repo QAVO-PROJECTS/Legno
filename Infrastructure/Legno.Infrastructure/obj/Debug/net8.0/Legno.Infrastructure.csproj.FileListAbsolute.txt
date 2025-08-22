@@ -17,3 +17,4 @@ C:\Users\gulco\source\repos\Legno\Infrastructure\Legno.Infrastructure\obj\Debug\
 C:\Users\gulco\source\repos\Legno\Infrastructure\Legno.Infrastructure\obj\Debug\net8.0\Legno.Infrastructure.pdb
 C:\Users\gulco\source\repos\Legno\Infrastructure\Legno.Infrastructure\obj\Debug\net8.0\Legno.Infrastructure.genruntimeconfig.cache
 C:\Users\gulco\source\repos\Legno\Infrastructure\Legno.Infrastructure\obj\Debug\net8.0\ref\Legno.Infrastructure.dll
+C:\Users\gulco\source\repos\Legno\Infrastructure\Legno.Infrastructure\obj\Debug\net8.0\Legno.Infrastructure.sourcelink.json
