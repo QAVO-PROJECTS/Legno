@@ -4,9 +4,12 @@ wwwroot\files\author_images\e3d706bb-6ed6-47a2-b2b5-325443e61070.webp
 wwwroot\files\blog_images\4ad9e997-faa5-46c7-9d80-01931b855e14.webp
 wwwroot\files\blog_images\8ae39001-30ea-4904-b228-a7aaa1a32aa7.webp
 wwwroot\files\blog_images\c88a8bf8-b18b-4cbd-9099-4f2711d07f4b.webp
+wwwroot\files\project_card_images\45467a13-607d-4bde-82da-c70810158cf5.webp
 wwwroot\files\project_card_images\4d4326a2-b01b-427a-8bb1-c14dcada3042.webp
 wwwroot\files\project_images\19b95f1b-3e6a-434f-85f6-9a307eed75a3.webp
+wwwroot\files\project_images\32434b86-09f5-4948-afb2-ba9694257b31.webp
 wwwroot\files\project_images\ff96e4fc-d0f6-4769-93c3-b05fb82c1aec.webp
+wwwroot\files\project_videos\5cfdbc59-d114-41fa-9fff-b6be6f941da3.webp
 wwwroot\files\project_videos\71eda501-f46c-4d28-b83f-86d212c15ba7.webp
 wwwroot\files\team_card_images\8cf3fed4-0306-441b-bca5-a657373c7419.webp
 wwwroot\files\team_card_images\bfe16dec-a241-4a20-bc99-b86d495b570e.webp

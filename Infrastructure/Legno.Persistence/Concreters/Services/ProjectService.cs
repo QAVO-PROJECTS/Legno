@@ -24,6 +24,7 @@ namespace Legno.Persistence.Concreters.Services
         private readonly IProjectVideoReadRepository _videoRead;
         private readonly IProjectVideoWriteRepository _videoWrite;
         private readonly IFileService _fileService;
+        private readonly CloudinaryService _cloudinaryService;
         private readonly IMapper _mapper;
 
         public ProjectService(
@@ -34,7 +35,8 @@ namespace Legno.Persistence.Concreters.Services
             IProjectVideoReadRepository videoRead,
             IProjectVideoWriteRepository videoWrite,
             IFileService fileService,
-            IMapper mapper)
+            IMapper mapper,
+            CloudinaryService cloudinaryService)
         {
             _projectRead = projectRead;
             _projectWrite = projectWrite;
@@ -44,6 +46,7 @@ namespace Legno.Persistence.Concreters.Services
             _videoWrite = videoWrite;
             _fileService = fileService;
             _mapper = mapper;
+            _cloudinaryService = cloudinaryService;
         }
 
         public async Task<ProjectDto> AddProjectAsync(CreateProjectDto dto)
@@ -66,7 +69,7 @@ namespace Legno.Persistence.Concreters.Services
             // 🔹 CARD IMAGE (IFormFile)
             if (dto.CardImage != null)
             {
-                var storedCard = await _fileService.UploadFile(dto.CardImage, "project_card_images");
+                var storedCard = await _cloudinaryService.UploadFileAsync(dto.CardImage);
                 entity.CardImage = storedCard;
             }
             else
@@ -82,7 +85,7 @@ namespace Legno.Persistence.Concreters.Services
             {
                 foreach (var file in dto.ProjectImages)
                 {
-                    var stored = await _fileService.UploadFile(file, "project_images");
+                    var stored = await _cloudinaryService.UploadFileAsync(file);
                     await _imageWrite.AddAsync(new ProjectImage
                     {
                         Id = Guid.NewGuid(),
@@ -100,7 +103,7 @@ namespace Legno.Persistence.Concreters.Services
             {
                 foreach (var file in dto.ProjectVideos)
                 {
-                    var stored = await _fileService.UploadFile(file, "project_videos");
+                    var stored = await _cloudinaryService.UploadFileAsync(file);
                     await _videoWrite.AddAsync(new ProjectVideo
                     {
                         Id = Guid.NewGuid(),
@@ -208,7 +211,7 @@ namespace Legno.Persistence.Concreters.Services
 
                 foreach (var img in toDeleteImgs)
                 {
-                    await _fileService.DeleteFile("project_images", img.Name);
+                    await _cloudinaryService.DeleteFileAsync( img.Name);
                     img.IsDeleted = true;
                     img.DeletedDate = DateTime.UtcNow;
                     img.LastUpdatedDate = DateTime.UtcNow;
@@ -227,7 +230,7 @@ namespace Legno.Persistence.Concreters.Services
 
                 foreach (var vid in toDeleteVids)
                 {
-                    await _fileService.DeleteFile("project_videos", vid.Name);
+                    await _cloudinaryService.DeleteFileAsync( vid.Name);
                     vid.IsDeleted = true;
                     vid.DeletedDate = DateTime.UtcNow;
                     vid.LastUpdatedDate = DateTime.UtcNow;
@@ -239,6 +242,8 @@ namespace Legno.Persistence.Concreters.Services
             if (!string.IsNullOrWhiteSpace(dto.Title)) entity.Title = dto.Title;
             if (!string.IsNullOrWhiteSpace(dto.TitleEng)) entity.TitleEng = dto.TitleEng;
             if (!string.IsNullOrWhiteSpace(dto.TitleRu)) entity.TitleRu = dto.TitleRu;
+            if (!string.IsNullOrWhiteSpace(dto.AuthorName)) entity.AuthorName = dto.AuthorName;
+
 
             if (dto.SubTitle != null) entity.SubTitle = dto.SubTitle;
             if (dto.SubTitleEng != null) entity.SubTitleEng = dto.SubTitleEng;
@@ -248,9 +253,9 @@ namespace Legno.Persistence.Concreters.Services
             if (dto.CardImage != null)
             {
                 if (!string.IsNullOrWhiteSpace(entity.CardImage))
-                    await _fileService.DeleteFile("project_card_images", entity.CardImage);
+                    await _cloudinaryService.DeleteFileAsync( entity.CardImage);
 
-                var storedCard = await _fileService.UploadFile(dto.CardImage, "project_card_images");
+                var storedCard = await _cloudinaryService.UploadFileAsync(dto.CardImage);
                 entity.CardImage = storedCard;
             }
 
@@ -273,7 +278,7 @@ namespace Legno.Persistence.Concreters.Services
             {
                 foreach (var f in dto.ProjectImages)
                 {
-                    var stored = await _fileService.UploadFile(f, "project_images");
+                    var stored = await _cloudinaryService.UploadFileAsync(f);
                     await _imageWrite.AddAsync(new ProjectImage
                     {
                         Id = Guid.NewGuid(),
@@ -290,7 +295,7 @@ namespace Legno.Persistence.Concreters.Services
             {
                 foreach (var f in dto.ProjectVideos)
                 {
-                    var stored = await _fileService.UploadFile(f, "project_videos");
+                    var stored = await _cloudinaryService.UploadFileAsync(f);
                     await _videoWrite.AddAsync(new ProjectVideo
                     {
                         Id = Guid.NewGuid(),

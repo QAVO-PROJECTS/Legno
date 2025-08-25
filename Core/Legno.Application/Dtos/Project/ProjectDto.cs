@@ -19,6 +19,7 @@ namespace Legno.Application.Dtos.Project
         public string? SubTitleRu { get; set; }
         public string CardImage { get; set; }
         public int DisplayOrderId { get; set; }
+        public string AuthorName { get; set; }
         public CategoryDto Category { get; set; }
         public List<string>? ProjectImageNames { get; set; }
         public List<string>? ProjectVideoNames { get; set; }

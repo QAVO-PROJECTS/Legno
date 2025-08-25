@@ -608,6 +608,9 @@
                     "type": "string",
                     "format": "binary"
                   },
+                  "AuthorName": {
+                    "type": "string"
+                  },
                   "CategoryId": {
                     "type": "string"
                   },
@@ -647,6 +650,9 @@
                   "style": "form"
                 },
                 "CardImage": {
+                  "style": "form"
+                },
+                "AuthorName": {
                   "style": "form"
                 },
                 "CategoryId": {
@@ -739,6 +745,9 @@
                     "type": "string",
                     "format": "binary"
                   },
+                  "AuthorName": {
+                    "type": "string"
+                  },
                   "DeleteImageNames": {
                     "type": "array",
                     "items": {
@@ -793,6 +802,9 @@
                   "style": "form"
                 },
                 "CardImage": {
+                  "style": "form"
+                },
+                "AuthorName": {
                   "style": "form"
                 },
                 "DeleteImageNames": {

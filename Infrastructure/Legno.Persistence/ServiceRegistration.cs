@@ -51,7 +51,8 @@ namespace Legno.Persistence
             services.AddScoped<IUserProjectService, UserProjectService>();
             services.AddScoped<IFAQService,FAQService>();
             services.AddScoped<ICategoryService, CategoryService>();
-            services.AddScoped<IProjectService, ProjectService>(); 
+            services.AddScoped<IProjectService, ProjectService>();
+            services.AddScoped<CloudinaryService>();
             services.AddScoped<IFuzzyProjectSearchService, InMemoryFuzzyProjectSearchService>();
             // Contacts
             services.AddScoped<IContactReadRepository, ContactReadRepository>();

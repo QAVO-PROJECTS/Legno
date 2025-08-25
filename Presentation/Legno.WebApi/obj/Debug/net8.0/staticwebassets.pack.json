@@ -25,6 +25,10 @@
       "PackagePath": "staticwebassets\\files\\blog_images\\c88a8bf8-b18b-4cbd-9099-4f2711d07f4b.webp"
     },
     {
+      "Id": "C:\\Users\\gulco\\source\\repos\\Legno\\Presentation\\Legno.WebApi\\wwwroot\\files\\project_card_images\\45467a13-607d-4bde-82da-c70810158cf5.webp",
+      "PackagePath": "staticwebassets\\files\\project_card_images\\45467a13-607d-4bde-82da-c70810158cf5.webp"
+    },
+    {
       "Id": "C:\\Users\\gulco\\source\\repos\\Legno\\Presentation\\Legno.WebApi\\wwwroot\\files\\project_card_images\\4d4326a2-b01b-427a-8bb1-c14dcada3042.webp",
       "PackagePath": "staticwebassets\\files\\project_card_images\\4d4326a2-b01b-427a-8bb1-c14dcada3042.webp"
     },
@@ -33,8 +37,16 @@
       "PackagePath": "staticwebassets\\files\\project_images\\19b95f1b-3e6a-434f-85f6-9a307eed75a3.webp"
     },
     {
+      "Id": "C:\\Users\\gulco\\source\\repos\\Legno\\Presentation\\Legno.WebApi\\wwwroot\\files\\project_images\\32434b86-09f5-4948-afb2-ba9694257b31.webp",
+      "PackagePath": "staticwebassets\\files\\project_images\\32434b86-09f5-4948-afb2-ba9694257b31.webp"
+    },
+    {
       "Id": "C:\\Users\\gulco\\source\\repos\\Legno\\Presentation\\Legno.WebApi\\wwwroot\\files\\project_images\\ff96e4fc-d0f6-4769-93c3-b05fb82c1aec.webp",
       "PackagePath": "staticwebassets\\files\\project_images\\ff96e4fc-d0f6-4769-93c3-b05fb82c1aec.webp"
+    },
+    {
+      "Id": "C:\\Users\\gulco\\source\\repos\\Legno\\Presentation\\Legno.WebApi\\wwwroot\\files\\project_videos\\5cfdbc59-d114-41fa-9fff-b6be6f941da3.webp",
+      "PackagePath": "staticwebassets\\files\\project_videos\\5cfdbc59-d114-41fa-9fff-b6be6f941da3.webp"
     },
     {
       "Id": "C:\\Users\\gulco\\source\\repos\\Legno\\Presentation\\Legno.WebApi\\wwwroot\\files\\project_videos\\71eda501-f46c-4d28-b83f-86d212c15ba7.webp",

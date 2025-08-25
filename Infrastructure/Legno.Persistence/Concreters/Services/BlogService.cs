@@ -23,6 +23,7 @@ namespace Legno.Persistence.Concreters.Services
         private readonly ISubscriberService _subscriberService;
         private readonly IMailService _mailService;
         private readonly IFileService _fileService;
+        private readonly CloudinaryService _cloudinaryService;
         private readonly IMapper _mapper;
 
         public BlogService(
@@ -31,7 +32,8 @@ namespace Legno.Persistence.Concreters.Services
             ISubscriberService subscriberService,
             IMailService mailService,
             IFileService fileService,
-            IMapper mapper)
+            IMapper mapper,
+            CloudinaryService cloudinaryService)
         {
             _blogReadRepository = blogReadRepository;
             _blogWriteRepository = blogWriteRepository;
@@ -39,6 +41,7 @@ namespace Legno.Persistence.Concreters.Services
             _mailService = mailService;
             _fileService = fileService;
             _mapper = mapper;
+            _cloudinaryService = cloudinaryService;
         }
 
         public async Task<BlogDto> AddBlogAsync(CreateBlogDto dto)
@@ -54,9 +57,9 @@ namespace Legno.Persistence.Concreters.Services
 
             // Şəkillər
             if (dto.BlogImage != null)
-                blog.BlogImage = await _fileService.UploadFile(dto.BlogImage, "blog_images");
+                blog.BlogImage = await _cloudinaryService.UploadFileAsync(dto.BlogImage);
             if (dto.AuthorImage != null)
-                blog.AuthorImage = await _fileService.UploadFile(dto.AuthorImage, "author_images");
+                blog.AuthorImage = await _cloudinaryService.UploadFileAsync(dto.AuthorImage);
 
             await _blogWriteRepository.AddAsync(blog);
             await _blogWriteRepository.CommitAsync();
@@ -136,14 +139,14 @@ namespace Legno.Persistence.Concreters.Services
             if (dto.BlogImage != null)
             {
                 if (!string.IsNullOrEmpty(blog.BlogImage))
-                    await _fileService.DeleteFile("blog_images", blog.BlogImage);
-                blog.BlogImage = await _fileService.UploadFile(dto.BlogImage, "blog_images");
+                    await _cloudinaryService.DeleteFileAsync(blog.BlogImage);
+                blog.BlogImage = await _cloudinaryService.UploadFileAsync(dto.BlogImage);
             }
             if (dto.AuthorImage != null)
             {
                 if (!string.IsNullOrEmpty(blog.AuthorImage))
-                    await _fileService.DeleteFile("author_images", blog.AuthorImage);
-                blog.AuthorImage = await _fileService.UploadFile(dto.AuthorImage, "author_images");
+                    await _cloudinaryService.DeleteFileAsync(blog.AuthorImage);
+                blog.AuthorImage = await _cloudinaryService.UploadFileAsync(dto.AuthorImage);
             }
 
             blog.LastUpdatedDate = DateTime.UtcNow;

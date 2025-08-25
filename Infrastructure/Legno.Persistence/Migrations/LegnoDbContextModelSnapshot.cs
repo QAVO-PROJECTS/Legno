@@ -314,6 +314,10 @@ namespace Legno.Persistence.Migrations
                         .ValueGeneratedOnAdd()
                         .HasColumnType("uuid");
 
+                    b.Property<string>("AuthorName")
+                        .IsRequired()
+                        .HasColumnType("text");
+
                     b.Property<string>("CardImage")
                         .IsRequired()
                         .HasMaxLength(300)

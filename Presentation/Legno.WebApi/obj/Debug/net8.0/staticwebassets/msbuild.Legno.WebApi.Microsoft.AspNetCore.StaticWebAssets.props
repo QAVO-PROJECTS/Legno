@@ -108,6 +108,24 @@
       <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
       <OriginalItemSpec>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\files\blog_images\c88a8bf8-b18b-4cbd-9099-4f2711d07f4b.webp'))</OriginalItemSpec>
     </StaticWebAsset>
+    <StaticWebAsset Include="$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\files\project_card_images\45467a13-607d-4bde-82da-c70810158cf5.webp'))">
+      <SourceType>Package</SourceType>
+      <SourceId>Legno.WebApi</SourceId>
+      <ContentRoot>$(MSBuildThisFileDirectory)..\staticwebassets\</ContentRoot>
+      <BasePath>_content/Legno.WebApi</BasePath>
+      <RelativePath>files/project_card_images/45467a13-607d-4bde-82da-c70810158cf5.webp</RelativePath>
+      <AssetKind>All</AssetKind>
+      <AssetMode>All</AssetMode>
+      <AssetRole>Primary</AssetRole>
+      <RelatedAsset></RelatedAsset>
+      <AssetTraitName></AssetTraitName>
+      <AssetTraitValue></AssetTraitValue>
+      <Fingerprint>ex36a9kyw3</Fingerprint>
+      <Integrity>nthN2pV7gMu2C9TRYIYr/pAK6CRZDxijReB6TVkSou8=</Integrity>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+      <OriginalItemSpec>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\files\project_card_images\45467a13-607d-4bde-82da-c70810158cf5.webp'))</OriginalItemSpec>
+    </StaticWebAsset>
     <StaticWebAsset Include="$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\files\project_card_images\4d4326a2-b01b-427a-8bb1-c14dcada3042.webp'))">
       <SourceType>Package</SourceType>
       <SourceId>Legno.WebApi</SourceId>
@@ -144,6 +162,24 @@
       <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
       <OriginalItemSpec>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\files\project_images\19b95f1b-3e6a-434f-85f6-9a307eed75a3.webp'))</OriginalItemSpec>
     </StaticWebAsset>
+    <StaticWebAsset Include="$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\files\project_images\32434b86-09f5-4948-afb2-ba9694257b31.webp'))">
+      <SourceType>Package</SourceType>
+      <SourceId>Legno.WebApi</SourceId>
+      <ContentRoot>$(MSBuildThisFileDirectory)..\staticwebassets\</ContentRoot>
+      <BasePath>_content/Legno.WebApi</BasePath>
+      <RelativePath>files/project_images/32434b86-09f5-4948-afb2-ba9694257b31.webp</RelativePath>
+      <AssetKind>All</AssetKind>
+      <AssetMode>All</AssetMode>
+      <AssetRole>Primary</AssetRole>
+      <RelatedAsset></RelatedAsset>
+      <AssetTraitName></AssetTraitName>
+      <AssetTraitValue></AssetTraitValue>
+      <Fingerprint>u0fv246hng</Fingerprint>
+      <Integrity>zs+nmgzFtLEaWSlRCZTbCPdnOFZUUgqGpf1k3ZMAi14=</Integrity>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+      <OriginalItemSpec>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\files\project_images\32434b86-09f5-4948-afb2-ba9694257b31.webp'))</OriginalItemSpec>
+    </StaticWebAsset>
     <StaticWebAsset Include="$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\files\project_images\ff96e4fc-d0f6-4769-93c3-b05fb82c1aec.webp'))">
       <SourceType>Package</SourceType>
       <SourceId>Legno.WebApi</SourceId>
@@ -161,6 +197,24 @@
       <CopyToOutputDirectory>Never</CopyToOutputDirectory>
       <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
       <OriginalItemSpec>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\files\project_images\ff96e4fc-d0f6-4769-93c3-b05fb82c1aec.webp'))</OriginalItemSpec>
+    </StaticWebAsset>
+    <StaticWebAsset Include="$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\files\project_videos\5cfdbc59-d114-41fa-9fff-b6be6f941da3.webp'))">
+      <SourceType>Package</SourceType>
+      <SourceId>Legno.WebApi</SourceId>
+      <ContentRoot>$(MSBuildThisFileDirectory)..\staticwebassets\</ContentRoot>
+      <BasePath>_content/Legno.WebApi</BasePath>
+      <RelativePath>files/project_videos/5cfdbc59-d114-41fa-9fff-b6be6f941da3.webp</RelativePath>
+      <AssetKind>All</AssetKind>
+      <AssetMode>All</AssetMode>
+      <AssetRole>Primary</AssetRole>
+      <RelatedAsset></RelatedAsset>
+      <AssetTraitName></AssetTraitName>
+      <AssetTraitValue></AssetTraitValue>
+      <Fingerprint>u0fv246hng</Fingerprint>
+      <Integrity>zs+nmgzFtLEaWSlRCZTbCPdnOFZUUgqGpf1k3ZMAi14=</Integrity>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+      <OriginalItemSpec>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\files\project_videos\5cfdbc59-d114-41fa-9fff-b6be6f941da3.webp'))</OriginalItemSpec>
     </StaticWebAsset>
     <StaticWebAsset Include="$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\files\project_videos\71eda501-f46c-4d28-b83f-86d212c15ba7.webp'))">
       <SourceType>Package</SourceType>

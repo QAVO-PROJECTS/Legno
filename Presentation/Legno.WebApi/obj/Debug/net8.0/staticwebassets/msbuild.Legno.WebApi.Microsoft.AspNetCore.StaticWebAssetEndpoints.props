@@ -72,6 +72,18 @@
       <EndpointProperties><![CDATA[[{"Name":"integrity","Value":"sha256-nthN2pV7gMu2C9TRYIYr/pAK6CRZDxijReB6TVkSou8="}]]]></EndpointProperties>
       <ResponseHeaders><![CDATA[[{"Name":"Accept-Ranges","Value":"bytes"},{"Name":"Cache-Control","Value":"max-age=3600, must-revalidate"},{"Name":"Content-Length","Value":"79888"},{"Name":"Content-Type","Value":"image/webp"},{"Name":"ETag","Value":"\u0022nthN2pV7gMu2C9TRYIYr/pAK6CRZDxijReB6TVkSou8=\u0022"},{"Name":"Last-Modified","Value":"Mon, 18 Aug 2025 11:19:07 GMT"}]]]></ResponseHeaders>
     </StaticWebAssetEndpoint>
+    <StaticWebAssetEndpoint Include="_content/Legno.WebApi/files/project_card_images/45467a13-607d-4bde-82da-c70810158cf5.ex36a9kyw3.webp">
+      <AssetFile>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\files\project_card_images\45467a13-607d-4bde-82da-c70810158cf5.webp'))</AssetFile>
+      <Selectors><![CDATA[[]]]></Selectors>
+      <EndpointProperties><![CDATA[[{"Name":"fingerprint","Value":"ex36a9kyw3"},{"Name":"integrity","Value":"sha256-nthN2pV7gMu2C9TRYIYr/pAK6CRZDxijReB6TVkSou8="},{"Name":"label","Value":"_content/Legno.WebApi/files/project_card_images/45467a13-607d-4bde-82da-c70810158cf5.webp"}]]]></EndpointProperties>
+      <ResponseHeaders><![CDATA[[{"Name":"Accept-Ranges","Value":"bytes"},{"Name":"Cache-Control","Value":"max-age=31536000, immutable"},{"Name":"Content-Length","Value":"79888"},{"Name":"Content-Type","Value":"image/webp"},{"Name":"ETag","Value":"\u0022nthN2pV7gMu2C9TRYIYr/pAK6CRZDxijReB6TVkSou8=\u0022"},{"Name":"Last-Modified","Value":"Mon, 25 Aug 2025 08:15:55 GMT"}]]]></ResponseHeaders>
+    </StaticWebAssetEndpoint>
+    <StaticWebAssetEndpoint Include="_content/Legno.WebApi/files/project_card_images/45467a13-607d-4bde-82da-c70810158cf5.webp">
+      <AssetFile>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\files\project_card_images\45467a13-607d-4bde-82da-c70810158cf5.webp'))</AssetFile>
+      <Selectors><![CDATA[[]]]></Selectors>
+      <EndpointProperties><![CDATA[[{"Name":"integrity","Value":"sha256-nthN2pV7gMu2C9TRYIYr/pAK6CRZDxijReB6TVkSou8="}]]]></EndpointProperties>
+      <ResponseHeaders><![CDATA[[{"Name":"Accept-Ranges","Value":"bytes"},{"Name":"Cache-Control","Value":"max-age=3600, must-revalidate"},{"Name":"Content-Length","Value":"79888"},{"Name":"Content-Type","Value":"image/webp"},{"Name":"ETag","Value":"\u0022nthN2pV7gMu2C9TRYIYr/pAK6CRZDxijReB6TVkSou8=\u0022"},{"Name":"Last-Modified","Value":"Mon, 25 Aug 2025 08:15:55 GMT"}]]]></ResponseHeaders>
+    </StaticWebAssetEndpoint>
     <StaticWebAssetEndpoint Include="_content/Legno.WebApi/files/project_card_images/4d4326a2-b01b-427a-8bb1-c14dcada3042.ex36a9kyw3.webp">
       <AssetFile>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\files\project_card_images\4d4326a2-b01b-427a-8bb1-c14dcada3042.webp'))</AssetFile>
       <Selectors><![CDATA[[]]]></Selectors>
@@ -96,6 +108,18 @@
       <EndpointProperties><![CDATA[[{"Name":"integrity","Value":"sha256-nthN2pV7gMu2C9TRYIYr/pAK6CRZDxijReB6TVkSou8="}]]]></EndpointProperties>
       <ResponseHeaders><![CDATA[[{"Name":"Accept-Ranges","Value":"bytes"},{"Name":"Cache-Control","Value":"max-age=3600, must-revalidate"},{"Name":"Content-Length","Value":"79888"},{"Name":"Content-Type","Value":"image/webp"},{"Name":"ETag","Value":"\u0022nthN2pV7gMu2C9TRYIYr/pAK6CRZDxijReB6TVkSou8=\u0022"},{"Name":"Last-Modified","Value":"Tue, 19 Aug 2025 07:04:29 GMT"}]]]></ResponseHeaders>
     </StaticWebAssetEndpoint>
+    <StaticWebAssetEndpoint Include="_content/Legno.WebApi/files/project_images/32434b86-09f5-4948-afb2-ba9694257b31.u0fv246hng.webp">
+      <AssetFile>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\files\project_images\32434b86-09f5-4948-afb2-ba9694257b31.webp'))</AssetFile>
+      <Selectors><![CDATA[[]]]></Selectors>
+      <EndpointProperties><![CDATA[[{"Name":"fingerprint","Value":"u0fv246hng"},{"Name":"integrity","Value":"sha256-zs\u002BnmgzFtLEaWSlRCZTbCPdnOFZUUgqGpf1k3ZMAi14="},{"Name":"label","Value":"_content/Legno.WebApi/files/project_images/32434b86-09f5-4948-afb2-ba9694257b31.webp"}]]]></EndpointProperties>
+      <ResponseHeaders><![CDATA[[{"Name":"Accept-Ranges","Value":"bytes"},{"Name":"Cache-Control","Value":"max-age=31536000, immutable"},{"Name":"Content-Length","Value":"81600"},{"Name":"Content-Type","Value":"image/webp"},{"Name":"ETag","Value":"\u0022zs\u002BnmgzFtLEaWSlRCZTbCPdnOFZUUgqGpf1k3ZMAi14=\u0022"},{"Name":"Last-Modified","Value":"Mon, 25 Aug 2025 08:15:56 GMT"}]]]></ResponseHeaders>
+    </StaticWebAssetEndpoint>
+    <StaticWebAssetEndpoint Include="_content/Legno.WebApi/files/project_images/32434b86-09f5-4948-afb2-ba9694257b31.webp">
+      <AssetFile>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\files\project_images\32434b86-09f5-4948-afb2-ba9694257b31.webp'))</AssetFile>
+      <Selectors><![CDATA[[]]]></Selectors>
+      <EndpointProperties><![CDATA[[{"Name":"integrity","Value":"sha256-zs\u002BnmgzFtLEaWSlRCZTbCPdnOFZUUgqGpf1k3ZMAi14="}]]]></EndpointProperties>
+      <ResponseHeaders><![CDATA[[{"Name":"Accept-Ranges","Value":"bytes"},{"Name":"Cache-Control","Value":"max-age=3600, must-revalidate"},{"Name":"Content-Length","Value":"81600"},{"Name":"Content-Type","Value":"image/webp"},{"Name":"ETag","Value":"\u0022zs\u002BnmgzFtLEaWSlRCZTbCPdnOFZUUgqGpf1k3ZMAi14=\u0022"},{"Name":"Last-Modified","Value":"Mon, 25 Aug 2025 08:15:56 GMT"}]]]></ResponseHeaders>
+    </StaticWebAssetEndpoint>
     <StaticWebAssetEndpoint Include="_content/Legno.WebApi/files/project_images/ff96e4fc-d0f6-4769-93c3-b05fb82c1aec.u0fv246hng.webp">
       <AssetFile>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\files\project_images\ff96e4fc-d0f6-4769-93c3-b05fb82c1aec.webp'))</AssetFile>
       <Selectors><![CDATA[[]]]></Selectors>
@@ -107,6 +131,18 @@
       <Selectors><![CDATA[[]]]></Selectors>
       <EndpointProperties><![CDATA[[{"Name":"integrity","Value":"sha256-zs\u002BnmgzFtLEaWSlRCZTbCPdnOFZUUgqGpf1k3ZMAi14="}]]]></EndpointProperties>
       <ResponseHeaders><![CDATA[[{"Name":"Accept-Ranges","Value":"bytes"},{"Name":"Cache-Control","Value":"max-age=3600, must-revalidate"},{"Name":"Content-Length","Value":"81600"},{"Name":"Content-Type","Value":"image/webp"},{"Name":"ETag","Value":"\u0022zs\u002BnmgzFtLEaWSlRCZTbCPdnOFZUUgqGpf1k3ZMAi14=\u0022"},{"Name":"Last-Modified","Value":"Tue, 19 Aug 2025 06:58:37 GMT"}]]]></ResponseHeaders>
+    </StaticWebAssetEndpoint>
+    <StaticWebAssetEndpoint Include="_content/Legno.WebApi/files/project_videos/5cfdbc59-d114-41fa-9fff-b6be6f941da3.u0fv246hng.webp">
+      <AssetFile>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\files\project_videos\5cfdbc59-d114-41fa-9fff-b6be6f941da3.webp'))</AssetFile>
+      <Selectors><![CDATA[[]]]></Selectors>
+      <EndpointProperties><![CDATA[[{"Name":"fingerprint","Value":"u0fv246hng"},{"Name":"integrity","Value":"sha256-zs\u002BnmgzFtLEaWSlRCZTbCPdnOFZUUgqGpf1k3ZMAi14="},{"Name":"label","Value":"_content/Legno.WebApi/files/project_videos/5cfdbc59-d114-41fa-9fff-b6be6f941da3.webp"}]]]></EndpointProperties>
+      <ResponseHeaders><![CDATA[[{"Name":"Accept-Ranges","Value":"bytes"},{"Name":"Cache-Control","Value":"max-age=31536000, immutable"},{"Name":"Content-Length","Value":"81600"},{"Name":"Content-Type","Value":"image/webp"},{"Name":"ETag","Value":"\u0022zs\u002BnmgzFtLEaWSlRCZTbCPdnOFZUUgqGpf1k3ZMAi14=\u0022"},{"Name":"Last-Modified","Value":"Mon, 25 Aug 2025 08:15:56 GMT"}]]]></ResponseHeaders>
+    </StaticWebAssetEndpoint>
+    <StaticWebAssetEndpoint Include="_content/Legno.WebApi/files/project_videos/5cfdbc59-d114-41fa-9fff-b6be6f941da3.webp">
+      <AssetFile>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\files\project_videos\5cfdbc59-d114-41fa-9fff-b6be6f941da3.webp'))</AssetFile>
+      <Selectors><![CDATA[[]]]></Selectors>
+      <EndpointProperties><![CDATA[[{"Name":"integrity","Value":"sha256-zs\u002BnmgzFtLEaWSlRCZTbCPdnOFZUUgqGpf1k3ZMAi14="}]]]></EndpointProperties>
+      <ResponseHeaders><![CDATA[[{"Name":"Accept-Ranges","Value":"bytes"},{"Name":"Cache-Control","Value":"max-age=3600, must-revalidate"},{"Name":"Content-Length","Value":"81600"},{"Name":"Content-Type","Value":"image/webp"},{"Name":"ETag","Value":"\u0022zs\u002BnmgzFtLEaWSlRCZTbCPdnOFZUUgqGpf1k3ZMAi14=\u0022"},{"Name":"Last-Modified","Value":"Mon, 25 Aug 2025 08:15:56 GMT"}]]]></ResponseHeaders>
     </StaticWebAssetEndpoint>
     <StaticWebAssetEndpoint Include="_content/Legno.WebApi/files/project_videos/71eda501-f46c-4d28-b83f-86d212c15ba7.u0fv246hng.webp">
       <AssetFile>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\files\project_videos\71eda501-f46c-4d28-b83f-86d212c15ba7.webp'))</AssetFile>

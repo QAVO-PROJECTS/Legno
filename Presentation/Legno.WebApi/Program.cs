@@ -1,4 +1,5 @@
 
+using CloudinaryDotNet;
 using FluentValidation.AspNetCore;
 using Legno.Application.Dtos.Account;
 using Legno.Application.Profiles;
@@ -80,6 +81,17 @@ namespace Legno.WebApi
            return new BadRequestObjectResult(errorResponse);
        };
    });
+
+            builder.Services.AddSingleton(x =>
+            {
+                var account = new Account(
+                    builder.Configuration["Cloudinary:CloudName"],
+                    builder.Configuration["Cloudinary:ApiKey"],
+                    builder.Configuration["Cloudinary:ApiSecret"]);
+
+                return new Cloudinary(account);
+            });
+
             builder.Services.AddDbContext<LegnoDbContext>(opt =>
             {
                 opt.UseNpgsql(builder.Configuration.GetConnectionString("Default"));

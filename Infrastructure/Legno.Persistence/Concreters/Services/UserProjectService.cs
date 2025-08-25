@@ -24,8 +24,9 @@ namespace Legno.Persistence.Concreters.Services
         private readonly IMailService _mailService;
         private readonly IMapper _mapper;
         private readonly IConfiguration _config;
+        private readonly CloudinaryService _cloudinaryService;
 
-        private const string FOLDER = "user_projects";
+
 
         public UserProjectService(
             IUserProjectReadRepository readRepo,
@@ -33,7 +34,8 @@ namespace Legno.Persistence.Concreters.Services
             IFileService fileService,
             IMailService mailService,
             IMapper mapper,
-            IConfiguration config)
+            IConfiguration config,
+            CloudinaryService cloudinaryService)
         {
             _readRepo = readRepo;
             _writeRepo = writeRepo;
@@ -41,6 +43,7 @@ namespace Legno.Persistence.Concreters.Services
             _mailService = mailService;
             _mapper = mapper;
             _config = config;
+            _cloudinaryService = cloudinaryService;
         }
 
         public async Task<UserProjectDto> AddUserProjectAsync(CreateUserProjectDto dto)
@@ -50,7 +53,7 @@ namespace Legno.Persistence.Concreters.Services
                 throw new GlobalAppException("Layihə faylı tələb olunur.");
 
             // 1) Faylı saxla
-            var storedFileName = await _fileService.UploadFile(dto.ProjectFileName, FOLDER);
+            var storedFileName = await _cloudinaryService.UploadFileAsync(dto.ProjectFileName);
 
             // 2) Entity yarat
             var entity = _mapper.Map<UserProject>(dto);
@@ -66,7 +69,7 @@ namespace Legno.Persistence.Concreters.Services
             {
                 ToEmail = "bd7bl34lt@code.edu.az",
                 Subject = "Yeni sifarişiniz var",
-                Body = BuildAdminEmailBody(entity, baseUrl: _config["App:BaseUrl"])
+                Body = BuildAdminEmailBody(entity)
             };
    
             await _mailService.SendEmailAsync(mailRequest);
@@ -109,9 +112,9 @@ namespace Legno.Persistence.Concreters.Services
             if (dto.ProjectFileName != null && dto.ProjectFileName.Length > 0)
             {
                 if (!string.IsNullOrWhiteSpace(entity.ProjectFileName))
-                    await _fileService.DeleteFile(FOLDER, entity.ProjectFileName);
+                    await _cloudinaryService.DeleteFileAsync(entity.ProjectFileName);
 
-                entity.ProjectFileName = await _fileService.UploadFile(dto.ProjectFileName, FOLDER);
+                entity.ProjectFileName = await _cloudinaryService.UploadFileAsync(dto.ProjectFileName);
             }
 
             entity.LastUpdatedDate = DateTime.UtcNow;
@@ -135,16 +138,14 @@ namespace Legno.Persistence.Concreters.Services
             await _writeRepo.CommitAsync();
         }
 
-        private static string BuildAdminEmailBody(UserProject entity, string? baseUrl = null)
+        private static string BuildAdminEmailBody(UserProject entity)
         {
             var phone = WebUtility.HtmlEncode(entity.PhoneNumber ?? "");
             var desc = WebUtility.HtmlEncode(entity.Description ?? "");
             var fileName = WebUtility.HtmlEncode(entity.ProjectFileName ?? "");
 
-            // Yüklənən faylın linki (wwwroot/files/user_projects/{file})
-            var fileUrlRaw = (string.IsNullOrWhiteSpace(baseUrl) ? "" : baseUrl.TrimEnd('/')) +
-                             $"/files/{FOLDER}/{entity.ProjectFileName}";
-            var fileUrl = WebUtility.HtmlEncode(fileUrlRaw);
+            // Fayl URL-i artıq avtomatik
+            var fileUrl = WebUtility.HtmlEncode(entity.ProjectFileName ?? "#");
 
             return $@"
 <!doctype html>
@@ -216,5 +217,6 @@ namespace Legno.Persistence.Concreters.Services
 </body>
 </html>";
         }
+
     }
 }

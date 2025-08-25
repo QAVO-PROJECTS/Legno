@@ -15,17 +15,20 @@ namespace Legno.Persistence.Concreters.Services
         private readonly ITeamWriteRepository _teamWriteRepository;
         private readonly IFileService _fileService;
         private readonly IMapper _mapper;
+        private readonly CloudinaryService _cloudinaryService;
 
         public TeamsService(
             ITeamReadRepository teamReadRepository,
             ITeamWriteRepository teamWriteRepository,
             IFileService fileService,
-            IMapper mapper)
+            IMapper mapper,
+            CloudinaryService cloudinaryService)
         {
             _teamReadRepository = teamReadRepository;
             _teamWriteRepository = teamWriteRepository;
             _fileService = fileService;
             _mapper = mapper;
+            _cloudinaryService = cloudinaryService;
         }
 
         public async Task<TeamDto> AddTeamAsync(CreateTeamDto createTeamDto)
@@ -50,7 +53,7 @@ namespace Legno.Persistence.Concreters.Services
 
             if (createTeamDto.CardImage != null)
             {
-                var fileName = await _fileService.UploadFile(createTeamDto.CardImage, "team_card_images");
+                var fileName = await _cloudinaryService.UploadFileAsync(createTeamDto.CardImage);
                 entity.CardImage = fileName;
             }
 
@@ -112,9 +115,9 @@ namespace Legno.Persistence.Concreters.Services
             if (updateTeamDto.CardImage != null)
             {
                 if (!string.IsNullOrEmpty(team.CardImage))
-                    await _fileService.DeleteFile("team_card_images", team.CardImage);
+                    await   _cloudinaryService.DeleteFileAsync(team.CardImage);
 
-                team.CardImage = await _fileService.UploadFile(updateTeamDto.CardImage, "team_card_images");
+                team.CardImage = await _cloudinaryService.UploadFileAsync(updateTeamDto.CardImage);
             }
 
         

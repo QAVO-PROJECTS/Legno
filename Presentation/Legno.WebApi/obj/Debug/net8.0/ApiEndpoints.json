@@ -438,6 +438,11 @@
         "IsRequired": false
       },
       {
+        "Name": "AuthorName",
+        "Type": "System.String",
+        "IsRequired": false
+      },
+      {
         "Name": "CategoryId",
         "Type": "System.String",
         "IsRequired": false
@@ -559,6 +564,11 @@
       {
         "Name": "CardImage",
         "Type": "Microsoft.AspNetCore.Http.IFormFile",
+        "IsRequired": false
+      },
+      {
+        "Name": "AuthorName",
+        "Type": "System.String",
         "IsRequired": false
       },
       {
