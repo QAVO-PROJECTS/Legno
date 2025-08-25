@@ -266,8 +266,7 @@
               "RelativeToolTip": "Infrastructure\\Legno.Persistence\\Concreters\\Services\\ProjectService.cs",
               "ViewState": "AgIAAHQAAAAAAAAAAAAswJUAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-08-19T06:24:09.26Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-08-19T06:24:09.26Z"
             },
             {
               "$type": "Document",
@@ -277,7 +276,7 @@
               "RelativeDocumentMoniker": "Infrastructure\\Legno.Persistence\\Concreters\\Services\\InMemoryFuzzyProjectSearchService.cs",
               "ToolTip": "C:\\Users\\gulco\\source\\repos\\Legno\\Infrastructure\\Legno.Persistence\\Concreters\\Services\\InMemoryFuzzyProjectSearchService.cs",
               "RelativeToolTip": "Infrastructure\\Legno.Persistence\\Concreters\\Services\\InMemoryFuzzyProjectSearchService.cs",
-              "ViewState": "AgIAAEsAAAAAAAAAAAAowFsAAAAnAAAAAAAAAA==",
+              "ViewState": "AgIAABIAAAAAAAAAAAAAwDUAAAA0AAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-08-19T07:33:45.67Z",
               "EditorCaption": ""
@@ -292,8 +291,7 @@
               "RelativeToolTip": "Presentation\\Legno.WebApi\\Controllers\\SearchsController.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAYwB0AAAA4AAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-08-19T07:36:00.627Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-08-19T07:36:00.627Z"
             },
             {
               "$type": "Document",
@@ -317,8 +315,7 @@
               "RelativeToolTip": "Core\\Legno.Application\\Abstracts\\Services\\IFuzzyProjectSearchService.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAkAAAA3AAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-08-19T07:33:10.036Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-08-19T07:33:10.036Z"
             },
             {
               "$type": "Document",

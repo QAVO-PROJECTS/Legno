@@ -1,16 +1,6 @@
 [
   {
     "ContainingType": "Legno.WebApi.Controllers.AdminsController",
-    "Method": "DeleteAllAdmins",
-    "RelativePath": "api/Admins/delete-all",
-    "HttpMethod": "DELETE",
-    "IsController": true,
-    "Order": 0,
-    "Parameters": [],
-    "ReturnTypes": []
-  },
-  {
-    "ContainingType": "Legno.WebApi.Controllers.AdminsController",
     "Method": "Login",
     "RelativePath": "api/Admins/login",
     "HttpMethod": "POST",
@@ -20,22 +10,6 @@
       {
         "Name": "loginDto",
         "Type": "Legno.Application.Dtos.Account.LoginDto",
-        "IsRequired": true
-      }
-    ],
-    "ReturnTypes": []
-  },
-  {
-    "ContainingType": "Legno.WebApi.Controllers.AdminsController",
-    "Method": "Register",
-    "RelativePath": "api/Admins/register",
-    "HttpMethod": "POST",
-    "IsController": true,
-    "Order": 0,
-    "Parameters": [
-      {
-        "Name": "registerDto",
-        "Type": "Legno.Application.Dtos.Account.RegisterDto",
         "IsRequired": true
       }
     ],
@@ -96,6 +70,11 @@
       },
       {
         "Name": "AuthorNameRu",
+        "Type": "System.String",
+        "IsRequired": false
+      },
+      {
+        "Name": "AuthorProfession",
         "Type": "System.String",
         "IsRequired": false
       },
@@ -209,6 +188,11 @@
       },
       {
         "Name": "AuthorNameRu",
+        "Type": "System.String",
+        "IsRequired": false
+      },
+      {
+        "Name": "AuthorProfession",
         "Type": "System.String",
         "IsRequired": false
       },
@@ -617,11 +601,6 @@
         "Name": "q",
         "Type": "System.String",
         "IsRequired": false
-      },
-      {
-        "Name": "take",
-        "Type": "System.Int32",
-        "IsRequired": false
       }
     ],
     "ReturnTypes": []
@@ -645,13 +624,13 @@
   {
     "ContainingType": "Legno.Api.Controllers.SubscribersController",
     "Method": "DeleteSubscriber",
-    "RelativePath": "api/Subscribers/delete-subscriber/{subscriberId}",
+    "RelativePath": "api/Subscribers/delete-subscriber/{subscriberName}",
     "HttpMethod": "DELETE",
     "IsController": true,
     "Order": 0,
     "Parameters": [
       {
-        "Name": "subscriberId",
+        "Name": "subscriberName",
         "Type": "System.String",
         "IsRequired": true
       }
@@ -666,22 +645,6 @@
     "IsController": true,
     "Order": 0,
     "Parameters": [],
-    "ReturnTypes": []
-  },
-  {
-    "ContainingType": "Legno.Api.Controllers.SubscribersController",
-    "Method": "GetSubscriber",
-    "RelativePath": "api/Subscribers/get-subscriber/{subscriberId}",
-    "HttpMethod": "GET",
-    "IsController": true,
-    "Order": 0,
-    "Parameters": [
-      {
-        "Name": "subscriberId",
-        "Type": "System.String",
-        "IsRequired": true
-      }
-    ],
     "ReturnTypes": []
   },
   {

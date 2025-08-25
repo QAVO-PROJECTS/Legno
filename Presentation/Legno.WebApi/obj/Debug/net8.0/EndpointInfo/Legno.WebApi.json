@@ -5,37 +5,6 @@
     "version": "v1"
   },
   "paths": {
-    "/api/Admins/register": {
-      "post": {
-        "tags": [
-          "Admins"
-        ],
-        "requestBody": {
-          "content": {
-            "application/json": {
-              "schema": {
-                "$ref": "#/components/schemas/RegisterDto"
-              }
-            },
-            "text/json": {
-              "schema": {
-                "$ref": "#/components/schemas/RegisterDto"
-              }
-            },
-            "application/*+json": {
-              "schema": {
-                "$ref": "#/components/schemas/RegisterDto"
-              }
-            }
-          }
-        },
-        "responses": {
-          "200": {
-            "description": "OK"
-          }
-        }
-      }
-    },
     "/api/Admins/login": {
       "post": {
         "tags": [
@@ -60,18 +29,6 @@
             }
           }
         },
-        "responses": {
-          "200": {
-            "description": "OK"
-          }
-        }
-      }
-    },
-    "/api/Admins/delete-all": {
-      "delete": {
-        "tags": [
-          "Admins"
-        ],
         "responses": {
           "200": {
             "description": "OK"
@@ -121,6 +78,9 @@
                   "AuthorNameRu": {
                     "type": "string"
                   },
+                  "AuthorProfession": {
+                    "type": "string"
+                  },
                   "AuthorImage": {
                     "type": "string",
                     "format": "binary"
@@ -156,6 +116,9 @@
                   "style": "form"
                 },
                 "AuthorNameRu": {
+                  "style": "form"
+                },
+                "AuthorProfession": {
                   "style": "form"
                 },
                 "AuthorImage": {
@@ -251,6 +214,9 @@
                   "AuthorNameRu": {
                     "type": "string"
                   },
+                  "AuthorProfession": {
+                    "type": "string"
+                  },
                   "AuthorImage": {
                     "type": "string",
                     "format": "binary"
@@ -289,6 +255,9 @@
                   "style": "form"
                 },
                 "AuthorNameRu": {
+                  "style": "form"
+                },
+                "AuthorProfession": {
                   "style": "form"
                 },
                 "AuthorImage": {
@@ -948,15 +917,6 @@
             "schema": {
               "type": "string"
             }
-          },
-          {
-            "name": "take",
-            "in": "query",
-            "schema": {
-              "type": "integer",
-              "format": "int32",
-              "default": 20
-            }
           }
         ],
         "responses": {
@@ -997,28 +957,6 @@
         }
       }
     },
-    "/api/Subscribers/get-subscriber/{subscriberId}": {
-      "get": {
-        "tags": [
-          "Subscribers"
-        ],
-        "parameters": [
-          {
-            "name": "subscriberId",
-            "in": "path",
-            "required": true,
-            "schema": {
-              "type": "string"
-            }
-          }
-        ],
-        "responses": {
-          "200": {
-            "description": "OK"
-          }
-        }
-      }
-    },
     "/api/Subscribers/get-all-subscribers": {
       "get": {
         "tags": [
@@ -1031,14 +969,14 @@
         }
       }
     },
-    "/api/Subscribers/delete-subscriber/{subscriberId}": {
+    "/api/Subscribers/delete-subscriber/{subscriberName}": {
       "delete": {
         "tags": [
           "Subscribers"
         ],
         "parameters": [
           {
-            "name": "subscriberId",
+            "name": "subscriberName",
             "in": "path",
             "required": true,
             "schema": {
@@ -1612,28 +1550,6 @@
           "displayOrderId": {
             "type": "integer",
             "format": "int32"
-          }
-        },
-        "additionalProperties": false
-      },
-      "RegisterDto": {
-        "type": "object",
-        "properties": {
-          "name": {
-            "type": "string",
-            "nullable": true
-          },
-          "surname": {
-            "type": "string",
-            "nullable": true
-          },
-          "email": {
-            "type": "string",
-            "nullable": true
-          },
-          "password": {
-            "type": "string",
-            "nullable": true
           }
         },
         "additionalProperties": false

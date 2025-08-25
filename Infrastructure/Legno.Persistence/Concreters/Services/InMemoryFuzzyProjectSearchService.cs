@@ -42,9 +42,7 @@ namespace Legno.Persistence.Concreters.Services
                 throw new GlobalAppException("Axtarış sorğusu boş ola bilməz.");
 
             var q = Normalize(query);
-            var (catTh, projTh) = GetThresholds(q);
-
-            var categories = await _categoryRead.GetAllAsync(x => !x.IsDeleted, EnableTraking: false);
+            var (_, projTh) = GetThresholds(q);
 
             var projects = await _projectRead.GetAllAsync(
                 func: p => !p.IsDeleted,
@@ -53,47 +51,23 @@ namespace Legno.Persistence.Concreters.Services
                 EnableTraking: false
             );
 
-            var bestCategory = categories
-                .Select(c => new
-                {
-                    Cat = c,
-                    Score = MaxScoreAcrossFields(q, c.Name, c.NameEng, c.NameRu)
-                })
+            // Yalnız Project üzərində fuzzy axtarış
+            var ranked = projects
+                .Select(p => (Project: p, Score: MaxScoreAcrossFields(
+                    q,
+                    p.Title, p.TitleEng, p.TitleRu
+                )))
+                .Where(x => x.Score >= projTh)
                 .OrderByDescending(x => x.Score)
-                .FirstOrDefault();
-
-            IEnumerable<(Project Project, double Score)> ranked;
-
-            if (bestCategory != null && bestCategory.Score >= catTh)
-            {
-                // 2A) Yüksək uyğunluq — həmin kateqoriyanın layihələrində axtar
-                ranked = projects
-                    .Where(p => p.CategoryId == bestCategory.Cat.Id)
-                    .Select(p => (Project: p, Score: MaxScoreAcrossFields(q, p.Title, p.TitleEng, p.TitleRu)))
-                    .Where(x => x.Score >= projTh)
-                    .OrderByDescending(x => x.Score)
-                    .ThenBy(x => x.Project.Title ?? x.Project.TitleEng ?? x.Project.TitleRu);
-            }
-            else
-            {
-                // 2B) Kateqoriya yetərli deyil — bütün layihələrdə fuzzy axtar
-                ranked = projects
-                    .Select(p => (Project: p, Score: MaxScoreAcrossFields(
-                        q,
-                        p.Title, p.TitleEng, p.TitleRu,
-                        p.Category?.Name, p.Category?.NameEng, p.Category?.NameRu)))
-                    .Where(x => x.Score >= projTh)
-                    .OrderByDescending(x => x.Score)
-                    .ThenBy(x => x.Project.Title ?? x.Project.TitleEng ?? x.Project.TitleRu);
-            }
+                .ThenBy(x => x.Project.Title ?? x.Project.TitleEng ?? x.Project.TitleRu);
 
             var resultEntities = ranked
-             
                 .Select(x => x.Project)
                 .ToList();
 
             return _mapper.Map<List<ProjectDto>>(resultEntities);
         }
+
 
         // ==== Thresholdları sorğunun uzunluğuna görə tənzimlə ====
         private static (double CategoryThreshold, double ProjectThreshold) GetThresholds(string q)
