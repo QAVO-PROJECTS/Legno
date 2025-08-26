@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("Legno.Persistence")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+0f3a8c6df4970198dd1e90e1bb0f21817f6364e5")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+57a884da2015f7e2ad0da894c7fdd569cbe9cd81")]
 [assembly: System.Reflection.AssemblyProductAttribute("Legno.Persistence")]
 [assembly: System.Reflection.AssemblyTitleAttribute("Legno.Persistence")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

@@ -17,9 +17,7 @@ namespace Legno.Persistence.Configurations
             builder.Property(x => x.TitleEng).IsRequired().HasMaxLength(200);
             builder.Property(x => x.TitleRu).IsRequired().HasMaxLength(200);
 
-            builder.Property(x => x.SubTitle).HasMaxLength(400);
-            builder.Property(x => x.SubTitleEng).HasMaxLength(400);
-            builder.Property(x => x.SubTitleRu).HasMaxLength(400);
+       
 
             builder.Property(x => x.CardImage).IsRequired().HasMaxLength(300);
 
