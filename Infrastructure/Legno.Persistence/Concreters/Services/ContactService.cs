@@ -150,13 +150,13 @@ namespace Legno.Persistence.Concreters.Services
 
 
             // 3) Adminə email göndər:
-            var mailRequest = new MailRequest
-            {
-                ToEmail = "bd7bl34lt@code.edu.az",
-                Subject = "Yeni İstifadəçi Məlumatları",
-                Body = emailBody
-            };
-            await _mailService.SendEmailAsync(mailRequest);
+            //var mailRequest = new MailRequest
+            //{
+            //    ToEmail = "bd7bl34lt@code.edu.az",
+            //    Subject = "Yeni İstifadəçi Məlumatları",
+            //    Body = emailBody
+            //};
+            //await _mailService.SendEmailAsync(mailRequest);
 
             // 4) Cavab olaraq yeni yaradılmış `ContactDto` qaytarırıq:
             return new ContactDto

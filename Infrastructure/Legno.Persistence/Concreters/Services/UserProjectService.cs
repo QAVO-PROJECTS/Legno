@@ -65,14 +65,14 @@ namespace Legno.Persistence.Concreters.Services
 
             await _writeRepo.AddAsync(entity);
             await _writeRepo.CommitAsync();
-            var mailRequest = new MailRequest
-            {
-                ToEmail = "bd7bl34lt@code.edu.az",
-                Subject = "Yeni sifarişiniz var",
-                Body = BuildAdminEmailBody(entity)
-            };
+            //var mailRequest = new MailRequest
+            //{
+            //    ToEmail = "bd7bl34lt@code.edu.az",
+            //    Subject = "Yeni sifarişiniz var",
+            //    Body = BuildAdminEmailBody(entity)
+            //};
    
-            await _mailService.SendEmailAsync(mailRequest);
+            //await _mailService.SendEmailAsync(mailRequest);
 
             return _mapper.Map<UserProjectDto>(entity);
         }
