@@ -139,7 +139,7 @@ namespace Legno.Persistence.Concreters.Services
                 throw new GlobalAppException("Category ID formatı yanlışdır.");
 
             var list = await _projectRead.GetAllAsync(
-                func: p => !p.IsDeleted && p.CategoryId == catId,
+                func: p => !p.IsDeleted && p.CategoryId == catId && !p.Category.IsDeleted,
                 include: q => q
                     .Include(p => p.Category)
                     .Include(p => p.ProjectImages.Where(i => !i.IsDeleted))
@@ -157,7 +157,7 @@ namespace Legno.Persistence.Concreters.Services
                 throw new GlobalAppException("Yanlış ID formatı.");
 
             var project = await _projectRead.GetAsync(
-                p => p.Id == id && !p.IsDeleted,
+                p => p.Id == id && !p.IsDeleted && !p.Category.IsDeleted,
                 include: q => q
                     .Include(p => p.Category)
                     .Include(p => p.ProjectImages.Where(i => !i.IsDeleted))
@@ -171,7 +171,7 @@ namespace Legno.Persistence.Concreters.Services
         public async Task<List<ProjectDto>> GetAllProjectsAsync()
         {
             var list = await _projectRead.GetAllAsync(
-                func: x => !x.IsDeleted,
+                func: x => !x.IsDeleted && !x.Category.IsDeleted,
                 include: q => q
                     .Include(p => p.Category)
                     .Include(p => p.ProjectImages.Where(i => !i.IsDeleted))

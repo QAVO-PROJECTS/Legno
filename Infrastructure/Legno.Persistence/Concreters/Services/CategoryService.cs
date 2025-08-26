@@ -1,6 +1,7 @@
 ﻿using AutoMapper;
 using Legno.Application.Abstracts.Repositories;
 using Legno.Application.Abstracts.Repositories.Categories;
+using Legno.Application.Abstracts.Repositories.Projects;
 using Legno.Application.Abstracts.Services;
 using Legno.Application.Dtos.Category;
 using Legno.Application.GlobalExceptionn;
@@ -18,15 +19,22 @@ namespace Legno.Persistence.Concreters.Services
         private readonly ICategoryReadRepository _read;
         private readonly ICategoryWriteRepository _write;
         private readonly IMapper _mapper;
+        private readonly IProjectReadRepository _projectRead;
+        private readonly IProjectWriteRepository _projectWrite;
+
 
         public CategoryService(
           ICategoryReadRepository read,
         ICategoryWriteRepository write,
-            IMapper mapper)
+            IMapper mapper,
+            IProjectReadRepository projectRead,
+            IProjectWriteRepository projectWrite)
         {
             _read = read;
             _write = write;
             _mapper = mapper;
+            _projectRead = projectRead;
+            _projectWrite = projectWrite;
         }
 
         public async Task<CategoryDto> AddCategoryAsync(CreateCategoryDto dto)
@@ -96,7 +104,6 @@ namespace Legno.Persistence.Concreters.Services
             return _mapper.Map<CategoryDto>(entity);
         }
 
-
         public async Task DeleteCategoryAsync(string categoryId)
         {
             if (!Guid.TryParse(categoryId, out var id))
@@ -106,11 +113,33 @@ namespace Legno.Persistence.Concreters.Services
             if (entity == null || entity.IsDeleted)
                 throw new GlobalAppException("Kateqoriya tapılmadı.");
 
+            // (İmkan varsa) eyni DbContext üzərindən tranzaksiya açın
+            // Repozitorinizdə BeginTransaction yoxdursa, DbContext-ə çıxış verən UoW istifadə edin.
+            // Misal üçün:
+            // using var tx = await _write.BeginTransactionAsync();
+
             entity.IsDeleted = true;
             entity.DeletedDate = DateTime.UtcNow;
-
             await _write.UpdateAsync(entity);
+
+            // Bu kateqoriyadakı bütün layihələri tap və soft delete et
+            var projects = await _projectRead.GetAllAsync(
+                func: p => p.CategoryId == id && !p.IsDeleted,
+                include: null,
+                orderBy: null,
+                EnableTraking: true
+            );
+
+            foreach (var p in projects)
+            {
+                p.IsDeleted = true;
+                p.DeletedDate = DateTime.UtcNow;
+                await _projectWrite.UpdateAsync(p);
+            }
+            await _projectWrite.CommitAsync();
+            // Tək commit (əgər yazı repozitoriləri eyni DbContext-i paylaşırsa)
             await _write.CommitAsync();
+            // await tx.CommitAsync();
         }
     }
 }

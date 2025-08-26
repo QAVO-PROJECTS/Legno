@@ -16,7 +16,7 @@ namespace Legno.Persistence.Configurations
             builder.Property(x => x.Surname).IsRequired().HasMaxLength(100);
             builder.Property(x => x.Email).IsRequired().HasMaxLength(200);
             builder.Property(x => x.PhoneNumber).IsRequired().HasMaxLength(50);
-            builder.Property(x => x.Description).IsRequired().HasMaxLength(2000);
+            builder.Property(x => x.Description).HasMaxLength(400);
 
             builder.HasQueryFilter(x => !x.IsDeleted);
         }
