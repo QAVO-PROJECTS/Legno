@@ -6,6 +6,7 @@ using Legno.Application.GlobalExceptionn;
 using System;
 using System.Collections.Generic;
 using System.Threading.Tasks;
+using Microsoft.AspNetCore.Authorization;
 
 namespace Legno.Api.Controllers
 {
@@ -40,7 +41,7 @@ namespace Legno.Api.Controllers
                 return StatusCode(500, new { StatusCode = 500, Error = $"Xəta baş verdi: {ex.Message}" });
             }
         }
-
+        [Authorize(Roles = "Admin")]
         // ✅ Bütün kontaktları (istifadəçiləri) getir
         [HttpGet("get-all-contacts")]
         public async Task<IActionResult> GetAllContacts()
@@ -48,6 +49,20 @@ namespace Legno.Api.Controllers
             try
             {
                 var contacts = await _contactService.GetAllUsersAsync();
+                return Ok(new { StatusCode = 200, Data = contacts });
+            }
+            catch (Exception ex)
+            {
+                return StatusCode(500, new { StatusCode = 500, Error = $"Xəta baş verdi: {ex.Message}" });
+            }
+        }
+        [Authorize(Roles = "Admin")]
+        [HttpGet("contact/{id}")]
+        public async Task<IActionResult> GetContactById(string id)
+        {
+            try
+            {
+                var contacts = await _contactService.GetByIdAsync(id);
                 return Ok(new { StatusCode = 200, Data = contacts });
             }
             catch (Exception ex)

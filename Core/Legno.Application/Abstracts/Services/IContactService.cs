@@ -11,5 +11,6 @@ namespace Legno.Application.Absrtacts.Services
     {
         Task<ContactDto> CreateUserInfoAsync(CreateContactDto createContacDto);
         Task<List<ContactDto>> GetAllUsersAsync();
+        Task<ContactDto> GetByIdAsync(string id);
     }
 }

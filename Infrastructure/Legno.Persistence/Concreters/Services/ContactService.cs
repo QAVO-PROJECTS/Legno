@@ -169,6 +169,26 @@ namespace Legno.Persistence.Concreters.Services
                 Description = newUser.Description
             };
         }
+        public async Task<ContactDto> GetByIdAsync(string id)
+        {
+            if (string.IsNullOrWhiteSpace(id))
+                throw new GlobalAppException("Id boş ola bilməz.");
+
+            var contact = await _contactReadRepository.GetByIdAsync(id);
+            if (contact == null)
+                throw new GlobalAppException("Məlumat tapılmadı.");
+
+            return new ContactDto
+            {
+                Id = contact.Id.ToString(),
+                Name = contact.Name,
+                Surname = contact.Surname,
+                Email = contact.Email,
+                PhoneNumber = contact.PhoneNumber,
+                Description = contact.Description
+            };
+        }
+
 
         public async Task<List<ContactDto>> GetAllUsersAsync()
         {

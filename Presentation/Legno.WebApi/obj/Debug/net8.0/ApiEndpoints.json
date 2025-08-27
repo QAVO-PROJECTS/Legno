@@ -280,6 +280,22 @@
   },
   {
     "ContainingType": "Legno.Api.Controllers.ContactsController",
+    "Method": "GetContactById",
+    "RelativePath": "api/Contacts/contact/{id}",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "id",
+        "Type": "System.String",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "Legno.Api.Controllers.ContactsController",
     "Method": "CreateContact",
     "RelativePath": "api/Contacts/create-contact",
     "HttpMethod": "POST",
