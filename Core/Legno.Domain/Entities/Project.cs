@@ -7,7 +7,7 @@ using System.Threading.Tasks;
 
 namespace Legno.Domain.Entities
 {
-    public class Project:BaseEntity
+    public class Project : BaseEntity
     {
         public string Title { get; set; }
         public string TitleEng { get; set; }
@@ -17,8 +17,9 @@ namespace Legno.Domain.Entities
         public string? SubTitleRu { get; set; }
         public string CardImage { get; set; }
         public int DisplayOrderId { get; set; } = 1;
-        public string AuthorName { get; set; }
-        public Guid CategoryId {  get; set; }
+        public Guid? TeamId { get; set; }
+        public Team? Team { get; set; }
+        public Guid CategoryId { get; set; }
         public Category? Category { get; set; }
         public List<ProjectImage>? ProjectImages { get; set; }
         public List<ProjectVideo>? ProjectVideos { get; set; }

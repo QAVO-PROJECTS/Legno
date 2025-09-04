@@ -12,6 +12,7 @@ namespace Legno.Domain.Entities
         public string Name { get; set; }
         public string NameRu { get; set; }
         public string NameEng { get; set; }
+        public string CategoryImage { get; set; }
 
         public List<Project>? Projects { get; set; }
     }

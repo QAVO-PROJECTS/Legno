@@ -24,6 +24,7 @@ namespace Legno.Domain.Entities
         public string InstagramLink { get; set; }
         public string LinkedInLink { get; set; }
         public int DisplayOrderId { get; set; } = 1;
+        public List<Project>? Projects { get; set; }
 
 
 

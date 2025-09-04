@@ -1,4 +1,5 @@
 ﻿using Legno.Application.Dtos.Category;
+using Legno.Application.Dtos.Team;
 using Legno.Domain.Entities;
 using System;
 using System.Collections.Generic;
@@ -19,7 +20,7 @@ namespace Legno.Application.Dtos.Project
         public string? SubTitleRu { get; set; }
         public string CardImage { get; set; }
         public int DisplayOrderId { get; set; }
-        public string AuthorName { get; set; }
+        public TeamDto Team { get; set; }
         public CategoryDto Category { get; set; }
         public List<string>? ProjectImageNames { get; set; }
         public List<string>? ProjectVideoNames { get; set; }

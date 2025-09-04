@@ -36,6 +36,124 @@
         }
       }
     },
+    "/api/B2BServices/create": {
+      "post": {
+        "tags": [
+          "B2BServices"
+        ],
+        "requestBody": {
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/CreateCommonServiceDto"
+              }
+            },
+            "text/json": {
+              "schema": {
+                "$ref": "#/components/schemas/CreateCommonServiceDto"
+              }
+            },
+            "application/*+json": {
+              "schema": {
+                "$ref": "#/components/schemas/CreateCommonServiceDto"
+              }
+            }
+          }
+        },
+        "responses": {
+          "200": {
+            "description": "OK"
+          }
+        }
+      }
+    },
+    "/api/B2BServices/get/{id}": {
+      "get": {
+        "tags": [
+          "B2BServices"
+        ],
+        "parameters": [
+          {
+            "name": "id",
+            "in": "path",
+            "required": true,
+            "schema": {
+              "type": "string"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "OK"
+          }
+        }
+      }
+    },
+    "/api/B2BServices/get-all": {
+      "get": {
+        "tags": [
+          "B2BServices"
+        ],
+        "responses": {
+          "200": {
+            "description": "OK"
+          }
+        }
+      }
+    },
+    "/api/B2BServices/update": {
+      "put": {
+        "tags": [
+          "B2BServices"
+        ],
+        "requestBody": {
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/UpdateCommonServiceDto"
+              }
+            },
+            "text/json": {
+              "schema": {
+                "$ref": "#/components/schemas/UpdateCommonServiceDto"
+              }
+            },
+            "application/*+json": {
+              "schema": {
+                "$ref": "#/components/schemas/UpdateCommonServiceDto"
+              }
+            }
+          }
+        },
+        "responses": {
+          "200": {
+            "description": "OK"
+          }
+        }
+      }
+    },
+    "/api/B2BServices/delete/{id}": {
+      "delete": {
+        "tags": [
+          "B2BServices"
+        ],
+        "parameters": [
+          {
+            "name": "id",
+            "in": "path",
+            "required": true,
+            "schema": {
+              "type": "string"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "OK"
+          }
+        }
+      }
+    },
     "/api/Blogs/create-blog": {
       "post": {
         "tags": [
@@ -303,19 +421,38 @@
         ],
         "requestBody": {
           "content": {
-            "application/json": {
+            "multipart/form-data": {
               "schema": {
-                "$ref": "#/components/schemas/CreateCategoryDto"
-              }
-            },
-            "text/json": {
-              "schema": {
-                "$ref": "#/components/schemas/CreateCategoryDto"
-              }
-            },
-            "application/*+json": {
-              "schema": {
-                "$ref": "#/components/schemas/CreateCategoryDto"
+                "type": "object",
+                "properties": {
+                  "Name": {
+                    "type": "string"
+                  },
+                  "NameRu": {
+                    "type": "string"
+                  },
+                  "NameEng": {
+                    "type": "string"
+                  },
+                  "CategoryImage": {
+                    "type": "string",
+                    "format": "binary"
+                  }
+                }
+              },
+              "encoding": {
+                "Name": {
+                  "style": "form"
+                },
+                "NameRu": {
+                  "style": "form"
+                },
+                "NameEng": {
+                  "style": "form"
+                },
+                "CategoryImage": {
+                  "style": "form"
+                }
               }
             }
           }
@@ -368,19 +505,44 @@
         ],
         "requestBody": {
           "content": {
-            "application/json": {
+            "multipart/form-data": {
               "schema": {
-                "$ref": "#/components/schemas/UpdateCategoryDto"
-              }
-            },
-            "text/json": {
-              "schema": {
-                "$ref": "#/components/schemas/UpdateCategoryDto"
-              }
-            },
-            "application/*+json": {
-              "schema": {
-                "$ref": "#/components/schemas/UpdateCategoryDto"
+                "type": "object",
+                "properties": {
+                  "Id": {
+                    "type": "string"
+                  },
+                  "Name": {
+                    "type": "string"
+                  },
+                  "NameRu": {
+                    "type": "string"
+                  },
+                  "NameEng": {
+                    "type": "string"
+                  },
+                  "CategoryImage": {
+                    "type": "string",
+                    "format": "binary"
+                  }
+                }
+              },
+              "encoding": {
+                "Id": {
+                  "style": "form"
+                },
+                "Name": {
+                  "style": "form"
+                },
+                "NameRu": {
+                  "style": "form"
+                },
+                "NameEng": {
+                  "style": "form"
+                },
+                "CategoryImage": {
+                  "style": "form"
+                }
               }
             }
           }
@@ -396,6 +558,124 @@
       "delete": {
         "tags": [
           "Categories"
+        ],
+        "parameters": [
+          {
+            "name": "id",
+            "in": "path",
+            "required": true,
+            "schema": {
+              "type": "string"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "OK"
+          }
+        }
+      }
+    },
+    "/api/CommonServices/create": {
+      "post": {
+        "tags": [
+          "CommonServices"
+        ],
+        "requestBody": {
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/CreateCommonServiceDto"
+              }
+            },
+            "text/json": {
+              "schema": {
+                "$ref": "#/components/schemas/CreateCommonServiceDto"
+              }
+            },
+            "application/*+json": {
+              "schema": {
+                "$ref": "#/components/schemas/CreateCommonServiceDto"
+              }
+            }
+          }
+        },
+        "responses": {
+          "200": {
+            "description": "OK"
+          }
+        }
+      }
+    },
+    "/api/CommonServices/get/{id}": {
+      "get": {
+        "tags": [
+          "CommonServices"
+        ],
+        "parameters": [
+          {
+            "name": "id",
+            "in": "path",
+            "required": true,
+            "schema": {
+              "type": "string"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "OK"
+          }
+        }
+      }
+    },
+    "/api/CommonServices/get-all": {
+      "get": {
+        "tags": [
+          "CommonServices"
+        ],
+        "responses": {
+          "200": {
+            "description": "OK"
+          }
+        }
+      }
+    },
+    "/api/CommonServices/update": {
+      "put": {
+        "tags": [
+          "CommonServices"
+        ],
+        "requestBody": {
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/UpdateCommonServiceDto"
+              }
+            },
+            "text/json": {
+              "schema": {
+                "$ref": "#/components/schemas/UpdateCommonServiceDto"
+              }
+            },
+            "application/*+json": {
+              "schema": {
+                "$ref": "#/components/schemas/UpdateCommonServiceDto"
+              }
+            }
+          }
+        },
+        "responses": {
+          "200": {
+            "description": "OK"
+          }
+        }
+      }
+    },
+    "/api/CommonServices/delete/{id}": {
+      "delete": {
+        "tags": [
+          "CommonServices"
         ],
         "parameters": [
           {
@@ -597,6 +877,242 @@
         }
       }
     },
+    "/api/Locations/create": {
+      "post": {
+        "tags": [
+          "Locations"
+        ],
+        "requestBody": {
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/CreateLocationDto"
+              }
+            },
+            "text/json": {
+              "schema": {
+                "$ref": "#/components/schemas/CreateLocationDto"
+              }
+            },
+            "application/*+json": {
+              "schema": {
+                "$ref": "#/components/schemas/CreateLocationDto"
+              }
+            }
+          }
+        },
+        "responses": {
+          "200": {
+            "description": "OK"
+          }
+        }
+      }
+    },
+    "/api/Locations/get/{id}": {
+      "get": {
+        "tags": [
+          "Locations"
+        ],
+        "parameters": [
+          {
+            "name": "id",
+            "in": "path",
+            "required": true,
+            "schema": {
+              "type": "string"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "OK"
+          }
+        }
+      }
+    },
+    "/api/Locations/get-all": {
+      "get": {
+        "tags": [
+          "Locations"
+        ],
+        "responses": {
+          "200": {
+            "description": "OK"
+          }
+        }
+      }
+    },
+    "/api/Locations/update": {
+      "put": {
+        "tags": [
+          "Locations"
+        ],
+        "requestBody": {
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/UpdateLocationDto"
+              }
+            },
+            "text/json": {
+              "schema": {
+                "$ref": "#/components/schemas/UpdateLocationDto"
+              }
+            },
+            "application/*+json": {
+              "schema": {
+                "$ref": "#/components/schemas/UpdateLocationDto"
+              }
+            }
+          }
+        },
+        "responses": {
+          "200": {
+            "description": "OK"
+          }
+        }
+      }
+    },
+    "/api/Locations/delete/{id}": {
+      "delete": {
+        "tags": [
+          "Locations"
+        ],
+        "parameters": [
+          {
+            "name": "id",
+            "in": "path",
+            "required": true,
+            "schema": {
+              "type": "string"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "OK"
+          }
+        }
+      }
+    },
+    "/api/Partners/create": {
+      "post": {
+        "tags": [
+          "Partners"
+        ],
+        "requestBody": {
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/CreateCommonServiceDto"
+              }
+            },
+            "text/json": {
+              "schema": {
+                "$ref": "#/components/schemas/CreateCommonServiceDto"
+              }
+            },
+            "application/*+json": {
+              "schema": {
+                "$ref": "#/components/schemas/CreateCommonServiceDto"
+              }
+            }
+          }
+        },
+        "responses": {
+          "200": {
+            "description": "OK"
+          }
+        }
+      }
+    },
+    "/api/Partners/get/{id}": {
+      "get": {
+        "tags": [
+          "Partners"
+        ],
+        "parameters": [
+          {
+            "name": "id",
+            "in": "path",
+            "required": true,
+            "schema": {
+              "type": "string"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "OK"
+          }
+        }
+      }
+    },
+    "/api/Partners/get-all": {
+      "get": {
+        "tags": [
+          "Partners"
+        ],
+        "responses": {
+          "200": {
+            "description": "OK"
+          }
+        }
+      }
+    },
+    "/api/Partners/update": {
+      "put": {
+        "tags": [
+          "Partners"
+        ],
+        "requestBody": {
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/UpdateCommonServiceDto"
+              }
+            },
+            "text/json": {
+              "schema": {
+                "$ref": "#/components/schemas/UpdateCommonServiceDto"
+              }
+            },
+            "application/*+json": {
+              "schema": {
+                "$ref": "#/components/schemas/UpdateCommonServiceDto"
+              }
+            }
+          }
+        },
+        "responses": {
+          "200": {
+            "description": "OK"
+          }
+        }
+      }
+    },
+    "/api/Partners/delete/{id}": {
+      "delete": {
+        "tags": [
+          "Partners"
+        ],
+        "parameters": [
+          {
+            "name": "id",
+            "in": "path",
+            "required": true,
+            "schema": {
+              "type": "string"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "OK"
+          }
+        }
+      }
+    },
     "/api/Projects/create": {
       "post": {
         "tags": [
@@ -630,7 +1146,7 @@
                     "type": "string",
                     "format": "binary"
                   },
-                  "AuthorName": {
+                  "TeamId": {
                     "type": "string"
                   },
                   "CategoryId": {
@@ -646,8 +1162,7 @@
                   "ProjectVideos": {
                     "type": "array",
                     "items": {
-                      "type": "string",
-                      "format": "binary"
+                      "type": "string"
                     }
                   }
                 }
@@ -674,7 +1189,7 @@
                 "CardImage": {
                   "style": "form"
                 },
-                "AuthorName": {
+                "TeamId": {
                   "style": "form"
                 },
                 "CategoryId": {
@@ -767,7 +1282,7 @@
                     "type": "string",
                     "format": "binary"
                   },
-                  "AuthorName": {
+                  "TeamId": {
                     "type": "string"
                   },
                   "DeleteImageNames": {
@@ -795,8 +1310,7 @@
                   "ProjectVideos": {
                     "type": "array",
                     "items": {
-                      "type": "string",
-                      "format": "binary"
+                      "type": "string"
                     }
                   }
                 }
@@ -826,7 +1340,7 @@
                 "CardImage": {
                   "style": "form"
                 },
-                "AuthorName": {
+                "TeamId": {
                   "style": "form"
                 },
                 "DeleteImageNames": {
@@ -1472,6 +1986,124 @@
           }
         }
       }
+    },
+    "/api/WorkPlannings/create": {
+      "post": {
+        "tags": [
+          "WorkPlannings"
+        ],
+        "requestBody": {
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/CreateCommonServiceDto"
+              }
+            },
+            "text/json": {
+              "schema": {
+                "$ref": "#/components/schemas/CreateCommonServiceDto"
+              }
+            },
+            "application/*+json": {
+              "schema": {
+                "$ref": "#/components/schemas/CreateCommonServiceDto"
+              }
+            }
+          }
+        },
+        "responses": {
+          "200": {
+            "description": "OK"
+          }
+        }
+      }
+    },
+    "/api/WorkPlannings/get/{id}": {
+      "get": {
+        "tags": [
+          "WorkPlannings"
+        ],
+        "parameters": [
+          {
+            "name": "id",
+            "in": "path",
+            "required": true,
+            "schema": {
+              "type": "string"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "OK"
+          }
+        }
+      }
+    },
+    "/api/WorkPlannings/get-all": {
+      "get": {
+        "tags": [
+          "WorkPlannings"
+        ],
+        "responses": {
+          "200": {
+            "description": "OK"
+          }
+        }
+      }
+    },
+    "/api/WorkPlannings/update": {
+      "put": {
+        "tags": [
+          "WorkPlannings"
+        ],
+        "requestBody": {
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/UpdateCommonServiceDto"
+              }
+            },
+            "text/json": {
+              "schema": {
+                "$ref": "#/components/schemas/UpdateCommonServiceDto"
+              }
+            },
+            "application/*+json": {
+              "schema": {
+                "$ref": "#/components/schemas/UpdateCommonServiceDto"
+              }
+            }
+          }
+        },
+        "responses": {
+          "200": {
+            "description": "OK"
+          }
+        }
+      }
+    },
+    "/api/WorkPlannings/delete/{id}": {
+      "delete": {
+        "tags": [
+          "WorkPlannings"
+        ],
+        "parameters": [
+          {
+            "name": "id",
+            "in": "path",
+            "required": true,
+            "schema": {
+              "type": "string"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "OK"
+          }
+        }
+      }
     }
   },
   "components": {
@@ -1486,18 +2118,18 @@
         },
         "additionalProperties": false
       },
-      "CreateCategoryDto": {
+      "CreateCommonServiceDto": {
         "type": "object",
         "properties": {
           "name": {
             "type": "string",
             "nullable": true
           },
-          "nameRu": {
+          "nameEng": {
             "type": "string",
             "nullable": true
           },
-          "nameEng": {
+          "nameRu": {
             "type": "string",
             "nullable": true
           }
@@ -1560,6 +2192,52 @@
         },
         "additionalProperties": false
       },
+      "CreateLocationDto": {
+        "type": "object",
+        "properties": {
+          "branchName": {
+            "type": "string",
+            "nullable": true
+          },
+          "branchNameEng": {
+            "type": "string",
+            "nullable": true
+          },
+          "branchNameRu": {
+            "type": "string",
+            "nullable": true
+          },
+          "branchLocationEng": {
+            "type": "string",
+            "nullable": true
+          },
+          "branchLocationRu": {
+            "type": "string",
+            "nullable": true
+          },
+          "branchLocation": {
+            "type": "string",
+            "nullable": true
+          },
+          "branchWorkTime": {
+            "type": "string",
+            "nullable": true
+          },
+          "branchWorkTimeEng": {
+            "type": "string",
+            "nullable": true
+          },
+          "branchWorkTimeRu": {
+            "type": "string",
+            "nullable": true
+          },
+          "branchContactNumber": {
+            "type": "string",
+            "nullable": true
+          }
+        },
+        "additionalProperties": false
+      },
       "LoginDto": {
         "type": "object",
         "properties": {
@@ -1602,7 +2280,7 @@
         },
         "additionalProperties": false
       },
-      "UpdateCategoryDto": {
+      "UpdateCommonServiceDto": {
         "type": "object",
         "properties": {
           "id": {
@@ -1613,11 +2291,11 @@
             "type": "string",
             "nullable": true
           },
-          "nameRu": {
+          "nameEng": {
             "type": "string",
             "nullable": true
           },
-          "nameEng": {
+          "nameRu": {
             "type": "string",
             "nullable": true
           }
@@ -1652,6 +2330,56 @@
             "nullable": true
           },
           "answerRu": {
+            "type": "string",
+            "nullable": true
+          }
+        },
+        "additionalProperties": false
+      },
+      "UpdateLocationDto": {
+        "type": "object",
+        "properties": {
+          "id": {
+            "type": "string",
+            "nullable": true
+          },
+          "branchName": {
+            "type": "string",
+            "nullable": true
+          },
+          "branchNameEng": {
+            "type": "string",
+            "nullable": true
+          },
+          "branchNameRu": {
+            "type": "string",
+            "nullable": true
+          },
+          "branchLocationEng": {
+            "type": "string",
+            "nullable": true
+          },
+          "branchLocationRu": {
+            "type": "string",
+            "nullable": true
+          },
+          "branchLocation": {
+            "type": "string",
+            "nullable": true
+          },
+          "branchWorkTime": {
+            "type": "string",
+            "nullable": true
+          },
+          "branchWorkTimeEng": {
+            "type": "string",
+            "nullable": true
+          },
+          "branchWorkTimeRu": {
+            "type": "string",
+            "nullable": true
+          },
+          "branchContactNumber": {
             "type": "string",
             "nullable": true
           }

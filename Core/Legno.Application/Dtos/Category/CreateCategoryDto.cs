@@ -1,4 +1,5 @@
 ﻿using Legno.Domain.Entities;
+using Microsoft.AspNetCore.Http;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -12,5 +13,7 @@ namespace Legno.Application.Dtos.Category
         public string Name { get; set; }
         public string NameRu { get; set; }
         public string NameEng { get; set; }
+
+        public IFormFile CategoryImage { get; set; }
     }
 }

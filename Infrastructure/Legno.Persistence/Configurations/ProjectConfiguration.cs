@@ -33,6 +33,11 @@ namespace Legno.Persistence.Configurations
                    .OnDelete(DeleteBehavior.Cascade);
 
 
+            builder.HasOne(x => x.Team)
+                   .WithMany(x => x.Projects)
+                   .HasForeignKey(x => x.TeamId)
+                   .OnDelete(DeleteBehavior.Cascade);
+
             builder.HasMany(x => x.ProjectVideos)
                    .WithOne(x => x.Project)
                    .HasForeignKey(x => x.ProjectId)

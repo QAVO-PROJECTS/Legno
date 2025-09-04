@@ -9,7 +9,8 @@ namespace Legno.Domain.Entities
 {
     public class ProjectVideo:BaseEntity
     {
-        public string Name { get; set; }
+
+        public string YoutubeLink { get; set; }
         public Guid ProjectId { get; set; }
         public Project? Project { get; set; }
     }

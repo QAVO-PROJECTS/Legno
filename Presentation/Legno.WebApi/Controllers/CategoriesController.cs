@@ -17,7 +17,7 @@ namespace Legno.Api.Controllers
         public CategoriesController(ICategoryService service) { _service = service; }
         [Authorize(Roles = "Admin")]
         [HttpPost("create")]
-        public async Task<IActionResult> Create([FromBody] CreateCategoryDto dto)
+        public async Task<IActionResult> Create([FromForm] CreateCategoryDto dto)
         {
             try
             {
@@ -52,7 +52,7 @@ namespace Legno.Api.Controllers
         }
         [Authorize(Roles = "Admin")]
         [HttpPut("update")]
-        public async Task<IActionResult> Update([FromBody] UpdateCategoryDto dto)
+        public async Task<IActionResult> Update([FromForm] UpdateCategoryDto dto)
         {
             try
             {

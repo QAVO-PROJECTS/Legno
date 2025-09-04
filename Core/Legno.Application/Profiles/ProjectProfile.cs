@@ -30,7 +30,7 @@ public class ProjectProfile : Profile
                     : null))
             .ForMember(d => d.ProjectVideoNames,
                 o => o.MapFrom(s => s.ProjectVideos != null
-                    ? s.ProjectVideos.Where(v => !v.IsDeleted).Select(v => v.Name)
+                    ? s.ProjectVideos.Where(v => !v.IsDeleted).Select(v => v.YoutubeLink)
                     : null));
 
         // Create DTO -> Entity

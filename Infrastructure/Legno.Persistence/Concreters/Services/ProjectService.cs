@@ -1,5 +1,4 @@
 ﻿using AutoMapper;
-using Legno.Application.Absrtacts.Services;
 using Legno.Application.Abstracts.Repositories.ProjectImages;
 using Legno.Application.Abstracts.Repositories.Projects;
 using Legno.Application.Abstracts.Repositories.ProjectVideos;
@@ -8,10 +7,6 @@ using Legno.Application.Dtos.Project;
 using Legno.Application.GlobalExceptionn;
 using Legno.Domain.Entities;
 using Microsoft.EntityFrameworkCore;
-using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Threading.Tasks;
 
 namespace Legno.Persistence.Concreters.Services
 {
@@ -19,69 +14,64 @@ namespace Legno.Persistence.Concreters.Services
     {
         private readonly IProjectReadRepository _projectRead;
         private readonly IProjectWriteRepository _projectWrite;
-        private readonly IProjectImageReadRepository _imageRead;
         private readonly IProjectImageWriteRepository _imageWrite;
-        private readonly IProjectVideoReadRepository _videoRead;
         private readonly IProjectVideoWriteRepository _videoWrite;
-        private readonly IFileService _fileService;
         private readonly CloudinaryService _cloudinaryService;
         private readonly IMapper _mapper;
 
         public ProjectService(
             IProjectReadRepository projectRead,
             IProjectWriteRepository projectWrite,
-            IProjectImageReadRepository imageRead,
             IProjectImageWriteRepository imageWrite,
-            IProjectVideoReadRepository videoRead,
             IProjectVideoWriteRepository videoWrite,
-            IFileService fileService,
-            IMapper mapper,
-            CloudinaryService cloudinaryService)
+            CloudinaryService cloudinaryService,
+            IMapper mapper)
         {
             _projectRead = projectRead;
             _projectWrite = projectWrite;
-            _imageRead = imageRead;
             _imageWrite = imageWrite;
-            _videoRead = videoRead;
             _videoWrite = videoWrite;
-            _fileService = fileService;
-            _mapper = mapper;
             _cloudinaryService = cloudinaryService;
+            _mapper = mapper;
         }
 
+        // CREATE
         public async Task<ProjectDto> AddProjectAsync(CreateProjectDto dto)
         {
             if (dto == null) throw new GlobalAppException("Məlumat göndərilməyib.");
-            if (!Guid.TryParse(dto.CategoryId, out var _))
+            if (string.IsNullOrWhiteSpace(dto.CategoryId) || !Guid.TryParse(dto.CategoryId, out var catId))
                 throw new GlobalAppException("Category ID formatı yanlışdır.");
 
             // DisplayOrderId = max + 1
             var all = await _projectRead.GetAllAsync(x => !x.IsDeleted);
             var maxDisplay = all.Any() ? all.Max(x => x.DisplayOrderId) : 0;
 
-            var entity = _mapper.Map<Project>(dto);
-            entity.Id = Guid.NewGuid();
-            entity.DisplayOrderId = maxDisplay + 1;
-            entity.IsDeleted = false;
-            entity.CreatedDate = DateTime.UtcNow;
-            entity.LastUpdatedDate = DateTime.UtcNow;
+            var entity = new Project
+            {
+                Id = Guid.NewGuid(),
+                Title = dto.Title,
+                TitleEng = dto.TitleEng,
+                TitleRu = dto.TitleRu,
+                SubTitle = dto.SubTitle,
+                SubTitleEng = dto.SubTitleEng,
+                SubTitleRu = dto.SubTitleRu,
+                CategoryId = catId,
+                TeamId = Guid.TryParse(dto.TeamId, out var teamId) ? teamId : (Guid?)null,
+                DisplayOrderId = maxDisplay + 1,
+                IsDeleted = false,
+                CreatedDate = DateTime.UtcNow,
+                LastUpdatedDate = DateTime.UtcNow
+            };
 
-            // 🔹 CARD IMAGE (IFormFile)
-            if (dto.CardImage != null)
-            {
-                var storedCard = await _cloudinaryService.UploadFileAsync(dto.CardImage);
-                entity.CardImage = storedCard;
-            }
-            else
-            {
-                // istəyinə görə “CardImage tələbidir” deyib exception ata bilərsən
-                entity.CardImage = entity.CardImage ?? string.Empty;
-            }
+            // Card image
+            entity.CardImage = dto.CardImage != null
+                ? await _cloudinaryService.UploadFileAsync(dto.CardImage)
+                : string.Empty;
 
             await _projectWrite.AddAsync(entity);
 
-            // 🔹 Şəkillər
-            if (dto.ProjectImages != null && dto.ProjectImages.Any())
+            // Images (IFormFile)
+            if (dto.ProjectImages?.Any() == true)
             {
                 foreach (var file in dto.ProjectImages)
                 {
@@ -98,17 +88,18 @@ namespace Legno.Persistence.Concreters.Services
                 }
             }
 
-            // 🔹 Videolar
-            if (dto.ProjectVideos != null && dto.ProjectVideos.Any())
+            // Videos (ProjectVideoInputDto: YoutubeLink və/və ya File)
+            if (dto.ProjectVideos?.Any() == true)
             {
-                foreach (var file in dto.ProjectVideos)
+                foreach (var v in dto.ProjectVideos)
                 {
-                    var stored = await _cloudinaryService.UploadFileAsync(file);
+
                     await _videoWrite.AddAsync(new ProjectVideo
                     {
                         Id = Guid.NewGuid(),
                         ProjectId = entity.Id,
-                        Name = stored,
+                           // varsa fayl
+                        YoutubeLink = v,      // varsa link
                         CreatedDate = DateTime.UtcNow,
                         LastUpdatedDate = DateTime.UtcNow,
                         IsDeleted = false
@@ -116,50 +107,33 @@ namespace Legno.Persistence.Concreters.Services
                 }
             }
 
-            await _projectWrite.CommitAsync();
             await _imageWrite.CommitAsync();
             await _videoWrite.CommitAsync();
+            await _projectWrite.CommitAsync();
 
             var created = await _projectRead.GetAsync(
                 p => p.Id == entity.Id && !p.IsDeleted,
                 include: q => q
                     .Include(p => p.Category)
+                    .Include(p => p.Team)
                     .Include(p => p.ProjectImages.Where(i => !i.IsDeleted))
                     .Include(p => p.ProjectVideos.Where(v => !v.IsDeleted)),
                 EnableTraking: false);
 
             return _mapper.Map<ProjectDto>(created);
         }
-        public async Task<List<ProjectDto>> GetProjectsByCategoryAsync(string categoryId)
-        {
-            if (string.IsNullOrWhiteSpace(categoryId))
-                throw new GlobalAppException("Category Id tələb olunur.");
 
-            if (!Guid.TryParse(categoryId, out var catId))
-                throw new GlobalAppException("Category ID formatı yanlışdır.");
-
-            var list = await _projectRead.GetAllAsync(
-                func: p => !p.IsDeleted && p.CategoryId == catId && !p.Category.IsDeleted,
-                include: q => q
-                    .Include(p => p.Category)
-                    .Include(p => p.ProjectImages.Where(i => !i.IsDeleted))
-                    .Include(p => p.ProjectVideos.Where(v => !v.IsDeleted)),
-                orderBy: q => q.OrderBy(p => p.DisplayOrderId).ThenBy(p => p.CreatedDate),
-                EnableTraking: false
-            );
-
-            return _mapper.Map<List<ProjectDto>>(list);
-        }
-
+        // READ (by id)
         public async Task<ProjectDto?> GetProjectAsync(string projectId)
         {
             if (!Guid.TryParse(projectId, out var id))
                 throw new GlobalAppException("Yanlış ID formatı.");
 
             var project = await _projectRead.GetAsync(
-                p => p.Id == id && !p.IsDeleted && !p.Category.IsDeleted,
+                p => p.Id == id && !p.IsDeleted && !p.Category.IsDeleted && !p.Team.IsDeleted,
                 include: q => q
                     .Include(p => p.Category)
+                    .Include(p => p.Team)
                     .Include(p => p.ProjectImages.Where(i => !i.IsDeleted))
                     .Include(p => p.ProjectVideos.Where(v => !v.IsDeleted)),
                 EnableTraking: false);
@@ -168,12 +142,14 @@ namespace Legno.Persistence.Concreters.Services
             return _mapper.Map<ProjectDto>(project);
         }
 
+        // READ (all)
         public async Task<List<ProjectDto>> GetAllProjectsAsync()
         {
             var list = await _projectRead.GetAllAsync(
-                func: x => !x.IsDeleted && !x.Category.IsDeleted,
+                func: x => !x.IsDeleted && !x.Category.IsDeleted && !x.Team.IsDeleted,
                 include: q => q
                     .Include(p => p.Category)
+                    .Include(p => p.Team)
                     .Include(p => p.ProjectImages.Where(i => !i.IsDeleted))
                     .Include(p => p.ProjectVideos.Where(v => !v.IsDeleted)),
                 orderBy: q => q.OrderBy(p => p.DisplayOrderId).ThenBy(p => p.CreatedDate),
@@ -182,36 +158,49 @@ namespace Legno.Persistence.Concreters.Services
             return _mapper.Map<List<ProjectDto>>(list);
         }
 
+        // READ (by category)
+        public async Task<List<ProjectDto>> GetProjectsByCategoryAsync(string categoryId)
+        {
+            if (!Guid.TryParse(categoryId, out var catId))
+                throw new GlobalAppException("Category ID formatı yanlışdır.");
+
+            var list = await _projectRead.GetAllAsync(
+                func: p => !p.IsDeleted && p.CategoryId == catId && !p.Category.IsDeleted && !p.Team.IsDeleted,
+                include: q => q
+                    .Include(p => p.Category)
+                    .Include(p => p.Team)
+                    .Include(p => p.ProjectImages.Where(i => !i.IsDeleted))
+                    .Include(p => p.ProjectVideos.Where(v => !v.IsDeleted)),
+                orderBy: q => q.OrderBy(p => p.DisplayOrderId).ThenBy(p => p.CreatedDate),
+                EnableTraking: false
+            );
+
+            return _mapper.Map<List<ProjectDto>>(list);
+        }
+
+        // UPDATE (DisplayOrderId DƏYİŞMİR)
         public async Task<ProjectDto> UpdateProjectAsync(UpdateProjectDto dto)
         {
-            if (dto == null || string.IsNullOrWhiteSpace(dto.Id))
-                throw new GlobalAppException("Id tələb olunur.");
-            if (!Guid.TryParse(dto.Id, out var id))
-                throw new GlobalAppException("Yanlış ID formatı.");
+            if (dto == null || !Guid.TryParse(dto.Id, out var id))
+                throw new GlobalAppException("Yanlış ID.");
 
             var entity = await _projectRead.GetAsync(
                 p => p.Id == id && !p.IsDeleted,
                 include: q => q
                     .Include(p => p.Category)
+                    .Include(p => p.Team)
                     .Include(p => p.ProjectImages.Where(i => !i.IsDeleted))
                     .Include(p => p.ProjectVideos.Where(v => !v.IsDeleted)),
-                EnableTraking: true);
+                EnableTraking: true) ?? throw new GlobalAppException("Layihə tapılmadı.");
 
-            if (entity == null) throw new GlobalAppException("Layihə tapılmadı.");
-
-            // 1) SİLİNƏCƏK İMAGE/VİDEO-LAR
-            if (dto.DeleteImageNames != null && dto.DeleteImageNames.Count > 0 && entity.ProjectImages != null)
+            // DELETE images by Name
+            if (dto.DeleteImageNames?.Any() == true && entity.ProjectImages != null)
             {
-                var delImgSet = new HashSet<string>(dto.DeleteImageNames.Where(n => !string.IsNullOrWhiteSpace(n)),
-                                                    StringComparer.OrdinalIgnoreCase);
-
-                var toDeleteImgs = entity.ProjectImages
-                    .Where(i => !i.IsDeleted && delImgSet.Contains(i.Name))
-                    .ToList();
-
-                foreach (var img in toDeleteImgs)
+                var set = new HashSet<string>(dto.DeleteImageNames, StringComparer.OrdinalIgnoreCase);
+                var toDelete = entity.ProjectImages.Where(i => !i.IsDeleted && set.Contains(i.Name)).ToList();
+                foreach (var img in toDelete)
                 {
-                    await _cloudinaryService.DeleteFileAsync( img.Name);
+                    await _cloudinaryService.DeleteFileAsync(img.Name);
                     img.IsDeleted = true;
                     img.DeletedDate = DateTime.UtcNow;
                     img.LastUpdatedDate = DateTime.UtcNow;
@@ -219,18 +208,17 @@ namespace Legno.Persistence.Concreters.Services
                 }
             }
 
-            if (dto.DeleteVideoNames != null && dto.DeleteVideoNames.Count > 0 && entity.ProjectVideos != null)
+            // DELETE videos by Name (file saxlanmış videolar)
+            if (dto.DeleteVideoNames?.Any() == true && entity.ProjectVideos != null)
             {
-                var delVidSet = new HashSet<string>(dto.DeleteVideoNames.Where(n => !string.IsNullOrWhiteSpace(n)),
-                                                    StringComparer.OrdinalIgnoreCase);
-
-                var toDeleteVids = entity.ProjectVideos
-                    .Where(v => !v.IsDeleted && delVidSet.Contains(v.Name))
+                var set = new HashSet<string>(dto.DeleteVideoNames, StringComparer.OrdinalIgnoreCase);
+                var toDelete = entity.ProjectVideos
+                    .Where(v => !v.IsDeleted && !string.IsNullOrWhiteSpace(v.YoutubeLink) && set.Contains(v.YoutubeLink))
                     .ToList();
 
-                foreach (var vid in toDeleteVids)
+                foreach (var vid in toDelete)
                 {
-                    await _cloudinaryService.DeleteFileAsync( vid.Name);
+                    await _cloudinaryService.DeleteFileAsync(vid.YoutubeLink);
                     vid.IsDeleted = true;
                     vid.DeletedDate = DateTime.UtcNow;
                     vid.LastUpdatedDate = DateTime.UtcNow;
@@ -238,26 +226,24 @@ namespace Legno.Persistence.Concreters.Services
                 }
             }
 
-            // 2) SCALAR FIELDS — yalnız göndərilənləri yaz
-            if (!string.IsNullOrWhiteSpace(dto.Title)) entity.Title = dto.Title;
-            if (!string.IsNullOrWhiteSpace(dto.TitleEng)) entity.TitleEng = dto.TitleEng;
-            if (!string.IsNullOrWhiteSpace(dto.TitleRu)) entity.TitleRu = dto.TitleRu;
-            if (!string.IsNullOrWhiteSpace(dto.AuthorName)) entity.AuthorName = dto.AuthorName;
-
-
+            // SCALARS (yalnız göndərilənlər)
+            if (dto.Title != null) entity.Title = dto.Title;
+            if (dto.TitleEng != null) entity.TitleEng = dto.TitleEng;
+            if (dto.TitleRu != null) entity.TitleRu = dto.TitleRu;
             if (dto.SubTitle != null) entity.SubTitle = dto.SubTitle;
             if (dto.SubTitleEng != null) entity.SubTitleEng = dto.SubTitleEng;
             if (dto.SubTitleRu != null) entity.SubTitleRu = dto.SubTitleRu;
 
-            // 🔹 CARD IMAGE (IFormFile) — köhnəni sil, yenisini yaz
             if (dto.CardImage != null)
             {
                 if (!string.IsNullOrWhiteSpace(entity.CardImage))
-                    await _cloudinaryService.DeleteFileAsync( entity.CardImage);
-
-                var storedCard = await _cloudinaryService.UploadFileAsync(dto.CardImage);
-                entity.CardImage = storedCard;
+                    await _cloudinaryService.DeleteFileAsync(entity.CardImage);
+                entity.CardImage = await _cloudinaryService.UploadFileAsync(dto.CardImage);
             }
+
+            // TeamId: boş string gəlirsə null et
+            if (dto.TeamId != null)
+                entity.TeamId = Guid.TryParse(dto.TeamId, out var newTeamId) ? newTeamId : (Guid?)null;
 
             if (!string.IsNullOrWhiteSpace(dto.CategoryId))
             {
@@ -266,15 +252,10 @@ namespace Legno.Persistence.Concreters.Services
                 entity.CategoryId = newCatId;
             }
 
-            // Update zamanı da DisplayOrderId = max + 1 (team məntiqi)
-            var others = await _projectRead.GetAllAsync(x => !x.IsDeleted && x.Id != id);
-            var maxDisplay = others.Any() ? others.Max(x => x.DisplayOrderId) : 0;
-            entity.DisplayOrderId = maxDisplay + 1;
-
             entity.LastUpdatedDate = DateTime.UtcNow;
 
-            // 3) YENİ FAYLLAR
-            if (dto.ProjectImages != null && dto.ProjectImages.Any())
+            // ADD NEW images (Update => IFormFile)
+            if (dto.ProjectImages?.Any() == true)
             {
                 foreach (var f in dto.ProjectImages)
                 {
@@ -291,16 +272,19 @@ namespace Legno.Persistence.Concreters.Services
                 }
             }
 
-            if (dto.ProjectVideos != null && dto.ProjectVideos.Any())
+            // ADD NEW videos (Update => ProjectVideoInputDto: link və/və ya file)
+            if (dto.ProjectVideos?.Any() == true)
             {
-                foreach (var f in dto.ProjectVideos)
+                foreach (var v in dto.ProjectVideos)
                 {
-                    var stored = await _cloudinaryService.UploadFileAsync(f);
+                 
+
                     await _videoWrite.AddAsync(new ProjectVideo
                     {
                         Id = Guid.NewGuid(),
                         ProjectId = entity.Id,
-                        Name = stored,
+            
+                        YoutubeLink = v,
                         CreatedDate = DateTime.UtcNow,
                         LastUpdatedDate = DateTime.UtcNow,
                         IsDeleted = false
@@ -316,9 +300,10 @@ namespace Legno.Persistence.Concreters.Services
             return _mapper.Map<ProjectDto>(entity);
         }
 
+        // DELETE (soft)
         public async Task DeleteProjectAsync(string projectId)
         {
-            if (!Guid.TryParse(projectId, out var _))
+            if (!Guid.TryParse(projectId, out _))
                 throw new GlobalAppException("Yanlış ID formatı.");
 
             var entity = await _projectRead.GetByIdAsync(projectId, EnableTraking: true);
@@ -332,6 +317,7 @@ namespace Legno.Persistence.Concreters.Services
             await _projectWrite.CommitAsync();
         }
 
+        // REORDER (kütləvi)
         public async Task BulkReorderAsync(List<ProjectReorderDto> items)
         {
             if (items == null || items.Count == 0) return;
@@ -343,13 +329,10 @@ namespace Legno.Persistence.Concreters.Services
             var projects = await _projectRead.GetAllAsync(x => idSet.Contains(x.Id) && !x.IsDeleted);
             foreach (var p in projects)
             {
-                var dto = items.FirstOrDefault(i => Guid.TryParse(i.Id, out var gid) && gid == p.Id);
-                if (dto != null)
-                {
-                    p.DisplayOrderId = dto.DisplayOrderId;
-                    p.LastUpdatedDate = DateTime.UtcNow;
-                    await _projectWrite.UpdateAsync(p);
-                }
+                var dto = items.First(i => Guid.TryParse(i.Id, out var gid) && gid == p.Id);
+                p.DisplayOrderId = dto.DisplayOrderId;
+                p.LastUpdatedDate = DateTime.UtcNow;
+                await _projectWrite.UpdateAsync(p);
             }
             await _projectWrite.CommitAsync();
         }

@@ -21,20 +21,22 @@ namespace Legno.Persistence.Concreters.Services
         private readonly IMapper _mapper;
         private readonly IProjectReadRepository _projectRead;
         private readonly IProjectWriteRepository _projectWrite;
-
+        private readonly CloudinaryService _cloudinaryService;
 
         public CategoryService(
           ICategoryReadRepository read,
         ICategoryWriteRepository write,
             IMapper mapper,
             IProjectReadRepository projectRead,
-            IProjectWriteRepository projectWrite)
+            IProjectWriteRepository projectWrite,
+            CloudinaryService cloudinaryService)
         {
             _read = read;
             _write = write;
             _mapper = mapper;
             _projectRead = projectRead;
             _projectWrite = projectWrite;
+            _cloudinaryService = cloudinaryService;
         }
 
         public async Task<CategoryDto> AddCategoryAsync(CreateCategoryDto dto)
@@ -46,6 +48,16 @@ namespace Legno.Persistence.Concreters.Services
             entity.IsDeleted = false;
             entity.CreatedDate = DateTime.UtcNow;
             entity.LastUpdatedDate = DateTime.UtcNow;
+            if (dto.CategoryImage != null)
+            {
+                var storedCard = await _cloudinaryService.UploadFileAsync(dto.CategoryImage);
+                entity.CategoryImage = storedCard;
+            }
+            else
+            {
+                // istəyinə görə “CardImage tələbidir” deyib exception ata bilərsən
+                entity.CategoryImage = entity.CategoryImage ?? string.Empty;
+            }
 
             await _write.AddAsync(entity);
             await _write.CommitAsync();
@@ -85,7 +97,14 @@ namespace Legno.Persistence.Concreters.Services
             var entity = await _read.GetByIdAsync(dto.Id, EnableTraking: true);
             if (entity == null || entity.IsDeleted)
                 throw new GlobalAppException("Kateqoriya tapılmadı.");
+            if (dto.CategoryImage != null)
+            {
+                if (!string.IsNullOrWhiteSpace(entity.CategoryImage))
+                    await _cloudinaryService.DeleteFileAsync(entity.CategoryImage);
 
+                var storedCard = await _cloudinaryService.UploadFileAsync(dto.CategoryImage);
+                entity.CategoryImage = storedCard;
+            }
             // Manual update: null/boş dəyərlər mövcudu örtmür
             if (!string.IsNullOrWhiteSpace(dto.Name))
                 entity.Name = dto.Name;

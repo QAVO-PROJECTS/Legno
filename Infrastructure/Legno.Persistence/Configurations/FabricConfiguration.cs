@@ -1,0 +1,20 @@
+﻿using Legno.Domain.Entities;
+using Microsoft.EntityFrameworkCore.Metadata.Builders;
+using Microsoft.EntityFrameworkCore;
+using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
+
+namespace Legno.Persistence.Configurations
+{
+    public class FabricConfiguration : IEntityTypeConfiguration<Fabric>
+    {
+        public void Configure(EntityTypeBuilder<Fabric> b)
+        {
+            b.ToTable("Fabrics");
+            b.HasKey(x => x.Id);
+        }
+    }
+}

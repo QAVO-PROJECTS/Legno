@@ -32,6 +32,8 @@ using Legno.Persistence.Concreters.Repositories.FAQs;
 using Legno.Application.Abstracts.Repositories.FAQs;
 using Legno.Application.Abstracts.Services;
 using Legno.Persistence.Concreters.Services;
+using Legno.Application.Abstracts.Repositories;
+using Legno.Persistence.Repositories;
 
 namespace Legno.Persistence
 {
@@ -54,6 +56,34 @@ namespace Legno.Persistence
             services.AddScoped<IProjectService, ProjectService>();
             services.AddScoped<CloudinaryService>();
             services.AddScoped<IFuzzyProjectSearchService, InMemoryFuzzyProjectSearchService>();
+            services.AddScoped<ILocationService, LocationService>();
+            services.AddScoped<ICommonServiceService, CommonServiceService>();
+            services.AddScoped<IWorkPlanningService,WorkPlanningService>();
+            services.AddScoped<IB2BServiceService, B2BServiceService>();
+            services.AddScoped<IPartnerService, PartnerService>();
+            // Repos
+            services.AddScoped<IB2BServiceReadRepository, B2BServiceReadRepository>();
+            services.AddScoped<IB2BServiceWriteRepository, B2BServiceWriteRepository>();
+            services.AddScoped<IBusinessServiceReadRepository, BusinessServiceReadRepository>();
+            services.AddScoped<IBusinessServiceWriteRepository, BusinessServiceWriteRepository>();
+            services.AddScoped<ICommonServiceReadRepository, CommonServiceReadRepository>();
+            services.AddScoped<ICommonServiceWriteRepository, CommonServiceWriteRepository>();
+            services.AddScoped<IDesignerCommonServiceReadRepository, DesignerCommonServiceReadRepository>();
+            services.AddScoped<IDesignerCommonServiceWriteRepository, DesignerCommonServiceWriteRepository>();
+            services.AddScoped<IDesignerServiceReadRepository, DesignerServiceReadRepository>();
+            services.AddScoped<IDesignerServiceWriteRepository, DesignerServiceWriteRepository>();
+            services.AddScoped<IFabricReadRepository, FabricReadRepository>();
+            services.AddScoped<IFabricWriteRepository, FabricWriteRepository>();
+            services.AddScoped<ILocationReadRepository, LocationReadRepository>();
+            services.AddScoped<ILocationWriteRepository, LocationWriteRepository>();
+            services.AddScoped<IPartnerReadRepository, PartnerReadRepository>();
+            services.AddScoped<IPartnerWriteRepository, PartnerWriteRepository>();
+            services.AddScoped<IServiceSliderReadRepository, ServiceSliderReadRepository>();
+            services.AddScoped<IServiceSliderWriteRepository, ServiceSliderWriteRepository>();
+            services.AddScoped<IServiceSliderImageReadRepository, ServiceSliderImageReadRepository>();
+            services.AddScoped<IServiceSliderImageWriteRepository, ServiceSliderImageWriteRepository>();
+            services.AddScoped<IWorkPlanningReadRepository, WorkPlanningReadRepository>();
+            services.AddScoped<IWorkPlanningWriteRepository, WorkPlanningWriteRepository>();
             // Contacts
             services.AddScoped<IContactReadRepository, ContactReadRepository>();
             services.AddScoped<IContactWriteRepository, ContactWriteRepository>();

@@ -16,6 +16,80 @@
     "ReturnTypes": []
   },
   {
+    "ContainingType": "Legno.WebApi.Controllers.B2BServicesController",
+    "Method": "Create",
+    "RelativePath": "api/B2BServices/create",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "dto",
+        "Type": "Legno.Application.Dtos.CommonService.CreateCommonServiceDto",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "Legno.WebApi.Controllers.B2BServicesController",
+    "Method": "Delete",
+    "RelativePath": "api/B2BServices/delete/{id}",
+    "HttpMethod": "DELETE",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "id",
+        "Type": "System.String",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "Legno.WebApi.Controllers.B2BServicesController",
+    "Method": "GetAll",
+    "RelativePath": "api/B2BServices/get-all",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "Legno.WebApi.Controllers.B2BServicesController",
+    "Method": "Get",
+    "RelativePath": "api/B2BServices/get/{id}",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "id",
+        "Type": "System.String",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "Legno.WebApi.Controllers.B2BServicesController",
+    "Method": "Update",
+    "RelativePath": "api/B2BServices/update",
+    "HttpMethod": "PUT",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "dto",
+        "Type": "Legno.Application.Dtos.CommonService.UpdateCommonServiceDto",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
     "ContainingType": "Legno.Api.Controllers.BlogsController",
     "Method": "CreateBlog",
     "RelativePath": "api/Blogs/create-blog",
@@ -213,9 +287,24 @@
     "Order": 0,
     "Parameters": [
       {
-        "Name": "dto",
-        "Type": "Legno.Application.Dtos.Category.CreateCategoryDto",
-        "IsRequired": true
+        "Name": "Name",
+        "Type": "System.String",
+        "IsRequired": false
+      },
+      {
+        "Name": "NameRu",
+        "Type": "System.String",
+        "IsRequired": false
+      },
+      {
+        "Name": "NameEng",
+        "Type": "System.String",
+        "IsRequired": false
+      },
+      {
+        "Name": "CategoryImage",
+        "Type": "Microsoft.AspNetCore.Http.IFormFile",
+        "IsRequired": false
       }
     ],
     "ReturnTypes": []
@@ -271,8 +360,102 @@
     "Order": 0,
     "Parameters": [
       {
+        "Name": "Id",
+        "Type": "System.String",
+        "IsRequired": false
+      },
+      {
+        "Name": "Name",
+        "Type": "System.String",
+        "IsRequired": false
+      },
+      {
+        "Name": "NameRu",
+        "Type": "System.String",
+        "IsRequired": false
+      },
+      {
+        "Name": "NameEng",
+        "Type": "System.String",
+        "IsRequired": false
+      },
+      {
+        "Name": "CategoryImage",
+        "Type": "Microsoft.AspNetCore.Http.IFormFile",
+        "IsRequired": false
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "Legno.Api.Controllers.CommonServicesController",
+    "Method": "Create",
+    "RelativePath": "api/CommonServices/create",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
         "Name": "dto",
-        "Type": "Legno.Application.Dtos.Category.UpdateCategoryDto",
+        "Type": "Legno.Application.Dtos.CommonService.CreateCommonServiceDto",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "Legno.Api.Controllers.CommonServicesController",
+    "Method": "Delete",
+    "RelativePath": "api/CommonServices/delete/{id}",
+    "HttpMethod": "DELETE",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "id",
+        "Type": "System.String",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "Legno.Api.Controllers.CommonServicesController",
+    "Method": "GetAll",
+    "RelativePath": "api/CommonServices/get-all",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "Legno.Api.Controllers.CommonServicesController",
+    "Method": "Get",
+    "RelativePath": "api/CommonServices/get/{id}",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "id",
+        "Type": "System.String",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "Legno.Api.Controllers.CommonServicesController",
+    "Method": "Update",
+    "RelativePath": "api/CommonServices/update",
+    "HttpMethod": "PUT",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "dto",
+        "Type": "Legno.Application.Dtos.CommonService.UpdateCommonServiceDto",
         "IsRequired": true
       }
     ],
@@ -395,6 +578,154 @@
     "ReturnTypes": []
   },
   {
+    "ContainingType": "Legno.Api.Controllers.LocationsController",
+    "Method": "Create",
+    "RelativePath": "api/Locations/create",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "dto",
+        "Type": "Legno.Application.Dtos.Location.CreateLocationDto",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "Legno.Api.Controllers.LocationsController",
+    "Method": "Delete",
+    "RelativePath": "api/Locations/delete/{id}",
+    "HttpMethod": "DELETE",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "id",
+        "Type": "System.String",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "Legno.Api.Controllers.LocationsController",
+    "Method": "GetAll",
+    "RelativePath": "api/Locations/get-all",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "Legno.Api.Controllers.LocationsController",
+    "Method": "Get",
+    "RelativePath": "api/Locations/get/{id}",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "id",
+        "Type": "System.String",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "Legno.Api.Controllers.LocationsController",
+    "Method": "Update",
+    "RelativePath": "api/Locations/update",
+    "HttpMethod": "PUT",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "dto",
+        "Type": "Legno.Application.Dtos.Location.UpdateLocationDto",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "Legno.WebApi.Controllers.PartnersController",
+    "Method": "Create",
+    "RelativePath": "api/Partners/create",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "dto",
+        "Type": "Legno.Application.Dtos.CommonService.CreateCommonServiceDto",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "Legno.WebApi.Controllers.PartnersController",
+    "Method": "Delete",
+    "RelativePath": "api/Partners/delete/{id}",
+    "HttpMethod": "DELETE",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "id",
+        "Type": "System.String",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "Legno.WebApi.Controllers.PartnersController",
+    "Method": "GetAll",
+    "RelativePath": "api/Partners/get-all",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "Legno.WebApi.Controllers.PartnersController",
+    "Method": "Get",
+    "RelativePath": "api/Partners/get/{id}",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "id",
+        "Type": "System.String",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "Legno.WebApi.Controllers.PartnersController",
+    "Method": "Update",
+    "RelativePath": "api/Partners/update",
+    "HttpMethod": "PUT",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "dto",
+        "Type": "Legno.Application.Dtos.CommonService.UpdateCommonServiceDto",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
     "ContainingType": "Legno.Api.Controllers.ProjectsController",
     "Method": "GetByCategory",
     "RelativePath": "api/Projects/by-category/{categoryId}",
@@ -454,7 +785,7 @@
         "IsRequired": false
       },
       {
-        "Name": "AuthorName",
+        "Name": "TeamId",
         "Type": "System.String",
         "IsRequired": false
       },
@@ -470,7 +801,7 @@
       },
       {
         "Name": "ProjectVideos",
-        "Type": "System.Collections.Generic.List\u00601[[Microsoft.AspNetCore.Http.IFormFile, Microsoft.AspNetCore.Http.Features, Version=8.0.0.0, Culture=neutral, PublicKeyToken=adb9793829ddae60]]",
+        "Type": "System.Collections.Generic.List\u00601[[System.String, System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]",
         "IsRequired": false
       }
     ],
@@ -583,7 +914,7 @@
         "IsRequired": false
       },
       {
-        "Name": "AuthorName",
+        "Name": "TeamId",
         "Type": "System.String",
         "IsRequired": false
       },
@@ -609,7 +940,7 @@
       },
       {
         "Name": "ProjectVideos",
-        "Type": "System.Collections.Generic.List\u00601[[Microsoft.AspNetCore.Http.IFormFile, Microsoft.AspNetCore.Http.Features, Version=8.0.0.0, Culture=neutral, PublicKeyToken=adb9793829ddae60]]",
+        "Type": "System.Collections.Generic.List\u00601[[System.String, System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]",
         "IsRequired": false
       }
     ],
@@ -973,6 +1304,80 @@
         "Name": "Description",
         "Type": "System.String",
         "IsRequired": false
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "Legno.WebApi.Controllers.WorkPlanningsController",
+    "Method": "Create",
+    "RelativePath": "api/WorkPlannings/create",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "dto",
+        "Type": "Legno.Application.Dtos.CommonService.CreateCommonServiceDto",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "Legno.WebApi.Controllers.WorkPlanningsController",
+    "Method": "Delete",
+    "RelativePath": "api/WorkPlannings/delete/{id}",
+    "HttpMethod": "DELETE",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "id",
+        "Type": "System.String",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "Legno.WebApi.Controllers.WorkPlanningsController",
+    "Method": "GetAll",
+    "RelativePath": "api/WorkPlannings/get-all",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "Legno.WebApi.Controllers.WorkPlanningsController",
+    "Method": "Get",
+    "RelativePath": "api/WorkPlannings/get/{id}",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "id",
+        "Type": "System.String",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "Legno.WebApi.Controllers.WorkPlanningsController",
+    "Method": "Update",
+    "RelativePath": "api/WorkPlannings/update",
+    "HttpMethod": "PUT",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "dto",
+        "Type": "Legno.Application.Dtos.CommonService.UpdateCommonServiceDto",
+        "IsRequired": true
       }
     ],
     "ReturnTypes": []

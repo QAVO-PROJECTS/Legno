@@ -12,7 +12,7 @@ namespace Legno.Persistence.Configurations
 
             builder.HasKey(x => x.Id);
 
-            builder.Property(x => x.Name).IsRequired().HasMaxLength(300);
+            builder.Property(x => x.YoutubeLink).IsRequired().HasMaxLength(300);
             builder.Property(x => x.ProjectId).IsRequired();
 
             builder.HasOne(x => x.Project)

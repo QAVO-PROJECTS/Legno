@@ -1,5 +1,6 @@
 ﻿using AutoMapper;
 using Legno.Application.Absrtacts.Services;
+using Legno.Application.Abstracts.Repositories.Projects;
 using Legno.Application.Abstracts.Repositories.Teams;
 using Legno.Application.Abstracts.Services;
 using Legno.Application.Dtos.Team;
@@ -14,6 +15,9 @@ namespace Legno.Persistence.Concreters.Services
         private readonly ITeamReadRepository _teamReadRepository;
         private readonly ITeamWriteRepository _teamWriteRepository;
         private readonly IFileService _fileService;
+        private readonly IProjectReadRepository _projectReadRepository;
+        private readonly IProjectWriteRepository _projectWriteRepository;
+
         private readonly IMapper _mapper;
         private readonly CloudinaryService _cloudinaryService;
 
@@ -22,13 +26,17 @@ namespace Legno.Persistence.Concreters.Services
             ITeamWriteRepository teamWriteRepository,
             IFileService fileService,
             IMapper mapper,
-            CloudinaryService cloudinaryService)
+            CloudinaryService cloudinaryService,
+            IProjectReadRepository projectReadRepository,
+            IProjectWriteRepository projectWriteRepository)
         {
             _teamReadRepository = teamReadRepository;
             _teamWriteRepository = teamWriteRepository;
             _fileService = fileService;
             _mapper = mapper;
             _cloudinaryService = cloudinaryService;
+            _projectReadRepository = projectReadRepository;
+            _projectWriteRepository = projectWriteRepository;
         }
 
         public async Task<TeamDto> AddTeamAsync(CreateTeamDto createTeamDto)
@@ -135,13 +143,29 @@ namespace Legno.Persistence.Concreters.Services
             if (team == null || team.IsDeleted)
                 throw new GlobalAppException("Komanda üzvü tapılmadı!");
 
+            // 🔹 Team soft-delete
             team.IsDeleted = true;
             team.DeletedDate = DateTime.UtcNow;
             team.LastUpdatedDate = DateTime.UtcNow;
-
             await _teamWriteRepository.UpdateAsync(team);
+
+            // 🔹 Team-ə bağlı Project-ləri tapıb soft-delete et
+            var relatedProjects = await _projectReadRepository
+                .GetAllAsync(p => p.TeamId == team.Id && !p.IsDeleted, EnableTraking: true);
+
+            foreach (var project in relatedProjects)
+            {
+                project.IsDeleted = true;
+                project.DeletedDate = DateTime.UtcNow;
+                project.LastUpdatedDate = DateTime.UtcNow;
+                await _projectWriteRepository.UpdateAsync(project);
+            }
+
+            // 🔹 Commitlər
             await _teamWriteRepository.CommitAsync();
+            await _projectWriteRepository.CommitAsync();
         }
+
 
         // TeamId + DisplayOrderId siyahısına görə sıralamanı dəyiş
         public async Task ReorderTeamsAsync(List<TeamOrderUpdateDto> orders)
