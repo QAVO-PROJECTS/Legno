@@ -279,6 +279,115 @@
     "ReturnTypes": []
   },
   {
+    "ContainingType": "Legno.Api.Controllers.BusinessServicesController",
+    "Method": "Create",
+    "RelativePath": "api/BusinessServices/create",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "Name",
+        "Type": "System.String",
+        "IsRequired": false
+      },
+      {
+        "Name": "NameEng",
+        "Type": "System.String",
+        "IsRequired": false
+      },
+      {
+        "Name": "NameRu",
+        "Type": "System.String",
+        "IsRequired": false
+      },
+      {
+        "Name": "CardImage",
+        "Type": "Microsoft.AspNetCore.Http.IFormFile",
+        "IsRequired": false
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "Legno.Api.Controllers.BusinessServicesController",
+    "Method": "Delete",
+    "RelativePath": "api/BusinessServices/delete/{BusinessServiceId}",
+    "HttpMethod": "DELETE",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "BusinessServiceId",
+        "Type": "System.String",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "Legno.Api.Controllers.BusinessServicesController",
+    "Method": "GetAll",
+    "RelativePath": "api/BusinessServices/get-all",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "Legno.Api.Controllers.BusinessServicesController",
+    "Method": "Get",
+    "RelativePath": "api/BusinessServices/get/{BusinessServiceId}",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "BusinessServiceId",
+        "Type": "System.String",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "Legno.Api.Controllers.BusinessServicesController",
+    "Method": "Update",
+    "RelativePath": "api/BusinessServices/update",
+    "HttpMethod": "PUT",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "Id",
+        "Type": "System.String",
+        "IsRequired": false
+      },
+      {
+        "Name": "Name",
+        "Type": "System.String",
+        "IsRequired": false
+      },
+      {
+        "Name": "NameEng",
+        "Type": "System.String",
+        "IsRequired": false
+      },
+      {
+        "Name": "NameRu",
+        "Type": "System.String",
+        "IsRequired": false
+      },
+      {
+        "Name": "CardImage",
+        "Type": "Microsoft.AspNetCore.Http.IFormFile",
+        "IsRequired": false
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
     "ContainingType": "Legno.Api.Controllers.CategoriesController",
     "Method": "Create",
     "RelativePath": "api/Categories/create",
@@ -501,6 +610,312 @@
     "IsController": true,
     "Order": 0,
     "Parameters": [],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "Legno.Api.Controllers.DesignerCommonServicesController",
+    "Method": "Create",
+    "RelativePath": "api/DesignerCommonServices/create",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "Title",
+        "Type": "System.String",
+        "IsRequired": false
+      },
+      {
+        "Name": "TitleEng",
+        "Type": "System.String",
+        "IsRequired": false
+      },
+      {
+        "Name": "TitleRu",
+        "Type": "System.String",
+        "IsRequired": false
+      },
+      {
+        "Name": "SubTitle",
+        "Type": "System.String",
+        "IsRequired": false
+      },
+      {
+        "Name": "SubTitleEng",
+        "Type": "System.String",
+        "IsRequired": false
+      },
+      {
+        "Name": "SubTitleRu",
+        "Type": "System.String",
+        "IsRequired": false
+      },
+      {
+        "Name": "CardImage",
+        "Type": "Microsoft.AspNetCore.Http.IFormFile",
+        "IsRequired": false
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "Legno.Api.Controllers.DesignerCommonServicesController",
+    "Method": "Delete",
+    "RelativePath": "api/DesignerCommonServices/delete/{designerCommonServiceId}",
+    "HttpMethod": "DELETE",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "designerCommonServiceId",
+        "Type": "System.String",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "Legno.Api.Controllers.DesignerCommonServicesController",
+    "Method": "GetAll",
+    "RelativePath": "api/DesignerCommonServices/get-all",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "Legno.Api.Controllers.DesignerCommonServicesController",
+    "Method": "Get",
+    "RelativePath": "api/DesignerCommonServices/get/{designerCommonServiceId}",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "designerCommonServiceId",
+        "Type": "System.String",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "Legno.Api.Controllers.DesignerCommonServicesController",
+    "Method": "Update",
+    "RelativePath": "api/DesignerCommonServices/update",
+    "HttpMethod": "PUT",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "Id",
+        "Type": "System.String",
+        "IsRequired": false
+      },
+      {
+        "Name": "Title",
+        "Type": "System.String",
+        "IsRequired": false
+      },
+      {
+        "Name": "TitleEng",
+        "Type": "System.String",
+        "IsRequired": false
+      },
+      {
+        "Name": "TitleRu",
+        "Type": "System.String",
+        "IsRequired": false
+      },
+      {
+        "Name": "SubTitle",
+        "Type": "System.String",
+        "IsRequired": false
+      },
+      {
+        "Name": "SubTitleEng",
+        "Type": "System.String",
+        "IsRequired": false
+      },
+      {
+        "Name": "SubTitleRu",
+        "Type": "System.String",
+        "IsRequired": false
+      },
+      {
+        "Name": "CardImage",
+        "Type": "Microsoft.AspNetCore.Http.IFormFile",
+        "IsRequired": false
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "Legno.WebApi.Controllers.DesignerServicesController",
+    "Method": "Create",
+    "RelativePath": "api/DesignerServices/create",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "Name",
+        "Type": "System.String",
+        "IsRequired": false
+      },
+      {
+        "Name": "NameEng",
+        "Type": "System.String",
+        "IsRequired": false
+      },
+      {
+        "Name": "NameRu",
+        "Type": "System.String",
+        "IsRequired": false
+      },
+      {
+        "Name": "CardImage",
+        "Type": "Microsoft.AspNetCore.Http.IFormFile",
+        "IsRequired": false
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "Legno.WebApi.Controllers.DesignerServicesController",
+    "Method": "Delete",
+    "RelativePath": "api/DesignerServices/delete/{BusinessServiceId}",
+    "HttpMethod": "DELETE",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "BusinessServiceId",
+        "Type": "System.String",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "Legno.WebApi.Controllers.DesignerServicesController",
+    "Method": "GetAll",
+    "RelativePath": "api/DesignerServices/get-all",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "Legno.WebApi.Controllers.DesignerServicesController",
+    "Method": "Get",
+    "RelativePath": "api/DesignerServices/get/{BusinessServiceId}",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "BusinessServiceId",
+        "Type": "System.String",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "Legno.WebApi.Controllers.DesignerServicesController",
+    "Method": "Update",
+    "RelativePath": "api/DesignerServices/update",
+    "HttpMethod": "PUT",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "Id",
+        "Type": "System.String",
+        "IsRequired": false
+      },
+      {
+        "Name": "Name",
+        "Type": "System.String",
+        "IsRequired": false
+      },
+      {
+        "Name": "NameEng",
+        "Type": "System.String",
+        "IsRequired": false
+      },
+      {
+        "Name": "NameRu",
+        "Type": "System.String",
+        "IsRequired": false
+      },
+      {
+        "Name": "CardImage",
+        "Type": "Microsoft.AspNetCore.Http.IFormFile",
+        "IsRequired": false
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "Legno.Api.Controllers.FabricsController",
+    "Method": "Delete",
+    "RelativePath": "api/Fabrics/delete/{fabricId}",
+    "HttpMethod": "DELETE",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "fabricId",
+        "Type": "System.String",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "Legno.Api.Controllers.FabricsController",
+    "Method": "GetAll",
+    "RelativePath": "api/Fabrics/get-all",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "Legno.Api.Controllers.FabricsController",
+    "Method": "Get",
+    "RelativePath": "api/Fabrics/get/{fabricId}",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "fabricId",
+        "Type": "System.String",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "Legno.Api.Controllers.FabricsController",
+    "Method": "Upload",
+    "RelativePath": "api/Fabrics/upload",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "fabricName",
+        "Type": "Microsoft.AspNetCore.Http.IFormFile",
+        "IsRequired": false
+      }
+    ],
     "ReturnTypes": []
   },
   {
@@ -957,6 +1372,64 @@
       {
         "Name": "q",
         "Type": "System.String",
+        "IsRequired": false
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "Legno.WebApi.Controllers.SliderServicesController",
+    "Method": "Delete",
+    "RelativePath": "api/SliderServices/delete/{ServiceSliderId}",
+    "HttpMethod": "DELETE",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "ServiceSliderId",
+        "Type": "System.String",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "Legno.WebApi.Controllers.SliderServicesController",
+    "Method": "GetAll",
+    "RelativePath": "api/SliderServices/get-all",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "Legno.WebApi.Controllers.SliderServicesController",
+    "Method": "Get",
+    "RelativePath": "api/SliderServices/get/{ServiceSliderId}",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "ServiceSliderId",
+        "Type": "System.String",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "Legno.WebApi.Controllers.SliderServicesController",
+    "Method": "Upload",
+    "RelativePath": "api/SliderServices/upload",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "ServiceSliderName",
+        "Type": "Microsoft.AspNetCore.Http.IFormFile",
         "IsRequired": false
       }
     ],

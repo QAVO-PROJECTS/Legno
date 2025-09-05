@@ -32,7 +32,7 @@ namespace Legno.Persistence.Context
         public DbSet<Location> Locations { get; set; }
         public DbSet<Partner> Partners { get; set; }
         public DbSet<ServiceSlider> ServiceSliders { get; set; }
-        public DbSet<ServiceSliderImage> ServiceSliderImages { get; set; }
+
         public DbSet<WorkPlanning> WorkPlannings { get; set; }
 
         protected override void OnModelCreating(ModelBuilder modelBuilder)
@@ -62,7 +62,7 @@ namespace Legno.Persistence.Context
             modelBuilder.ApplyConfiguration(new LocationConfiguration());
             modelBuilder.ApplyConfiguration(new PartnerConfiguration());
             modelBuilder.ApplyConfiguration(new ServiceSliderConfiguration());
-            modelBuilder.ApplyConfiguration(new ServiceSliderImageConfiguration());
+  
             modelBuilder.ApplyConfiguration(new WorkPlanningConfiguration());
         }
     }

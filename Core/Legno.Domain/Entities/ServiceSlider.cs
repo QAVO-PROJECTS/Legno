@@ -9,6 +9,6 @@ namespace Legno.Domain.Entities
 {
     public class ServiceSlider:BaseEntity
     {
-        public List<ServiceSliderImage>? ServiceSliderImages {  get; set; }
+       public string ServiceSliderImage { get; set; }
     }
 }

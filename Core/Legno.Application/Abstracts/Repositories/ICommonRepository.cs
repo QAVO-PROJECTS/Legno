@@ -21,8 +21,7 @@ namespace Legno.Application.Abstracts.Repositories
     public interface IPartnerWriteRepository : IWriteRepository<Partner> { }
     public interface IServiceSliderReadRepository : IReadRepository<ServiceSlider> { }
     public interface IServiceSliderWriteRepository : IWriteRepository<ServiceSlider> { }
-    public interface IServiceSliderImageReadRepository : IReadRepository<ServiceSliderImage> { }
-    public interface IServiceSliderImageWriteRepository : IWriteRepository<ServiceSliderImage> { }
+   
     public interface IWorkPlanningReadRepository : IReadRepository<WorkPlanning> { }
     public interface IWorkPlanningWriteRepository : IWriteRepository<WorkPlanning> { }
 }

@@ -15,10 +15,7 @@ namespace Legno.Persistence.Configurations
         {
             b.ToTable("ServiceSliders");
             b.HasKey(x => x.Id);
-            b.HasMany(x => x.ServiceSliderImages)
-             .WithOne(x => x.ServiceSlider)
-             .HasForeignKey(x => x.ServiceSliderId)
-             .OnDelete(DeleteBehavior.Cascade);
+     
         }
     }
 }

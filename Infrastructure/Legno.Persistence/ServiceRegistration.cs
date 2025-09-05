@@ -61,6 +61,10 @@ namespace Legno.Persistence
             services.AddScoped<IWorkPlanningService,WorkPlanningService>();
             services.AddScoped<IB2BServiceService, B2BServiceService>();
             services.AddScoped<IPartnerService, PartnerService>();
+            services.AddScoped<IBusinessServiceService, BusinessServiceService>();
+            services.AddScoped<IDesignerServiceService,DesignerServiceService>();
+            services.AddScoped<IFabricService, FabricService>();
+            services.AddScoped<IDesignerCommonServiceService,DesignerCommonServiceService>();
             // Repos
             services.AddScoped<IB2BServiceReadRepository, B2BServiceReadRepository>();
             services.AddScoped<IB2BServiceWriteRepository, B2BServiceWriteRepository>();
@@ -80,10 +84,10 @@ namespace Legno.Persistence
             services.AddScoped<IPartnerWriteRepository, PartnerWriteRepository>();
             services.AddScoped<IServiceSliderReadRepository, ServiceSliderReadRepository>();
             services.AddScoped<IServiceSliderWriteRepository, ServiceSliderWriteRepository>();
-            services.AddScoped<IServiceSliderImageReadRepository, ServiceSliderImageReadRepository>();
-            services.AddScoped<IServiceSliderImageWriteRepository, ServiceSliderImageWriteRepository>();
+            services.AddScoped<IServiceSliderService, ServiceSliderService>();
             services.AddScoped<IWorkPlanningReadRepository, WorkPlanningReadRepository>();
             services.AddScoped<IWorkPlanningWriteRepository, WorkPlanningWriteRepository>();
+         
             // Contacts
             services.AddScoped<IContactReadRepository, ContactReadRepository>();
             services.AddScoped<IContactWriteRepository, ContactWriteRepository>();

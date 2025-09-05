@@ -414,6 +414,168 @@
         }
       }
     },
+    "/api/BusinessServices/create": {
+      "post": {
+        "tags": [
+          "BusinessServices"
+        ],
+        "requestBody": {
+          "content": {
+            "multipart/form-data": {
+              "schema": {
+                "type": "object",
+                "properties": {
+                  "Name": {
+                    "type": "string"
+                  },
+                  "NameEng": {
+                    "type": "string"
+                  },
+                  "NameRu": {
+                    "type": "string"
+                  },
+                  "CardImage": {
+                    "type": "string",
+                    "format": "binary"
+                  }
+                }
+              },
+              "encoding": {
+                "Name": {
+                  "style": "form"
+                },
+                "NameEng": {
+                  "style": "form"
+                },
+                "NameRu": {
+                  "style": "form"
+                },
+                "CardImage": {
+                  "style": "form"
+                }
+              }
+            }
+          }
+        },
+        "responses": {
+          "200": {
+            "description": "OK"
+          }
+        }
+      }
+    },
+    "/api/BusinessServices/get/{BusinessServiceId}": {
+      "get": {
+        "tags": [
+          "BusinessServices"
+        ],
+        "parameters": [
+          {
+            "name": "BusinessServiceId",
+            "in": "path",
+            "required": true,
+            "schema": {
+              "type": "string"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "OK"
+          }
+        }
+      }
+    },
+    "/api/BusinessServices/get-all": {
+      "get": {
+        "tags": [
+          "BusinessServices"
+        ],
+        "responses": {
+          "200": {
+            "description": "OK"
+          }
+        }
+      }
+    },
+    "/api/BusinessServices/update": {
+      "put": {
+        "tags": [
+          "BusinessServices"
+        ],
+        "requestBody": {
+          "content": {
+            "multipart/form-data": {
+              "schema": {
+                "type": "object",
+                "properties": {
+                  "Id": {
+                    "type": "string"
+                  },
+                  "Name": {
+                    "type": "string"
+                  },
+                  "NameEng": {
+                    "type": "string"
+                  },
+                  "NameRu": {
+                    "type": "string"
+                  },
+                  "CardImage": {
+                    "type": "string",
+                    "format": "binary"
+                  }
+                }
+              },
+              "encoding": {
+                "Id": {
+                  "style": "form"
+                },
+                "Name": {
+                  "style": "form"
+                },
+                "NameEng": {
+                  "style": "form"
+                },
+                "NameRu": {
+                  "style": "form"
+                },
+                "CardImage": {
+                  "style": "form"
+                }
+              }
+            }
+          }
+        },
+        "responses": {
+          "200": {
+            "description": "OK"
+          }
+        }
+      }
+    },
+    "/api/BusinessServices/delete/{BusinessServiceId}": {
+      "delete": {
+        "tags": [
+          "BusinessServices"
+        ],
+        "parameters": [
+          {
+            "name": "BusinessServiceId",
+            "in": "path",
+            "required": true,
+            "schema": {
+              "type": "string"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "OK"
+          }
+        }
+      }
+    },
     "/api/Categories/create": {
       "post": {
         "tags": [
@@ -745,6 +907,454 @@
         "parameters": [
           {
             "name": "id",
+            "in": "path",
+            "required": true,
+            "schema": {
+              "type": "string"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "OK"
+          }
+        }
+      }
+    },
+    "/api/DesignerCommonServices/create": {
+      "post": {
+        "tags": [
+          "DesignerCommonServices"
+        ],
+        "requestBody": {
+          "content": {
+            "multipart/form-data": {
+              "schema": {
+                "type": "object",
+                "properties": {
+                  "Title": {
+                    "type": "string"
+                  },
+                  "TitleEng": {
+                    "type": "string"
+                  },
+                  "TitleRu": {
+                    "type": "string"
+                  },
+                  "SubTitle": {
+                    "type": "string"
+                  },
+                  "SubTitleEng": {
+                    "type": "string"
+                  },
+                  "SubTitleRu": {
+                    "type": "string"
+                  },
+                  "CardImage": {
+                    "type": "string",
+                    "format": "binary"
+                  }
+                }
+              },
+              "encoding": {
+                "Title": {
+                  "style": "form"
+                },
+                "TitleEng": {
+                  "style": "form"
+                },
+                "TitleRu": {
+                  "style": "form"
+                },
+                "SubTitle": {
+                  "style": "form"
+                },
+                "SubTitleEng": {
+                  "style": "form"
+                },
+                "SubTitleRu": {
+                  "style": "form"
+                },
+                "CardImage": {
+                  "style": "form"
+                }
+              }
+            }
+          }
+        },
+        "responses": {
+          "200": {
+            "description": "OK"
+          }
+        }
+      }
+    },
+    "/api/DesignerCommonServices/get/{designerCommonServiceId}": {
+      "get": {
+        "tags": [
+          "DesignerCommonServices"
+        ],
+        "parameters": [
+          {
+            "name": "designerCommonServiceId",
+            "in": "path",
+            "required": true,
+            "schema": {
+              "type": "string"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "OK"
+          }
+        }
+      }
+    },
+    "/api/DesignerCommonServices/get-all": {
+      "get": {
+        "tags": [
+          "DesignerCommonServices"
+        ],
+        "responses": {
+          "200": {
+            "description": "OK"
+          }
+        }
+      }
+    },
+    "/api/DesignerCommonServices/update": {
+      "put": {
+        "tags": [
+          "DesignerCommonServices"
+        ],
+        "requestBody": {
+          "content": {
+            "multipart/form-data": {
+              "schema": {
+                "type": "object",
+                "properties": {
+                  "Id": {
+                    "type": "string"
+                  },
+                  "Title": {
+                    "type": "string"
+                  },
+                  "TitleEng": {
+                    "type": "string"
+                  },
+                  "TitleRu": {
+                    "type": "string"
+                  },
+                  "SubTitle": {
+                    "type": "string"
+                  },
+                  "SubTitleEng": {
+                    "type": "string"
+                  },
+                  "SubTitleRu": {
+                    "type": "string"
+                  },
+                  "CardImage": {
+                    "type": "string",
+                    "format": "binary"
+                  }
+                }
+              },
+              "encoding": {
+                "Id": {
+                  "style": "form"
+                },
+                "Title": {
+                  "style": "form"
+                },
+                "TitleEng": {
+                  "style": "form"
+                },
+                "TitleRu": {
+                  "style": "form"
+                },
+                "SubTitle": {
+                  "style": "form"
+                },
+                "SubTitleEng": {
+                  "style": "form"
+                },
+                "SubTitleRu": {
+                  "style": "form"
+                },
+                "CardImage": {
+                  "style": "form"
+                }
+              }
+            }
+          }
+        },
+        "responses": {
+          "200": {
+            "description": "OK"
+          }
+        }
+      }
+    },
+    "/api/DesignerCommonServices/delete/{designerCommonServiceId}": {
+      "delete": {
+        "tags": [
+          "DesignerCommonServices"
+        ],
+        "parameters": [
+          {
+            "name": "designerCommonServiceId",
+            "in": "path",
+            "required": true,
+            "schema": {
+              "type": "string"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "OK"
+          }
+        }
+      }
+    },
+    "/api/DesignerServices/create": {
+      "post": {
+        "tags": [
+          "DesignerServices"
+        ],
+        "requestBody": {
+          "content": {
+            "multipart/form-data": {
+              "schema": {
+                "type": "object",
+                "properties": {
+                  "Name": {
+                    "type": "string"
+                  },
+                  "NameEng": {
+                    "type": "string"
+                  },
+                  "NameRu": {
+                    "type": "string"
+                  },
+                  "CardImage": {
+                    "type": "string",
+                    "format": "binary"
+                  }
+                }
+              },
+              "encoding": {
+                "Name": {
+                  "style": "form"
+                },
+                "NameEng": {
+                  "style": "form"
+                },
+                "NameRu": {
+                  "style": "form"
+                },
+                "CardImage": {
+                  "style": "form"
+                }
+              }
+            }
+          }
+        },
+        "responses": {
+          "200": {
+            "description": "OK"
+          }
+        }
+      }
+    },
+    "/api/DesignerServices/get/{BusinessServiceId}": {
+      "get": {
+        "tags": [
+          "DesignerServices"
+        ],
+        "parameters": [
+          {
+            "name": "BusinessServiceId",
+            "in": "path",
+            "required": true,
+            "schema": {
+              "type": "string"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "OK"
+          }
+        }
+      }
+    },
+    "/api/DesignerServices/get-all": {
+      "get": {
+        "tags": [
+          "DesignerServices"
+        ],
+        "responses": {
+          "200": {
+            "description": "OK"
+          }
+        }
+      }
+    },
+    "/api/DesignerServices/update": {
+      "put": {
+        "tags": [
+          "DesignerServices"
+        ],
+        "requestBody": {
+          "content": {
+            "multipart/form-data": {
+              "schema": {
+                "type": "object",
+                "properties": {
+                  "Id": {
+                    "type": "string"
+                  },
+                  "Name": {
+                    "type": "string"
+                  },
+                  "NameEng": {
+                    "type": "string"
+                  },
+                  "NameRu": {
+                    "type": "string"
+                  },
+                  "CardImage": {
+                    "type": "string",
+                    "format": "binary"
+                  }
+                }
+              },
+              "encoding": {
+                "Id": {
+                  "style": "form"
+                },
+                "Name": {
+                  "style": "form"
+                },
+                "NameEng": {
+                  "style": "form"
+                },
+                "NameRu": {
+                  "style": "form"
+                },
+                "CardImage": {
+                  "style": "form"
+                }
+              }
+            }
+          }
+        },
+        "responses": {
+          "200": {
+            "description": "OK"
+          }
+        }
+      }
+    },
+    "/api/DesignerServices/delete/{BusinessServiceId}": {
+      "delete": {
+        "tags": [
+          "DesignerServices"
+        ],
+        "parameters": [
+          {
+            "name": "BusinessServiceId",
+            "in": "path",
+            "required": true,
+            "schema": {
+              "type": "string"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "OK"
+          }
+        }
+      }
+    },
+    "/api/Fabrics/upload": {
+      "post": {
+        "tags": [
+          "Fabrics"
+        ],
+        "requestBody": {
+          "content": {
+            "multipart/form-data": {
+              "schema": {
+                "type": "object",
+                "properties": {
+                  "fabricName": {
+                    "type": "string",
+                    "format": "binary"
+                  }
+                }
+              },
+              "encoding": {
+                "fabricName": {
+                  "style": "form"
+                }
+              }
+            }
+          }
+        },
+        "responses": {
+          "200": {
+            "description": "OK"
+          }
+        }
+      }
+    },
+    "/api/Fabrics/get/{fabricId}": {
+      "get": {
+        "tags": [
+          "Fabrics"
+        ],
+        "parameters": [
+          {
+            "name": "fabricId",
+            "in": "path",
+            "required": true,
+            "schema": {
+              "type": "string"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "OK"
+          }
+        }
+      }
+    },
+    "/api/Fabrics/get-all": {
+      "get": {
+        "tags": [
+          "Fabrics"
+        ],
+        "responses": {
+          "200": {
+            "description": "OK"
+          }
+        }
+      }
+    },
+    "/api/Fabrics/delete/{fabricId}": {
+      "delete": {
+        "tags": [
+          "Fabrics"
+        ],
+        "parameters": [
+          {
+            "name": "fabricId",
             "in": "path",
             "required": true,
             "schema": {
@@ -1462,6 +2072,94 @@
           {
             "name": "q",
             "in": "query",
+            "schema": {
+              "type": "string"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "OK"
+          }
+        }
+      }
+    },
+    "/api/SliderServices/upload": {
+      "post": {
+        "tags": [
+          "SliderServices"
+        ],
+        "requestBody": {
+          "content": {
+            "multipart/form-data": {
+              "schema": {
+                "type": "object",
+                "properties": {
+                  "ServiceSliderName": {
+                    "type": "string",
+                    "format": "binary"
+                  }
+                }
+              },
+              "encoding": {
+                "ServiceSliderName": {
+                  "style": "form"
+                }
+              }
+            }
+          }
+        },
+        "responses": {
+          "200": {
+            "description": "OK"
+          }
+        }
+      }
+    },
+    "/api/SliderServices/get/{ServiceSliderId}": {
+      "get": {
+        "tags": [
+          "SliderServices"
+        ],
+        "parameters": [
+          {
+            "name": "ServiceSliderId",
+            "in": "path",
+            "required": true,
+            "schema": {
+              "type": "string"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "OK"
+          }
+        }
+      }
+    },
+    "/api/SliderServices/get-all": {
+      "get": {
+        "tags": [
+          "SliderServices"
+        ],
+        "responses": {
+          "200": {
+            "description": "OK"
+          }
+        }
+      }
+    },
+    "/api/SliderServices/delete/{ServiceSliderId}": {
+      "delete": {
+        "tags": [
+          "SliderServices"
+        ],
+        "parameters": [
+          {
+            "name": "ServiceSliderId",
+            "in": "path",
+            "required": true,
             "schema": {
               "type": "string"
             }

@@ -776,41 +776,13 @@ namespace Legno.Persistence.Migrations
                     b.Property<DateTime>("LastUpdatedDate")
                         .HasColumnType("timestamp with time zone");
 
-                    b.HasKey("Id");
-
-                    b.ToTable("ServiceSliders", (string)null);
-                });
-
-            modelBuilder.Entity("Legno.Domain.Entities.ServiceSliderImage", b =>
-                {
-                    b.Property<Guid>("Id")
-                        .ValueGeneratedOnAdd()
-                        .HasColumnType("uuid");
-
-                    b.Property<DateTime>("CreatedDate")
-                        .HasColumnType("timestamp with time zone");
-
-                    b.Property<DateTime>("DeletedDate")
-                        .HasColumnType("timestamp with time zone");
-
-                    b.Property<bool>("IsDeleted")
-                        .HasColumnType("boolean");
-
-                    b.Property<DateTime>("LastUpdatedDate")
-                        .HasColumnType("timestamp with time zone");
-
-                    b.Property<string>("Name")
+                    b.Property<string>("ServiceSliderImage")
                         .IsRequired()
                         .HasColumnType("text");
 
-                    b.Property<Guid>("ServiceSliderId")
-                        .HasColumnType("uuid");
-
                     b.HasKey("Id");
 
-                    b.HasIndex("ServiceSliderId");
-
-                    b.ToTable("ServiceSliderImages", (string)null);
+                    b.ToTable("ServiceSliders", (string)null);
                 });
 
             modelBuilder.Entity("Legno.Domain.Entities.Subscriber", b =>
@@ -1174,17 +1146,6 @@ namespace Legno.Persistence.Migrations
                     b.Navigation("Project");
                 });
 
-            modelBuilder.Entity("Legno.Domain.Entities.ServiceSliderImage", b =>
-                {
-                    b.HasOne("Legno.Domain.Entities.ServiceSlider", "ServiceSlider")
-                        .WithMany("ServiceSliderImages")
-                        .HasForeignKey("ServiceSliderId")
-                        .OnDelete(DeleteBehavior.Cascade)
-                        .IsRequired();
-
-                    b.Navigation("ServiceSlider");
-                });
-
             modelBuilder.Entity("Microsoft.AspNetCore.Identity.IdentityRoleClaim<string>", b =>
                 {
                     b.HasOne("Microsoft.AspNetCore.Identity.IdentityRole", null)
@@ -1246,11 +1207,6 @@ namespace Legno.Persistence.Migrations
                     b.Navigation("ProjectImages");
 
                     b.Navigation("ProjectVideos");
-                });
-
-            modelBuilder.Entity("Legno.Domain.Entities.ServiceSlider", b =>
-                {
-                    b.Navigation("ServiceSliderImages");
                 });
 
             modelBuilder.Entity("Legno.Domain.Entities.Team", b =>
