@@ -1612,19 +1612,38 @@
         ],
         "requestBody": {
           "content": {
-            "application/json": {
+            "multipart/form-data": {
               "schema": {
-                "$ref": "#/components/schemas/CreateCommonServiceDto"
-              }
-            },
-            "text/json": {
-              "schema": {
-                "$ref": "#/components/schemas/CreateCommonServiceDto"
-              }
-            },
-            "application/*+json": {
-              "schema": {
-                "$ref": "#/components/schemas/CreateCommonServiceDto"
+                "type": "object",
+                "properties": {
+                  "Name": {
+                    "type": "string"
+                  },
+                  "NameEng": {
+                    "type": "string"
+                  },
+                  "NameRu": {
+                    "type": "string"
+                  },
+                  "CardImage": {
+                    "type": "string",
+                    "format": "binary"
+                  }
+                }
+              },
+              "encoding": {
+                "Name": {
+                  "style": "form"
+                },
+                "NameEng": {
+                  "style": "form"
+                },
+                "NameRu": {
+                  "style": "form"
+                },
+                "CardImage": {
+                  "style": "form"
+                }
               }
             }
           }
@@ -1677,19 +1696,44 @@
         ],
         "requestBody": {
           "content": {
-            "application/json": {
+            "multipart/form-data": {
               "schema": {
-                "$ref": "#/components/schemas/UpdateCommonServiceDto"
-              }
-            },
-            "text/json": {
-              "schema": {
-                "$ref": "#/components/schemas/UpdateCommonServiceDto"
-              }
-            },
-            "application/*+json": {
-              "schema": {
-                "$ref": "#/components/schemas/UpdateCommonServiceDto"
+                "type": "object",
+                "properties": {
+                  "Id": {
+                    "type": "string"
+                  },
+                  "Name": {
+                    "type": "string"
+                  },
+                  "NameEng": {
+                    "type": "string"
+                  },
+                  "NameRu": {
+                    "type": "string"
+                  },
+                  "CardImage": {
+                    "type": "string",
+                    "format": "binary"
+                  }
+                }
+              },
+              "encoding": {
+                "Id": {
+                  "style": "form"
+                },
+                "Name": {
+                  "style": "form"
+                },
+                "NameEng": {
+                  "style": "form"
+                },
+                "NameRu": {
+                  "style": "form"
+                },
+                "CardImage": {
+                  "style": "form"
+                }
               }
             }
           }

@@ -1,7 +1,7 @@
 ﻿using AutoMapper;
 using Legno.Application.Abstracts.Repositories;
 using Legno.Application.Abstracts.Services;
-using Legno.Application.Dtos.CommonService;
+using Legno.Application.Dtos.BusinessService;
 using Legno.Application.GlobalExceptionn;
 using Legno.Domain.Entities;
 using System;
@@ -17,18 +17,20 @@ namespace Legno.Persistence.Concreters.Services
         private readonly IPartnerReadRepository _read;
         private readonly IPartnerWriteRepository _write;
         private readonly IMapper _mapper;
-
+        private readonly CloudinaryService _cloudinary;
         public PartnerService(
             IPartnerReadRepository read,
             IPartnerWriteRepository write,
-            IMapper mapper)
+            IMapper mapper,
+            CloudinaryService cloudinary)
         {
             _read = read;
             _write = write;
             _mapper = mapper;
+            _cloudinary = cloudinary;
         }
 
-        public async Task<CommonServiceDto> AddCommonServiceAsync(CreateCommonServiceDto createDto)
+        public async Task<BusinessServiceDto> AddBusinessServiceAsync(CreateBusinessServiceDto createDto)
         {
             if (createDto == null) throw new GlobalAppException("Məlumat göndərilməyib.");
 
@@ -37,14 +39,17 @@ namespace Legno.Persistence.Concreters.Services
             entity.IsDeleted = false;
             entity.CreatedDate = DateTime.UtcNow;
             entity.LastUpdatedDate = DateTime.UtcNow;
+            if (createDto.CardImage == null) throw new GlobalAppException("Kart şəkli tələb olunur.");
+            entity.CardImage = await _cloudinary.UploadFileAsync(createDto.CardImage);
+
 
             await _write.AddAsync(entity);
             await _write.CommitAsync();
 
-            return _mapper.Map<CommonServiceDto>(entity);
+            return _mapper.Map<BusinessServiceDto>(entity);
         }
 
-        public async Task<CommonServiceDto?> GetCommonServiceAsync(string id)
+        public async Task<BusinessServiceDto?> GetBusinessServiceAsync(string id)
         {
             if (!Guid.TryParse(id, out var gid))
                 throw new GlobalAppException("Yanlış ID formatı.");
@@ -52,17 +57,17 @@ namespace Legno.Persistence.Concreters.Services
             var entity = await _read.GetAsync(x => x.Id == gid && !x.IsDeleted, EnableTraking: false);
             if (entity == null) throw new GlobalAppException("Xidmət tapılmadı.");
 
-            return _mapper.Map<CommonServiceDto>(entity);
+            return _mapper.Map<BusinessServiceDto>(entity);
         }
 
-        public async Task<List<CommonServiceDto>> GetAllCommonServicesAsync()
+        public async Task<List<BusinessServiceDto>> GetAllBusinessServicesAsync()
         {
             var list = await _read.GetAllAsync(x => !x.IsDeleted, EnableTraking: false,
                 orderBy: q => q.OrderBy(x => x.CreatedDate));
-            return list.Select(_mapper.Map<CommonServiceDto>).ToList();
+            return list.Select(_mapper.Map<BusinessServiceDto>).ToList();
         }
 
-        public async Task<CommonServiceDto> UpdateCommonServiceAsync(UpdateCommonServiceDto updateDto)
+        public async Task<BusinessServiceDto> UpdateBusinessServiceAsync(UpdateBusinessServiceDto updateDto)
         {
             if (updateDto == null || !Guid.TryParse(updateDto.Id, out var gid))
                 throw new GlobalAppException("Yanlış ID.");
@@ -73,14 +78,24 @@ namespace Legno.Persistence.Concreters.Services
             // yalnız göndərilən sahələr (Profile-də null-ignore olmalıdır)
             _mapper.Map(updateDto, entity);
             entity.LastUpdatedDate = DateTime.UtcNow;
+            // Kart şəkli göndərilibsə yenilə (DTO-da CardImage mövcuddur) :contentReference[oaicite:10]{index=10}
+            if (updateDto.CardImage != null)
+            {
+                // köhnəni silmək istəyirsinizsə:
+                if (!string.IsNullOrWhiteSpace(entity.CardImage))
+                    await _cloudinary.DeleteFileAsync(entity.CardImage);
 
-            await _write.UpdateAsync(entity);
+                entity.CardImage = await _cloudinary.UploadFileAsync(updateDto.CardImage);
+            }
+          
+
+                await _write.UpdateAsync(entity);
             await _write.CommitAsync();
 
-            return _mapper.Map<CommonServiceDto>(entity);
+            return _mapper.Map<BusinessServiceDto>(entity);
         }
 
-        public async Task DeleteCommonServiceAsync(string id)
+        public async Task DeleteBusinessServiceAsync(string id)
         {
             if (!Guid.TryParse(id, out var gid))
                 throw new GlobalAppException("Yanlış ID formatı.");

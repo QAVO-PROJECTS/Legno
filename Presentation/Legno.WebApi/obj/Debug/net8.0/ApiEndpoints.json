@@ -1075,9 +1075,24 @@
     "Order": 0,
     "Parameters": [
       {
-        "Name": "dto",
-        "Type": "Legno.Application.Dtos.CommonService.CreateCommonServiceDto",
-        "IsRequired": true
+        "Name": "Name",
+        "Type": "System.String",
+        "IsRequired": false
+      },
+      {
+        "Name": "NameEng",
+        "Type": "System.String",
+        "IsRequired": false
+      },
+      {
+        "Name": "NameRu",
+        "Type": "System.String",
+        "IsRequired": false
+      },
+      {
+        "Name": "CardImage",
+        "Type": "Microsoft.AspNetCore.Http.IFormFile",
+        "IsRequired": false
       }
     ],
     "ReturnTypes": []
@@ -1133,9 +1148,29 @@
     "Order": 0,
     "Parameters": [
       {
-        "Name": "dto",
-        "Type": "Legno.Application.Dtos.CommonService.UpdateCommonServiceDto",
-        "IsRequired": true
+        "Name": "Id",
+        "Type": "System.String",
+        "IsRequired": false
+      },
+      {
+        "Name": "Name",
+        "Type": "System.String",
+        "IsRequired": false
+      },
+      {
+        "Name": "NameEng",
+        "Type": "System.String",
+        "IsRequired": false
+      },
+      {
+        "Name": "NameRu",
+        "Type": "System.String",
+        "IsRequired": false
+      },
+      {
+        "Name": "CardImage",
+        "Type": "Microsoft.AspNetCore.Http.IFormFile",
+        "IsRequired": false
       }
     ],
     "ReturnTypes": []

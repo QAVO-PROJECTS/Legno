@@ -1,5 +1,5 @@
 ﻿using Legno.Application.Abstracts.Services;
-using Legno.Application.Dtos.CommonService;
+using Legno.Application.Dtos.BusinessService;
 using Legno.Application.GlobalExceptionn;
 using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Http;
@@ -16,11 +16,11 @@ namespace Legno.WebApi.Controllers
         public PartnersController(IPartnerService service) { _service = service; }
         //[Authorize(Roles = "Admin")]
         [HttpPost("create")]
-        public async Task<IActionResult> Create([FromBody] CreateCommonServiceDto dto)
+        public async Task<IActionResult> Create([FromForm] CreateBusinessServiceDto dto)
         {
             try
             {
-                var created = await _service.AddCommonServiceAsync(dto);
+                var created = await _service.AddBusinessServiceAsync(dto);
                 return Ok(new { StatusCode = 201, Data = created });
             }
             catch (GlobalAppException ex) { return BadRequest(new { StatusCode = 400, Error = ex.Message }); }
@@ -32,7 +32,7 @@ namespace Legno.WebApi.Controllers
         {
             try
             {
-                var item = await _service.GetCommonServiceAsync(id);
+                var item = await _service.GetBusinessServiceAsync(id);
                 return Ok(new { StatusCode = 200, Data = item });
             }
             catch (GlobalAppException ex)
@@ -49,18 +49,18 @@ namespace Legno.WebApi.Controllers
         {
             try
             {
-                var list = await _service.GetAllCommonServicesAsync();
+                var list = await _service.GetAllBusinessServicesAsync();
                 return Ok(new { StatusCode = 200, Data = list });
             }
             catch (Exception ex) { return StatusCode(500, new { StatusCode = 500, Error = $"Xəta baş verdi: {ex.Message}" }); }
         }
         [Authorize(Roles = "Admin")]
         [HttpPut("update")]
-        public async Task<IActionResult> Update([FromBody] UpdateCommonServiceDto dto)
+        public async Task<IActionResult> Update([FromForm] UpdateBusinessServiceDto dto)
         {
             try
             {
-                var updated = await _service.UpdateCommonServiceAsync(dto);
+                var updated = await _service.UpdateBusinessServiceAsync(dto);
                 return Ok(new { StatusCode = 200, Data = updated });
             }
             catch (GlobalAppException ex) { return BadRequest(new { StatusCode = 400, Error = ex.Message }); }
@@ -72,7 +72,7 @@ namespace Legno.WebApi.Controllers
         {
             try
             {
-                await _service.DeleteCommonServiceAsync(id);
+                await _service.DeleteBusinessServiceAsync(id);
                 return Ok(new { StatusCode = 200, Message = "Silindi." });
             }
             catch (GlobalAppException ex)

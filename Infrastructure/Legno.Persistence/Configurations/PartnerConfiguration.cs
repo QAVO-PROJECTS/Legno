@@ -15,6 +15,8 @@ namespace Legno.Persistence.Configurations
         {
             b.ToTable("Partners");
             b.HasKey(x => x.Id);
+
+            b.Property(x => x.CardImage).IsRequired().HasMaxLength(300);
         }
     }
 }
