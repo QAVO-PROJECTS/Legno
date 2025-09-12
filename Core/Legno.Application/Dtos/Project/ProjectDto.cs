@@ -1,6 +1,8 @@
 ﻿using Legno.Application.Dtos.Category;
+using Legno.Application.Dtos.Fabric;
 using Legno.Application.Dtos.Team;
 using Legno.Domain.Entities;
+using Microsoft.AspNetCore.Http;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -23,6 +25,8 @@ namespace Legno.Application.Dtos.Project
         public TeamDto Team { get; set; }
         public CategoryDto Category { get; set; }
         public List<string>? ProjectImageNames { get; set; }
+        public List<string>? ProjectSliderImages { get; set; }
         public List<string>? ProjectVideoNames { get; set; }
+        public List<FabricDto>? Fabrics { get; set; }
     }
 }

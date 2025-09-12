@@ -34,43 +34,33 @@ namespace Legno.Persistence.Concreters.Services
             try { _ = new MailAddress(email); }
             catch { throw new GlobalAppException("Email formatı yanlışdır."); }
 
-            // mövcud (silinməyən) eyni email varmı?
+            // mövcud və aktiv (IsDeleted = false) abunəçi varsa -> xəta
             var existActive = await _subscriberReadRepository.GetAllAsync(
-                func: s => !s.IsDeleted && s.Email.ToLower() == email,
+                func: s => s.Email.ToLower() == email && !s.IsDeleted,
                 include: null, orderBy: null, EnableTraking: false
             );
             if (existActive.Any())
                 throw new GlobalAppException("Bu email artıq abunədir.");
 
-            // silinmiş eyni email varsa — re-activate et
-            var existDeleted = await _subscriberReadRepository.GetAllAsync(
-                func: s => s.IsDeleted && s.Email.ToLower() == email,
-                include: null, orderBy: null, EnableTraking: true
-            );
-            var deletedOne = existDeleted.FirstOrDefault();
-            if (deletedOne != null)
+            else
             {
-                deletedOne.IsDeleted = false;
-                deletedOne.DeletedDate = default;
-                deletedOne.LastUpdatedDate = DateTime.UtcNow;
+                var entity = new Subscriber
+                {
+                    Email = email,
+                    IsDeleted = false,
+                    CreatedDate = DateTime.UtcNow,
+                    LastUpdatedDate = DateTime.UtcNow
+                };
 
-                await _subscriberWriteRepository.UpdateAsync(deletedOne);
+                await _subscriberWriteRepository.AddAsync(entity);
                 await _subscriberWriteRepository.CommitAsync();
-                return;
+
             }
 
-            // yeni əlavə et
-            var entity = new Subscriber
-            {
-                Email = email,
-                IsDeleted = false,
-                CreatedDate = DateTime.UtcNow,
-                LastUpdatedDate = DateTime.UtcNow
-            };
-
-            await _subscriberWriteRepository.AddAsync(entity);
-            await _subscriberWriteRepository.CommitAsync();
+                // yeni əlavə et
+              
         }
+
 
         public async Task<string?> GetSubscriberAsync(string subscriberId)
         {

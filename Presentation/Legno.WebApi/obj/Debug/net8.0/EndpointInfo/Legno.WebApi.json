@@ -1813,7 +1813,20 @@
                       "format": "binary"
                     }
                   },
+                  "ProjectSliderImages": {
+                    "type": "array",
+                    "items": {
+                      "type": "string",
+                      "format": "binary"
+                    }
+                  },
                   "ProjectVideos": {
+                    "type": "array",
+                    "items": {
+                      "type": "string"
+                    }
+                  },
+                  "FabricIds": {
                     "type": "array",
                     "items": {
                       "type": "string"
@@ -1852,7 +1865,13 @@
                 "ProjectImages": {
                   "style": "form"
                 },
+                "ProjectSliderImages": {
+                  "style": "form"
+                },
                 "ProjectVideos": {
+                  "style": "form"
+                },
+                "FabricIds": {
                   "style": "form"
                 }
               }
@@ -1951,6 +1970,18 @@
                       "type": "string"
                     }
                   },
+                  "DeleteFabricIds": {
+                    "type": "array",
+                    "items": {
+                      "type": "string"
+                    }
+                  },
+                  "DeleteSliderImageNames": {
+                    "type": "array",
+                    "items": {
+                      "type": "string"
+                    }
+                  },
                   "CategoryId": {
                     "type": "string"
                   },
@@ -1961,7 +1992,20 @@
                       "format": "binary"
                     }
                   },
+                  "ProjectSliderImages": {
+                    "type": "array",
+                    "items": {
+                      "type": "string",
+                      "format": "binary"
+                    }
+                  },
                   "ProjectVideos": {
+                    "type": "array",
+                    "items": {
+                      "type": "string"
+                    }
+                  },
+                  "FabricIds": {
                     "type": "array",
                     "items": {
                       "type": "string"
@@ -2003,13 +2047,25 @@
                 "DeleteVideoNames": {
                   "style": "form"
                 },
+                "DeleteFabricIds": {
+                  "style": "form"
+                },
+                "DeleteSliderImageNames": {
+                  "style": "form"
+                },
                 "CategoryId": {
                   "style": "form"
                 },
                 "ProjectImages": {
                   "style": "form"
                 },
+                "ProjectSliderImages": {
+                  "style": "form"
+                },
                 "ProjectVideos": {
+                  "style": "form"
+                },
+                "FabricIds": {
                   "style": "form"
                 }
               }

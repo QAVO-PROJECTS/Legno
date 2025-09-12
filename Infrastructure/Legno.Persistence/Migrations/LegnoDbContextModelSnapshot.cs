@@ -697,6 +697,39 @@ namespace Legno.Persistence.Migrations
                     b.ToTable("Projects", (string)null);
                 });
 
+            modelBuilder.Entity("Legno.Domain.Entities.ProjectFabric", b =>
+                {
+                    b.Property<Guid>("Id")
+                        .ValueGeneratedOnAdd()
+                        .HasColumnType("uuid");
+
+                    b.Property<DateTime>("CreatedDate")
+                        .HasColumnType("timestamp with time zone");
+
+                    b.Property<DateTime>("DeletedDate")
+                        .HasColumnType("timestamp with time zone");
+
+                    b.Property<Guid>("FabricId")
+                        .HasColumnType("uuid");
+
+                    b.Property<bool>("IsDeleted")
+                        .HasColumnType("boolean");
+
+                    b.Property<DateTime>("LastUpdatedDate")
+                        .HasColumnType("timestamp with time zone");
+
+                    b.Property<Guid>("ProjectId")
+                        .HasColumnType("uuid");
+
+                    b.HasKey("Id");
+
+                    b.HasIndex("FabricId");
+
+                    b.HasIndex("ProjectId");
+
+                    b.ToTable("ProjectFabrics");
+                });
+
             modelBuilder.Entity("Legno.Domain.Entities.ProjectImage", b =>
                 {
                     b.Property<Guid>("Id")
@@ -728,6 +761,39 @@ namespace Legno.Persistence.Migrations
                     b.HasIndex("ProjectId");
 
                     b.ToTable("ProjectImages", (string)null);
+                });
+
+            modelBuilder.Entity("Legno.Domain.Entities.ProjectSliderImage", b =>
+                {
+                    b.Property<Guid>("Id")
+                        .ValueGeneratedOnAdd()
+                        .HasColumnType("uuid");
+
+                    b.Property<DateTime>("CreatedDate")
+                        .HasColumnType("timestamp with time zone");
+
+                    b.Property<DateTime>("DeletedDate")
+                        .HasColumnType("timestamp with time zone");
+
+                    b.Property<bool>("IsDeleted")
+                        .HasColumnType("boolean");
+
+                    b.Property<DateTime>("LastUpdatedDate")
+                        .HasColumnType("timestamp with time zone");
+
+                    b.Property<string>("Name")
+                        .IsRequired()
+                        .HasMaxLength(300)
+                        .HasColumnType("character varying(300)");
+
+                    b.Property<Guid>("ProjectId")
+                        .HasColumnType("uuid");
+
+                    b.HasKey("Id");
+
+                    b.HasIndex("ProjectId");
+
+                    b.ToTable("ProjectSliderImages", (string)null);
                 });
 
             modelBuilder.Entity("Legno.Domain.Entities.ProjectVideo", b =>
@@ -816,7 +882,9 @@ namespace Legno.Persistence.Migrations
                     b.HasKey("Id");
 
                     b.HasIndex("Email")
-                        .IsUnique();
+                        .IsUnique()
+                        .HasDatabaseName("IX_Subscribers_Email_Active")
+                        .HasFilter("\"IsDeleted\" = FALSE");
 
                     b.ToTable("Subscribers", (string)null);
                 });
@@ -1129,10 +1197,40 @@ namespace Legno.Persistence.Migrations
                     b.Navigation("Team");
                 });
 
+            modelBuilder.Entity("Legno.Domain.Entities.ProjectFabric", b =>
+                {
+                    b.HasOne("Legno.Domain.Entities.Fabric", "Fabric")
+                        .WithMany("ProjectFabrics")
+                        .HasForeignKey("FabricId")
+                        .OnDelete(DeleteBehavior.Cascade)
+                        .IsRequired();
+
+                    b.HasOne("Legno.Domain.Entities.Project", "Project")
+                        .WithMany("ProjectFabrics")
+                        .HasForeignKey("ProjectId")
+                        .OnDelete(DeleteBehavior.Cascade)
+                        .IsRequired();
+
+                    b.Navigation("Fabric");
+
+                    b.Navigation("Project");
+                });
+
             modelBuilder.Entity("Legno.Domain.Entities.ProjectImage", b =>
                 {
                     b.HasOne("Legno.Domain.Entities.Project", "Project")
                         .WithMany("ProjectImages")
+                        .HasForeignKey("ProjectId")
+                        .OnDelete(DeleteBehavior.Cascade)
+                        .IsRequired();
+
+                    b.Navigation("Project");
+                });
+
+            modelBuilder.Entity("Legno.Domain.Entities.ProjectSliderImage", b =>
+                {
+                    b.HasOne("Legno.Domain.Entities.Project", "Project")
+                        .WithMany("ProjectSliderImages")
                         .HasForeignKey("ProjectId")
                         .OnDelete(DeleteBehavior.Cascade)
                         .IsRequired();
@@ -1207,9 +1305,18 @@ namespace Legno.Persistence.Migrations
                     b.Navigation("Projects");
                 });
 
+            modelBuilder.Entity("Legno.Domain.Entities.Fabric", b =>
+                {
+                    b.Navigation("ProjectFabrics");
+                });
+
             modelBuilder.Entity("Legno.Domain.Entities.Project", b =>
                 {
+                    b.Navigation("ProjectFabrics");
+
                     b.Navigation("ProjectImages");
+
+                    b.Navigation("ProjectSliderImages");
 
                     b.Navigation("ProjectVideos");
                 });

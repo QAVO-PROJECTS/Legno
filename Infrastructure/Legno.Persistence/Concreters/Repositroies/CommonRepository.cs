@@ -25,6 +25,16 @@ namespace Legno.Persistence.Repositories
     public class PartnerWriteRepository(LegnoDbContext c) : WriteRepository<Partner>(c), IPartnerWriteRepository { }
     public class ServiceSliderReadRepository(LegnoDbContext c) : ReadRepository<ServiceSlider>(c), IServiceSliderReadRepository { }
     public class ServiceSliderWriteRepository(LegnoDbContext c) : WriteRepository<ServiceSlider>(c), IServiceSliderWriteRepository { }
+    public class ProjectSliderImageWriteRepository(LegnoDbContext c) : WriteRepository<ProjectSliderImage>(c), IProjectSliderImageWriteRepository { }
+    public class ProjectSliderImageReadRepository(LegnoDbContext c) : ReadRepository<ProjectSliderImage>(c), IProjectSliderImageReadRepository { }
+    public class ProjectSliderReadWriteRepository(LegnoDbContext c) : ReadRepository<ProjectFabric>(c), IProjectFabricReadRepository { }
+    public class ProjectFabricWriteRepository(LegnoDbContext c) : WriteRepository<ProjectFabric>(c), IProjectFabricWriteRepository { }
+    public class ProjectFabricReadRepository(LegnoDbContext c) : ReadRepository<ProjectFabric>(c), IProjectFabricReadRepository { }
+
+
+
+
+
 
     public class WorkPlanningReadRepository(LegnoDbContext c) : ReadRepository<WorkPlanning>(c), IWorkPlanningReadRepository { }
     public class WorkPlanningWriteRepository(LegnoDbContext c) : WriteRepository<WorkPlanning>(c), IWorkPlanningWriteRepository { }

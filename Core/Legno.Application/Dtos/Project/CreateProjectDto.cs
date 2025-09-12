@@ -20,6 +20,8 @@ namespace Legno.Application.Dtos.Project
         public string TeamId { get; set; }
         public string CategoryId { get; set; } // REQUIRED
         public List<IFormFile>? ProjectImages { get; set; }
+        public List<IFormFile>? ProjectSliderImages { get; set; }
         public List<string>? ProjectVideos { get; set; }
+        public List<string>? FabricIds { get; set; }
     }
 }

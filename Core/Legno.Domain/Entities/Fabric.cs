@@ -10,5 +10,6 @@ namespace Legno.Domain.Entities
     public class Fabric:BaseEntity
     {
         public string Image {  get; set; }
+        public List<ProjectFabric>? ProjectFabrics { get; set; }
     }
 }

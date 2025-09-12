@@ -87,7 +87,13 @@ namespace Legno.Persistence
             services.AddScoped<IServiceSliderService, ServiceSliderService>();
             services.AddScoped<IWorkPlanningReadRepository, WorkPlanningReadRepository>();
             services.AddScoped<IWorkPlanningWriteRepository, WorkPlanningWriteRepository>();
-         
+            services.AddScoped<IProjectSliderImageReadRepository, ProjectSliderImageReadRepository>();
+            services.AddScoped<IProjectSliderImageWriteRepository, ProjectSliderImageWriteRepository>();
+            services.AddScoped<IProjectFabricReadRepository,ProjectFabricReadRepository>();
+            services.AddScoped<IProjectFabricWriteRepository, ProjectFabricWriteRepository>();
+
+
+
             // Contacts
             services.AddScoped<IContactReadRepository, ContactReadRepository>();
             services.AddScoped<IContactWriteRepository, ContactWriteRepository>();

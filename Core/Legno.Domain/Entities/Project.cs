@@ -16,6 +16,7 @@ namespace Legno.Domain.Entities
         public string? SubTitleEng { get; set; }
         public string? SubTitleRu { get; set; }
         public string CardImage { get; set; }
+
         public int DisplayOrderId { get; set; } = 1;
         public Guid? TeamId { get; set; }
         public Team? Team { get; set; }
@@ -23,6 +24,8 @@ namespace Legno.Domain.Entities
         public Category? Category { get; set; }
         public List<ProjectImage>? ProjectImages { get; set; }
         public List<ProjectVideo>? ProjectVideos { get; set; }
+        public List<ProjectFabric>? ProjectFabrics { get; set; }
+        public List<ProjectSliderImage>? ProjectSliderImages { get; set; }
 
     }
 }

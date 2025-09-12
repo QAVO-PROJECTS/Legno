@@ -16,7 +16,12 @@ namespace Legno.Persistence.Configurations
                    .IsRequired()
                    .HasMaxLength(200);
 
-            builder.HasIndex(x => x.Email).IsUnique();
+            // SubscriberConfiguration.cs
+            builder.HasIndex(x => x.Email)
+                   .IsUnique()
+                   .HasFilter("\"IsDeleted\" = FALSE")   // PostgreSQL üçün partial index
+                   .HasDatabaseName("IX_Subscribers_Email_Active");
+
 
             builder.HasQueryFilter(x => !x.IsDeleted);
         }

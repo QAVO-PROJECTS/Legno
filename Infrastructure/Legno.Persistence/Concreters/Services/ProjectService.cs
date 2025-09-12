@@ -1,4 +1,5 @@
 ﻿using AutoMapper;
+using Legno.Application.Abstracts.Repositories;
 using Legno.Application.Abstracts.Repositories.ProjectImages;
 using Legno.Application.Abstracts.Repositories.Projects;
 using Legno.Application.Abstracts.Repositories.ProjectVideos;
@@ -16,6 +17,9 @@ namespace Legno.Persistence.Concreters.Services
         private readonly IProjectWriteRepository _projectWrite;
         private readonly IProjectImageWriteRepository _imageWrite;
         private readonly IProjectVideoWriteRepository _videoWrite;
+        private readonly IProjectSliderImageWriteRepository _sliderImageWrite;
+        private readonly IProjectFabricReadRepository _fabricRead;
+        private readonly IProjectFabricWriteRepository _fabricWrite;
         private readonly CloudinaryService _cloudinaryService;
         private readonly IMapper _mapper;
 
@@ -25,7 +29,10 @@ namespace Legno.Persistence.Concreters.Services
             IProjectImageWriteRepository imageWrite,
             IProjectVideoWriteRepository videoWrite,
             CloudinaryService cloudinaryService,
-            IMapper mapper)
+            IMapper mapper,
+            IProjectSliderImageWriteRepository sliderImageWrite,
+            IProjectFabricReadRepository fabricRead,
+            IProjectFabricWriteRepository fabricWrite)
         {
             _projectRead = projectRead;
             _projectWrite = projectWrite;
@@ -33,6 +40,9 @@ namespace Legno.Persistence.Concreters.Services
             _videoWrite = videoWrite;
             _cloudinaryService = cloudinaryService;
             _mapper = mapper;
+            _sliderImageWrite = sliderImageWrite;
+            _fabricRead = fabricRead;
+            _fabricWrite = fabricWrite;
         }
 
         // CREATE
@@ -69,7 +79,22 @@ namespace Legno.Persistence.Concreters.Services
                 : string.Empty;
 
             await _projectWrite.AddAsync(entity);
-
+            if (dto.FabricIds?.Any() == true)
+            {
+                foreach (var fidStr in dto.FabricIds)
+                {
+                    if (!Guid.TryParse(fidStr, out var fid)) continue;
+                    await _fabricWrite.AddAsync(new ProjectFabric
+                    {
+                        Id = Guid.NewGuid(),
+                        ProjectId = entity.Id,
+                        FabricId = fid,
+                        CreatedDate = DateTime.UtcNow,
+                        LastUpdatedDate = DateTime.UtcNow,
+                        IsDeleted = false
+                    });
+                }
+            }
             // Images (IFormFile)
             if (dto.ProjectImages?.Any() == true)
             {
@@ -77,6 +102,22 @@ namespace Legno.Persistence.Concreters.Services
                 {
                     var stored = await _cloudinaryService.UploadFileAsync(file);
                     await _imageWrite.AddAsync(new ProjectImage
+                    {
+                        Id = Guid.NewGuid(),
+                        ProjectId = entity.Id,
+                        Name = stored,
+                        CreatedDate = DateTime.UtcNow,
+                        LastUpdatedDate = DateTime.UtcNow,
+                        IsDeleted = false
+                    });
+                }
+            }
+            if (dto.ProjectSliderImages?.Any() == true)
+            {
+                foreach (var file in dto.ProjectSliderImages)
+                {
+                    var stored = await _cloudinaryService.UploadFileAsync(file);
+                    await _sliderImageWrite.AddAsync(new ProjectSliderImage
                     {
                         Id = Guid.NewGuid(),
                         ProjectId = entity.Id,
@@ -107,7 +148,9 @@ namespace Legno.Persistence.Concreters.Services
                 }
             }
 
+            await _fabricWrite.CommitAsync();
             await _imageWrite.CommitAsync();
+            await _sliderImageWrite.CommitAsync();
             await _videoWrite.CommitAsync();
             await _projectWrite.CommitAsync();
 
@@ -130,12 +173,18 @@ namespace Legno.Persistence.Concreters.Services
                 throw new GlobalAppException("Yanlış ID formatı.");
 
             var project = await _projectRead.GetAsync(
-                p => p.Id == id && !p.IsDeleted && !p.Category.IsDeleted && !p.Team.IsDeleted,
+                p => p.Id == id
+                     && !p.IsDeleted
+                     && !p.Category.IsDeleted
+                     && (p.TeamId == null || (p.Team != null && !p.Team.IsDeleted)),
                 include: q => q
                     .Include(p => p.Category)
                     .Include(p => p.Team)
                     .Include(p => p.ProjectImages.Where(i => !i.IsDeleted))
-                    .Include(p => p.ProjectVideos.Where(v => !v.IsDeleted)),
+                    .Include(p => p.ProjectSliderImages.Where(i => !i.IsDeleted))
+                    .Include(p => p.ProjectVideos.Where(v => !v.IsDeleted))
+                    .Include(p => p.ProjectFabrics.Where(x => !x.IsDeleted))
+                        .ThenInclude(pf => pf.Fabric),
                 EnableTraking: false);
 
             if (project == null) throw new GlobalAppException("Layihə tapılmadı.");
@@ -146,12 +195,17 @@ namespace Legno.Persistence.Concreters.Services
         public async Task<List<ProjectDto>> GetAllProjectsAsync()
         {
             var list = await _projectRead.GetAllAsync(
-                func: x => !x.IsDeleted && !x.Category.IsDeleted && !x.Team.IsDeleted,
+                func: x => !x.IsDeleted
+                           && !x.Category.IsDeleted
+                           && (x.TeamId == null || (x.Team != null && !x.Team.IsDeleted)),
                 include: q => q
                     .Include(p => p.Category)
                     .Include(p => p.Team)
                     .Include(p => p.ProjectImages.Where(i => !i.IsDeleted))
-                    .Include(p => p.ProjectVideos.Where(v => !v.IsDeleted)),
+                    .Include(p => p.ProjectSliderImages.Where(i => !i.IsDeleted))
+                    .Include(p => p.ProjectVideos.Where(v => !v.IsDeleted))
+                    .Include(p => p.ProjectFabrics.Where(x => !x.IsDeleted))
+                        .ThenInclude(pf => pf.Fabric),
                 orderBy: q => q.OrderBy(p => p.DisplayOrderId).ThenBy(p => p.CreatedDate),
                 EnableTraking: false
             );
@@ -165,12 +219,18 @@ namespace Legno.Persistence.Concreters.Services
                 throw new GlobalAppException("Category ID formatı yanlışdır.");
 
             var list = await _projectRead.GetAllAsync(
-                func: p => !p.IsDeleted && p.CategoryId == catId && !p.Category.IsDeleted && !p.Team.IsDeleted,
+                func: p => !p.IsDeleted
+                           && p.CategoryId == catId
+                           && !p.Category.IsDeleted
+                           && (p.TeamId == null || (p.Team != null && !p.Team.IsDeleted)),
                 include: q => q
                     .Include(p => p.Category)
                     .Include(p => p.Team)
                     .Include(p => p.ProjectImages.Where(i => !i.IsDeleted))
-                    .Include(p => p.ProjectVideos.Where(v => !v.IsDeleted)),
+                    .Include(p => p.ProjectSliderImages.Where(i => !i.IsDeleted))
+                    .Include(p => p.ProjectVideos.Where(v => !v.IsDeleted))
+                    .Include(p => p.ProjectFabrics.Where(x => !x.IsDeleted))
+                        .ThenInclude(pf => pf.Fabric),
                 orderBy: q => q.OrderBy(p => p.DisplayOrderId).ThenBy(p => p.CreatedDate),
                 EnableTraking: false
             );
@@ -178,6 +238,7 @@ namespace Legno.Persistence.Concreters.Services
             return _mapper.Map<List<ProjectDto>>(list);
         }
 
+        // UPDATE (DisplayOrderId DƏYİŞMİR)
         // UPDATE (DisplayOrderId DƏYİŞMİR)
         public async Task<ProjectDto> UpdateProjectAsync(UpdateProjectDto dto)
         {
@@ -190,7 +251,9 @@ namespace Legno.Persistence.Concreters.Services
                     .Include(p => p.Category)
                     .Include(p => p.Team)
                     .Include(p => p.ProjectImages.Where(i => !i.IsDeleted))
-                    .Include(p => p.ProjectVideos.Where(v => !v.IsDeleted)),
+                    .Include(p => p.ProjectSliderImages.Where(i => !i.IsDeleted))
+                    .Include(p => p.ProjectVideos.Where(v => !v.IsDeleted))
+                    .Include(p => p.ProjectFabrics.Where(x => !x.IsDeleted)),
                 EnableTraking: true) ?? throw new GlobalAppException("Layihə tapılmadı.");
 
             // DELETE images by Name
@@ -208,7 +271,22 @@ namespace Legno.Persistence.Concreters.Services
                 }
             }
 
-            // DELETE videos by Name (file saxlanmış videolar)
+            // DELETE slider images by Name
+            if (dto.DeleteSliderImageNames?.Any() == true && entity.ProjectSliderImages != null)
+            {
+                var set = new HashSet<string>(dto.DeleteSliderImageNames, StringComparer.OrdinalIgnoreCase);
+                var toDelete = entity.ProjectSliderImages.Where(i => !i.IsDeleted && set.Contains(i.Name)).ToList();
+                foreach (var img in toDelete)
+                {
+                    await _cloudinaryService.DeleteFileAsync(img.Name);
+                    img.IsDeleted = true;
+                    img.DeletedDate = DateTime.UtcNow;
+                    img.LastUpdatedDate = DateTime.UtcNow;
+                    await _sliderImageWrite.UpdateAsync(img);
+                }
+            }
+
+            // DELETE videos by "YoutubeLink" (link-based)
             if (dto.DeleteVideoNames?.Any() == true && entity.ProjectVideos != null)
             {
                 var set = new HashSet<string>(dto.DeleteVideoNames, StringComparer.OrdinalIgnoreCase);
@@ -218,7 +296,7 @@ namespace Legno.Persistence.Concreters.Services
 
                 foreach (var vid in toDelete)
                 {
-                    await _cloudinaryService.DeleteFileAsync(vid.YoutubeLink);
+                    // Linklər Cloudinary faylı deyil; fayl saxlanılmırsa, DeleteFileAsync çağırmağa ehtiyac yoxdur.
                     vid.IsDeleted = true;
                     vid.DeletedDate = DateTime.UtcNow;
                     vid.LastUpdatedDate = DateTime.UtcNow;
@@ -226,7 +304,7 @@ namespace Legno.Persistence.Concreters.Services
                 }
             }
 
-            // SCALARS (yalnız göndərilənlər)
+            // SCALARS
             if (dto.Title != null) entity.Title = dto.Title;
             if (dto.TitleEng != null) entity.TitleEng = dto.TitleEng;
             if (dto.TitleRu != null) entity.TitleRu = dto.TitleRu;
@@ -241,7 +319,7 @@ namespace Legno.Persistence.Concreters.Services
                 entity.CardImage = await _cloudinaryService.UploadFileAsync(dto.CardImage);
             }
 
-            // TeamId: boş string gəlirsə null et
+            // TeamId: boş string gələrsə null
             if (dto.TeamId != null)
                 entity.TeamId = Guid.TryParse(dto.TeamId, out var newTeamId) ? newTeamId : (Guid?)null;
 
@@ -254,7 +332,7 @@ namespace Legno.Persistence.Concreters.Services
 
             entity.LastUpdatedDate = DateTime.UtcNow;
 
-            // ADD NEW images (Update => IFormFile)
+            // ADD NEW images
             if (dto.ProjectImages?.Any() == true)
             {
                 foreach (var f in dto.ProjectImages)
@@ -272,19 +350,17 @@ namespace Legno.Persistence.Concreters.Services
                 }
             }
 
-            // ADD NEW videos (Update => ProjectVideoInputDto: link və/və ya file)
-            if (dto.ProjectVideos?.Any() == true)
+            // ADD NEW slider images
+            if (dto.ProjectSliderImages?.Any() == true)
             {
-                foreach (var v in dto.ProjectVideos)
+                foreach (var f in dto.ProjectSliderImages)
                 {
-                 
-
-                    await _videoWrite.AddAsync(new ProjectVideo
+                    var stored = await _cloudinaryService.UploadFileAsync(f);
+                    await _sliderImageWrite.AddAsync(new ProjectSliderImage
                     {
                         Id = Guid.NewGuid(),
                         ProjectId = entity.Id,
-            
-                        YoutubeLink = v,
+                        Name = stored,
                         CreatedDate = DateTime.UtcNow,
                         LastUpdatedDate = DateTime.UtcNow,
                         IsDeleted = false
@@ -292,8 +368,79 @@ namespace Legno.Persistence.Concreters.Services
                 }
             }
 
+            // ADD NEW videos (links)
+            if (dto.ProjectVideos?.Any() == true)
+            {
+                foreach (var v in dto.ProjectVideos)
+                {
+                    if (string.IsNullOrWhiteSpace(v)) continue;
+                    await _videoWrite.AddAsync(new ProjectVideo
+                    {
+                        Id = Guid.NewGuid(),
+                        ProjectId = entity.Id,
+                        YoutubeLink = v.Trim(),
+                        CreatedDate = DateTime.UtcNow,
+                        LastUpdatedDate = DateTime.UtcNow,
+                        IsDeleted = false
+                    });
+                }
+            }
+
+            // FABRICS: DELETE selected
+            if (dto.DeleteFabricIds?.Any() == true)
+            {
+                var delIds = dto.DeleteFabricIds
+                    .Select(s => Guid.TryParse(s, out var g) ? g : (Guid?)null)
+                    .Where(g => g.HasValue).Select(g => g!.Value).ToHashSet();
+
+                var existing = await _fabricRead.GetAllAsync(pf =>
+                    pf.ProjectId == entity.Id && !pf.IsDeleted && delIds.Contains(pf.FabricId));
+
+                foreach (var pf in existing)
+                {
+                    pf.IsDeleted = true;
+                    pf.DeletedDate = DateTime.UtcNow;
+                    pf.LastUpdatedDate = DateTime.UtcNow;
+                    await _fabricWrite.UpdateAsync(pf);
+                }
+            }
+
+            // FABRICS: ADD new (skip if exists)
+            if (dto.FabricIds?.Any() == true)
+            {
+                var addIds = dto.FabricIds
+                    .Select(s => Guid.TryParse(s, out var g) ? g : (Guid?)null)
+                    .Where(g => g.HasValue).Select(g => g!.Value).ToList();
+
+                if (addIds.Count > 0)
+                {
+                    var existingAll = await _fabricRead.GetAllAsync(pf =>
+                        pf.ProjectId == entity.Id && !pf.IsDeleted);
+
+                    var existingSet = existingAll.Select(pf => pf.FabricId).ToHashSet();
+
+                    foreach (var fid in addIds)
+                    {
+                        if (existingSet.Contains(fid)) continue;
+                        await _fabricWrite.AddAsync(new ProjectFabric
+                        {
+                            Id = Guid.NewGuid(),
+                            ProjectId = entity.Id,
+                            FabricId = fid,
+                            CreatedDate = DateTime.UtcNow,
+                            LastUpdatedDate = DateTime.UtcNow,
+                            IsDeleted = false
+                        });
+                    }
+                }
+            }
+
             await _projectWrite.UpdateAsync(entity);
+
+            // Commits
+            await _fabricWrite.CommitAsync();
             await _imageWrite.CommitAsync();
+            await _sliderImageWrite.CommitAsync();
             await _videoWrite.CommitAsync();
             await _projectWrite.CommitAsync();
 

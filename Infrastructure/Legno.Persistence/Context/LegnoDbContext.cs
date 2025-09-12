@@ -34,6 +34,8 @@ namespace Legno.Persistence.Context
         public DbSet<ServiceSlider> ServiceSliders { get; set; }
 
         public DbSet<WorkPlanning> WorkPlannings { get; set; }
+        public DbSet<ProjectSliderImage> ProjectSliderImages { get; set; }
+        public DbSet<ProjectFabric> ProjectFabrics { get; set; }
 
         protected override void OnModelCreating(ModelBuilder modelBuilder)
         {
@@ -64,6 +66,9 @@ namespace Legno.Persistence.Context
             modelBuilder.ApplyConfiguration(new ServiceSliderConfiguration());
   
             modelBuilder.ApplyConfiguration(new WorkPlanningConfiguration());
+            modelBuilder.ApplyConfiguration(new ProjectSliderImageConfiguration());
+            modelBuilder.ApplyConfiguration(new ProjectFabricConfiguration());
+
         }
     }
 }
