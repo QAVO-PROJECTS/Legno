@@ -32,7 +32,20 @@ public class ProjectProfile : Profile
                 : new TeamDto
                 {
                     Id = s.Team.Id.ToString(),
-                    Name = s.Team.Name
+                    Name = s.Team.Name,
+                    NameEng = s.Team.NameEng,
+                    NameRu=s.Team.NameRu,
+                    Surname= s.Team.Surname,
+                    SurnameEng = s.Team.SurnameEng,
+                    SurnameRu=s.Team.SurnameRu,
+                    Position= s.Team.Position,
+                    PositionEng = s.Team.PositionEng,
+                    PositionRu=s.Team.PositionRu,
+                    CardImage= s.Team.CardImage,
+                    InstagramLink= s.Team.InstagramLink,
+                    LinkedInLink= s.Team.LinkedInLink,
+                    DisplayOrderId= s.Team.DisplayOrderId
+
                 }))
 
             // Şəkil adları
