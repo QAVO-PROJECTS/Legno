@@ -252,8 +252,8 @@ namespace Legno.Persistence.Concreters.Services
                     .Include(p => p.Team)
                     .Include(p => p.ProjectImages.Where(i => !i.IsDeleted))
                     .Include(p => p.ProjectSliderImages.Where(i => !i.IsDeleted))
-                    .Include(p => p.ProjectVideos.Where(v => !v.IsDeleted))
-                    .Include(p => p.ProjectFabrics.Where(x => !x.IsDeleted)),
+                    .Include(p => p.ProjectVideos.Where(v => !v.IsDeleted)),
+          
                 EnableTraking: true) ?? throw new GlobalAppException("Layihə tapılmadı.");
 
             // DELETE images by Name
@@ -392,9 +392,9 @@ namespace Legno.Persistence.Concreters.Services
                 var delIds = dto.DeleteFabricIds
                     .Select(s => Guid.TryParse(s, out var g) ? g : (Guid?)null)
                     .Where(g => g.HasValue).Select(g => g!.Value).ToHashSet();
-
-                var existing = await _fabricRead.GetAllAsync(pf =>
-                    pf.ProjectId == entity.Id && !pf.IsDeleted && delIds.Contains(pf.FabricId));
+                var existing = await _fabricRead.GetAllAsync(
+                    pf => pf.ProjectId == entity.Id && !pf.IsDeleted && delIds.Contains(pf.FabricId),
+                    EnableTraking: false);
 
                 foreach (var pf in existing)
                 {
