@@ -27,11 +27,11 @@ jobs:
       - name: Publish
         run: dotnet publish Presentation/Legno.WebApi/Legno.WebApi.csproj -c Release -o ./publish
 
-      # 1️⃣ APP OFFLINE
+      # 🔴 APP OFFLINE (DLL LOCK HƏLLİ)
       - name: Put app offline
         run: echo "Maintenance..." > ./publish/app_offline.htm
 
-      # 2️⃣ DEPLOY (wwwroot protected)
+      # 🚀 DEPLOY (wwwroot qorunur)
       - name: Deploy to Plesk via FTP
         uses: SamKirkland/FTP-Deploy-Action@v4.3.5
         with:
@@ -44,17 +44,3 @@ jobs:
           dangerous-clean-slate: false
           exclude: |
             **/wwwroot/**
-
-      # 3️⃣ APP ONLINE
-      - name: Remove app_offline.htm
-        uses: SamKirkland/FTP-Deploy-Action@v4.3.5
-        with:
-          server: ${{ secrets.FTP_SERVER }}
-          username: ${{ secrets.FTP_USERNAME }}
-          password: ${{ secrets.FTP_PASSWORD }}
-          server-dir: ${{ secrets.FTP_DIR }}/
-          local-dir: ./empty/
-          protocol: ftp
-          dangerous-clean-slate: false
-          exclude: |
-            **/**
