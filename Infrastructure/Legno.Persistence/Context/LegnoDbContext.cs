@@ -1,7 +1,6 @@
 ﻿using Microsoft.AspNetCore.Identity.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore;
 using Legno.Domain.Entities;
-using Legno.Persistence.Configurations;
 
 namespace Legno.Persistence.Context
 {
@@ -9,10 +8,11 @@ namespace Legno.Persistence.Context
     {
         public LegnoDbContext(DbContextOptions<LegnoDbContext> options) : base(options) { }
 
-        // DbSets (mövcudlar + yenilər)
+        // Mövcud DbSet-lər
         public DbSet<Admin> Admins { get; set; }
         public DbSet<Blog> Blogs { get; set; }
         public DbSet<Category> Categories { get; set; }
+        public DbSet<CategoryImage> CategorySliderImages { get; set; }
         public DbSet<Contact> Contacts { get; set; }
         public DbSet<Project> Projects { get; set; }
         public DbSet<ProjectImage> ProjectImages { get; set; }
@@ -22,7 +22,7 @@ namespace Legno.Persistence.Context
         public DbSet<UserProject> UserProjects { get; set; }
         public DbSet<FAQ> FAQs { get; set; }
 
-        // 🔹 YENİLƏR
+        // Yeni DbSet-lər
         public DbSet<B2BService> B2BServices { get; set; }
         public DbSet<BusinessService> BusinessServices { get; set; }
         public DbSet<CommonService> CommonServices { get; set; }
@@ -32,43 +32,24 @@ namespace Legno.Persistence.Context
         public DbSet<Location> Locations { get; set; }
         public DbSet<Partner> Partners { get; set; }
         public DbSet<ServiceSlider> ServiceSliders { get; set; }
-
         public DbSet<WorkPlanning> WorkPlannings { get; set; }
         public DbSet<ProjectSliderImage> ProjectSliderImages { get; set; }
         public DbSet<ProjectFabric> ProjectFabrics { get; set; }
+
+        // 🔹 ƏLAVƏ YENİ ENTITY-LƏR
+        public DbSet<Purchase> Purchases { get; set; }
+        public DbSet<Career> Careers { get; set; }
+        public DbSet<Article> Articles { get; set; }
+        public DbSet<ArticleImage> ArticleImages { get; set; }
+        public DbSet<Announcement> Announcements { get; set; }
+        public DbSet<Member> Members { get; set; }
 
         protected override void OnModelCreating(ModelBuilder modelBuilder)
         {
             base.OnModelCreating(modelBuilder);
 
-            // Mövcud konfiqurasiyalar
-            modelBuilder.ApplyConfiguration(new AdminConfiguration());
-            modelBuilder.ApplyConfiguration(new BlogConfiguration());
-            modelBuilder.ApplyConfiguration(new CategoryConfiguration());
-            modelBuilder.ApplyConfiguration(new ContactConfiguration());
-            modelBuilder.ApplyConfiguration(new FAQConfiguration());
-            modelBuilder.ApplyConfiguration(new ProjectConfiguration());
-            modelBuilder.ApplyConfiguration(new ProjectImageConfiguration());
-            modelBuilder.ApplyConfiguration(new ProjectVideoConfiguration());
-            modelBuilder.ApplyConfiguration(new SubscriberConfiguration());
-            modelBuilder.ApplyConfiguration(new TeamConfiguration());
-            modelBuilder.ApplyConfiguration(new UserProjectConfiguration());
-
-            // 🔹 YENİ konfiqurasiyalar
-            modelBuilder.ApplyConfiguration(new B2BServiceConfiguration());
-            modelBuilder.ApplyConfiguration(new BusinessServiceConfiguration());
-            modelBuilder.ApplyConfiguration(new CommonServiceConfiguration());
-            modelBuilder.ApplyConfiguration(new DesignerCommonServiceConfiguration());
-            modelBuilder.ApplyConfiguration(new DesignerServiceConfiguration());
-            modelBuilder.ApplyConfiguration(new FabricConfiguration());
-            modelBuilder.ApplyConfiguration(new LocationConfiguration());
-            modelBuilder.ApplyConfiguration(new PartnerConfiguration());
-            modelBuilder.ApplyConfiguration(new ServiceSliderConfiguration());
-  
-            modelBuilder.ApplyConfiguration(new WorkPlanningConfiguration());
-            modelBuilder.ApplyConfiguration(new ProjectSliderImageConfiguration());
-            modelBuilder.ApplyConfiguration(new ProjectFabricConfiguration());
-
+            // 🔥 BÜTÜN CONFIG-FAYLLARI AVTOMATİK QEYD ET
+            modelBuilder.ApplyConfigurationsFromAssembly(typeof(LegnoDbContext).Assembly);
         }
     }
 }

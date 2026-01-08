@@ -46,7 +46,7 @@ namespace Legno.Persistence.Concreters.Services
 
             var projects = await _projectRead.GetAllAsync(
                 func: p => !p.IsDeleted,
-                include: x => x.Include(p => p.Category),
+             
                 orderBy: null,
                 EnableTraking: false
             );

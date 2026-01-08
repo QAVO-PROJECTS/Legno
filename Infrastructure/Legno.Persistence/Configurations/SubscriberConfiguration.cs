@@ -1,4 +1,4 @@
-using Legno.Domain.Entities;
+ï»¿using Legno.Domain.Entities;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.Metadata.Builders;
 
@@ -16,13 +16,13 @@ namespace Legno.Persistence.Configurations
                    .IsRequired()
                    .HasMaxLength(200);
 
-            // SubscriberConfiguration.cs
+            // âœ… SQL Server sintaksisi (BIT = 0 => false, 1 => true)
             builder.HasIndex(x => x.Email)
                    .IsUnique()
-                   .HasFilter("\"IsDeleted\" = FALSE")   // PostgreSQL üçün partial index
+                   .HasFilter("[IsDeleted] = 0")
                    .HasDatabaseName("IX_Subscribers_Email_Active");
 
-
+            // Global query filter (soft delete)
             builder.HasQueryFilter(x => !x.IsDeleted);
         }
     }

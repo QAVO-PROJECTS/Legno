@@ -4,6 +4,7 @@ using Legno.Application.GlobalExceptionn;
 using Legno.Domain.Entities;
 using Legno.Application.Abstracts.Repositories;
 using Microsoft.AspNetCore.Http;
+using Legno.Application.Absrtacts.Services;
 
 namespace Legno.Persistence.Concreters.Services
 {
@@ -11,28 +12,33 @@ namespace Legno.Persistence.Concreters.Services
     {
         private readonly IFabricReadRepository _read;
         private readonly IFabricWriteRepository _write;
-        private readonly CloudinaryService _cloudinary;
+        private readonly IFileService _fileService; // 🔁 Cloudinary əvəzinə
 
-        public FabricService(IFabricReadRepository read,
-                             IFabricWriteRepository write,
-                             CloudinaryService cloudinary)
+        public FabricService(
+            IFabricReadRepository read,
+            IFabricWriteRepository write,
+            IFileService fileService)
         {
             _read = read;
             _write = write;
-            _cloudinary = cloudinary;
+            _fileService = fileService;
         }
 
-        public async Task<FabricDto> AddFabricServiceAsync(IFormFile fabricName)
+        // ───────────────────────────────
+        // ✅ Yeni material (şəkil) əlavə et
+        // ───────────────────────────────
+        public async Task<FabricDto> AddFabricServiceAsync(IFormFile fabricFile)
         {
-            if (fabricName == null || fabricName.Length == 0)
-                throw new GlobalAppException("Şəkil faylı göndərilməyib.");
+            if (fabricFile == null || fabricFile.Length == 0)
+                throw new GlobalAppException("Material şəkli göndərilməyib.");
 
-            var url = await _cloudinary.UploadFileAsync(fabricName);
+            // 📂 Faylı serverə yüklə
+            var fileName = await _fileService.UploadFile(fabricFile, "fabrics");
 
             var entity = new Fabric
             {
                 Id = Guid.NewGuid(),
-                Image = url,
+                Image = fileName,
                 IsDeleted = false,
                 CreatedDate = DateTime.UtcNow,
                 LastUpdatedDate = DateTime.UtcNow
@@ -41,24 +47,43 @@ namespace Legno.Persistence.Concreters.Services
             await _write.AddAsync(entity);
             await _write.CommitAsync();
 
-            return new FabricDto { Id = entity.Id.ToString(), Image = entity.Image };
+            return new FabricDto
+            {
+                Id = entity.Id.ToString(),
+                Image = entity.Image
+            };
         }
 
+        // ───────────────────────────────
+        // ✅ Tək materialı gətir
+        // ───────────────────────────────
         public async Task<FabricDto?> GetFabricServiceAsync(string fabricId)
         {
             if (!Guid.TryParse(fabricId, out var id))
                 throw new GlobalAppException("Yanlış ID formatı.");
 
-            var entity = await _read.GetAsync(x => x.Id == id && !x.IsDeleted, EnableTraking: false);
-            if (entity == null) throw new GlobalAppException("Material tapılmadı.");
+            var entity = await _read.GetAsync(
+                x => x.Id == id && !x.IsDeleted,
+                EnableTraking: false
+            ) ?? throw new GlobalAppException("Material tapılmadı.");
 
-            return new FabricDto { Id = entity.Id.ToString(), Image = entity.Image };
+            return new FabricDto
+            {
+                Id = entity.Id.ToString(),
+                Image = entity.Image
+            };
         }
 
+        // ───────────────────────────────
+        // ✅ Bütün materialları gətir
+        // ───────────────────────────────
         public async Task<List<FabricDto>> GetAllFabricsAsync()
         {
-            var list = await _read.GetAllAsync(x => !x.IsDeleted, EnableTraking: false,
-                                               orderBy: q => q.OrderBy(x => x.CreatedDate));
+            var list = await _read.GetAllAsync(
+                x => !x.IsDeleted,
+                EnableTraking: false,
+                orderBy: q => q.OrderBy(x => x.CreatedDate)
+            );
 
             return list.Select(x => new FabricDto
             {
@@ -67,16 +92,22 @@ namespace Legno.Persistence.Concreters.Services
             }).ToList();
         }
 
+        // ───────────────────────────────
+        // ✅ Material sil (soft delete + faylı sil)
+        // ───────────────────────────────
         public async Task DeleteFabricServiceAsync(string fabricId)
         {
             if (!Guid.TryParse(fabricId, out var id))
                 throw new GlobalAppException("Yanlış ID formatı.");
 
-            var entity = await _read.GetAsync(x => x.Id == id && !x.IsDeleted, EnableTraking: true)
-                        ?? throw new GlobalAppException("Material tapılmadı.");
+            var entity = await _read.GetAsync(
+                x => x.Id == id && !x.IsDeleted,
+                EnableTraking: true
+            ) ?? throw new GlobalAppException("Material tapılmadı.");
 
+            // 📂 Əgər fayl varsa — sil
             if (!string.IsNullOrWhiteSpace(entity.Image))
-                await _cloudinary.DeleteFileAsync(entity.Image);
+                await _fileService.DeleteFile("fabrics", entity.Image);
 
             entity.IsDeleted = true;
             entity.DeletedDate = DateTime.UtcNow;

@@ -83,7 +83,7 @@ namespace Legno.Persistence.Concreters.Services
                     };
                     try
                     {
-                        await _mailService.SendEmailAsync(mailRequest);
+                        await _mailService.SendFromInfoAsync(mailRequest);
                     }
                     catch
                     {

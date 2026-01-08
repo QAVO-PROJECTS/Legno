@@ -20,8 +20,7 @@ namespace Legno.Domain.Entities
         public int DisplayOrderId { get; set; } = 1;
         public Guid? TeamId { get; set; }
         public Team? Team { get; set; }
-        public Guid CategoryId { get; set; }
-        public Category? Category { get; set; }
+        public string CategoryName { get; set; }
         public List<ProjectImage>? ProjectImages { get; set; }
         public List<ProjectVideo>? ProjectVideos { get; set; }
         public List<ProjectFabric>? ProjectFabrics { get; set; }

@@ -17,14 +17,14 @@ namespace Legno.Persistence.Configurations
             builder.Property(x => x.NameEng).IsRequired().HasMaxLength(150);
             builder.Property(x => x.NameRu).IsRequired().HasMaxLength(150);
 
+            builder.HasMany(x => x.CategorySliderImages)
+       .WithOne(x => x.Category)
+       .HasForeignKey(x => x.CategoryId)
+       .OnDelete(DeleteBehavior.Cascade);
             // Soft-delete global filter
             builder.HasQueryFilter(x => !x.IsDeleted);
 
-            // Relationship: Category (1) -> Projects (many) via shadow FK on Project
-            builder.HasMany(x => x.Projects)
-                   .WithOne()
-                   .HasForeignKey("CategoryId")
-                   .OnDelete(DeleteBehavior.SetNull);
+
         }
     }
 }

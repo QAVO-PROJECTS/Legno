@@ -1,4 +1,5 @@
 ﻿using AutoMapper;
+using Legno.Application.Absrtacts.Services;
 using Legno.Application.Abstracts.Repositories;
 using Legno.Application.Abstracts.Repositories.Categories;
 using Legno.Application.Abstracts.Repositories.Projects;
@@ -7,10 +8,6 @@ using Legno.Application.Dtos.Category;
 using Legno.Application.GlobalExceptionn;
 using Legno.Domain.Entities;
 using Microsoft.EntityFrameworkCore;
-using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Threading.Tasks;
 
 namespace Legno.Persistence.Concreters.Services
 {
@@ -18,94 +15,174 @@ namespace Legno.Persistence.Concreters.Services
     {
         private readonly ICategoryReadRepository _read;
         private readonly ICategoryWriteRepository _write;
-        private readonly IMapper _mapper;
         private readonly IProjectReadRepository _projectRead;
         private readonly IProjectWriteRepository _projectWrite;
-        private readonly CloudinaryService _cloudinaryService;
+        private readonly IFileService _fileService;
+        private readonly IMapper _mapper;
+        private readonly ICategoryImageReadRepository _categoryImageRead;
+        private readonly ICategoryImageWriteRepository _categoryImageWrite;
 
         public CategoryService(
-          ICategoryReadRepository read,
-        ICategoryWriteRepository write,
+            ICategoryReadRepository read,
+            ICategoryWriteRepository write,
             IMapper mapper,
             IProjectReadRepository projectRead,
             IProjectWriteRepository projectWrite,
-            CloudinaryService cloudinaryService)
+            IFileService fileService,
+            ICategoryImageReadRepository categoryImageRead,
+            ICategoryImageWriteRepository categoryImageWrite)
         {
             _read = read;
             _write = write;
             _mapper = mapper;
             _projectRead = projectRead;
             _projectWrite = projectWrite;
-            _cloudinaryService = cloudinaryService;
+            _fileService = fileService;
+            _categoryImageRead = categoryImageRead;
+            _categoryImageWrite = categoryImageWrite;
         }
 
+        // ───────────────────────────────
+        // ✅ Yeni Kateqoriya Əlavə Et
+        // ───────────────────────────────
         public async Task<CategoryDto> AddCategoryAsync(CreateCategoryDto dto)
         {
-            if (dto == null) throw new GlobalAppException("Məlumat göndərilməyib.");
+            if (dto == null)
+                throw new GlobalAppException("Məlumat göndərilməyib.");
 
             var entity = _mapper.Map<Category>(dto);
             entity.Id = Guid.NewGuid();
             entity.IsDeleted = false;
             entity.CreatedDate = DateTime.UtcNow;
             entity.LastUpdatedDate = DateTime.UtcNow;
+
+            // 📂 Şəkil yüklə (əgər varsa)
             if (dto.CategoryImage != null)
             {
-                var storedCard = await _cloudinaryService.UploadFileAsync(dto.CategoryImage);
-                entity.CategoryImage = storedCard;
+                entity.CategoryImage = await _fileService.UploadFile(dto.CategoryImage, "categories");
             }
             else
             {
-                // istəyinə görə “CardImage tələbidir” deyib exception ata bilərsən
-                entity.CategoryImage = entity.CategoryImage ?? string.Empty;
+                // Şəkil vacibdirsə, burada exception ata bilərsən
+                entity.CategoryImage = string.Empty;
             }
-
+            if (dto.CategorySliderImages?.Any() == true)
+            {
+                foreach (var file in dto.CategorySliderImages)
+                {
+                    var fileName = await _fileService.UploadFile(file, "category/images");
+                    await _categoryImageWrite.AddAsync(new CategoryImage
+                    {
+                        Id = Guid.NewGuid(),
+                        CategoryId = entity.Id,
+                        Name = fileName,
+                        CreatedDate = DateTime.UtcNow,
+                        LastUpdatedDate = DateTime.UtcNow
+                    });
+                }
+            }
             await _write.AddAsync(entity);
             await _write.CommitAsync();
 
             return _mapper.Map<CategoryDto>(entity);
         }
 
+        // ───────────────────────────────
+        // ✅ Tək Kateqoriyanı Getir
+        // ───────────────────────────────
         public async Task<CategoryDto?> GetCategoryAsync(string categoryId)
         {
             if (!Guid.TryParse(categoryId, out var id))
                 throw new GlobalAppException("Yanlış ID formatı.");
 
-            var cat = await _read.GetAsync(
+            var category = await _read.GetAsync(
                 c => c.Id == id && !c.IsDeleted,
-                include: null,
-                EnableTraking: false);
+               include: q => q
 
-            if (cat == null) throw new GlobalAppException("Kateqoriya tapılmadı.");
-            return _mapper.Map<CategoryDto>(cat);
-        }
-
-        public async Task<List<CategoryDto>> GetAllCategoriesAsync()
-        {
-            var cats = await _read.GetAllAsync(
-                func: x => !x.IsDeleted,
-                include: null,
-                orderBy: q => q.OrderBy(x => x.CreatedDate),
+                    .Include(p => p.CategorySliderImages.Where(i => !i.IsDeleted)),
                 EnableTraking: false
             );
-            return _mapper.Map<List<CategoryDto>>(cats);
+
+            if (category == null)
+                throw new GlobalAppException("Kateqoriya tapılmadı.");
+
+            return _mapper.Map<CategoryDto>(category);
         }
+
+        // ───────────────────────────────
+        // ✅ Bütün Kateqoriyaları Getir
+        // ───────────────────────────────
+        public async Task<List<CategoryDto>> GetAllCategoriesAsync()
+        {
+            var categories = await _read.GetAllAsync(
+                func: c => !c.IsDeleted,
+                  include: q => q
+                    .Include(p => p.CategorySliderImages.Where(i => !i.IsDeleted)),
+                orderBy: q => q.OrderBy(c => c.CreatedDate),
+                EnableTraking: false
+            );
+
+            return _mapper.Map<List<CategoryDto>>(categories);
+        }
+
+        // ───────────────────────────────
+        // ✅ Kateqoriya Yenilə
+        // ───────────────────────────────
         public async Task<CategoryDto> UpdateCategoryAsync(UpdateCategoryDto dto)
         {
             if (dto == null || string.IsNullOrWhiteSpace(dto.Id))
                 throw new GlobalAppException("Id tələb olunur.");
 
-            var entity = await _read.GetByIdAsync(dto.Id, EnableTraking: true);
+            var entity = await _read.GetAsync(
+                p => p.Id.ToString() == dto.Id && !p.IsDeleted,
+                include: q => q
+
+                 
+                    .Include(p => p.CategorySliderImages.Where(i => !i.IsDeleted)),
+               
+
+                EnableTraking: true) ;
             if (entity == null || entity.IsDeleted)
                 throw new GlobalAppException("Kateqoriya tapılmadı.");
+
+            // 📂 Əgər yeni şəkil yüklənibsə
             if (dto.CategoryImage != null)
             {
                 if (!string.IsNullOrWhiteSpace(entity.CategoryImage))
-                    await _cloudinaryService.DeleteFileAsync(entity.CategoryImage);
+                    await _fileService.DeleteFile("categories", entity.CategoryImage);
 
-                var storedCard = await _cloudinaryService.UploadFileAsync(dto.CategoryImage);
-                entity.CategoryImage = storedCard;
+                entity.CategoryImage = await _fileService.UploadFile(dto.CategoryImage, "categories");
             }
-            // Manual update: null/boş dəyərlər mövcudu örtmür
+            if (dto.DeletedCategorySliderImage?.Any() == true && entity.CategorySliderImages != null)
+            {
+                var set = new HashSet<string>(dto.DeletedCategorySliderImage, StringComparer.OrdinalIgnoreCase);
+                var toDelete = entity.CategorySliderImages.Where(i => !i.IsDeleted && set.Contains(i.Name)).ToList();
+                foreach (var img in toDelete)
+                {
+                    await _fileService.DeleteFile("category/images", img.Name);
+                    img.IsDeleted = true;
+                    img.DeletedDate = DateTime.UtcNow;
+                    img.LastUpdatedDate = DateTime.UtcNow;
+                    await _categoryImageWrite.UpdateAsync(img);
+                }
+            }
+            if (dto.CategorySliderImages?.Any() == true)
+            {
+                foreach (var file in dto.CategorySliderImages)
+                {
+                    var fileName = await _fileService.UploadFile(file, "category/images");
+                    await _categoryImageWrite.AddAsync(new CategoryImage
+                    {
+                        Id = Guid.NewGuid(),
+                        CategoryId = entity.Id,
+                        Name = fileName,
+                        CreatedDate = DateTime.UtcNow,
+                        LastUpdatedDate = DateTime.UtcNow
+                    });
+                }
+            }
+
+            // 🔤 Digər dəyərləri yenilə (yalnız null olmayanları)
             if (!string.IsNullOrWhiteSpace(dto.Name))
                 entity.Name = dto.Name;
 
@@ -123,6 +200,9 @@ namespace Legno.Persistence.Concreters.Services
             return _mapper.Map<CategoryDto>(entity);
         }
 
+        // ───────────────────────────────
+        // ✅ Kateqoriyanı Sil (Soft Delete)
+        // ───────────────────────────────
         public async Task DeleteCategoryAsync(string categoryId)
         {
             if (!Guid.TryParse(categoryId, out var id))
@@ -132,33 +212,21 @@ namespace Legno.Persistence.Concreters.Services
             if (entity == null || entity.IsDeleted)
                 throw new GlobalAppException("Kateqoriya tapılmadı.");
 
-            // (İmkan varsa) eyni DbContext üzərindən tranzaksiya açın
-            // Repozitorinizdə BeginTransaction yoxdursa, DbContext-ə çıxış verən UoW istifadə edin.
-            // Misal üçün:
-            // using var tx = await _write.BeginTransactionAsync();
+            // 📂 Əgər şəkil varsa sil
+            if (!string.IsNullOrEmpty(entity.CategoryImage))
+                await _fileService.DeleteFile("categories", entity.CategoryImage);
 
+            // Kateqoriyanı soft delete et
             entity.IsDeleted = true;
             entity.DeletedDate = DateTime.UtcNow;
+
             await _write.UpdateAsync(entity);
 
-            // Bu kateqoriyadakı bütün layihələri tap və soft delete et
-            var projects = await _projectRead.GetAllAsync(
-                func: p => p.CategoryId == id && !p.IsDeleted,
-                include: null,
-                orderBy: null,
-                EnableTraking: true
-            );
+        
 
-            foreach (var p in projects)
-            {
-                p.IsDeleted = true;
-                p.DeletedDate = DateTime.UtcNow;
-                await _projectWrite.UpdateAsync(p);
-            }
+            // Hər iki repository üçün commit
             await _projectWrite.CommitAsync();
-            // Tək commit (əgər yazı repozitoriləri eyni DbContext-i paylaşırsa)
             await _write.CommitAsync();
-            // await tx.CommitAsync();
         }
     }
 }

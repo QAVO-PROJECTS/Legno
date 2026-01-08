@@ -17,8 +17,8 @@ namespace Legno.Application.Dtos.Project
         public string? SubTitleEng { get; set; }
         public string? SubTitleRu { get; set; }
         public IFormFile CardImage { get; set; }
-        public string TeamId { get; set; }
-        public string CategoryId { get; set; } // REQUIRED
+        public string? TeamId { get; set; }
+        public string? CategoryName { get; set; }
         public List<IFormFile>? ProjectImages { get; set; }
         public List<IFormFile>? ProjectSliderImages { get; set; }
         public List<string>? ProjectVideos { get; set; }

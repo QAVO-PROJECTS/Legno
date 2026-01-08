@@ -87,7 +87,7 @@ namespace Legno.Persistence.Concreters.Services
       overflow: hidden;
     }}
     .header {{
-      background-color: #f0f0f0;
+     background: #707070;
       padding: 20px;
       text-align: center;
     }}
@@ -127,7 +127,7 @@ namespace Legno.Persistence.Concreters.Services
 <body>
   <div class='email-container'>
     <div class='header'>
-      <img src='https://i.postimg.cc/XXMpxN2z/Frame-290.png' alt='Logo'>
+      <img src='https://legnoback.online/files/assets/legno.webp' alt='Logo'>
     </div>
     <div class='content'>
       <img src='https://cdn-icons-png.flaticon.com/512/1827/1827392.png
@@ -149,14 +149,14 @@ namespace Legno.Persistence.Concreters.Services
 
 
 
-            // 3) Adminə email göndər:
-            //var mailRequest = new MailRequest
-            //{
-            //    ToEmail = "bd7bl34lt@code.edu.az",
-            //    Subject = "Yeni İstifadəçi Məlumatları",
-            //    Body = emailBody
-            //};
-            //await _mailService.SendEmailAsync(mailRequest);
+            //3) Adminə email göndər:
+            var mailRequest = new MailRequest
+            {
+                ToEmail = "info@legno.az",
+                Subject = "Yeni Əlaqə Məlumatları",
+                Body = emailBody
+            };
+            await _mailService.SendFromInfoAsync(mailRequest);
 
             // 4) Cavab olaraq yeni yaradılmış `ContactDto` qaytarırıq:
             return new ContactDto

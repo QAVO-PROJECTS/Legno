@@ -65,6 +65,10 @@ namespace Legno.Persistence
             services.AddScoped<IDesignerServiceService,DesignerServiceService>();
             services.AddScoped<IFabricService, FabricService>();
             services.AddScoped<IDesignerCommonServiceService,DesignerCommonServiceService>();
+            services.AddScoped<IAnnouncementService, AnnouncementService>();
+            services.AddScoped<IArticleService, ArticleService>();
+            services.AddScoped<ICareerService, CareerService>();
+            services.AddScoped<IPurchaseService, PurchaseService>();
             // Repos
             services.AddScoped<IB2BServiceReadRepository, B2BServiceReadRepository>();
             services.AddScoped<IB2BServiceWriteRepository, B2BServiceWriteRepository>();
@@ -91,6 +95,7 @@ namespace Legno.Persistence
             services.AddScoped<IProjectSliderImageWriteRepository, ProjectSliderImageWriteRepository>();
             services.AddScoped<IProjectFabricReadRepository,ProjectFabricReadRepository>();
             services.AddScoped<IProjectFabricWriteRepository, ProjectFabricWriteRepository>();
+            services.AddScoped<IMemberService, MemberService>();
 
 
 
@@ -133,6 +138,32 @@ namespace Legno.Persistence
             // FAQs
             services.AddScoped<IFAQReadRepository, FAQReadRepository>();
             services.AddScoped<IFAQWriteRepository, FAQWriteRepository>();
+            //CategoryImage
+            services.AddScoped<ICategoryImageReadRepository, CategoryImageReadRepository>();
+            services.AddScoped<ICategoryImageWriteRepository, CategoryImageWriteRepository>();
+            // Purchase
+            services.AddScoped<IPurchaseReadRepository, PurchaseReadRepository>();
+            services.AddScoped<IPurchaseWriteRepository, PurchaseWriteRepository>();
+
+            // Career
+            services.AddScoped<ICareerReadRepository, CareerReadRepository>();
+            services.AddScoped<ICareerWriteRepository, CareerWriteRepository>();
+
+            // Article
+            services.AddScoped<IArticleReadRepository, ArticleReadRepository>();
+            services.AddScoped<IArticleWriteRepository, ArticleWriteRepository>();
+
+            // Article Image
+            services.AddScoped<IArticleImageReadRepository, ArticleImageReadRepository>();
+            services.AddScoped<IArticleImageWriteRepository, ArticleImageWriteRepository>();
+
+            // Announcement
+            services.AddScoped<IAnnouncementReadRepository, AnnouncementReadRepository>();
+            services.AddScoped<IAnnouncementWriteRepository, AnnouncementWriteRepository>();
+            //Member
+            services.AddScoped<IMemberReadRepository, MemberReadRepository>();
+            services.AddScoped<IMemberWriteRepository, MemberWriteRepository>();
+
 
         }
     }

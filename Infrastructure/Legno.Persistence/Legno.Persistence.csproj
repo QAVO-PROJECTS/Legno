@@ -34,4 +34,8 @@
     <ProjectReference Include="..\Legno.Infrastructure\Legno.Infrastructure.csproj" />
   </ItemGroup>
 
+  <ItemGroup>
+    <Folder Include="Migrations\" />
+  </ItemGroup>
+
 </Project>

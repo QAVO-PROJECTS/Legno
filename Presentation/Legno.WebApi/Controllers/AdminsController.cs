@@ -22,46 +22,46 @@ namespace Legno.WebApi.Controllers
         ///<summary>
         /// Yeni admin qeydiyyatı
         /// </summary>
-        //[HttpPost("register")]
-        //public async Task<IActionResult> Register([FromBody] RegisterDto registerDto)
-        //{
-        //    if (!ModelState.IsValid)
-        //    {
-        //        return BadRequest(new
-        //        {
-        //            StatusCode = StatusCodes.Status400BadRequest,
-        //            Error = "Yanlış daxiletmə məlumatı!"
-        //        });
-        //    }
+        [HttpPost("register")]
+        public async Task<IActionResult> Register([FromBody] RegisterDto registerDto)
+        {
+            if (!ModelState.IsValid)
+            {
+                return BadRequest(new
+                {
+                    StatusCode = StatusCodes.Status400BadRequest,
+                    Error = "Yanlış daxiletmə məlumatı!"
+                });
+            }
 
-        //    try
-        //    {
-        //        await _adminService.RegisterAdminAsync(registerDto);
-        //        return StatusCode(StatusCodes.Status201Created, new
-        //        {
-        //            StatusCode = StatusCodes.Status201Created,
-        //            Message = "İstifadəçi uğurla yaradıldı!"
-        //        });
-        //    }
-        //    catch (GlobalAppException ex)
-        //    {
-        //        _logger.LogError(ex, "Admin qeydiyyatı zamanı xəta baş verdi!");
-        //        return BadRequest(new
-        //        {
-        //            StatusCode = StatusCodes.Status400BadRequest,
-        //            Error = ex.Message
-        //        });
-        //    }
-        //    catch (Exception ex)
-        //    {
-        //        _logger.LogError(ex, "Admin qeydiyyatı zamanı gözlənilməz xəta baş verdi!");
-        //        return StatusCode(StatusCodes.Status500InternalServerError, new
-        //        {
-        //            StatusCode = StatusCodes.Status500InternalServerError,
-        //            Error = "Gözlənilməz xəta baş verdi. Zəhmət olmasa, yenidən cəhd edin!"
-        //        });
-        //    }
-        //}
+            try
+            {
+                await _adminService.RegisterAdminAsync(registerDto);
+                return StatusCode(StatusCodes.Status201Created, new
+                {
+                    StatusCode = StatusCodes.Status201Created,
+                    Message = "İstifadəçi uğurla yaradıldı!"
+                });
+            }
+            catch (GlobalAppException ex)
+            {
+                _logger.LogError(ex, "Admin qeydiyyatı zamanı xəta baş verdi!");
+                return BadRequest(new
+                {
+                    StatusCode = StatusCodes.Status400BadRequest,
+                    Error = ex.Message
+                });
+            }
+            catch (Exception ex)
+            {
+                _logger.LogError(ex, "Admin qeydiyyatı zamanı gözlənilməz xəta baş verdi!");
+                return StatusCode(StatusCodes.Status500InternalServerError, new
+                {
+                    StatusCode = StatusCodes.Status500InternalServerError,
+                    Error = "Gözlənilməz xəta baş verdi. Zəhmət olmasa, yenidən cəhd edin!"
+                });
+            }
+        }
 
         /// <summary>
         /// Admin login

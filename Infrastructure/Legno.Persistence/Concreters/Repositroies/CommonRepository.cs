@@ -31,11 +31,33 @@ namespace Legno.Persistence.Repositories
     public class ProjectFabricWriteRepository(LegnoDbContext c) : WriteRepository<ProjectFabric>(c), IProjectFabricWriteRepository { }
     public class ProjectFabricReadRepository(LegnoDbContext c) : ReadRepository<ProjectFabric>(c), IProjectFabricReadRepository { }
 
-
-
-
-
-
+    public class CategoryImageReadRepository(LegnoDbContext c) : ReadRepository<CategoryImage>(c), ICategoryImageReadRepository { }
+    public class CategoryImageWriteRepository(LegnoDbContext c) : WriteRepository<CategoryImage>(c), ICategoryImageWriteRepository { }
     public class WorkPlanningReadRepository(LegnoDbContext c) : ReadRepository<WorkPlanning>(c), IWorkPlanningReadRepository { }
     public class WorkPlanningWriteRepository(LegnoDbContext c) : WriteRepository<WorkPlanning>(c), IWorkPlanningWriteRepository { }
+    public class PurchaseReadRepository(LegnoDbContext c) : ReadRepository<Purchase>(c), IPurchaseReadRepository { }
+    public class PurchaseWriteRepository(LegnoDbContext c) : WriteRepository<Purchase>(c), IPurchaseWriteRepository { }
+
+
+    public class CareerReadRepository(LegnoDbContext c): ReadRepository<Career>(c), ICareerReadRepository { }
+
+    public class CareerWriteRepository(LegnoDbContext c): WriteRepository<Career>(c), ICareerWriteRepository{ }
+
+
+    public class ArticleReadRepository(LegnoDbContext c): ReadRepository<Article>(c), IArticleReadRepository{ }
+
+    public class ArticleWriteRepository(LegnoDbContext c): WriteRepository<Article>(c), IArticleWriteRepository{ }
+
+
+    public class ArticleImageReadRepository(LegnoDbContext c): ReadRepository<ArticleImage>(c), IArticleImageReadRepository{ }
+
+    public class ArticleImageWriteRepository(LegnoDbContext c): WriteRepository<ArticleImage>(c), IArticleImageWriteRepository{ }
+
+
+    public class AnnouncementReadRepository(LegnoDbContext c): ReadRepository<Announcement>(c), IAnnouncementReadRepository{ }
+
+    public class AnnouncementWriteRepository(LegnoDbContext c): WriteRepository<Announcement>(c), IAnnouncementWriteRepository{ }
+    public class MemberReadRepository(LegnoDbContext c): ReadRepository<Member>(c), IMemberReadRepository{ }
+    public class MemberWriteRepository(LegnoDbContext c) : WriteRepository<Member>(c), IMemberWriteRepository { }
+
 }

@@ -21,8 +21,8 @@ namespace Legno.Domain.Entities
         public string PositionEng { get; set; }
         public string PositionRu { get; set; }
         public string CardImage { get; set; }
-        public string InstagramLink { get; set; }
-        public string LinkedInLink { get; set; }
+        public string? InstagramLink { get; set; }
+        public string? LinkedInLink { get; set; }
         public int DisplayOrderId { get; set; } = 1;
         public List<Project>? Projects { get; set; }
 

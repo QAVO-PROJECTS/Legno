@@ -16,6 +16,379 @@
     "ReturnTypes": []
   },
   {
+    "ContainingType": "Legno.WebApi.Controllers.AnnouncementsController",
+    "Method": "Create",
+    "RelativePath": "api/Announcements/create",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "Title",
+        "Type": "System.String",
+        "IsRequired": false
+      },
+      {
+        "Name": "TitleEng",
+        "Type": "System.String",
+        "IsRequired": false
+      },
+      {
+        "Name": "TitleRu",
+        "Type": "System.String",
+        "IsRequired": false
+      },
+      {
+        "Name": "AuthorName",
+        "Type": "System.String",
+        "IsRequired": false
+      },
+      {
+        "Name": "AuthorNameEng",
+        "Type": "System.String",
+        "IsRequired": false
+      },
+      {
+        "Name": "AuthorNameRu",
+        "Type": "System.String",
+        "IsRequired": false
+      },
+      {
+        "Name": "SubTitle",
+        "Type": "System.String",
+        "IsRequired": false
+      },
+      {
+        "Name": "SubTitleEng",
+        "Type": "System.String",
+        "IsRequired": false
+      },
+      {
+        "Name": "SubTitleRu",
+        "Type": "System.String",
+        "IsRequired": false
+      },
+      {
+        "Name": "AuthorImage",
+        "Type": "Microsoft.AspNetCore.Http.IFormFile",
+        "IsRequired": false
+      },
+      {
+        "Name": "CardImage",
+        "Type": "Microsoft.AspNetCore.Http.IFormFile",
+        "IsRequired": false
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "Legno.WebApi.Controllers.AnnouncementsController",
+    "Method": "Delete",
+    "RelativePath": "api/Announcements/delete/{id}",
+    "HttpMethod": "DELETE",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "id",
+        "Type": "System.String",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "Legno.WebApi.Controllers.AnnouncementsController",
+    "Method": "GetAll",
+    "RelativePath": "api/Announcements/get-all",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "Legno.WebApi.Controllers.AnnouncementsController",
+    "Method": "Get",
+    "RelativePath": "api/Announcements/get/{id}",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "id",
+        "Type": "System.String",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "Legno.WebApi.Controllers.AnnouncementsController",
+    "Method": "Update",
+    "RelativePath": "api/Announcements/update",
+    "HttpMethod": "PUT",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "Id",
+        "Type": "System.String",
+        "IsRequired": false
+      },
+      {
+        "Name": "Title",
+        "Type": "System.String",
+        "IsRequired": false
+      },
+      {
+        "Name": "TitleEng",
+        "Type": "System.String",
+        "IsRequired": false
+      },
+      {
+        "Name": "TitleRu",
+        "Type": "System.String",
+        "IsRequired": false
+      },
+      {
+        "Name": "AuthorNameEng",
+        "Type": "System.String",
+        "IsRequired": false
+      },
+      {
+        "Name": "AuthorNameRu",
+        "Type": "System.String",
+        "IsRequired": false
+      },
+      {
+        "Name": "SubTitle",
+        "Type": "System.String",
+        "IsRequired": false
+      },
+      {
+        "Name": "SubTitleEng",
+        "Type": "System.String",
+        "IsRequired": false
+      },
+      {
+        "Name": "SubTitleRu",
+        "Type": "System.String",
+        "IsRequired": false
+      },
+      {
+        "Name": "AuthorName",
+        "Type": "System.String",
+        "IsRequired": false
+      },
+      {
+        "Name": "AuthorImage",
+        "Type": "Microsoft.AspNetCore.Http.IFormFile",
+        "IsRequired": false
+      },
+      {
+        "Name": "CardImage",
+        "Type": "Microsoft.AspNetCore.Http.IFormFile",
+        "IsRequired": false
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "Legno.WebApi.Controllers.ArticlesController",
+    "Method": "Create",
+    "RelativePath": "api/Articles/create",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "Title",
+        "Type": "System.String",
+        "IsRequired": false
+      },
+      {
+        "Name": "TitleEng",
+        "Type": "System.String",
+        "IsRequired": false
+      },
+      {
+        "Name": "TitleRu",
+        "Type": "System.String",
+        "IsRequired": false
+      },
+      {
+        "Name": "SubTitle",
+        "Type": "System.String",
+        "IsRequired": false
+      },
+      {
+        "Name": "SubTitleEng",
+        "Type": "System.String",
+        "IsRequired": false
+      },
+      {
+        "Name": "SubTitleRu",
+        "Type": "System.String",
+        "IsRequired": false
+      },
+      {
+        "Name": "AuthorName",
+        "Type": "System.String",
+        "IsRequired": false
+      },
+      {
+        "Name": "AuthorNameEng",
+        "Type": "System.String",
+        "IsRequired": false
+      },
+      {
+        "Name": "AuthorNameRu",
+        "Type": "System.String",
+        "IsRequired": false
+      },
+      {
+        "Name": "AuthorImage",
+        "Type": "Microsoft.AspNetCore.Http.IFormFile",
+        "IsRequired": false
+      },
+      {
+        "Name": "CardImage",
+        "Type": "Microsoft.AspNetCore.Http.IFormFile",
+        "IsRequired": false
+      },
+      {
+        "Name": "Images",
+        "Type": "System.Collections.Generic.List\u00601[[Microsoft.AspNetCore.Http.IFormFile, Microsoft.AspNetCore.Http.Features, Version=8.0.0.0, Culture=neutral, PublicKeyToken=adb9793829ddae60]]",
+        "IsRequired": false
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "Legno.WebApi.Controllers.ArticlesController",
+    "Method": "Delete",
+    "RelativePath": "api/Articles/delete/{id}",
+    "HttpMethod": "DELETE",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "id",
+        "Type": "System.String",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "Legno.WebApi.Controllers.ArticlesController",
+    "Method": "GetAll",
+    "RelativePath": "api/Articles/get-all",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "Legno.WebApi.Controllers.ArticlesController",
+    "Method": "Get",
+    "RelativePath": "api/Articles/get/{id}",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "id",
+        "Type": "System.String",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "Legno.WebApi.Controllers.ArticlesController",
+    "Method": "Update",
+    "RelativePath": "api/Articles/update",
+    "HttpMethod": "PUT",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "Id",
+        "Type": "System.String",
+        "IsRequired": false
+      },
+      {
+        "Name": "Title",
+        "Type": "System.String",
+        "IsRequired": false
+      },
+      {
+        "Name": "TitleEng",
+        "Type": "System.String",
+        "IsRequired": false
+      },
+      {
+        "Name": "TitleRu",
+        "Type": "System.String",
+        "IsRequired": false
+      },
+      {
+        "Name": "AuthorName",
+        "Type": "System.String",
+        "IsRequired": false
+      },
+      {
+        "Name": "AuthorNameEng",
+        "Type": "System.String",
+        "IsRequired": false
+      },
+      {
+        "Name": "AuthorNameRu",
+        "Type": "System.String",
+        "IsRequired": false
+      },
+      {
+        "Name": "SubTitle",
+        "Type": "System.String",
+        "IsRequired": false
+      },
+      {
+        "Name": "SubTitleEng",
+        "Type": "System.String",
+        "IsRequired": false
+      },
+      {
+        "Name": "SubTitleRu",
+        "Type": "System.String",
+        "IsRequired": false
+      },
+      {
+        "Name": "AuthorImage",
+        "Type": "Microsoft.AspNetCore.Http.IFormFile",
+        "IsRequired": false
+      },
+      {
+        "Name": "CardImage",
+        "Type": "Microsoft.AspNetCore.Http.IFormFile",
+        "IsRequired": false
+      },
+      {
+        "Name": "Images",
+        "Type": "System.Collections.Generic.List\u00601[[Microsoft.AspNetCore.Http.IFormFile, Microsoft.AspNetCore.Http.Features, Version=8.0.0.0, Culture=neutral, PublicKeyToken=adb9793829ddae60]]",
+        "IsRequired": false
+      },
+      {
+        "Name": "DeleteImageIds",
+        "Type": "System.Collections.Generic.List\u00601[[System.String, System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]",
+        "IsRequired": false
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
     "ContainingType": "Legno.WebApi.Controllers.B2BServicesController",
     "Method": "Create",
     "RelativePath": "api/B2BServices/create",
@@ -388,6 +761,145 @@
     "ReturnTypes": []
   },
   {
+    "ContainingType": "Legno.WebApi.Controllers.CareersController",
+    "Method": "Create",
+    "RelativePath": "api/Careers/create",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "Name",
+        "Type": "System.String",
+        "IsRequired": false
+      },
+      {
+        "Name": "Surname",
+        "Type": "System.String",
+        "IsRequired": false
+      },
+      {
+        "Name": "BirthDate",
+        "Type": "System.String",
+        "IsRequired": false
+      },
+      {
+        "Name": "WorkExperience",
+        "Type": "System.String",
+        "IsRequired": false
+      },
+      {
+        "Name": "Email",
+        "Type": "System.String",
+        "IsRequired": false
+      },
+      {
+        "Name": "PhoneNumber",
+        "Type": "System.String",
+        "IsRequired": false
+      },
+      {
+        "Name": "FileName",
+        "Type": "Microsoft.AspNetCore.Http.IFormFile",
+        "IsRequired": false
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "Legno.WebApi.Controllers.CareersController",
+    "Method": "Delete",
+    "RelativePath": "api/Careers/delete/{id}",
+    "HttpMethod": "DELETE",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "id",
+        "Type": "System.String",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "Legno.WebApi.Controllers.CareersController",
+    "Method": "GetAll",
+    "RelativePath": "api/Careers/get-all",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "Legno.WebApi.Controllers.CareersController",
+    "Method": "Get",
+    "RelativePath": "api/Careers/get/{id}",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "id",
+        "Type": "System.String",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "Legno.WebApi.Controllers.CareersController",
+    "Method": "Update",
+    "RelativePath": "api/Careers/update",
+    "HttpMethod": "PUT",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "Id",
+        "Type": "System.String",
+        "IsRequired": false
+      },
+      {
+        "Name": "Name",
+        "Type": "System.String",
+        "IsRequired": false
+      },
+      {
+        "Name": "Surname",
+        "Type": "System.String",
+        "IsRequired": false
+      },
+      {
+        "Name": "BirthDate",
+        "Type": "System.String",
+        "IsRequired": false
+      },
+      {
+        "Name": "WorkExperience",
+        "Type": "System.String",
+        "IsRequired": false
+      },
+      {
+        "Name": "Email",
+        "Type": "System.String",
+        "IsRequired": false
+      },
+      {
+        "Name": "PhoneNumber",
+        "Type": "System.String",
+        "IsRequired": false
+      },
+      {
+        "Name": "FileName",
+        "Type": "Microsoft.AspNetCore.Http.IFormFile",
+        "IsRequired": false
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
     "ContainingType": "Legno.Api.Controllers.CategoriesController",
     "Method": "Create",
     "RelativePath": "api/Categories/create",
@@ -413,6 +925,11 @@
       {
         "Name": "CategoryImage",
         "Type": "Microsoft.AspNetCore.Http.IFormFile",
+        "IsRequired": false
+      },
+      {
+        "Name": "CategorySliderImages",
+        "Type": "System.Collections.Generic.List\u00601[[Microsoft.AspNetCore.Http.IFormFile, Microsoft.AspNetCore.Http.Features, Version=8.0.0.0, Culture=neutral, PublicKeyToken=adb9793829ddae60]]",
         "IsRequired": false
       }
     ],
@@ -491,6 +1008,16 @@
       {
         "Name": "CategoryImage",
         "Type": "Microsoft.AspNetCore.Http.IFormFile",
+        "IsRequired": false
+      },
+      {
+        "Name": "CategorySliderImages",
+        "Type": "System.Collections.Generic.List\u00601[[Microsoft.AspNetCore.Http.IFormFile, Microsoft.AspNetCore.Http.Features, Version=8.0.0.0, Culture=neutral, PublicKeyToken=adb9793829ddae60]]",
+        "IsRequired": false
+      },
+      {
+        "Name": "DeletedCategorySliderImage",
+        "Type": "System.Collections.Generic.List\u00601[[System.String, System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]",
         "IsRequired": false
       }
     ],
@@ -1067,6 +1594,115 @@
     "ReturnTypes": []
   },
   {
+    "ContainingType": "Legno.WebApi.Controllers.MembersController",
+    "Method": "Create",
+    "RelativePath": "api/Members/create",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "Image",
+        "Type": "Microsoft.AspNetCore.Http.IFormFile",
+        "IsRequired": false
+      },
+      {
+        "Name": "Title",
+        "Type": "System.String",
+        "IsRequired": false
+      },
+      {
+        "Name": "TitleEng",
+        "Type": "System.String",
+        "IsRequired": false
+      },
+      {
+        "Name": "TitleRu",
+        "Type": "System.String",
+        "IsRequired": false
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "Legno.WebApi.Controllers.MembersController",
+    "Method": "Delete",
+    "RelativePath": "api/Members/delete/{id}",
+    "HttpMethod": "DELETE",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "id",
+        "Type": "System.String",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "Legno.WebApi.Controllers.MembersController",
+    "Method": "GetAll",
+    "RelativePath": "api/Members/get-all",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "Legno.WebApi.Controllers.MembersController",
+    "Method": "Get",
+    "RelativePath": "api/Members/get/{id}",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "id",
+        "Type": "System.String",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "Legno.WebApi.Controllers.MembersController",
+    "Method": "Update",
+    "RelativePath": "api/Members/update",
+    "HttpMethod": "PUT",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "Id",
+        "Type": "System.String",
+        "IsRequired": false
+      },
+      {
+        "Name": "Image",
+        "Type": "Microsoft.AspNetCore.Http.IFormFile",
+        "IsRequired": false
+      },
+      {
+        "Name": "Title",
+        "Type": "System.String",
+        "IsRequired": false
+      },
+      {
+        "Name": "TitleEng",
+        "Type": "System.String",
+        "IsRequired": false
+      },
+      {
+        "Name": "TitleRu",
+        "Type": "System.String",
+        "IsRequired": false
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
     "ContainingType": "Legno.WebApi.Controllers.PartnersController",
     "Method": "Create",
     "RelativePath": "api/Partners/create",
@@ -1240,7 +1876,7 @@
         "IsRequired": false
       },
       {
-        "Name": "CategoryId",
+        "Name": "CategoryName",
         "Type": "System.String",
         "IsRequired": false
       },
@@ -1399,7 +2035,7 @@
         "IsRequired": false
       },
       {
-        "Name": "CategoryId",
+        "Name": "CategoryName",
         "Type": "System.String",
         "IsRequired": false
       },
@@ -1421,6 +2057,135 @@
       {
         "Name": "FabricIds",
         "Type": "System.Collections.Generic.List\u00601[[System.String, System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]",
+        "IsRequired": false
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "Legno.WebApi.Controllers.PurchasesController",
+    "Method": "Create",
+    "RelativePath": "api/Purchases/create",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "CompanyName",
+        "Type": "System.String",
+        "IsRequired": false
+      },
+      {
+        "Name": "Subtitle",
+        "Type": "System.String",
+        "IsRequired": false
+      },
+      {
+        "Name": "ProductOrService",
+        "Type": "System.String",
+        "IsRequired": false
+      },
+      {
+        "Name": "Email",
+        "Type": "System.String",
+        "IsRequired": false
+      },
+      {
+        "Name": "PhoneNumber",
+        "Type": "System.String",
+        "IsRequired": false
+      },
+      {
+        "Name": "FileName",
+        "Type": "Microsoft.AspNetCore.Http.IFormFile",
+        "IsRequired": false
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "Legno.WebApi.Controllers.PurchasesController",
+    "Method": "Delete",
+    "RelativePath": "api/Purchases/delete/{id}",
+    "HttpMethod": "DELETE",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "id",
+        "Type": "System.String",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "Legno.WebApi.Controllers.PurchasesController",
+    "Method": "GetAll",
+    "RelativePath": "api/Purchases/get-all",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "Legno.WebApi.Controllers.PurchasesController",
+    "Method": "Get",
+    "RelativePath": "api/Purchases/get/{id}",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "id",
+        "Type": "System.String",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "Legno.WebApi.Controllers.PurchasesController",
+    "Method": "Update",
+    "RelativePath": "api/Purchases/update",
+    "HttpMethod": "PUT",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "Id",
+        "Type": "System.String",
+        "IsRequired": false
+      },
+      {
+        "Name": "CompanyName",
+        "Type": "System.String",
+        "IsRequired": false
+      },
+      {
+        "Name": "Subtitle",
+        "Type": "System.String",
+        "IsRequired": false
+      },
+      {
+        "Name": "ProductOrService",
+        "Type": "System.String",
+        "IsRequired": false
+      },
+      {
+        "Name": "Email",
+        "Type": "System.String",
+        "IsRequired": false
+      },
+      {
+        "Name": "PhoneNumber",
+        "Type": "System.String",
+        "IsRequired": false
+      },
+      {
+        "Name": "FileName",
+        "Type": "Microsoft.AspNetCore.Http.IFormFile",
         "IsRequired": false
       }
     ],

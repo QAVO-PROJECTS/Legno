@@ -3,176 +3,164 @@
   "WorkspaceRootPath": "C:\\Users\\gulco\\source\\repos\\Legno\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{9962C3C2-A1D6-4198-B145-87BE4A838676}|Core\\Legno.Application\\Legno.Application.csproj|c:\\users\\gulco\\source\\repos\\legno\\core\\legno.application\\profiles\\projectprofile.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{9962C3C2-A1D6-4198-B145-87BE4A838676}|Core\\Legno.Application\\Legno.Application.csproj|solutionrelative:core\\legno.application\\profiles\\projectprofile.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{E6DAFAB3-406B-4CC3-8044-A1CF14CA1EED}|Presentation\\Legno.WebApi\\Legno.WebApi.csproj|c:\\users\\gulco\\source\\repos\\legno\\presentation\\legno.webapi\\controllers\\adminscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{E6DAFAB3-406B-4CC3-8044-A1CF14CA1EED}|Presentation\\Legno.WebApi\\Legno.WebApi.csproj|solutionrelative:presentation\\legno.webapi\\controllers\\adminscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{7BB3B0C6-50E0-421C-B56E-908C6CAC7567}|Infrastructure\\Legno.Persistence\\Legno.Persistence.csproj|c:\\users\\gulco\\source\\repos\\legno\\infrastructure\\legno.persistence\\concreters\\services\\projectservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{7BB3B0C6-50E0-421C-B56E-908C6CAC7567}|Infrastructure\\Legno.Persistence\\Legno.Persistence.csproj|solutionrelative:infrastructure\\legno.persistence\\concreters\\services\\projectservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{7BB3B0C6-50E0-421C-B56E-908C6CAC7567}|Infrastructure\\Legno.Persistence\\Legno.Persistence.csproj|c:\\users\\gulco\\source\\repos\\legno\\infrastructure\\legno.persistence\\concreters\\services\\memberservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{7BB3B0C6-50E0-421C-B56E-908C6CAC7567}|Infrastructure\\Legno.Persistence\\Legno.Persistence.csproj|solutionrelative:infrastructure\\legno.persistence\\concreters\\services\\memberservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{9962C3C2-A1D6-4198-B145-87BE4A838676}|Core\\Legno.Application\\Legno.Application.csproj|c:\\users\\gulco\\source\\repos\\legno\\core\\legno.application\\dtos\\project\\updateprojectdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{9962C3C2-A1D6-4198-B145-87BE4A838676}|Core\\Legno.Application\\Legno.Application.csproj|solutionrelative:core\\legno.application\\dtos\\project\\updateprojectdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{9962C3C2-A1D6-4198-B145-87BE4A838676}|Core\\Legno.Application\\Legno.Application.csproj|c:\\users\\gulco\\source\\repos\\legno\\core\\legno.application\\dtos\\member\\updatememberdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{9962C3C2-A1D6-4198-B145-87BE4A838676}|Core\\Legno.Application\\Legno.Application.csproj|solutionrelative:core\\legno.application\\dtos\\member\\updatememberdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{7BB3B0C6-50E0-421C-B56E-908C6CAC7567}|Infrastructure\\Legno.Persistence\\Legno.Persistence.csproj|c:\\users\\gulco\\source\\repos\\legno\\infrastructure\\legno.persistence\\serviceregistration.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{7BB3B0C6-50E0-421C-B56E-908C6CAC7567}|Infrastructure\\Legno.Persistence\\Legno.Persistence.csproj|solutionrelative:infrastructure\\legno.persistence\\serviceregistration.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{E6DAFAB3-406B-4CC3-8044-A1CF14CA1EED}|Presentation\\Legno.WebApi\\Legno.WebApi.csproj|c:\\users\\gulco\\source\\repos\\legno\\presentation\\legno.webapi\\controllers\\adminscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{E6DAFAB3-406B-4CC3-8044-A1CF14CA1EED}|Presentation\\Legno.WebApi\\Legno.WebApi.csproj|solutionrelative:presentation\\legno.webapi\\controllers\\adminscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{9962C3C2-A1D6-4198-B145-87BE4A838676}|Core\\Legno.Application\\Legno.Application.csproj|c:\\users\\gulco\\source\\repos\\legno\\core\\legno.application\\abstracts\\services\\iadminservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{9962C3C2-A1D6-4198-B145-87BE4A838676}|Core\\Legno.Application\\Legno.Application.csproj|solutionrelative:core\\legno.application\\abstracts\\services\\iadminservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{E6DAFAB3-406B-4CC3-8044-A1CF14CA1EED}|Presentation\\Legno.WebApi\\Legno.WebApi.csproj|c:\\users\\gulco\\source\\repos\\legno\\presentation\\legno.webapi\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{E6DAFAB3-406B-4CC3-8044-A1CF14CA1EED}|Presentation\\Legno.WebApi\\Legno.WebApi.csproj|solutionrelative:presentation\\legno.webapi\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
       "AbsoluteMoniker": "D:0:0:{E6DAFAB3-406B-4CC3-8044-A1CF14CA1EED}|Presentation\\Legno.WebApi\\Legno.WebApi.csproj|c:\\users\\gulco\\source\\repos\\legno\\presentation\\legno.webapi\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
       "RelativeMoniker": "D:0:0:{E6DAFAB3-406B-4CC3-8044-A1CF14CA1EED}|Presentation\\Legno.WebApi\\Legno.WebApi.csproj|solutionrelative:presentation\\legno.webapi\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{7BB3B0C6-50E0-421C-B56E-908C6CAC7567}|Infrastructure\\Legno.Persistence\\Legno.Persistence.csproj|c:\\users\\gulco\\source\\repos\\legno\\infrastructure\\legno.persistence\\context\\legnodbcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{7BB3B0C6-50E0-421C-B56E-908C6CAC7567}|Infrastructure\\Legno.Persistence\\Legno.Persistence.csproj|solutionrelative:infrastructure\\legno.persistence\\context\\legnodbcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{C95201BA-3085-49DB-9ABE-AF417C6733E8}|Core\\Legno.Domain\\Legno.Domain.csproj|c:\\users\\gulco\\source\\repos\\legno\\core\\legno.domain\\entities\\faq.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{C95201BA-3085-49DB-9ABE-AF417C6733E8}|Core\\Legno.Domain\\Legno.Domain.csproj|solutionrelative:core\\legno.domain\\entities\\faq.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{7BB3B0C6-50E0-421C-B56E-908C6CAC7567}|Infrastructure\\Legno.Persistence\\Legno.Persistence.csproj|c:\\users\\gulco\\source\\repos\\legno\\infrastructure\\legno.persistence\\migrations\\20250912113623_editsubscriber.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{7BB3B0C6-50E0-421C-B56E-908C6CAC7567}|Infrastructure\\Legno.Persistence\\Legno.Persistence.csproj|solutionrelative:infrastructure\\legno.persistence\\migrations\\20250912113623_editsubscriber.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{7BB3B0C6-50E0-421C-B56E-908C6CAC7567}|Infrastructure\\Legno.Persistence\\Legno.Persistence.csproj|c:\\users\\gulco\\source\\repos\\legno\\infrastructure\\legno.persistence\\configurations\\subscriberconfiguration.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{7BB3B0C6-50E0-421C-B56E-908C6CAC7567}|Infrastructure\\Legno.Persistence\\Legno.Persistence.csproj|solutionrelative:infrastructure\\legno.persistence\\configurations\\subscriberconfiguration.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{7BB3B0C6-50E0-421C-B56E-908C6CAC7567}|Infrastructure\\Legno.Persistence\\Legno.Persistence.csproj|c:\\users\\gulco\\source\\repos\\legno\\infrastructure\\legno.persistence\\concreters\\services\\subscriberservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{7BB3B0C6-50E0-421C-B56E-908C6CAC7567}|Infrastructure\\Legno.Persistence\\Legno.Persistence.csproj|solutionrelative:infrastructure\\legno.persistence\\concreters\\services\\subscriberservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{E6DAFAB3-406B-4CC3-8044-A1CF14CA1EED}|Presentation\\Legno.WebApi\\Legno.WebApi.csproj|c:\\users\\gulco\\source\\repos\\legno\\presentation\\legno.webapi\\controllers\\subscriberscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{E6DAFAB3-406B-4CC3-8044-A1CF14CA1EED}|Presentation\\Legno.WebApi\\Legno.WebApi.csproj|solutionrelative:presentation\\legno.webapi\\controllers\\subscriberscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{E6DAFAB3-406B-4CC3-8044-A1CF14CA1EED}|Presentation\\Legno.WebApi\\Legno.WebApi.csproj|c:\\users\\gulco\\source\\repos\\legno\\presentation\\legno.webapi\\controllers\\memberscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{E6DAFAB3-406B-4CC3-8044-A1CF14CA1EED}|Presentation\\Legno.WebApi\\Legno.WebApi.csproj|solutionrelative:presentation\\legno.webapi\\controllers\\memberscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{7BB3B0C6-50E0-421C-B56E-908C6CAC7567}|Infrastructure\\Legno.Persistence\\Legno.Persistence.csproj|c:\\users\\gulco\\source\\repos\\legno\\infrastructure\\legno.persistence\\concreters\\repositroies\\commonrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{7BB3B0C6-50E0-421C-B56E-908C6CAC7567}|Infrastructure\\Legno.Persistence\\Legno.Persistence.csproj|solutionrelative:infrastructure\\legno.persistence\\concreters\\repositroies\\commonrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{9962C3C2-A1D6-4198-B145-87BE4A838676}|Core\\Legno.Application\\Legno.Application.csproj|c:\\users\\gulco\\source\\repos\\legno\\core\\legno.application\\dtos\\fabric\\fabricdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{9962C3C2-A1D6-4198-B145-87BE4A838676}|Core\\Legno.Application\\Legno.Application.csproj|solutionrelative:core\\legno.application\\dtos\\fabric\\fabricdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{9962C3C2-A1D6-4198-B145-87BE4A838676}|Core\\Legno.Application\\Legno.Application.csproj|c:\\users\\gulco\\source\\repos\\legno\\core\\legno.application\\abstracts\\services\\iarticleservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{9962C3C2-A1D6-4198-B145-87BE4A838676}|Core\\Legno.Application\\Legno.Application.csproj|solutionrelative:core\\legno.application\\abstracts\\services\\iarticleservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{9962C3C2-A1D6-4198-B145-87BE4A838676}|Core\\Legno.Application\\Legno.Application.csproj|c:\\users\\gulco\\source\\repos\\legno\\core\\legno.application\\dtos\\project\\projectdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{9962C3C2-A1D6-4198-B145-87BE4A838676}|Core\\Legno.Application\\Legno.Application.csproj|solutionrelative:core\\legno.application\\dtos\\project\\projectdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{9962C3C2-A1D6-4198-B145-87BE4A838676}|Core\\Legno.Application\\Legno.Application.csproj|c:\\users\\gulco\\source\\repos\\legno\\core\\legno.application\\profiles\\memberprofile.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{9962C3C2-A1D6-4198-B145-87BE4A838676}|Core\\Legno.Application\\Legno.Application.csproj|solutionrelative:core\\legno.application\\profiles\\memberprofile.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{9962C3C2-A1D6-4198-B145-87BE4A838676}|Core\\Legno.Application\\Legno.Application.csproj|c:\\users\\gulco\\source\\repos\\legno\\core\\legno.application\\dtos\\project\\createprojectdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{9962C3C2-A1D6-4198-B145-87BE4A838676}|Core\\Legno.Application\\Legno.Application.csproj|solutionrelative:core\\legno.application\\dtos\\project\\createprojectdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{E6DAFAB3-406B-4CC3-8044-A1CF14CA1EED}|Presentation\\Legno.WebApi\\Legno.WebApi.csproj|c:\\users\\gulco\\source\\repos\\legno\\presentation\\legno.webapi\\controllers\\articlescontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{E6DAFAB3-406B-4CC3-8044-A1CF14CA1EED}|Presentation\\Legno.WebApi\\Legno.WebApi.csproj|solutionrelative:presentation\\legno.webapi\\controllers\\articlescontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{9962C3C2-A1D6-4198-B145-87BE4A838676}|Core\\Legno.Application\\Legno.Application.csproj|c:\\users\\gulco\\source\\repos\\legno\\core\\legno.application\\abstracts\\services\\imemberservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{9962C3C2-A1D6-4198-B145-87BE4A838676}|Core\\Legno.Application\\Legno.Application.csproj|solutionrelative:core\\legno.application\\abstracts\\services\\imemberservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{9962C3C2-A1D6-4198-B145-87BE4A838676}|Core\\Legno.Application\\Legno.Application.csproj|c:\\users\\gulco\\source\\repos\\legno\\core\\legno.application\\dtos\\member\\memberdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{9962C3C2-A1D6-4198-B145-87BE4A838676}|Core\\Legno.Application\\Legno.Application.csproj|solutionrelative:core\\legno.application\\dtos\\member\\memberdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{9962C3C2-A1D6-4198-B145-87BE4A838676}|Core\\Legno.Application\\Legno.Application.csproj|c:\\users\\gulco\\source\\repos\\legno\\core\\legno.application\\dtos\\member\\creatememberdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{9962C3C2-A1D6-4198-B145-87BE4A838676}|Core\\Legno.Application\\Legno.Application.csproj|solutionrelative:core\\legno.application\\dtos\\member\\creatememberdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{C95201BA-3085-49DB-9ABE-AF417C6733E8}|Core\\Legno.Domain\\Legno.Domain.csproj|c:\\users\\gulco\\source\\repos\\legno\\core\\legno.domain\\entities\\member.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{C95201BA-3085-49DB-9ABE-AF417C6733E8}|Core\\Legno.Domain\\Legno.Domain.csproj|solutionrelative:core\\legno.domain\\entities\\member.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{9962C3C2-A1D6-4198-B145-87BE4A838676}|Core\\Legno.Application\\Legno.Application.csproj|c:\\users\\gulco\\source\\repos\\legno\\core\\legno.application\\abstracts\\repositories\\icommonrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{9962C3C2-A1D6-4198-B145-87BE4A838676}|Core\\Legno.Application\\Legno.Application.csproj|solutionrelative:core\\legno.application\\abstracts\\repositories\\icommonrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{9962C3C2-A1D6-4198-B145-87BE4A838676}|Core\\Legno.Application\\Legno.Application.csproj|c:\\users\\gulco\\source\\repos\\legno\\core\\legno.application\\dtos\\project\\projectreorderdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{9962C3C2-A1D6-4198-B145-87BE4A838676}|Core\\Legno.Application\\Legno.Application.csproj|solutionrelative:core\\legno.application\\dtos\\project\\projectreorderdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{7BB3B0C6-50E0-421C-B56E-908C6CAC7567}|Infrastructure\\Legno.Persistence\\Legno.Persistence.csproj|c:\\users\\gulco\\source\\repos\\legno\\infrastructure\\legno.persistence\\context\\legnodbcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{7BB3B0C6-50E0-421C-B56E-908C6CAC7567}|Infrastructure\\Legno.Persistence\\Legno.Persistence.csproj|solutionrelative:infrastructure\\legno.persistence\\context\\legnodbcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{7BB3B0C6-50E0-421C-B56E-908C6CAC7567}|Infrastructure\\Legno.Persistence\\Legno.Persistence.csproj|c:\\users\\gulco\\source\\repos\\legno\\infrastructure\\legno.persistence\\configurations\\projectsliderimageconfiguration.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{7BB3B0C6-50E0-421C-B56E-908C6CAC7567}|Infrastructure\\Legno.Persistence\\Legno.Persistence.csproj|solutionrelative:infrastructure\\legno.persistence\\configurations\\projectsliderimageconfiguration.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{7BB3B0C6-50E0-421C-B56E-908C6CAC7567}|Infrastructure\\Legno.Persistence\\Legno.Persistence.csproj|c:\\users\\gulco\\source\\repos\\legno\\infrastructure\\legno.persistence\\concreters\\services\\articleservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{7BB3B0C6-50E0-421C-B56E-908C6CAC7567}|Infrastructure\\Legno.Persistence\\Legno.Persistence.csproj|solutionrelative:infrastructure\\legno.persistence\\concreters\\services\\articleservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{7BB3B0C6-50E0-421C-B56E-908C6CAC7567}|Infrastructure\\Legno.Persistence\\Legno.Persistence.csproj|c:\\users\\gulco\\source\\repos\\legno\\infrastructure\\legno.persistence\\configurations\\projectfabricconfiguration.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{7BB3B0C6-50E0-421C-B56E-908C6CAC7567}|Infrastructure\\Legno.Persistence\\Legno.Persistence.csproj|solutionrelative:infrastructure\\legno.persistence\\configurations\\projectfabricconfiguration.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{7BB3B0C6-50E0-421C-B56E-908C6CAC7567}|Infrastructure\\Legno.Persistence\\Legno.Persistence.csproj|c:\\users\\gulco\\source\\repos\\legno\\infrastructure\\legno.persistence\\concreters\\services\\projectservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{7BB3B0C6-50E0-421C-B56E-908C6CAC7567}|Infrastructure\\Legno.Persistence\\Legno.Persistence.csproj|solutionrelative:infrastructure\\legno.persistence\\concreters\\services\\projectservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{C95201BA-3085-49DB-9ABE-AF417C6733E8}|Core\\Legno.Domain\\Legno.Domain.csproj|c:\\users\\gulco\\source\\repos\\legno\\core\\legno.domain\\entities\\projectfabric.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{C95201BA-3085-49DB-9ABE-AF417C6733E8}|Core\\Legno.Domain\\Legno.Domain.csproj|solutionrelative:core\\legno.domain\\entities\\projectfabric.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{E6DAFAB3-406B-4CC3-8044-A1CF14CA1EED}|Presentation\\Legno.WebApi\\Legno.WebApi.csproj|c:\\users\\gulco\\source\\repos\\legno\\presentation\\legno.webapi\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{E6DAFAB3-406B-4CC3-8044-A1CF14CA1EED}|Presentation\\Legno.WebApi\\Legno.WebApi.csproj|solutionrelative:presentation\\legno.webapi\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{7BB3B0C6-50E0-421C-B56E-908C6CAC7567}|Infrastructure\\Legno.Persistence\\Legno.Persistence.csproj|c:\\users\\gulco\\source\\repos\\legno\\infrastructure\\legno.persistence\\configurations\\projectimageconfiguration.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{7BB3B0C6-50E0-421C-B56E-908C6CAC7567}|Infrastructure\\Legno.Persistence\\Legno.Persistence.csproj|solutionrelative:infrastructure\\legno.persistence\\configurations\\projectimageconfiguration.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{9962C3C2-A1D6-4198-B145-87BE4A838676}|Core\\Legno.Application\\Legno.Application.csproj|c:\\users\\gulco\\source\\repos\\legno\\core\\legno.application\\profiles\\articleprofile.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{9962C3C2-A1D6-4198-B145-87BE4A838676}|Core\\Legno.Application\\Legno.Application.csproj|solutionrelative:core\\legno.application\\profiles\\articleprofile.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{C95201BA-3085-49DB-9ABE-AF417C6733E8}|Core\\Legno.Domain\\Legno.Domain.csproj|c:\\users\\gulco\\source\\repos\\legno\\core\\legno.domain\\entities\\project.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{C95201BA-3085-49DB-9ABE-AF417C6733E8}|Core\\Legno.Domain\\Legno.Domain.csproj|solutionrelative:core\\legno.domain\\entities\\project.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{7BB3B0C6-50E0-421C-B56E-908C6CAC7567}|Infrastructure\\Legno.Persistence\\Legno.Persistence.csproj|c:\\users\\gulco\\source\\repos\\legno\\infrastructure\\legno.persistence\\concreters\\services\\announcementservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{7BB3B0C6-50E0-421C-B56E-908C6CAC7567}|Infrastructure\\Legno.Persistence\\Legno.Persistence.csproj|solutionrelative:infrastructure\\legno.persistence\\concreters\\services\\announcementservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{C95201BA-3085-49DB-9ABE-AF417C6733E8}|Core\\Legno.Domain\\Legno.Domain.csproj|c:\\users\\gulco\\source\\repos\\legno\\core\\legno.domain\\entities\\projectsliderimage.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{C95201BA-3085-49DB-9ABE-AF417C6733E8}|Core\\Legno.Domain\\Legno.Domain.csproj|solutionrelative:core\\legno.domain\\entities\\projectsliderimage.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{9962C3C2-A1D6-4198-B145-87BE4A838676}|Core\\Legno.Application\\Legno.Application.csproj|c:\\users\\gulco\\source\\repos\\legno\\core\\legno.application\\dtos\\announcement\\updateannouncementdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{9962C3C2-A1D6-4198-B145-87BE4A838676}|Core\\Legno.Application\\Legno.Application.csproj|solutionrelative:core\\legno.application\\dtos\\announcement\\updateannouncementdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{C95201BA-3085-49DB-9ABE-AF417C6733E8}|Core\\Legno.Domain\\Legno.Domain.csproj|c:\\users\\gulco\\source\\repos\\legno\\core\\legno.domain\\entities\\fabric.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{C95201BA-3085-49DB-9ABE-AF417C6733E8}|Core\\Legno.Domain\\Legno.Domain.csproj|solutionrelative:core\\legno.domain\\entities\\fabric.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{9962C3C2-A1D6-4198-B145-87BE4A838676}|Core\\Legno.Application\\Legno.Application.csproj|c:\\users\\gulco\\source\\repos\\legno\\core\\legno.application\\dtos\\article\\updatearticledto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{9962C3C2-A1D6-4198-B145-87BE4A838676}|Core\\Legno.Application\\Legno.Application.csproj|solutionrelative:core\\legno.application\\dtos\\article\\updatearticledto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{9962C3C2-A1D6-4198-B145-87BE4A838676}|Core\\Legno.Application\\Legno.Application.csproj|c:\\users\\gulco\\source\\repos\\legno\\core\\legno.application\\profiles\\partnerprofile.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{9962C3C2-A1D6-4198-B145-87BE4A838676}|Core\\Legno.Application\\Legno.Application.csproj|solutionrelative:core\\legno.application\\profiles\\partnerprofile.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{9962C3C2-A1D6-4198-B145-87BE4A838676}|Core\\Legno.Application\\Legno.Application.csproj|c:\\users\\gulco\\source\\repos\\legno\\core\\legno.application\\dtos\\article\\createarticledto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{9962C3C2-A1D6-4198-B145-87BE4A838676}|Core\\Legno.Application\\Legno.Application.csproj|solutionrelative:core\\legno.application\\dtos\\article\\createarticledto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{9962C3C2-A1D6-4198-B145-87BE4A838676}|Core\\Legno.Application\\Legno.Application.csproj|c:\\users\\gulco\\source\\repos\\legno\\core\\legno.application\\profiles\\businessserviceprofile.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{9962C3C2-A1D6-4198-B145-87BE4A838676}|Core\\Legno.Application\\Legno.Application.csproj|solutionrelative:core\\legno.application\\profiles\\businessserviceprofile.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{7BB3B0C6-50E0-421C-B56E-908C6CAC7567}|Infrastructure\\Legno.Persistence\\Legno.Persistence.csproj|c:\\users\\gulco\\source\\repos\\legno\\infrastructure\\legno.persistence\\migrations\\20251227123007_editannouncementandarticles.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{7BB3B0C6-50E0-421C-B56E-908C6CAC7567}|Infrastructure\\Legno.Persistence\\Legno.Persistence.csproj|solutionrelative:infrastructure\\legno.persistence\\migrations\\20251227123007_editannouncementandarticles.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{9962C3C2-A1D6-4198-B145-87BE4A838676}|Core\\Legno.Application\\Legno.Application.csproj|c:\\users\\gulco\\source\\repos\\legno\\core\\legno.application\\profiles\\blogprofile.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{9962C3C2-A1D6-4198-B145-87BE4A838676}|Core\\Legno.Application\\Legno.Application.csproj|solutionrelative:core\\legno.application\\profiles\\blogprofile.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{9962C3C2-A1D6-4198-B145-87BE4A838676}|Core\\Legno.Application\\Legno.Application.csproj|c:\\users\\gulco\\source\\repos\\legno\\core\\legno.application\\dtos\\article\\articledto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{9962C3C2-A1D6-4198-B145-87BE4A838676}|Core\\Legno.Application\\Legno.Application.csproj|solutionrelative:core\\legno.application\\dtos\\article\\articledto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{7BB3B0C6-50E0-421C-B56E-908C6CAC7567}|Infrastructure\\Legno.Persistence\\Legno.Persistence.csproj|c:\\users\\gulco\\source\\repos\\legno\\infrastructure\\legno.persistence\\concreters\\services\\partnerservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{7BB3B0C6-50E0-421C-B56E-908C6CAC7567}|Infrastructure\\Legno.Persistence\\Legno.Persistence.csproj|solutionrelative:infrastructure\\legno.persistence\\concreters\\services\\partnerservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{9962C3C2-A1D6-4198-B145-87BE4A838676}|Core\\Legno.Application\\Legno.Application.csproj|c:\\users\\gulco\\source\\repos\\legno\\core\\legno.application\\dtos\\announcement\\announcementdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{9962C3C2-A1D6-4198-B145-87BE4A838676}|Core\\Legno.Application\\Legno.Application.csproj|solutionrelative:core\\legno.application\\dtos\\announcement\\announcementdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{9962C3C2-A1D6-4198-B145-87BE4A838676}|Core\\Legno.Application\\Legno.Application.csproj|c:\\users\\gulco\\source\\repos\\legno\\core\\legno.application\\profiles\\userprojectprofile.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{9962C3C2-A1D6-4198-B145-87BE4A838676}|Core\\Legno.Application\\Legno.Application.csproj|solutionrelative:core\\legno.application\\profiles\\userprojectprofile.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{9962C3C2-A1D6-4198-B145-87BE4A838676}|Core\\Legno.Application\\Legno.Application.csproj|c:\\users\\gulco\\source\\repos\\legno\\core\\legno.application\\dtos\\announcement\\createannouncementdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{9962C3C2-A1D6-4198-B145-87BE4A838676}|Core\\Legno.Application\\Legno.Application.csproj|solutionrelative:core\\legno.application\\dtos\\announcement\\createannouncementdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{9962C3C2-A1D6-4198-B145-87BE4A838676}|Core\\Legno.Application\\Legno.Application.csproj|c:\\users\\gulco\\source\\repos\\legno\\core\\legno.application\\profiles\\b2bserviceprofile.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{9962C3C2-A1D6-4198-B145-87BE4A838676}|Core\\Legno.Application\\Legno.Application.csproj|solutionrelative:core\\legno.application\\profiles\\b2bserviceprofile.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{C95201BA-3085-49DB-9ABE-AF417C6733E8}|Core\\Legno.Domain\\Legno.Domain.csproj|c:\\users\\gulco\\source\\repos\\legno\\core\\legno.domain\\entities\\article.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{C95201BA-3085-49DB-9ABE-AF417C6733E8}|Core\\Legno.Domain\\Legno.Domain.csproj|solutionrelative:core\\legno.domain\\entities\\article.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{9962C3C2-A1D6-4198-B145-87BE4A838676}|Core\\Legno.Application\\Legno.Application.csproj|c:\\users\\gulco\\source\\repos\\legno\\core\\legno.application\\dtos\\businessservice\\updatebusinessservicedto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{9962C3C2-A1D6-4198-B145-87BE4A838676}|Core\\Legno.Application\\Legno.Application.csproj|solutionrelative:core\\legno.application\\dtos\\businessservice\\updatebusinessservicedto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{C95201BA-3085-49DB-9ABE-AF417C6733E8}|Core\\Legno.Domain\\Legno.Domain.csproj|c:\\users\\gulco\\source\\repos\\legno\\core\\legno.domain\\entities\\announcement.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{C95201BA-3085-49DB-9ABE-AF417C6733E8}|Core\\Legno.Domain\\Legno.Domain.csproj|solutionrelative:core\\legno.domain\\entities\\announcement.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{E6DAFAB3-406B-4CC3-8044-A1CF14CA1EED}|Presentation\\Legno.WebApi\\Legno.WebApi.csproj|c:\\users\\gulco\\source\\repos\\legno\\presentation\\legno.webapi\\controllers\\partnerscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{E6DAFAB3-406B-4CC3-8044-A1CF14CA1EED}|Presentation\\Legno.WebApi\\Legno.WebApi.csproj|solutionrelative:presentation\\legno.webapi\\controllers\\partnerscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{7BB3B0C6-50E0-421C-B56E-908C6CAC7567}|Infrastructure\\Legno.Persistence\\Legno.Persistence.csproj|c:\\users\\gulco\\source\\repos\\legno\\infrastructure\\legno.persistence\\concreters\\services\\purchaseservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{7BB3B0C6-50E0-421C-B56E-908C6CAC7567}|Infrastructure\\Legno.Persistence\\Legno.Persistence.csproj|solutionrelative:infrastructure\\legno.persistence\\concreters\\services\\purchaseservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{7BB3B0C6-50E0-421C-B56E-908C6CAC7567}|Infrastructure\\Legno.Persistence\\Legno.Persistence.csproj|c:\\users\\gulco\\source\\repos\\legno\\infrastructure\\legno.persistence\\concreters\\services\\businessserviceservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{7BB3B0C6-50E0-421C-B56E-908C6CAC7567}|Infrastructure\\Legno.Persistence\\Legno.Persistence.csproj|solutionrelative:infrastructure\\legno.persistence\\concreters\\services\\businessserviceservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{E6DAFAB3-406B-4CC3-8044-A1CF14CA1EED}|Presentation\\Legno.WebApi\\Legno.WebApi.csproj|c:\\users\\gulco\\source\\repos\\legno\\presentation\\legno.webapi\\controllers\\purchasescontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{E6DAFAB3-406B-4CC3-8044-A1CF14CA1EED}|Presentation\\Legno.WebApi\\Legno.WebApi.csproj|solutionrelative:presentation\\legno.webapi\\controllers\\purchasescontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{9962C3C2-A1D6-4198-B145-87BE4A838676}|Core\\Legno.Application\\Legno.Application.csproj|c:\\users\\gulco\\source\\repos\\legno\\core\\legno.application\\abstracts\\services\\ipartnerservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{9962C3C2-A1D6-4198-B145-87BE4A838676}|Core\\Legno.Application\\Legno.Application.csproj|solutionrelative:core\\legno.application\\abstracts\\services\\ipartnerservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{9962C3C2-A1D6-4198-B145-87BE4A838676}|Core\\Legno.Application\\Legno.Application.csproj|c:\\users\\gulco\\source\\repos\\legno\\core\\legno.application\\dtos\\purchase\\createpurchasedto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{9962C3C2-A1D6-4198-B145-87BE4A838676}|Core\\Legno.Application\\Legno.Application.csproj|solutionrelative:core\\legno.application\\dtos\\purchase\\createpurchasedto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{9962C3C2-A1D6-4198-B145-87BE4A838676}|Core\\Legno.Application\\Legno.Application.csproj|c:\\users\\gulco\\source\\repos\\legno\\core\\legno.application\\dtos\\businessservice\\createbusinessservicedto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{9962C3C2-A1D6-4198-B145-87BE4A838676}|Core\\Legno.Application\\Legno.Application.csproj|solutionrelative:core\\legno.application\\dtos\\businessservice\\createbusinessservicedto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{C95201BA-3085-49DB-9ABE-AF417C6733E8}|Core\\Legno.Domain\\Legno.Domain.csproj|c:\\users\\gulco\\source\\repos\\legno\\core\\legno.domain\\entities\\purchase.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{C95201BA-3085-49DB-9ABE-AF417C6733E8}|Core\\Legno.Domain\\Legno.Domain.csproj|solutionrelative:core\\legno.domain\\entities\\purchase.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{9962C3C2-A1D6-4198-B145-87BE4A838676}|Core\\Legno.Application\\Legno.Application.csproj|c:\\users\\gulco\\source\\repos\\legno\\core\\legno.application\\dtos\\businessservice\\businessservicedto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{9962C3C2-A1D6-4198-B145-87BE4A838676}|Core\\Legno.Application\\Legno.Application.csproj|solutionrelative:core\\legno.application\\dtos\\businessservice\\businessservicedto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{9962C3C2-A1D6-4198-B145-87BE4A838676}|Core\\Legno.Application\\Legno.Application.csproj|c:\\users\\gulco\\source\\repos\\legno\\core\\legno.application\\dtos\\purchase\\updatepurchasedto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{9962C3C2-A1D6-4198-B145-87BE4A838676}|Core\\Legno.Application\\Legno.Application.csproj|solutionrelative:core\\legno.application\\dtos\\purchase\\updatepurchasedto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{9962C3C2-A1D6-4198-B145-87BE4A838676}|Core\\Legno.Application\\Legno.Application.csproj|c:\\users\\gulco\\source\\repos\\legno\\core\\legno.application\\dtos\\designercommonservice\\createdesignercommonservicedto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{9962C3C2-A1D6-4198-B145-87BE4A838676}|Core\\Legno.Application\\Legno.Application.csproj|solutionrelative:core\\legno.application\\dtos\\designercommonservice\\createdesignercommonservicedto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{9962C3C2-A1D6-4198-B145-87BE4A838676}|Core\\Legno.Application\\Legno.Application.csproj|c:\\users\\gulco\\source\\repos\\legno\\core\\legno.application\\dtos\\purchase\\purchasedto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{9962C3C2-A1D6-4198-B145-87BE4A838676}|Core\\Legno.Application\\Legno.Application.csproj|solutionrelative:core\\legno.application\\dtos\\purchase\\purchasedto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{7BB3B0C6-50E0-421C-B56E-908C6CAC7567}|Infrastructure\\Legno.Persistence\\Legno.Persistence.csproj|c:\\users\\gulco\\source\\repos\\legno\\infrastructure\\legno.persistence\\configurations\\partnerconfiguration.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{7BB3B0C6-50E0-421C-B56E-908C6CAC7567}|Infrastructure\\Legno.Persistence\\Legno.Persistence.csproj|solutionrelative:infrastructure\\legno.persistence\\configurations\\partnerconfiguration.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{9962C3C2-A1D6-4198-B145-87BE4A838676}|Core\\Legno.Application\\Legno.Application.csproj|c:\\users\\gulco\\source\\repos\\legno\\core\\legno.application\\abstracts\\services\\ipurchaseservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{9962C3C2-A1D6-4198-B145-87BE4A838676}|Core\\Legno.Application\\Legno.Application.csproj|solutionrelative:core\\legno.application\\abstracts\\services\\ipurchaseservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{7BB3B0C6-50E0-421C-B56E-908C6CAC7567}|Infrastructure\\Legno.Persistence\\Legno.Persistence.csproj|c:\\users\\gulco\\source\\repos\\legno\\infrastructure\\legno.persistence\\configurations\\userprojectconfiguration.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{7BB3B0C6-50E0-421C-B56E-908C6CAC7567}|Infrastructure\\Legno.Persistence\\Legno.Persistence.csproj|solutionrelative:infrastructure\\legno.persistence\\configurations\\userprojectconfiguration.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{9962C3C2-A1D6-4198-B145-87BE4A838676}|Core\\Legno.Application\\Legno.Application.csproj|c:\\users\\gulco\\source\\repos\\legno\\core\\legno.application\\profiles\\purchaseprofile.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{9962C3C2-A1D6-4198-B145-87BE4A838676}|Core\\Legno.Application\\Legno.Application.csproj|solutionrelative:core\\legno.application\\profiles\\purchaseprofile.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{C95201BA-3085-49DB-9ABE-AF417C6733E8}|Core\\Legno.Domain\\Legno.Domain.csproj|c:\\users\\gulco\\source\\repos\\legno\\core\\legno.domain\\entities\\partner.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{C95201BA-3085-49DB-9ABE-AF417C6733E8}|Core\\Legno.Domain\\Legno.Domain.csproj|solutionrelative:core\\legno.domain\\entities\\partner.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{7BB3B0C6-50E0-421C-B56E-908C6CAC7567}|Infrastructure\\Legno.Persistence\\Legno.Persistence.csproj|c:\\users\\gulco\\source\\repos\\legno\\infrastructure\\legno.persistence\\migrations\\20251227122314_editannouncementandarticle.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{7BB3B0C6-50E0-421C-B56E-908C6CAC7567}|Infrastructure\\Legno.Persistence\\Legno.Persistence.csproj|solutionrelative:infrastructure\\legno.persistence\\migrations\\20251227122314_editannouncementandarticle.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{7BB3B0C6-50E0-421C-B56E-908C6CAC7567}|Infrastructure\\Legno.Persistence\\Legno.Persistence.csproj|c:\\users\\gulco\\source\\repos\\legno\\infrastructure\\legno.persistence\\migrations\\20260107082051_createmember.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{7BB3B0C6-50E0-421C-B56E-908C6CAC7567}|Infrastructure\\Legno.Persistence\\Legno.Persistence.csproj|solutionrelative:infrastructure\\legno.persistence\\migrations\\20260107082051_createmember.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -181,8 +169,8 @@
       "VerticalTabListWidth": 256,
       "DocumentGroups": [
         {
-          "DockedWidth": 2,
-          "SelectedChildIndex": 6,
+          "DockedWidth": 200,
+          "SelectedChildIndex": 2,
           "Children": [
             {
               "$type": "Bookmark",
@@ -194,27 +182,137 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 11,
-              "Title": "SubscriberConfiguration.cs",
-              "DocumentMoniker": "C:\\Users\\gulco\\source\\repos\\Legno\\Infrastructure\\Legno.Persistence\\Configurations\\SubscriberConfiguration.cs",
-              "RelativeDocumentMoniker": "Infrastructure\\Legno.Persistence\\Configurations\\SubscriberConfiguration.cs",
-              "ToolTip": "C:\\Users\\gulco\\source\\repos\\Legno\\Infrastructure\\Legno.Persistence\\Configurations\\SubscriberConfiguration.cs",
-              "RelativeToolTip": "Infrastructure\\Legno.Persistence\\Configurations\\SubscriberConfiguration.cs",
-              "ViewState": "AgIAAAIAAAAAAAAAAAAcwBcAAAAAAAAAAAAAAA==",
+              "DocumentIndex": 0,
+              "Title": "AdminsController.cs",
+              "DocumentMoniker": "C:\\Users\\gulco\\source\\repos\\Legno\\Presentation\\Legno.WebApi\\Controllers\\AdminsController.cs",
+              "RelativeDocumentMoniker": "Presentation\\Legno.WebApi\\Controllers\\AdminsController.cs",
+              "ToolTip": "C:\\Users\\gulco\\source\\repos\\Legno\\Presentation\\Legno.WebApi\\Controllers\\AdminsController.cs",
+              "RelativeToolTip": "Presentation\\Legno.WebApi\\Controllers\\AdminsController.cs",
+              "ViewState": "AgIAAAkAAAAAAAAAAAAAACQAAAAPAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-09-12T11:35:27.501Z"
+              "WhenOpened": "2026-01-08T05:08:17.139Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 13,
-              "Title": "SubscribersController.cs",
-              "DocumentMoniker": "C:\\Users\\gulco\\source\\repos\\Legno\\Presentation\\Legno.WebApi\\Controllers\\SubscribersController.cs",
-              "RelativeDocumentMoniker": "Presentation\\Legno.WebApi\\Controllers\\SubscribersController.cs",
-              "ToolTip": "C:\\Users\\gulco\\source\\repos\\Legno\\Presentation\\Legno.WebApi\\Controllers\\SubscribersController.cs",
-              "RelativeToolTip": "Presentation\\Legno.WebApi\\Controllers\\SubscribersController.cs",
-              "ViewState": "AgIAABMAAAAAAAAAAAAgwC0AAAANAAAAAAAAAA==",
+              "DocumentIndex": 5,
+              "Title": "MembersController.cs",
+              "DocumentMoniker": "C:\\Users\\gulco\\source\\repos\\Legno\\Presentation\\Legno.WebApi\\Controllers\\MembersController.cs",
+              "RelativeDocumentMoniker": "Presentation\\Legno.WebApi\\Controllers\\MembersController.cs",
+              "ToolTip": "C:\\Users\\gulco\\source\\repos\\Legno\\Presentation\\Legno.WebApi\\Controllers\\MembersController.cs",
+              "RelativeToolTip": "Presentation\\Legno.WebApi\\Controllers\\MembersController.cs",
+              "ViewState": "AgIAAAsAAAAAAAAAAAAQwDoAAAANAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-09-12T11:32:34.911Z"
+              "WhenOpened": "2026-01-07T08:40:43.294Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "MemberService.cs",
+              "DocumentMoniker": "C:\\Users\\gulco\\source\\repos\\Legno\\Infrastructure\\Legno.Persistence\\Concreters\\Services\\MemberService.cs",
+              "RelativeDocumentMoniker": "Infrastructure\\Legno.Persistence\\Concreters\\Services\\MemberService.cs",
+              "ToolTip": "C:\\Users\\gulco\\source\\repos\\Legno\\Infrastructure\\Legno.Persistence\\Concreters\\Services\\MemberService.cs",
+              "RelativeToolTip": "Infrastructure\\Legno.Persistence\\Concreters\\Services\\MemberService.cs",
+              "ViewState": "AgIAACcAAAAAAAAAAAAiwEMAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-01-07T08:39:25.415Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 8,
+              "Title": "MemberProfile.cs",
+              "DocumentMoniker": "C:\\Users\\gulco\\source\\repos\\Legno\\Core\\Legno.Application\\Profiles\\MemberProfile.cs",
+              "RelativeDocumentMoniker": "Core\\Legno.Application\\Profiles\\MemberProfile.cs",
+              "ToolTip": "C:\\Users\\gulco\\source\\repos\\Legno\\Core\\Legno.Application\\Profiles\\MemberProfile.cs",
+              "RelativeToolTip": "Core\\Legno.Application\\Profiles\\MemberProfile.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABMAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-01-07T08:38:02.828Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "IArticleService.cs",
+              "DocumentMoniker": "C:\\Users\\gulco\\source\\repos\\Legno\\Core\\Legno.Application\\Abstracts\\Services\\IArticleService.cs",
+              "RelativeDocumentMoniker": "Core\\Legno.Application\\Abstracts\\Services\\IArticleService.cs",
+              "ToolTip": "C:\\Users\\gulco\\source\\repos\\Legno\\Core\\Legno.Application\\Abstracts\\Services\\IArticleService.cs",
+              "RelativeToolTip": "Core\\Legno.Application\\Abstracts\\Services\\IArticleService.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAYAAAADAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-01-07T08:31:00.991Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 10,
+              "Title": "IMemberService.cs",
+              "DocumentMoniker": "C:\\Users\\gulco\\source\\repos\\Legno\\Core\\Legno.Application\\Abstracts\\Services\\IMemberService.cs",
+              "RelativeDocumentMoniker": "Core\\Legno.Application\\Abstracts\\Services\\IMemberService.cs",
+              "ToolTip": "C:\\Users\\gulco\\source\\repos\\Legno\\Core\\Legno.Application\\Abstracts\\Services\\IMemberService.cs",
+              "RelativeToolTip": "Core\\Legno.Application\\Abstracts\\Services\\IMemberService.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABEAAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-01-07T08:30:31.646Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "UpdateMemberDto.cs",
+              "DocumentMoniker": "C:\\Users\\gulco\\source\\repos\\Legno\\Core\\Legno.Application\\Dtos\\Member\\UpdateMemberDto.cs",
+              "RelativeDocumentMoniker": "Core\\Legno.Application\\Dtos\\Member\\UpdateMemberDto.cs",
+              "ToolTip": "C:\\Users\\gulco\\source\\repos\\Legno\\Core\\Legno.Application\\Dtos\\Member\\UpdateMemberDto.cs",
+              "RelativeToolTip": "Core\\Legno.Application\\Dtos\\Member\\UpdateMemberDto.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAQAAAASAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-01-07T08:28:50.488Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 11,
+              "Title": "MemberDto.cs",
+              "DocumentMoniker": "C:\\Users\\gulco\\source\\repos\\Legno\\Core\\Legno.Application\\Dtos\\Member\\MemberDto.cs",
+              "RelativeDocumentMoniker": "Core\\Legno.Application\\Dtos\\Member\\MemberDto.cs",
+              "ToolTip": "C:\\Users\\gulco\\source\\repos\\Legno\\Core\\Legno.Application\\Dtos\\Member\\MemberDto.cs",
+              "RelativeToolTip": "Core\\Legno.Application\\Dtos\\Member\\MemberDto.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAsAAAApAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-01-07T08:28:20.588Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "CommonRepository.cs",
+              "DocumentMoniker": "C:\\Users\\gulco\\source\\repos\\Legno\\Infrastructure\\Legno.Persistence\\Concreters\\Repositroies\\CommonRepository.cs",
+              "RelativeDocumentMoniker": "Infrastructure\\Legno.Persistence\\Concreters\\Repositroies\\CommonRepository.cs",
+              "ToolTip": "C:\\Users\\gulco\\source\\repos\\Legno\\Infrastructure\\Legno.Persistence\\Concreters\\Repositroies\\CommonRepository.cs",
+              "RelativeToolTip": "Infrastructure\\Legno.Persistence\\Concreters\\Repositroies\\CommonRepository.cs",
+              "ViewState": "AgIAACwAAAAAAAAAAAApwDwAAABxAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-01-07T08:23:21.874Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 9,
+              "Title": "ArticlesController.cs",
+              "DocumentMoniker": "C:\\Users\\gulco\\source\\repos\\Legno\\Presentation\\Legno.WebApi\\Controllers\\ArticlesController.cs",
+              "RelativeDocumentMoniker": "Presentation\\Legno.WebApi\\Controllers\\ArticlesController.cs",
+              "ToolTip": "C:\\Users\\gulco\\source\\repos\\Legno\\Presentation\\Legno.WebApi\\Controllers\\ArticlesController.cs",
+              "RelativeToolTip": "Presentation\\Legno.WebApi\\Controllers\\ArticlesController.cs",
+              "ViewState": "AgIAADwAAAAAAAAAAAAqwF4AAAApAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-01-07T04:40:01.481Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "appsettings.json",
+              "DocumentMoniker": "C:\\Users\\gulco\\source\\repos\\Legno\\Presentation\\Legno.WebApi\\appsettings.json",
+              "RelativeDocumentMoniker": "Presentation\\Legno.WebApi\\appsettings.json",
+              "ToolTip": "C:\\Users\\gulco\\source\\repos\\Legno\\Presentation\\Legno.WebApi\\appsettings.json",
+              "RelativeToolTip": "Presentation\\Legno.WebApi\\appsettings.json",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAgAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
+              "WhenOpened": "2025-12-28T10:36:40.125Z"
             },
             {
               "$type": "Document",
@@ -224,491 +322,345 @@
               "RelativeDocumentMoniker": "Infrastructure\\Legno.Persistence\\ServiceRegistration.cs",
               "ToolTip": "C:\\Users\\gulco\\source\\repos\\Legno\\Infrastructure\\Legno.Persistence\\ServiceRegistration.cs",
               "RelativeToolTip": "Infrastructure\\Legno.Persistence\\ServiceRegistration.cs",
-              "ViewState": "AgIAAA8AAAAAAAAAAAAAADUAAAA5AAAAAAAAAA==",
+              "ViewState": "AgIAAEoAAAAAAAAAAAAQwF4AAABoAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-09-12T10:59:47.961Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 5,
-              "Title": "IAdminService.cs",
-              "DocumentMoniker": "C:\\Users\\gulco\\source\\repos\\Legno\\Core\\Legno.Application\\Abstracts\\Services\\IAdminService.cs",
-              "RelativeDocumentMoniker": "Core\\Legno.Application\\Abstracts\\Services\\IAdminService.cs",
-              "ToolTip": "C:\\Users\\gulco\\source\\repos\\Legno\\Core\\Legno.Application\\Abstracts\\Services\\IAdminService.cs",
-              "RelativeToolTip": "Core\\Legno.Application\\Abstracts\\Services\\IAdminService.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-09-15T09:54:31.897Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 0,
-              "Title": "ProjectProfile.cs",
-              "DocumentMoniker": "C:\\Users\\gulco\\source\\repos\\Legno\\Core\\Legno.Application\\Profiles\\ProjectProfile.cs",
-              "RelativeDocumentMoniker": "Core\\Legno.Application\\Profiles\\ProjectProfile.cs",
-              "ToolTip": "C:\\Users\\gulco\\source\\repos\\Legno\\Core\\Legno.Application\\Profiles\\ProjectProfile.cs",
-              "RelativeToolTip": "Core\\Legno.Application\\Profiles\\ProjectProfile.cs",
-              "ViewState": "AgIAAAoAAAAAAAAAAAAwwBgAAAAxAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-09-12T11:22:15.345Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 14,
-              "Title": "CommonRepository.cs",
-              "DocumentMoniker": "C:\\Users\\gulco\\source\\repos\\Legno\\Infrastructure\\Legno.Persistence\\Concreters\\Repositroies\\CommonRepository.cs",
-              "RelativeDocumentMoniker": "Infrastructure\\Legno.Persistence\\Concreters\\Repositroies\\CommonRepository.cs",
-              "ToolTip": "C:\\Users\\gulco\\source\\repos\\Legno\\Infrastructure\\Legno.Persistence\\Concreters\\Repositroies\\CommonRepository.cs",
-              "RelativeToolTip": "Infrastructure\\Legno.Persistence\\Concreters\\Repositroies\\CommonRepository.cs",
-              "ViewState": "AgIAABAAAAAAAAAAAAA0wCIAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-09-12T10:55:40.054Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 1,
-              "Title": "ProjectService.cs",
-              "DocumentMoniker": "C:\\Users\\gulco\\source\\repos\\Legno\\Infrastructure\\Legno.Persistence\\Concreters\\Services\\ProjectService.cs",
-              "RelativeDocumentMoniker": "Infrastructure\\Legno.Persistence\\Concreters\\Services\\ProjectService.cs",
-              "ToolTip": "C:\\Users\\gulco\\source\\repos\\Legno\\Infrastructure\\Legno.Persistence\\Concreters\\Services\\ProjectService.cs",
-              "RelativeToolTip": "Infrastructure\\Legno.Persistence\\Concreters\\Services\\ProjectService.cs",
-              "ViewState": "AgIAAKkAAAAAAAAAAAA7wEMBAABVAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-09-12T10:50:11.714Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 2,
-              "Title": "UpdateProjectDto.cs",
-              "DocumentMoniker": "C:\\Users\\gulco\\source\\repos\\Legno\\Core\\Legno.Application\\Dtos\\Project\\UpdateProjectDto.cs",
-              "RelativeDocumentMoniker": "Core\\Legno.Application\\Dtos\\Project\\UpdateProjectDto.cs",
-              "ToolTip": "C:\\Users\\gulco\\source\\repos\\Legno\\Core\\Legno.Application\\Dtos\\Project\\UpdateProjectDto.cs",
-              "RelativeToolTip": "Core\\Legno.Application\\Dtos\\Project\\UpdateProjectDto.cs",
-              "ViewState": "AgIAAAgAAAAAAAAAAAAUwBMAAAAWAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-09-12T10:49:40.674Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 9,
-              "Title": "FAQ.cs",
-              "DocumentMoniker": "C:\\Users\\gulco\\source\\repos\\Legno\\Core\\Legno.Domain\\Entities\\FAQ.cs",
-              "RelativeDocumentMoniker": "Core\\Legno.Domain\\Entities\\FAQ.cs",
-              "ToolTip": "C:\\Users\\gulco\\source\\repos\\Legno\\Core\\Legno.Domain\\Entities\\FAQ.cs",
-              "RelativeToolTip": "Core\\Legno.Domain\\Entities\\FAQ.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-09-12T13:38:44.163Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 7,
-              "Title": "appsettings.json",
-              "DocumentMoniker": "C:\\Users\\gulco\\source\\repos\\Legno\\Presentation\\Legno.WebApi\\appsettings.json",
-              "RelativeDocumentMoniker": "Presentation\\Legno.WebApi\\appsettings.json",
-              "ToolTip": "C:\\Users\\gulco\\source\\repos\\Legno\\Presentation\\Legno.WebApi\\appsettings.json",
-              "RelativeToolTip": "Presentation\\Legno.WebApi\\appsettings.json",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAgAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
-              "WhenOpened": "2025-09-15T09:41:06.439Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 6,
-              "Title": "Program.cs",
-              "DocumentMoniker": "C:\\Users\\gulco\\source\\repos\\Legno\\Presentation\\Legno.WebApi\\Program.cs",
-              "RelativeDocumentMoniker": "Presentation\\Legno.WebApi\\Program.cs",
-              "ToolTip": "C:\\Users\\gulco\\source\\repos\\Legno\\Presentation\\Legno.WebApi\\Program.cs",
-              "RelativeToolTip": "Presentation\\Legno.WebApi\\Program.cs",
-              "ViewState": "AgIAAAYAAAAAAAAAAAAAABMAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-09-15T09:44:57.694Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 4,
-              "Title": "AdminsController.cs",
-              "DocumentMoniker": "C:\\Users\\gulco\\source\\repos\\Legno\\Presentation\\Legno.WebApi\\Controllers\\AdminsController.cs",
-              "RelativeDocumentMoniker": "Presentation\\Legno.WebApi\\Controllers\\AdminsController.cs",
-              "ToolTip": "C:\\Users\\gulco\\source\\repos\\Legno\\Presentation\\Legno.WebApi\\Controllers\\AdminsController.cs",
-              "RelativeToolTip": "Presentation\\Legno.WebApi\\Controllers\\AdminsController.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAoAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-09-15T09:58:10.082Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 16,
-              "Title": "ProjectDto.cs",
-              "DocumentMoniker": "C:\\Users\\gulco\\source\\repos\\Legno\\Core\\Legno.Application\\Dtos\\Project\\ProjectDto.cs",
-              "RelativeDocumentMoniker": "Core\\Legno.Application\\Dtos\\Project\\ProjectDto.cs",
-              "ToolTip": "C:\\Users\\gulco\\source\\repos\\Legno\\Core\\Legno.Application\\Dtos\\Project\\ProjectDto.cs",
-              "RelativeToolTip": "Core\\Legno.Application\\Dtos\\Project\\ProjectDto.cs",
-              "ViewState": "AgIAABAAAAAAAAAAAAAxwB8AAAABAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-09-12T10:49:39.613Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 8,
-              "Title": "LegnoDbContext.cs",
-              "DocumentMoniker": "C:\\Users\\gulco\\source\\repos\\Legno\\Infrastructure\\Legno.Persistence\\Context\\LegnoDbContext.cs",
-              "RelativeDocumentMoniker": "Infrastructure\\Legno.Persistence\\Context\\LegnoDbContext.cs",
-              "ToolTip": "C:\\Users\\gulco\\source\\repos\\Legno\\Infrastructure\\Legno.Persistence\\Context\\LegnoDbContext.cs",
-              "RelativeToolTip": "Infrastructure\\Legno.Persistence\\Context\\LegnoDbContext.cs",
-              "ViewState": "AgIAAAMAAAAAAAAAAAAqwEUAAABOAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-09-08T11:59:58.548Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 10,
-              "Title": "20250912113623_EditSubscriber.cs",
-              "DocumentMoniker": "C:\\Users\\gulco\\source\\repos\\Legno\\Infrastructure\\Legno.Persistence\\Migrations\\20250912113623_EditSubscriber.cs",
-              "RelativeDocumentMoniker": "Infrastructure\\Legno.Persistence\\Migrations\\20250912113623_EditSubscriber.cs",
-              "ToolTip": "C:\\Users\\gulco\\source\\repos\\Legno\\Infrastructure\\Legno.Persistence\\Migrations\\20250912113623_EditSubscriber.cs",
-              "RelativeToolTip": "Infrastructure\\Legno.Persistence\\Migrations\\20250912113623_EditSubscriber.cs",
-              "ViewState": "AgIAAAsAAAAAAAAAAAAQwAAAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-09-12T11:36:23.901Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 17,
-              "Title": "CreateProjectDto.cs",
-              "DocumentMoniker": "C:\\Users\\gulco\\source\\repos\\Legno\\Core\\Legno.Application\\Dtos\\Project\\CreateProjectDto.cs",
-              "RelativeDocumentMoniker": "Core\\Legno.Application\\Dtos\\Project\\CreateProjectDto.cs",
-              "ToolTip": "C:\\Users\\gulco\\source\\repos\\Legno\\Core\\Legno.Application\\Dtos\\Project\\CreateProjectDto.cs",
-              "RelativeToolTip": "Core\\Legno.Application\\Dtos\\Project\\CreateProjectDto.cs",
-              "ViewState": "AgIAAA8AAAAAAAAAAAA5wBsAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-09-12T10:49:06.222Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 15,
-              "Title": "FabricDto.cs",
-              "DocumentMoniker": "C:\\Users\\gulco\\source\\repos\\Legno\\Core\\Legno.Application\\Dtos\\Fabric\\FabricDto.cs",
-              "RelativeDocumentMoniker": "Core\\Legno.Application\\Dtos\\Fabric\\FabricDto.cs",
-              "ToolTip": "C:\\Users\\gulco\\source\\repos\\Legno\\Core\\Legno.Application\\Dtos\\Fabric\\FabricDto.cs",
-              "RelativeToolTip": "Core\\Legno.Application\\Dtos\\Fabric\\FabricDto.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAgAAAARAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-09-08T12:01:51.438Z"
+              "WhenOpened": "2025-12-26T11:55:43.371Z"
             },
             {
               "$type": "Document",
               "DocumentIndex": 12,
-              "Title": "SubscriberService.cs",
-              "DocumentMoniker": "C:\\Users\\gulco\\source\\repos\\Legno\\Infrastructure\\Legno.Persistence\\Concreters\\Services\\SubscriberService.cs",
-              "RelativeDocumentMoniker": "Infrastructure\\Legno.Persistence\\Concreters\\Services\\SubscriberService.cs",
-              "ToolTip": "C:\\Users\\gulco\\source\\repos\\Legno\\Infrastructure\\Legno.Persistence\\Concreters\\Services\\SubscriberService.cs",
-              "RelativeToolTip": "Infrastructure\\Legno.Persistence\\Concreters\\Services\\SubscriberService.cs",
-              "ViewState": "AgIAAB8AAAAAAAAAAAAqwC8AAAARAAAAAAAAAA==",
+              "Title": "CreateMemberDto.cs",
+              "DocumentMoniker": "C:\\Users\\gulco\\source\\repos\\Legno\\Core\\Legno.Application\\Dtos\\Member\\CreateMemberDto.cs",
+              "RelativeDocumentMoniker": "Core\\Legno.Application\\Dtos\\Member\\CreateMemberDto.cs",
+              "ToolTip": "C:\\Users\\gulco\\source\\repos\\Legno\\Core\\Legno.Application\\Dtos\\Member\\CreateMemberDto.cs",
+              "RelativeToolTip": "Core\\Legno.Application\\Dtos\\Member\\CreateMemberDto.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAsAAAAYAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-09-12T10:15:55.224Z"
+              "WhenOpened": "2026-01-07T08:26:07.122Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 18,
+              "DocumentIndex": 14,
               "Title": "ICommonRepository.cs",
               "DocumentMoniker": "C:\\Users\\gulco\\source\\repos\\Legno\\Core\\Legno.Application\\Abstracts\\Repositories\\ICommonRepository.cs",
               "RelativeDocumentMoniker": "Core\\Legno.Application\\Abstracts\\Repositories\\ICommonRepository.cs",
               "ToolTip": "C:\\Users\\gulco\\source\\repos\\Legno\\Core\\Legno.Application\\Abstracts\\Repositories\\ICommonRepository.cs",
               "RelativeToolTip": "Core\\Legno.Application\\Abstracts\\Repositories\\ICommonRepository.cs",
-              "ViewState": "AgIAAAwAAAAAAAAAAAA4wB0AAAAAAAAAAAAAAA==",
+              "ViewState": "AgIAABoAAAAAAAAAAAA5wDIAAABLAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-09-12T10:54:41.508Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 19,
-              "Title": "ProjectReorderDto.cs",
-              "DocumentMoniker": "C:\\Users\\gulco\\source\\repos\\Legno\\Core\\Legno.Application\\Dtos\\Project\\ProjectReorderDto.cs",
-              "RelativeDocumentMoniker": "Core\\Legno.Application\\Dtos\\Project\\ProjectReorderDto.cs",
-              "ToolTip": "C:\\Users\\gulco\\source\\repos\\Legno\\Core\\Legno.Application\\Dtos\\Project\\ProjectReorderDto.cs",
-              "RelativeToolTip": "Core\\Legno.Application\\Dtos\\Project\\ProjectReorderDto.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-09-12T10:49:38.459Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 21,
-              "Title": "ProjectFabricConfiguration.cs",
-              "DocumentMoniker": "C:\\Users\\gulco\\source\\repos\\Legno\\Infrastructure\\Legno.Persistence\\Configurations\\ProjectFabricConfiguration.cs",
-              "RelativeDocumentMoniker": "Infrastructure\\Legno.Persistence\\Configurations\\ProjectFabricConfiguration.cs",
-              "ToolTip": "C:\\Users\\gulco\\source\\repos\\Legno\\Infrastructure\\Legno.Persistence\\Configurations\\ProjectFabricConfiguration.cs",
-              "RelativeToolTip": "Infrastructure\\Legno.Persistence\\Configurations\\ProjectFabricConfiguration.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAABkAAAAFAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-09-12T10:35:00.401Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 23,
-              "Title": "ProjectImageConfiguration.cs",
-              "DocumentMoniker": "C:\\Users\\gulco\\source\\repos\\Legno\\Infrastructure\\Legno.Persistence\\Configurations\\ProjectImageConfiguration.cs",
-              "RelativeDocumentMoniker": "Infrastructure\\Legno.Persistence\\Configurations\\ProjectImageConfiguration.cs",
-              "ToolTip": "C:\\Users\\gulco\\source\\repos\\Legno\\Infrastructure\\Legno.Persistence\\Configurations\\ProjectImageConfiguration.cs",
-              "RelativeToolTip": "Infrastructure\\Legno.Persistence\\Configurations\\ProjectImageConfiguration.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAYAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-09-12T10:33:00.166Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 20,
-              "Title": "ProjectSliderImageConfiguration.cs",
-              "DocumentMoniker": "C:\\Users\\gulco\\source\\repos\\Legno\\Infrastructure\\Legno.Persistence\\Configurations\\ProjectSliderImageConfiguration.cs",
-              "RelativeDocumentMoniker": "Infrastructure\\Legno.Persistence\\Configurations\\ProjectSliderImageConfiguration.cs",
-              "ToolTip": "C:\\Users\\gulco\\source\\repos\\Legno\\Infrastructure\\Legno.Persistence\\Configurations\\ProjectSliderImageConfiguration.cs",
-              "RelativeToolTip": "Infrastructure\\Legno.Persistence\\Configurations\\ProjectSliderImageConfiguration.cs",
-              "ViewState": "AgIAAAgAAAAAAAAAAAAcwA8AAAAqAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-09-12T10:32:51.758Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 25,
-              "Title": "ProjectSliderImage.cs",
-              "DocumentMoniker": "C:\\Users\\gulco\\source\\repos\\Legno\\Core\\Legno.Domain\\Entities\\ProjectSliderImage.cs",
-              "RelativeDocumentMoniker": "Core\\Legno.Domain\\Entities\\ProjectSliderImage.cs",
-              "ToolTip": "C:\\Users\\gulco\\source\\repos\\Legno\\Core\\Legno.Domain\\Entities\\ProjectSliderImage.cs",
-              "RelativeToolTip": "Core\\Legno.Domain\\Entities\\ProjectSliderImage.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAABAAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-09-12T10:30:53.478Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 22,
-              "Title": "ProjectFabric.cs",
-              "DocumentMoniker": "C:\\Users\\gulco\\source\\repos\\Legno\\Core\\Legno.Domain\\Entities\\ProjectFabric.cs",
-              "RelativeDocumentMoniker": "Core\\Legno.Domain\\Entities\\ProjectFabric.cs",
-              "ToolTip": "C:\\Users\\gulco\\source\\repos\\Legno\\Core\\Legno.Domain\\Entities\\ProjectFabric.cs",
-              "RelativeToolTip": "Core\\Legno.Domain\\Entities\\ProjectFabric.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAABEAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-09-12T10:25:13.847Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 24,
-              "Title": "Project.cs",
-              "DocumentMoniker": "C:\\Users\\gulco\\source\\repos\\Legno\\Core\\Legno.Domain\\Entities\\Project.cs",
-              "RelativeDocumentMoniker": "Core\\Legno.Domain\\Entities\\Project.cs",
-              "ToolTip": "C:\\Users\\gulco\\source\\repos\\Legno\\Core\\Legno.Domain\\Entities\\Project.cs",
-              "RelativeToolTip": "Core\\Legno.Domain\\Entities\\Project.cs",
-              "ViewState": "AgIAABIAAAAAAAAAAAAmwB0AAAAFAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-09-12T10:24:49.12Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 26,
-              "Title": "Fabric.cs",
-              "DocumentMoniker": "C:\\Users\\gulco\\source\\repos\\Legno\\Core\\Legno.Domain\\Entities\\Fabric.cs",
-              "RelativeDocumentMoniker": "Core\\Legno.Domain\\Entities\\Fabric.cs",
-              "ToolTip": "C:\\Users\\gulco\\source\\repos\\Legno\\Core\\Legno.Domain\\Entities\\Fabric.cs",
-              "RelativeToolTip": "Core\\Legno.Domain\\Entities\\Fabric.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAwAAABAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-09-12T10:24:34.915Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 31,
-              "Title": "UserProjectProfile.cs",
-              "DocumentMoniker": "C:\\Users\\gulco\\source\\repos\\Legno\\Core\\Legno.Application\\Profiles\\UserProjectProfile.cs",
-              "RelativeDocumentMoniker": "Core\\Legno.Application\\Profiles\\UserProjectProfile.cs",
-              "ToolTip": "C:\\Users\\gulco\\source\\repos\\Legno\\Core\\Legno.Application\\Profiles\\UserProjectProfile.cs",
-              "RelativeToolTip": "Core\\Legno.Application\\Profiles\\UserProjectProfile.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-09-08T12:12:52.663Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 29,
-              "Title": "BlogProfile.cs",
-              "DocumentMoniker": "C:\\Users\\gulco\\source\\repos\\Legno\\Core\\Legno.Application\\Profiles\\BlogProfile.cs",
-              "RelativeDocumentMoniker": "Core\\Legno.Application\\Profiles\\BlogProfile.cs",
-              "ToolTip": "C:\\Users\\gulco\\source\\repos\\Legno\\Core\\Legno.Application\\Profiles\\BlogProfile.cs",
-              "RelativeToolTip": "Core\\Legno.Application\\Profiles\\BlogProfile.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-09-08T12:15:28.159Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 28,
-              "Title": "BusinessServiceProfile.cs",
-              "DocumentMoniker": "C:\\Users\\gulco\\source\\repos\\Legno\\Core\\Legno.Application\\Profiles\\BusinessServiceProfile.cs",
-              "RelativeDocumentMoniker": "Core\\Legno.Application\\Profiles\\BusinessServiceProfile.cs",
-              "ToolTip": "C:\\Users\\gulco\\source\\repos\\Legno\\Core\\Legno.Application\\Profiles\\BusinessServiceProfile.cs",
-              "RelativeToolTip": "Core\\Legno.Application\\Profiles\\BusinessServiceProfile.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAABoAAABiAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-09-08T12:12:43.831Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 32,
-              "Title": "B2BServiceProfile.cs",
-              "DocumentMoniker": "C:\\Users\\gulco\\source\\repos\\Legno\\Core\\Legno.Application\\Profiles\\B2BServiceProfile.cs",
-              "RelativeDocumentMoniker": "Core\\Legno.Application\\Profiles\\B2BServiceProfile.cs",
-              "ToolTip": "C:\\Users\\gulco\\source\\repos\\Legno\\Core\\Legno.Application\\Profiles\\B2BServiceProfile.cs",
-              "RelativeToolTip": "Core\\Legno.Application\\Profiles\\B2BServiceProfile.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-09-08T12:12:41.581Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 33,
-              "Title": "UpdateBusinessServiceDto.cs",
-              "DocumentMoniker": "C:\\Users\\gulco\\source\\repos\\Legno\\Core\\Legno.Application\\Dtos\\BusinessService\\UpdateBusinessServiceDto.cs",
-              "RelativeDocumentMoniker": "Core\\Legno.Application\\Dtos\\BusinessService\\UpdateBusinessServiceDto.cs",
-              "ToolTip": "C:\\Users\\gulco\\source\\repos\\Legno\\Core\\Legno.Application\\Dtos\\BusinessService\\UpdateBusinessServiceDto.cs",
-              "RelativeToolTip": "Core\\Legno.Application\\Dtos\\BusinessService\\UpdateBusinessServiceDto.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAABAAAAAFAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-09-08T12:08:18.308Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 34,
-              "Title": "PartnersController.cs",
-              "DocumentMoniker": "C:\\Users\\gulco\\source\\repos\\Legno\\Presentation\\Legno.WebApi\\Controllers\\PartnersController.cs",
-              "RelativeDocumentMoniker": "Presentation\\Legno.WebApi\\Controllers\\PartnersController.cs",
-              "ToolTip": "C:\\Users\\gulco\\source\\repos\\Legno\\Presentation\\Legno.WebApi\\Controllers\\PartnersController.cs",
-              "RelativeToolTip": "Presentation\\Legno.WebApi\\Controllers\\PartnersController.cs",
-              "ViewState": "AgIAACwAAAAAAAAAAAAwwDoAAAA1AAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-09-08T12:05:43.458Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 35,
-              "Title": "BusinessServiceService.cs",
-              "DocumentMoniker": "C:\\Users\\gulco\\source\\repos\\Legno\\Infrastructure\\Legno.Persistence\\Concreters\\Services\\BusinessServiceService.cs",
-              "RelativeDocumentMoniker": "Infrastructure\\Legno.Persistence\\Concreters\\Services\\BusinessServiceService.cs",
-              "ToolTip": "C:\\Users\\gulco\\source\\repos\\Legno\\Infrastructure\\Legno.Persistence\\Concreters\\Services\\BusinessServiceService.cs",
-              "RelativeToolTip": "Infrastructure\\Legno.Persistence\\Concreters\\Services\\BusinessServiceService.cs",
-              "ViewState": "AgIAAEEAAAAAAAAAAAAIwE8AAAAGAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-09-08T12:04:08.493Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 30,
-              "Title": "PartnerService.cs",
-              "DocumentMoniker": "C:\\Users\\gulco\\source\\repos\\Legno\\Infrastructure\\Legno.Persistence\\Concreters\\Services\\PartnerService.cs",
-              "RelativeDocumentMoniker": "Infrastructure\\Legno.Persistence\\Concreters\\Services\\PartnerService.cs",
-              "ToolTip": "C:\\Users\\gulco\\source\\repos\\Legno\\Infrastructure\\Legno.Persistence\\Concreters\\Services\\PartnerService.cs",
-              "RelativeToolTip": "Infrastructure\\Legno.Persistence\\Concreters\\Services\\PartnerService.cs",
-              "ViewState": "AgIAADgAAAAAAAAAAAAwwEUAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-09-08T12:03:40.252Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 27,
-              "Title": "PartnerProfile.cs",
-              "DocumentMoniker": "C:\\Users\\gulco\\source\\repos\\Legno\\Core\\Legno.Application\\Profiles\\PartnerProfile.cs",
-              "RelativeDocumentMoniker": "Core\\Legno.Application\\Profiles\\PartnerProfile.cs",
-              "ToolTip": "C:\\Users\\gulco\\source\\repos\\Legno\\Core\\Legno.Application\\Profiles\\PartnerProfile.cs",
-              "RelativeToolTip": "Core\\Legno.Application\\Profiles\\PartnerProfile.cs",
-              "ViewState": "AgIAAAYAAAAAAAAAAIBJwB4AAAA9AAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-09-08T12:02:48.696Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 37,
-              "Title": "CreateBusinessServiceDto.cs",
-              "DocumentMoniker": "C:\\Users\\gulco\\source\\repos\\Legno\\Core\\Legno.Application\\Dtos\\BusinessService\\CreateBusinessServiceDto.cs",
-              "RelativeDocumentMoniker": "Core\\Legno.Application\\Dtos\\BusinessService\\CreateBusinessServiceDto.cs",
-              "ToolTip": "C:\\Users\\gulco\\source\\repos\\Legno\\Core\\Legno.Application\\Dtos\\BusinessService\\CreateBusinessServiceDto.cs",
-              "RelativeToolTip": "Core\\Legno.Application\\Dtos\\BusinessService\\CreateBusinessServiceDto.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAkAAAApAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-09-08T12:02:04.733Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 38,
-              "Title": "BusinessServiceDto.cs",
-              "DocumentMoniker": "C:\\Users\\gulco\\source\\repos\\Legno\\Core\\Legno.Application\\Dtos\\BusinessService\\BusinessServiceDto.cs",
-              "RelativeDocumentMoniker": "Core\\Legno.Application\\Dtos\\BusinessService\\BusinessServiceDto.cs",
-              "ToolTip": "C:\\Users\\gulco\\source\\repos\\Legno\\Core\\Legno.Application\\Dtos\\BusinessService\\BusinessServiceDto.cs",
-              "RelativeToolTip": "Core\\Legno.Application\\Dtos\\BusinessService\\BusinessServiceDto.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-09-08T12:02:01.612Z"
+              "WhenOpened": "2026-01-07T08:22:28.452Z"
             },
             {
               "$type": "Document",
               "DocumentIndex": 39,
-              "Title": "CreateDesignerCommonServiceDto.cs",
-              "DocumentMoniker": "C:\\Users\\gulco\\source\\repos\\Legno\\Core\\Legno.Application\\Dtos\\DesignerCommonService\\CreateDesignerCommonServiceDto.cs",
-              "RelativeDocumentMoniker": "Core\\Legno.Application\\Dtos\\DesignerCommonService\\CreateDesignerCommonServiceDto.cs",
-              "ToolTip": "C:\\Users\\gulco\\source\\repos\\Legno\\Core\\Legno.Application\\Dtos\\DesignerCommonService\\CreateDesignerCommonServiceDto.cs",
-              "RelativeToolTip": "Core\\Legno.Application\\Dtos\\DesignerCommonService\\CreateDesignerCommonServiceDto.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Title": "20260107082051_CreateMember.cs",
+              "DocumentMoniker": "C:\\Users\\gulco\\source\\repos\\Legno\\Infrastructure\\Legno.Persistence\\Migrations\\20260107082051_CreateMember.cs",
+              "RelativeDocumentMoniker": "Infrastructure\\Legno.Persistence\\Migrations\\20260107082051_CreateMember.cs",
+              "ToolTip": "C:\\Users\\gulco\\source\\repos\\Legno\\Infrastructure\\Legno.Persistence\\Migrations\\20260107082051_CreateMember.cs",
+              "RelativeToolTip": "Infrastructure\\Legno.Persistence\\Migrations\\20260107082051_CreateMember.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABEAAABXAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-09-08T12:01:58.103Z"
+              "WhenOpened": "2026-01-07T08:20:51.506Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 15,
+              "Title": "LegnoDbContext.cs",
+              "DocumentMoniker": "C:\\Users\\gulco\\source\\repos\\Legno\\Infrastructure\\Legno.Persistence\\Context\\LegnoDbContext.cs",
+              "RelativeDocumentMoniker": "Infrastructure\\Legno.Persistence\\Context\\LegnoDbContext.cs",
+              "ToolTip": "C:\\Users\\gulco\\source\\repos\\Legno\\Infrastructure\\Legno.Persistence\\Context\\LegnoDbContext.cs",
+              "RelativeToolTip": "Infrastructure\\Legno.Persistence\\Context\\LegnoDbContext.cs",
+              "ViewState": "AgIAABoAAAAAAAAAAAA2wCwAAAAyAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-01-07T08:20:00.868Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 13,
+              "Title": "Member.cs",
+              "DocumentMoniker": "C:\\Users\\gulco\\source\\repos\\Legno\\Core\\Legno.Domain\\Entities\\Member.cs",
+              "RelativeDocumentMoniker": "Core\\Legno.Domain\\Entities\\Member.cs",
+              "ToolTip": "C:\\Users\\gulco\\source\\repos\\Legno\\Core\\Legno.Domain\\Entities\\Member.cs",
+              "RelativeToolTip": "Core\\Legno.Domain\\Entities\\Member.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAsAAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-01-07T08:16:25.474Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 18,
+              "Title": "Program.cs",
+              "DocumentMoniker": "C:\\Users\\gulco\\source\\repos\\Legno\\Presentation\\Legno.WebApi\\Program.cs",
+              "RelativeDocumentMoniker": "Presentation\\Legno.WebApi\\Program.cs",
+              "ToolTip": "C:\\Users\\gulco\\source\\repos\\Legno\\Presentation\\Legno.WebApi\\Program.cs",
+              "RelativeToolTip": "Presentation\\Legno.WebApi\\Program.cs",
+              "ViewState": "AgIAAHkAAAAAAAAAAAAAAIQAAAA/AAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-01-06T11:40:38.424Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 24,
+              "Title": "20251227123007_EditAnnouncementandArticles.cs",
+              "DocumentMoniker": "C:\\Users\\gulco\\source\\repos\\Legno\\Infrastructure\\Legno.Persistence\\Migrations\\20251227123007_EditAnnouncementandArticles.cs",
+              "RelativeDocumentMoniker": "Infrastructure\\Legno.Persistence\\Migrations\\20251227123007_EditAnnouncementandArticles.cs",
+              "ToolTip": "C:\\Users\\gulco\\source\\repos\\Legno\\Infrastructure\\Legno.Persistence\\Migrations\\20251227123007_EditAnnouncementandArticles.cs",
+              "RelativeToolTip": "Infrastructure\\Legno.Persistence\\Migrations\\20251227123007_EditAnnouncementandArticles.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABAAAAAgAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-12-27T12:30:07.755Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 17,
+              "Title": "ProjectService.cs",
+              "DocumentMoniker": "C:\\Users\\gulco\\source\\repos\\Legno\\Infrastructure\\Legno.Persistence\\Concreters\\Services\\ProjectService.cs",
+              "RelativeDocumentMoniker": "Infrastructure\\Legno.Persistence\\Concreters\\Services\\ProjectService.cs",
+              "ToolTip": "C:\\Users\\gulco\\source\\repos\\Legno\\Infrastructure\\Legno.Persistence\\Concreters\\Services\\ProjectService.cs",
+              "RelativeToolTip": "Infrastructure\\Legno.Persistence\\Concreters\\Services\\ProjectService.cs",
+              "ViewState": "AgIAAEQBAAAAAAAAAAAAAFMBAAARAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-01-06T12:21:45.938Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 16,
+              "Title": "ArticleService.cs",
+              "DocumentMoniker": "C:\\Users\\gulco\\source\\repos\\Legno\\Infrastructure\\Legno.Persistence\\Concreters\\Services\\ArticleService.cs",
+              "RelativeDocumentMoniker": "Infrastructure\\Legno.Persistence\\Concreters\\Services\\ArticleService.cs",
+              "ToolTip": "C:\\Users\\gulco\\source\\repos\\Legno\\Infrastructure\\Legno.Persistence\\Concreters\\Services\\ArticleService.cs",
+              "RelativeToolTip": "Infrastructure\\Legno.Persistence\\Concreters\\Services\\ArticleService.cs",
+              "ViewState": "AgIAAIEAAAAAAAAAAAAQwKIAAABDAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-12-27T12:27:43.223Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 19,
+              "Title": "ArticleProfile.cs",
+              "DocumentMoniker": "C:\\Users\\gulco\\source\\repos\\Legno\\Core\\Legno.Application\\Profiles\\ArticleProfile.cs",
+              "RelativeDocumentMoniker": "Core\\Legno.Application\\Profiles\\ArticleProfile.cs",
+              "ToolTip": "C:\\Users\\gulco\\source\\repos\\Legno\\Core\\Legno.Application\\Profiles\\ArticleProfile.cs",
+              "RelativeToolTip": "Core\\Legno.Application\\Profiles\\ArticleProfile.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABIAAAAlAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-01-06T12:09:54.946Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 20,
+              "Title": "AnnouncementService.cs",
+              "DocumentMoniker": "C:\\Users\\gulco\\source\\repos\\Legno\\Infrastructure\\Legno.Persistence\\Concreters\\Services\\AnnouncementService.cs",
+              "RelativeDocumentMoniker": "Infrastructure\\Legno.Persistence\\Concreters\\Services\\AnnouncementService.cs",
+              "ToolTip": "C:\\Users\\gulco\\source\\repos\\Legno\\Infrastructure\\Legno.Persistence\\Concreters\\Services\\AnnouncementService.cs",
+              "RelativeToolTip": "Infrastructure\\Legno.Persistence\\Concreters\\Services\\AnnouncementService.cs",
+              "ViewState": "AgIAAI4AAAAAAAAAAAAAAEEAAAAdAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-12-27T12:25:30.262Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 21,
+              "Title": "UpdateAnnouncementDto.cs",
+              "DocumentMoniker": "C:\\Users\\gulco\\source\\repos\\Legno\\Core\\Legno.Application\\Dtos\\Announcement\\UpdateAnnouncementDto.cs",
+              "RelativeDocumentMoniker": "Core\\Legno.Application\\Dtos\\Announcement\\UpdateAnnouncementDto.cs",
+              "ToolTip": "C:\\Users\\gulco\\source\\repos\\Legno\\Core\\Legno.Application\\Dtos\\Announcement\\UpdateAnnouncementDto.cs",
+              "RelativeToolTip": "Core\\Legno.Application\\Dtos\\Announcement\\UpdateAnnouncementDto.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAIAAAAhAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-12-27T12:24:59.872Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 27,
+              "Title": "CreateAnnouncementDto.cs",
+              "DocumentMoniker": "C:\\Users\\gulco\\source\\repos\\Legno\\Core\\Legno.Application\\Dtos\\Announcement\\CreateAnnouncementDto.cs",
+              "RelativeDocumentMoniker": "Core\\Legno.Application\\Dtos\\Announcement\\CreateAnnouncementDto.cs",
+              "ToolTip": "C:\\Users\\gulco\\source\\repos\\Legno\\Core\\Legno.Application\\Dtos\\Announcement\\CreateAnnouncementDto.cs",
+              "RelativeToolTip": "Core\\Legno.Application\\Dtos\\Announcement\\CreateAnnouncementDto.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABUAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-12-27T12:24:51.111Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 26,
+              "Title": "AnnouncementDto.cs",
+              "DocumentMoniker": "C:\\Users\\gulco\\source\\repos\\Legno\\Core\\Legno.Application\\Dtos\\Announcement\\AnnouncementDto.cs",
+              "RelativeDocumentMoniker": "Core\\Legno.Application\\Dtos\\Announcement\\AnnouncementDto.cs",
+              "ToolTip": "C:\\Users\\gulco\\source\\repos\\Legno\\Core\\Legno.Application\\Dtos\\Announcement\\AnnouncementDto.cs",
+              "RelativeToolTip": "Core\\Legno.Application\\Dtos\\Announcement\\AnnouncementDto.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABUAAAAwAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-12-27T12:24:43.51Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 22,
+              "Title": "UpdateArticleDto.cs",
+              "DocumentMoniker": "C:\\Users\\gulco\\source\\repos\\Legno\\Core\\Legno.Application\\Dtos\\Article\\UpdateArticleDto.cs",
+              "RelativeDocumentMoniker": "Core\\Legno.Application\\Dtos\\Article\\UpdateArticleDto.cs",
+              "ToolTip": "C:\\Users\\gulco\\source\\repos\\Legno\\Core\\Legno.Application\\Dtos\\Article\\UpdateArticleDto.cs",
+              "RelativeToolTip": "Core\\Legno.Application\\Dtos\\Article\\UpdateArticleDto.cs",
+              "ViewState": "AgIAAAsAAAAAAAAAAAAAABoAAAAmAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-12-27T12:24:21.838Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 23,
+              "Title": "CreateArticleDto.cs",
+              "DocumentMoniker": "C:\\Users\\gulco\\source\\repos\\Legno\\Core\\Legno.Application\\Dtos\\Article\\CreateArticleDto.cs",
+              "RelativeDocumentMoniker": "Core\\Legno.Application\\Dtos\\Article\\CreateArticleDto.cs",
+              "ToolTip": "C:\\Users\\gulco\\source\\repos\\Legno\\Core\\Legno.Application\\Dtos\\Article\\CreateArticleDto.cs",
+              "RelativeToolTip": "Core\\Legno.Application\\Dtos\\Article\\CreateArticleDto.cs",
+              "ViewState": "AgIAAAkAAAAAAAAAAAAAABgAAAAZAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-12-27T12:24:12.11Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 25,
+              "Title": "ArticleDto.cs",
+              "DocumentMoniker": "C:\\Users\\gulco\\source\\repos\\Legno\\Core\\Legno.Application\\Dtos\\Article\\ArticleDto.cs",
+              "RelativeDocumentMoniker": "Core\\Legno.Application\\Dtos\\Article\\ArticleDto.cs",
+              "ToolTip": "C:\\Users\\gulco\\source\\repos\\Legno\\Core\\Legno.Application\\Dtos\\Article\\ArticleDto.cs",
+              "RelativeToolTip": "Core\\Legno.Application\\Dtos\\Article\\ArticleDto.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABUAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-12-27T12:24:04.166Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 38,
+              "Title": "20251227122314_EditAnnouncementandArticle.cs",
+              "DocumentMoniker": "C:\\Users\\gulco\\source\\repos\\Legno\\Infrastructure\\Legno.Persistence\\Migrations\\20251227122314_EditAnnouncementandArticle.cs",
+              "RelativeDocumentMoniker": "Infrastructure\\Legno.Persistence\\Migrations\\20251227122314_EditAnnouncementandArticle.cs",
+              "ToolTip": "C:\\Users\\gulco\\source\\repos\\Legno\\Infrastructure\\Legno.Persistence\\Migrations\\20251227122314_EditAnnouncementandArticle.cs",
+              "RelativeToolTip": "Infrastructure\\Legno.Persistence\\Migrations\\20251227122314_EditAnnouncementandArticle.cs",
+              "ViewState": "AgIAADQAAAAAAAAAAAAgwAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-12-27T12:23:15.106Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 29,
+              "Title": "Announcement.cs",
+              "DocumentMoniker": "C:\\Users\\gulco\\source\\repos\\Legno\\Core\\Legno.Domain\\Entities\\Announcement.cs",
+              "RelativeDocumentMoniker": "Core\\Legno.Domain\\Entities\\Announcement.cs",
+              "ToolTip": "C:\\Users\\gulco\\source\\repos\\Legno\\Core\\Legno.Domain\\Entities\\Announcement.cs",
+              "RelativeToolTip": "Core\\Legno.Domain\\Entities\\Announcement.cs",
+              "ViewState": "AgIAAAYAAAAAAAAAAAAAABMAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-12-27T12:20:52.519Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 28,
+              "Title": "Article.cs",
+              "DocumentMoniker": "C:\\Users\\gulco\\source\\repos\\Legno\\Core\\Legno.Domain\\Entities\\Article.cs",
+              "RelativeDocumentMoniker": "Core\\Legno.Domain\\Entities\\Article.cs",
+              "ToolTip": "C:\\Users\\gulco\\source\\repos\\Legno\\Core\\Legno.Domain\\Entities\\Article.cs",
+              "RelativeToolTip": "Core\\Legno.Domain\\Entities\\Article.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABYAAAAwAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-12-27T12:12:10.132Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 31,
+              "Title": "PurchasesController.cs",
+              "DocumentMoniker": "C:\\Users\\gulco\\source\\repos\\Legno\\Presentation\\Legno.WebApi\\Controllers\\PurchasesController.cs",
+              "RelativeDocumentMoniker": "Presentation\\Legno.WebApi\\Controllers\\PurchasesController.cs",
+              "ToolTip": "C:\\Users\\gulco\\source\\repos\\Legno\\Presentation\\Legno.WebApi\\Controllers\\PurchasesController.cs",
+              "RelativeToolTip": "Presentation\\Legno.WebApi\\Controllers\\PurchasesController.cs",
+              "ViewState": "AgIAAEQAAAAAAAAAAAAQwGwAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-12-26T11:55:34.309Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 30,
+              "Title": "PurchaseService.cs",
+              "DocumentMoniker": "C:\\Users\\gulco\\source\\repos\\Legno\\Infrastructure\\Legno.Persistence\\Concreters\\Services\\PurchaseService.cs",
+              "RelativeDocumentMoniker": "Infrastructure\\Legno.Persistence\\Concreters\\Services\\PurchaseService.cs",
+              "ToolTip": "C:\\Users\\gulco\\source\\repos\\Legno\\Infrastructure\\Legno.Persistence\\Concreters\\Services\\PurchaseService.cs",
+              "RelativeToolTip": "Infrastructure\\Legno.Persistence\\Concreters\\Services\\PurchaseService.cs",
+              "ViewState": "AgIAAEMAAAAAAAAAAAAQwGsAAAA6AAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-12-26T11:54:17.405Z"
             },
             {
               "$type": "Document",
               "DocumentIndex": 36,
-              "Title": "IPartnerService.cs",
-              "DocumentMoniker": "C:\\Users\\gulco\\source\\repos\\Legno\\Core\\Legno.Application\\Abstracts\\Services\\IPartnerService.cs",
-              "RelativeDocumentMoniker": "Core\\Legno.Application\\Abstracts\\Services\\IPartnerService.cs",
-              "ToolTip": "C:\\Users\\gulco\\source\\repos\\Legno\\Core\\Legno.Application\\Abstracts\\Services\\IPartnerService.cs",
-              "RelativeToolTip": "Core\\Legno.Application\\Abstracts\\Services\\IPartnerService.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAsAAAA2AAAAAAAAAA==",
+              "Title": "IPurchaseService.cs",
+              "DocumentMoniker": "C:\\Users\\gulco\\source\\repos\\Legno\\Core\\Legno.Application\\Abstracts\\Services\\IPurchaseService.cs",
+              "RelativeDocumentMoniker": "Core\\Legno.Application\\Abstracts\\Services\\IPurchaseService.cs",
+              "ToolTip": "C:\\Users\\gulco\\source\\repos\\Legno\\Core\\Legno.Application\\Abstracts\\Services\\IPurchaseService.cs",
+              "RelativeToolTip": "Core\\Legno.Application\\Abstracts\\Services\\IPurchaseService.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA0AAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-09-08T12:01:36.671Z"
+              "WhenOpened": "2025-12-26T11:52:44.145Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 41,
-              "Title": "UserProjectConfiguration.cs",
-              "DocumentMoniker": "C:\\Users\\gulco\\source\\repos\\Legno\\Infrastructure\\Legno.Persistence\\Configurations\\UserProjectConfiguration.cs",
-              "RelativeDocumentMoniker": "Infrastructure\\Legno.Persistence\\Configurations\\UserProjectConfiguration.cs",
-              "ToolTip": "C:\\Users\\gulco\\source\\repos\\Legno\\Infrastructure\\Legno.Persistence\\Configurations\\UserProjectConfiguration.cs",
-              "RelativeToolTip": "Infrastructure\\Legno.Persistence\\Configurations\\UserProjectConfiguration.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA8AAAAAAAAAAAAAAA==",
+              "DocumentIndex": 37,
+              "Title": "PurchaseProfile.cs",
+              "DocumentMoniker": "C:\\Users\\gulco\\source\\repos\\Legno\\Core\\Legno.Application\\Profiles\\PurchaseProfile.cs",
+              "RelativeDocumentMoniker": "Core\\Legno.Application\\Profiles\\PurchaseProfile.cs",
+              "ToolTip": "C:\\Users\\gulco\\source\\repos\\Legno\\Core\\Legno.Application\\Profiles\\PurchaseProfile.cs",
+              "RelativeToolTip": "Core\\Legno.Application\\Profiles\\PurchaseProfile.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABEAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-09-08T12:00:13.74Z"
+              "WhenOpened": "2025-12-26T11:52:20.95Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 40,
-              "Title": "PartnerConfiguration.cs",
-              "DocumentMoniker": "C:\\Users\\gulco\\source\\repos\\Legno\\Infrastructure\\Legno.Persistence\\Configurations\\PartnerConfiguration.cs",
-              "RelativeDocumentMoniker": "Infrastructure\\Legno.Persistence\\Configurations\\PartnerConfiguration.cs",
-              "ToolTip": "C:\\Users\\gulco\\source\\repos\\Legno\\Infrastructure\\Legno.Persistence\\Configurations\\PartnerConfiguration.cs",
-              "RelativeToolTip": "Infrastructure\\Legno.Persistence\\Configurations\\PartnerConfiguration.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAABIAAAAnAAAAAAAAAA==",
+              "DocumentIndex": 34,
+              "Title": "UpdatePurchaseDto.cs",
+              "DocumentMoniker": "C:\\Users\\gulco\\source\\repos\\Legno\\Core\\Legno.Application\\Dtos\\Purchase\\UpdatePurchaseDto.cs",
+              "RelativeDocumentMoniker": "Core\\Legno.Application\\Dtos\\Purchase\\UpdatePurchaseDto.cs",
+              "ToolTip": "C:\\Users\\gulco\\source\\repos\\Legno\\Core\\Legno.Application\\Dtos\\Purchase\\UpdatePurchaseDto.cs",
+              "RelativeToolTip": "Core\\Legno.Application\\Dtos\\Purchase\\UpdatePurchaseDto.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAwAAAAwAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-09-08T11:59:52.342Z"
+              "WhenOpened": "2025-12-26T11:49:25.062Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 42,
-              "Title": "Partner.cs",
-              "DocumentMoniker": "C:\\Users\\gulco\\source\\repos\\Legno\\Core\\Legno.Domain\\Entities\\Partner.cs",
-              "RelativeDocumentMoniker": "Core\\Legno.Domain\\Entities\\Partner.cs",
-              "ToolTip": "C:\\Users\\gulco\\source\\repos\\Legno\\Core\\Legno.Domain\\Entities\\Partner.cs",
-              "RelativeToolTip": "Core\\Legno.Domain\\Entities\\Partner.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA4AAAAAAAAAAAAAAA==",
+              "DocumentIndex": 32,
+              "Title": "CreatePurchaseDto.cs",
+              "DocumentMoniker": "C:\\Users\\gulco\\source\\repos\\Legno\\Core\\Legno.Application\\Dtos\\Purchase\\CreatePurchaseDto.cs",
+              "RelativeDocumentMoniker": "Core\\Legno.Application\\Dtos\\Purchase\\CreatePurchaseDto.cs",
+              "ToolTip": "C:\\Users\\gulco\\source\\repos\\Legno\\Core\\Legno.Application\\Dtos\\Purchase\\CreatePurchaseDto.cs",
+              "RelativeToolTip": "Core\\Legno.Application\\Dtos\\Purchase\\CreatePurchaseDto.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA8AAAAvAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-09-08T11:58:05.374Z"
+              "WhenOpened": "2025-12-26T11:49:14.555Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 35,
+              "Title": "PurchaseDto.cs",
+              "DocumentMoniker": "C:\\Users\\gulco\\source\\repos\\Legno\\Core\\Legno.Application\\Dtos\\Purchase\\PurchaseDto.cs",
+              "RelativeDocumentMoniker": "Core\\Legno.Application\\Dtos\\Purchase\\PurchaseDto.cs",
+              "ToolTip": "C:\\Users\\gulco\\source\\repos\\Legno\\Core\\Legno.Application\\Dtos\\Purchase\\PurchaseDto.cs",
+              "RelativeToolTip": "Core\\Legno.Application\\Dtos\\Purchase\\PurchaseDto.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAoAAAAmAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-12-26T11:48:56.461Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 33,
+              "Title": "Purchase.cs",
+              "DocumentMoniker": "C:\\Users\\gulco\\source\\repos\\Legno\\Core\\Legno.Domain\\Entities\\Purchase.cs",
+              "RelativeDocumentMoniker": "Core\\Legno.Domain\\Entities\\Purchase.cs",
+              "ToolTip": "C:\\Users\\gulco\\source\\repos\\Legno\\Core\\Legno.Domain\\Entities\\Purchase.cs",
+              "RelativeToolTip": "Core\\Legno.Domain\\Entities\\Purchase.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAkAAAAkAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-12-26T11:48:35.537Z"
             }
           ]
         }

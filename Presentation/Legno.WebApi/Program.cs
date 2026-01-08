@@ -94,7 +94,7 @@ namespace Legno.WebApi
 
             builder.Services.AddDbContext<LegnoDbContext>(opt =>
             {
-                opt.UseNpgsql(builder.Configuration.GetConnectionString("Default"));
+                opt.UseSqlServer(builder.Configuration.GetConnectionString("Default"));
             });
 
             builder.Services.AddAutoMapper(typeof(AdminMapProfile));
@@ -138,10 +138,10 @@ namespace Legno.WebApi
 
             // Configure the HTTP request pipeline.
             //if (app.Environment.IsDevelopment())
-            //{
+            {
             app.UseSwagger();
             app.UseSwaggerUI();
-            //}
+            }
 
             app.UseHttpsRedirection();
 

@@ -15,5 +15,6 @@ namespace Legno.Application.Dtos.Category
         public string NameEng { get; set; }
 
         public IFormFile CategoryImage { get; set; }
+        public List<IFormFile>? CategorySliderImages { get; set; }
     }
 }

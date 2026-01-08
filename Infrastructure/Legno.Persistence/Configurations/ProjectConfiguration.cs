@@ -43,11 +43,8 @@ namespace Legno.Persistence.Configurations
                    .HasForeignKey(x => x.ProjectId)
                    .OnDelete(DeleteBehavior.Cascade);
 
-            builder.Property(x => x.CategoryId).IsRequired();
-            builder.HasOne(x => x.Category).
-                 WithMany(c => c.Projects) // ?g?r Category-d? Projects kolleksiyas? varsa, WithMany(c => c.Projects) yaz
-                   .HasForeignKey(x => x.CategoryId)
-                   .OnDelete(DeleteBehavior.NoAction);
+      
+
         }
     }
 }

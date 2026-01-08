@@ -4,7 +4,6 @@ using Legno.Application.Abstracts.Repositories.Projects;
 using Legno.Application.Abstracts.Repositories.Teams;
 using Legno.Application.Abstracts.Services;
 using Legno.Application.Dtos.Team;
-
 using Legno.Application.GlobalExceptionn;
 using Legno.Domain.Entities;
 
@@ -12,196 +11,139 @@ namespace Legno.Persistence.Concreters.Services
 {
     public class TeamsService : ITeamService
     {
-        private readonly ITeamReadRepository _teamReadRepository;
-        private readonly ITeamWriteRepository _teamWriteRepository;
+        private readonly ITeamReadRepository _read;
+        private readonly ITeamWriteRepository _write;
+        private readonly IProjectReadRepository _projectRead;
+        private readonly IProjectWriteRepository _projectWrite;
         private readonly IFileService _fileService;
-        private readonly IProjectReadRepository _projectReadRepository;
-        private readonly IProjectWriteRepository _projectWriteRepository;
-
         private readonly IMapper _mapper;
-        private readonly CloudinaryService _cloudinaryService;
 
         public TeamsService(
-            ITeamReadRepository teamReadRepository,
-            ITeamWriteRepository teamWriteRepository,
+            ITeamReadRepository read,
+            ITeamWriteRepository write,
+            IProjectReadRepository projectRead,
+            IProjectWriteRepository projectWrite,
             IFileService fileService,
-            IMapper mapper,
-            CloudinaryService cloudinaryService,
-            IProjectReadRepository projectReadRepository,
-            IProjectWriteRepository projectWriteRepository)
+            IMapper mapper)
         {
-            _teamReadRepository = teamReadRepository;
-            _teamWriteRepository = teamWriteRepository;
+            _read = read;
+            _write = write;
+            _projectRead = projectRead;
+            _projectWrite = projectWrite;
             _fileService = fileService;
             _mapper = mapper;
-            _cloudinaryService = cloudinaryService;
-            _projectReadRepository = projectReadRepository;
-            _projectWriteRepository = projectWriteRepository;
         }
 
-        public async Task<TeamDto> AddTeamAsync(CreateTeamDto createTeamDto)
+        public async Task<TeamDto> AddTeamAsync(CreateTeamDto dto)
         {
-            if (!string.IsNullOrWhiteSpace(createTeamDto.Name) && createTeamDto.Name.Length > 100)
-                throw new GlobalAppException("Ad maksimum 100 simvol ola bilər.");
+            if (dto == null) throw new GlobalAppException("Məlumat göndərilməyib.");
 
-            // Max(DisplayOrderId) + 1  (GetAllAsync ilə)
-            var existing = await _teamReadRepository.GetAllAsync(
-                func: t => !t.IsDeleted,
-                include: null,
-                orderBy: null,
-                EnableTraking: false
-            );
-            var maxOrder = existing.Any() ? existing.Max(t => t.DisplayOrderId) : 0;
+            var all = await _read.GetAllAsync(t => !t.IsDeleted);
+            var maxOrder = all.Any() ? all.Max(t => t.DisplayOrderId) : 0;
 
-            var entity = _mapper.Map<Team>(createTeamDto);
+            var entity = _mapper.Map<Team>(dto);
+            entity.Id = Guid.NewGuid();
             entity.DisplayOrderId = maxOrder + 1;
-            entity.IsDeleted = false;
             entity.CreatedDate = DateTime.UtcNow;
-            entity.LastUpdatedDate = entity.CreatedDate;
+            entity.LastUpdatedDate = DateTime.UtcNow;
+            entity.IsDeleted = false;
 
-            if (createTeamDto.CardImage != null)
-            {
-                var fileName = await _cloudinaryService.UploadFileAsync(createTeamDto.CardImage);
-                entity.CardImage = fileName;
-            }
+            if (dto.CardImage != null)
+                entity.CardImage = await _fileService.UploadFile(dto.CardImage, "teams");
 
-            await _teamWriteRepository.AddAsync(entity);
-            await _teamWriteRepository.CommitAsync();
+            await _write.AddAsync(entity);
+            await _write.CommitAsync();
 
             return _mapper.Map<TeamDto>(entity);
         }
 
-        public async Task<TeamDto?> GetTeamAsync(string teamId)
+        public async Task<TeamDto?> GetTeamAsync(string id)
         {
-            var team = await _teamReadRepository.GetByIdAsync(teamId, EnableTraking: false);
-            if (team == null || team.IsDeleted)
-                return null;
-
-            return _mapper.Map<TeamDto>(team);
+            var entity = await _read.GetByIdAsync(id, EnableTraking: false);
+            if (entity == null || entity.IsDeleted)
+                throw new GlobalAppException("Komanda üzvü tapılmadı.");
+            return _mapper.Map<TeamDto>(entity);
         }
 
         public async Task<List<TeamDto>> GetAllTeamsAsync()
         {
-            var teams = await _teamReadRepository.GetAllAsync(
+            var list = await _read.GetAllAsync(
                 func: t => !t.IsDeleted,
-                include: null,
-                orderBy: q => q.OrderBy(t => t.DisplayOrderId).ThenByDescending(t => t.CreatedDate),
-                EnableTraking: false
-            );
+                orderBy: q => q.OrderBy(t => t.DisplayOrderId),
+                EnableTraking: false);
 
-            return _mapper.Map<List<TeamDto>>(teams.ToList());
+            return _mapper.Map<List<TeamDto>>(list);
         }
 
-        public async Task<TeamDto> UpdateTeamAsync(UpdateTeamDto updateTeamDto)
+        public async Task<TeamDto> UpdateTeamAsync(UpdateTeamDto dto)
         {
-            if (string.IsNullOrWhiteSpace(updateTeamDto.Id))
-                throw new GlobalAppException("Id boş ola bilməz.");
+            if (string.IsNullOrWhiteSpace(dto.Id))
+                throw new GlobalAppException("Id tələb olunur.");
 
-            var team = await _teamReadRepository.GetByIdAsync(updateTeamDto.Id, EnableTraking: true);
-            if (team == null || team.IsDeleted)
-                throw new GlobalAppException("Komanda üzvü tapılmadı!");
+            var entity = await _read.GetByIdAsync(dto.Id, EnableTraking: true)
+                ?? throw new GlobalAppException("Komanda tapılmadı.");
 
-            // Null olmayan sahələri kopyala
-            _mapper.Map(updateTeamDto, team);
-            // ---- Manual field-by-field update (null gəlməyənlər tətbiq olunur) ----
-            if (updateTeamDto.Name != null) team.Name = updateTeamDto.Name;
-            if (updateTeamDto.NameEng != null) team.NameEng = updateTeamDto.NameEng;
-            if (updateTeamDto.NameRu != null) team.NameRu = updateTeamDto.NameRu;
+            _mapper.Map(dto, entity);
 
-            if (updateTeamDto.Surname != null) team.Surname = updateTeamDto.Surname;
-            if (updateTeamDto.SurnameEng != null) team.SurnameEng = updateTeamDto.SurnameEng;
-            if (updateTeamDto.SurnameRu != null) team.SurnameRu = updateTeamDto.SurnameRu;
-
-            if (updateTeamDto.Position != null) team.Position = updateTeamDto.Position;
-            if (updateTeamDto.PositionEng != null) team.PositionEng = updateTeamDto.PositionEng;
-            if (updateTeamDto.PositionRu != null) team.PositionRu = updateTeamDto.PositionRu;
-
-            if (updateTeamDto.InstagramLink != null) team.InstagramLink = updateTeamDto.InstagramLink;
-            if (updateTeamDto.LinkedInLink != null) team.LinkedInLink = updateTeamDto.LinkedInLink;
-
-            // Yeni şəkil gəlirsə — köhnəni sil, yenisini yaz
-            if (updateTeamDto.CardImage != null)
+            if (dto.CardImage != null)
             {
-                if (!string.IsNullOrEmpty(team.CardImage))
-                    await   _cloudinaryService.DeleteFileAsync(team.CardImage);
+                if (!string.IsNullOrWhiteSpace(entity.CardImage))
+                    await _fileService.DeleteFile("teams", entity.CardImage);
 
-                team.CardImage = await _cloudinaryService.UploadFileAsync(updateTeamDto.CardImage);
+                entity.CardImage = await _fileService.UploadFile(dto.CardImage, "teams");
             }
 
-        
-            team.LastUpdatedDate = DateTime.UtcNow;
+            entity.LastUpdatedDate = DateTime.UtcNow;
+            await _write.UpdateAsync(entity);
+            await _write.CommitAsync();
 
-            await _teamWriteRepository.UpdateAsync(team);
-            await _teamWriteRepository.CommitAsync();
-
-            return _mapper.Map<TeamDto>(team);
+            return _mapper.Map<TeamDto>(entity);
         }
 
-        public async Task DeleteTeamAsync(string teamId)
+        public async Task DeleteTeamAsync(string id)
         {
-            var team = await _teamReadRepository.GetByIdAsync(teamId, EnableTraking: true);
-            if (team == null || team.IsDeleted)
-                throw new GlobalAppException("Komanda üzvü tapılmadı!");
+            var entity = await _read.GetByIdAsync(id, EnableTraking: true)
+                ?? throw new GlobalAppException("Komanda tapılmadı.");
 
-            // 🔹 Team soft-delete
-            team.IsDeleted = true;
-            team.DeletedDate = DateTime.UtcNow;
-            team.LastUpdatedDate = DateTime.UtcNow;
-            await _teamWriteRepository.UpdateAsync(team);
+            entity.IsDeleted = true;
+            entity.DeletedDate = DateTime.UtcNow;
+            entity.LastUpdatedDate = DateTime.UtcNow;
+            await _write.UpdateAsync(entity);
 
-            // 🔹 Team-ə bağlı Project-ləri tapıb soft-delete et
-            var relatedProjects = await _projectReadRepository
-                .GetAllAsync(p => p.TeamId == team.Id && !p.IsDeleted, EnableTraking: true);
-
-            foreach (var project in relatedProjects)
+            var relatedProjects = await _projectRead.GetAllAsync(p => p.TeamId == entity.Id && !p.IsDeleted);
+            foreach (var p in relatedProjects)
             {
-                project.IsDeleted = true;
-                project.DeletedDate = DateTime.UtcNow;
-                project.LastUpdatedDate = DateTime.UtcNow;
-                await _projectWriteRepository.UpdateAsync(project);
+                p.IsDeleted = true;
+                p.DeletedDate = DateTime.UtcNow;
+                p.LastUpdatedDate = DateTime.UtcNow;
+                await _projectWrite.UpdateAsync(p);
             }
 
-            // 🔹 Commitlər
-            await _teamWriteRepository.CommitAsync();
-            await _projectWriteRepository.CommitAsync();
+            await _write.CommitAsync();
+            await _projectWrite.CommitAsync();
         }
 
-
-        // TeamId + DisplayOrderId siyahısına görə sıralamanı dəyiş
         public async Task ReorderTeamsAsync(List<TeamOrderUpdateDto> orders)
         {
-            if (orders == null || orders.Count == 0)
-                return;
+            if (orders == null || orders.Count == 0) return;
 
-            var dupDisplay = orders.GroupBy(o => o.DisplayOrderId).Any(g => g.Count() > 1);
-            if (dupDisplay)
-                throw new GlobalAppException("DisplayOrderId dəyərləri təkrarlanmamalıdır.");
-
-            // Id-ləri yığ
             var idMap = new Dictionary<Guid, int>();
             foreach (var o in orders)
             {
                 if (!Guid.TryParse(o.TeamId, out var gid))
-                    throw new GlobalAppException($"Yanlış TeamId: {o.TeamId}");
+                    throw new GlobalAppException($"Yanlış ID: {o.TeamId}");
                 idMap[gid] = o.DisplayOrderId;
             }
 
-            // Yalnız verilənlərə aid olanları çək (GetAllAsync ilə)
-            var affected = await _teamReadRepository.GetAllAsync(
-                func: t => !t.IsDeleted && idMap.Keys.Contains(t.Id),
-                include: null,
-                orderBy: null,
-                EnableTraking: true
-            );
-
-            foreach (var t in affected)
+            var teams = await _read.GetAllAsync(t => idMap.Keys.Contains(t.Id) && !t.IsDeleted, EnableTraking: true);
+            foreach (var t in teams)
             {
                 t.DisplayOrderId = idMap[t.Id];
                 t.LastUpdatedDate = DateTime.UtcNow;
-                await _teamWriteRepository.UpdateAsync(t);
+                await _write.UpdateAsync(t);
             }
 
-            await _teamWriteRepository.CommitAsync();
+            await _write.CommitAsync();
         }
     }
 }

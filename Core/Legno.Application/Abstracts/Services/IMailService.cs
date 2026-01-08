@@ -10,6 +10,8 @@ namespace Legno.Application.Absrtacts.Services
 {
     public interface IMailService
     {
-        Task SendEmailAsync(MailRequest mailRequest);
+        Task SendFromInfoAsync(MailRequest mailRequest);
+        Task SendFromHRAsync(MailRequest mailRequest);
     }
+
 }

@@ -36,6 +36,531 @@
         }
       }
     },
+    "/api/Announcements/create": {
+      "post": {
+        "tags": [
+          "Announcements"
+        ],
+        "requestBody": {
+          "content": {
+            "multipart/form-data": {
+              "schema": {
+                "type": "object",
+                "properties": {
+                  "Title": {
+                    "type": "string"
+                  },
+                  "TitleEng": {
+                    "type": "string"
+                  },
+                  "TitleRu": {
+                    "type": "string"
+                  },
+                  "AuthorName": {
+                    "type": "string"
+                  },
+                  "AuthorNameEng": {
+                    "type": "string"
+                  },
+                  "AuthorNameRu": {
+                    "type": "string"
+                  },
+                  "SubTitle": {
+                    "type": "string"
+                  },
+                  "SubTitleEng": {
+                    "type": "string"
+                  },
+                  "SubTitleRu": {
+                    "type": "string"
+                  },
+                  "AuthorImage": {
+                    "type": "string",
+                    "format": "binary"
+                  },
+                  "CardImage": {
+                    "type": "string",
+                    "format": "binary"
+                  }
+                }
+              },
+              "encoding": {
+                "Title": {
+                  "style": "form"
+                },
+                "TitleEng": {
+                  "style": "form"
+                },
+                "TitleRu": {
+                  "style": "form"
+                },
+                "AuthorName": {
+                  "style": "form"
+                },
+                "AuthorNameEng": {
+                  "style": "form"
+                },
+                "AuthorNameRu": {
+                  "style": "form"
+                },
+                "SubTitle": {
+                  "style": "form"
+                },
+                "SubTitleEng": {
+                  "style": "form"
+                },
+                "SubTitleRu": {
+                  "style": "form"
+                },
+                "AuthorImage": {
+                  "style": "form"
+                },
+                "CardImage": {
+                  "style": "form"
+                }
+              }
+            }
+          }
+        },
+        "responses": {
+          "200": {
+            "description": "OK"
+          }
+        }
+      }
+    },
+    "/api/Announcements/get/{id}": {
+      "get": {
+        "tags": [
+          "Announcements"
+        ],
+        "parameters": [
+          {
+            "name": "id",
+            "in": "path",
+            "required": true,
+            "schema": {
+              "type": "string"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "OK"
+          }
+        }
+      }
+    },
+    "/api/Announcements/get-all": {
+      "get": {
+        "tags": [
+          "Announcements"
+        ],
+        "responses": {
+          "200": {
+            "description": "OK"
+          }
+        }
+      }
+    },
+    "/api/Announcements/update": {
+      "put": {
+        "tags": [
+          "Announcements"
+        ],
+        "requestBody": {
+          "content": {
+            "multipart/form-data": {
+              "schema": {
+                "type": "object",
+                "properties": {
+                  "Id": {
+                    "type": "string"
+                  },
+                  "Title": {
+                    "type": "string"
+                  },
+                  "TitleEng": {
+                    "type": "string"
+                  },
+                  "TitleRu": {
+                    "type": "string"
+                  },
+                  "AuthorNameEng": {
+                    "type": "string"
+                  },
+                  "AuthorNameRu": {
+                    "type": "string"
+                  },
+                  "SubTitle": {
+                    "type": "string"
+                  },
+                  "SubTitleEng": {
+                    "type": "string"
+                  },
+                  "SubTitleRu": {
+                    "type": "string"
+                  },
+                  "AuthorName": {
+                    "type": "string"
+                  },
+                  "AuthorImage": {
+                    "type": "string",
+                    "format": "binary"
+                  },
+                  "CardImage": {
+                    "type": "string",
+                    "format": "binary"
+                  }
+                }
+              },
+              "encoding": {
+                "Id": {
+                  "style": "form"
+                },
+                "Title": {
+                  "style": "form"
+                },
+                "TitleEng": {
+                  "style": "form"
+                },
+                "TitleRu": {
+                  "style": "form"
+                },
+                "AuthorNameEng": {
+                  "style": "form"
+                },
+                "AuthorNameRu": {
+                  "style": "form"
+                },
+                "SubTitle": {
+                  "style": "form"
+                },
+                "SubTitleEng": {
+                  "style": "form"
+                },
+                "SubTitleRu": {
+                  "style": "form"
+                },
+                "AuthorName": {
+                  "style": "form"
+                },
+                "AuthorImage": {
+                  "style": "form"
+                },
+                "CardImage": {
+                  "style": "form"
+                }
+              }
+            }
+          }
+        },
+        "responses": {
+          "200": {
+            "description": "OK"
+          }
+        }
+      }
+    },
+    "/api/Announcements/delete/{id}": {
+      "delete": {
+        "tags": [
+          "Announcements"
+        ],
+        "parameters": [
+          {
+            "name": "id",
+            "in": "path",
+            "required": true,
+            "schema": {
+              "type": "string"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "OK"
+          }
+        }
+      }
+    },
+    "/api/Articles/create": {
+      "post": {
+        "tags": [
+          "Articles"
+        ],
+        "requestBody": {
+          "content": {
+            "multipart/form-data": {
+              "schema": {
+                "type": "object",
+                "properties": {
+                  "Title": {
+                    "type": "string"
+                  },
+                  "TitleEng": {
+                    "type": "string"
+                  },
+                  "TitleRu": {
+                    "type": "string"
+                  },
+                  "SubTitle": {
+                    "type": "string"
+                  },
+                  "SubTitleEng": {
+                    "type": "string"
+                  },
+                  "SubTitleRu": {
+                    "type": "string"
+                  },
+                  "AuthorName": {
+                    "type": "string"
+                  },
+                  "AuthorNameEng": {
+                    "type": "string"
+                  },
+                  "AuthorNameRu": {
+                    "type": "string"
+                  },
+                  "AuthorImage": {
+                    "type": "string",
+                    "format": "binary"
+                  },
+                  "CardImage": {
+                    "type": "string",
+                    "format": "binary"
+                  },
+                  "Images": {
+                    "type": "array",
+                    "items": {
+                      "type": "string",
+                      "format": "binary"
+                    }
+                  }
+                }
+              },
+              "encoding": {
+                "Title": {
+                  "style": "form"
+                },
+                "TitleEng": {
+                  "style": "form"
+                },
+                "TitleRu": {
+                  "style": "form"
+                },
+                "SubTitle": {
+                  "style": "form"
+                },
+                "SubTitleEng": {
+                  "style": "form"
+                },
+                "SubTitleRu": {
+                  "style": "form"
+                },
+                "AuthorName": {
+                  "style": "form"
+                },
+                "AuthorNameEng": {
+                  "style": "form"
+                },
+                "AuthorNameRu": {
+                  "style": "form"
+                },
+                "AuthorImage": {
+                  "style": "form"
+                },
+                "CardImage": {
+                  "style": "form"
+                },
+                "Images": {
+                  "style": "form"
+                }
+              }
+            }
+          }
+        },
+        "responses": {
+          "200": {
+            "description": "OK"
+          }
+        }
+      }
+    },
+    "/api/Articles/get/{id}": {
+      "get": {
+        "tags": [
+          "Articles"
+        ],
+        "parameters": [
+          {
+            "name": "id",
+            "in": "path",
+            "required": true,
+            "schema": {
+              "type": "string"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "OK"
+          }
+        }
+      }
+    },
+    "/api/Articles/get-all": {
+      "get": {
+        "tags": [
+          "Articles"
+        ],
+        "responses": {
+          "200": {
+            "description": "OK"
+          }
+        }
+      }
+    },
+    "/api/Articles/update": {
+      "put": {
+        "tags": [
+          "Articles"
+        ],
+        "requestBody": {
+          "content": {
+            "multipart/form-data": {
+              "schema": {
+                "type": "object",
+                "properties": {
+                  "Id": {
+                    "type": "string"
+                  },
+                  "Title": {
+                    "type": "string"
+                  },
+                  "TitleEng": {
+                    "type": "string"
+                  },
+                  "TitleRu": {
+                    "type": "string"
+                  },
+                  "AuthorName": {
+                    "type": "string"
+                  },
+                  "AuthorNameEng": {
+                    "type": "string"
+                  },
+                  "AuthorNameRu": {
+                    "type": "string"
+                  },
+                  "SubTitle": {
+                    "type": "string"
+                  },
+                  "SubTitleEng": {
+                    "type": "string"
+                  },
+                  "SubTitleRu": {
+                    "type": "string"
+                  },
+                  "AuthorImage": {
+                    "type": "string",
+                    "format": "binary"
+                  },
+                  "CardImage": {
+                    "type": "string",
+                    "format": "binary"
+                  },
+                  "Images": {
+                    "type": "array",
+                    "items": {
+                      "type": "string",
+                      "format": "binary"
+                    }
+                  },
+                  "DeleteImageIds": {
+                    "type": "array",
+                    "items": {
+                      "type": "string"
+                    }
+                  }
+                }
+              },
+              "encoding": {
+                "Id": {
+                  "style": "form"
+                },
+                "Title": {
+                  "style": "form"
+                },
+                "TitleEng": {
+                  "style": "form"
+                },
+                "TitleRu": {
+                  "style": "form"
+                },
+                "AuthorName": {
+                  "style": "form"
+                },
+                "AuthorNameEng": {
+                  "style": "form"
+                },
+                "AuthorNameRu": {
+                  "style": "form"
+                },
+                "SubTitle": {
+                  "style": "form"
+                },
+                "SubTitleEng": {
+                  "style": "form"
+                },
+                "SubTitleRu": {
+                  "style": "form"
+                },
+                "AuthorImage": {
+                  "style": "form"
+                },
+                "CardImage": {
+                  "style": "form"
+                },
+                "Images": {
+                  "style": "form"
+                },
+                "DeleteImageIds": {
+                  "style": "form"
+                }
+              }
+            }
+          }
+        },
+        "responses": {
+          "200": {
+            "description": "OK"
+          }
+        }
+      }
+    },
+    "/api/Articles/delete/{id}": {
+      "delete": {
+        "tags": [
+          "Articles"
+        ],
+        "parameters": [
+          {
+            "name": "id",
+            "in": "path",
+            "required": true,
+            "schema": {
+              "type": "string"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "OK"
+          }
+        }
+      }
+    },
     "/api/B2BServices/create": {
       "post": {
         "tags": [
@@ -576,6 +1101,204 @@
         }
       }
     },
+    "/api/Careers/create": {
+      "post": {
+        "tags": [
+          "Careers"
+        ],
+        "requestBody": {
+          "content": {
+            "multipart/form-data": {
+              "schema": {
+                "type": "object",
+                "properties": {
+                  "Name": {
+                    "type": "string"
+                  },
+                  "Surname": {
+                    "type": "string"
+                  },
+                  "BirthDate": {
+                    "type": "string"
+                  },
+                  "WorkExperience": {
+                    "type": "string"
+                  },
+                  "Email": {
+                    "type": "string"
+                  },
+                  "PhoneNumber": {
+                    "type": "string"
+                  },
+                  "FileName": {
+                    "type": "string",
+                    "format": "binary"
+                  }
+                }
+              },
+              "encoding": {
+                "Name": {
+                  "style": "form"
+                },
+                "Surname": {
+                  "style": "form"
+                },
+                "BirthDate": {
+                  "style": "form"
+                },
+                "WorkExperience": {
+                  "style": "form"
+                },
+                "Email": {
+                  "style": "form"
+                },
+                "PhoneNumber": {
+                  "style": "form"
+                },
+                "FileName": {
+                  "style": "form"
+                }
+              }
+            }
+          }
+        },
+        "responses": {
+          "200": {
+            "description": "OK"
+          }
+        }
+      }
+    },
+    "/api/Careers/get/{id}": {
+      "get": {
+        "tags": [
+          "Careers"
+        ],
+        "parameters": [
+          {
+            "name": "id",
+            "in": "path",
+            "required": true,
+            "schema": {
+              "type": "string"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "OK"
+          }
+        }
+      }
+    },
+    "/api/Careers/get-all": {
+      "get": {
+        "tags": [
+          "Careers"
+        ],
+        "responses": {
+          "200": {
+            "description": "OK"
+          }
+        }
+      }
+    },
+    "/api/Careers/update": {
+      "put": {
+        "tags": [
+          "Careers"
+        ],
+        "requestBody": {
+          "content": {
+            "multipart/form-data": {
+              "schema": {
+                "type": "object",
+                "properties": {
+                  "Id": {
+                    "type": "string"
+                  },
+                  "Name": {
+                    "type": "string"
+                  },
+                  "Surname": {
+                    "type": "string"
+                  },
+                  "BirthDate": {
+                    "type": "string"
+                  },
+                  "WorkExperience": {
+                    "type": "string"
+                  },
+                  "Email": {
+                    "type": "string"
+                  },
+                  "PhoneNumber": {
+                    "type": "string"
+                  },
+                  "FileName": {
+                    "type": "string",
+                    "format": "binary"
+                  }
+                }
+              },
+              "encoding": {
+                "Id": {
+                  "style": "form"
+                },
+                "Name": {
+                  "style": "form"
+                },
+                "Surname": {
+                  "style": "form"
+                },
+                "BirthDate": {
+                  "style": "form"
+                },
+                "WorkExperience": {
+                  "style": "form"
+                },
+                "Email": {
+                  "style": "form"
+                },
+                "PhoneNumber": {
+                  "style": "form"
+                },
+                "FileName": {
+                  "style": "form"
+                }
+              }
+            }
+          }
+        },
+        "responses": {
+          "200": {
+            "description": "OK"
+          }
+        }
+      }
+    },
+    "/api/Careers/delete/{id}": {
+      "delete": {
+        "tags": [
+          "Careers"
+        ],
+        "parameters": [
+          {
+            "name": "id",
+            "in": "path",
+            "required": true,
+            "schema": {
+              "type": "string"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "OK"
+          }
+        }
+      }
+    },
     "/api/Categories/create": {
       "post": {
         "tags": [
@@ -599,6 +1322,13 @@
                   "CategoryImage": {
                     "type": "string",
                     "format": "binary"
+                  },
+                  "CategorySliderImages": {
+                    "type": "array",
+                    "items": {
+                      "type": "string",
+                      "format": "binary"
+                    }
                   }
                 }
               },
@@ -613,6 +1343,9 @@
                   "style": "form"
                 },
                 "CategoryImage": {
+                  "style": "form"
+                },
+                "CategorySliderImages": {
                   "style": "form"
                 }
               }
@@ -686,6 +1419,19 @@
                   "CategoryImage": {
                     "type": "string",
                     "format": "binary"
+                  },
+                  "CategorySliderImages": {
+                    "type": "array",
+                    "items": {
+                      "type": "string",
+                      "format": "binary"
+                    }
+                  },
+                  "DeletedCategorySliderImage": {
+                    "type": "array",
+                    "items": {
+                      "type": "string"
+                    }
                   }
                 }
               },
@@ -703,6 +1449,12 @@
                   "style": "form"
                 },
                 "CategoryImage": {
+                  "style": "form"
+                },
+                "CategorySliderImages": {
+                  "style": "form"
+                },
+                "DeletedCategorySliderImage": {
                   "style": "form"
                 }
               }
@@ -1605,6 +2357,168 @@
         }
       }
     },
+    "/api/Members/create": {
+      "post": {
+        "tags": [
+          "Members"
+        ],
+        "requestBody": {
+          "content": {
+            "multipart/form-data": {
+              "schema": {
+                "type": "object",
+                "properties": {
+                  "Image": {
+                    "type": "string",
+                    "format": "binary"
+                  },
+                  "Title": {
+                    "type": "string"
+                  },
+                  "TitleEng": {
+                    "type": "string"
+                  },
+                  "TitleRu": {
+                    "type": "string"
+                  }
+                }
+              },
+              "encoding": {
+                "Image": {
+                  "style": "form"
+                },
+                "Title": {
+                  "style": "form"
+                },
+                "TitleEng": {
+                  "style": "form"
+                },
+                "TitleRu": {
+                  "style": "form"
+                }
+              }
+            }
+          }
+        },
+        "responses": {
+          "200": {
+            "description": "OK"
+          }
+        }
+      }
+    },
+    "/api/Members/get/{id}": {
+      "get": {
+        "tags": [
+          "Members"
+        ],
+        "parameters": [
+          {
+            "name": "id",
+            "in": "path",
+            "required": true,
+            "schema": {
+              "type": "string"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "OK"
+          }
+        }
+      }
+    },
+    "/api/Members/get-all": {
+      "get": {
+        "tags": [
+          "Members"
+        ],
+        "responses": {
+          "200": {
+            "description": "OK"
+          }
+        }
+      }
+    },
+    "/api/Members/update": {
+      "put": {
+        "tags": [
+          "Members"
+        ],
+        "requestBody": {
+          "content": {
+            "multipart/form-data": {
+              "schema": {
+                "type": "object",
+                "properties": {
+                  "Id": {
+                    "type": "string"
+                  },
+                  "Image": {
+                    "type": "string",
+                    "format": "binary"
+                  },
+                  "Title": {
+                    "type": "string"
+                  },
+                  "TitleEng": {
+                    "type": "string"
+                  },
+                  "TitleRu": {
+                    "type": "string"
+                  }
+                }
+              },
+              "encoding": {
+                "Id": {
+                  "style": "form"
+                },
+                "Image": {
+                  "style": "form"
+                },
+                "Title": {
+                  "style": "form"
+                },
+                "TitleEng": {
+                  "style": "form"
+                },
+                "TitleRu": {
+                  "style": "form"
+                }
+              }
+            }
+          }
+        },
+        "responses": {
+          "200": {
+            "description": "OK"
+          }
+        }
+      }
+    },
+    "/api/Members/delete/{id}": {
+      "delete": {
+        "tags": [
+          "Members"
+        ],
+        "parameters": [
+          {
+            "name": "id",
+            "in": "path",
+            "required": true,
+            "schema": {
+              "type": "string"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "OK"
+          }
+        }
+      }
+    },
     "/api/Partners/create": {
       "post": {
         "tags": [
@@ -1803,7 +2717,7 @@
                   "TeamId": {
                     "type": "string"
                   },
-                  "CategoryId": {
+                  "CategoryName": {
                     "type": "string"
                   },
                   "ProjectImages": {
@@ -1859,7 +2773,7 @@
                 "TeamId": {
                   "style": "form"
                 },
-                "CategoryId": {
+                "CategoryName": {
                   "style": "form"
                 },
                 "ProjectImages": {
@@ -1982,7 +2896,7 @@
                       "type": "string"
                     }
                   },
-                  "CategoryId": {
+                  "CategoryName": {
                     "type": "string"
                   },
                   "ProjectImages": {
@@ -2053,7 +2967,7 @@
                 "DeleteSliderImageNames": {
                   "style": "form"
                 },
-                "CategoryId": {
+                "CategoryName": {
                   "style": "form"
                 },
                 "ProjectImages": {
@@ -2156,6 +3070,192 @@
             }
           }
         },
+        "responses": {
+          "200": {
+            "description": "OK"
+          }
+        }
+      }
+    },
+    "/api/Purchases/create": {
+      "post": {
+        "tags": [
+          "Purchases"
+        ],
+        "requestBody": {
+          "content": {
+            "multipart/form-data": {
+              "schema": {
+                "type": "object",
+                "properties": {
+                  "CompanyName": {
+                    "type": "string"
+                  },
+                  "Subtitle": {
+                    "type": "string"
+                  },
+                  "ProductOrService": {
+                    "type": "string"
+                  },
+                  "Email": {
+                    "type": "string"
+                  },
+                  "PhoneNumber": {
+                    "type": "string"
+                  },
+                  "FileName": {
+                    "type": "string",
+                    "format": "binary"
+                  }
+                }
+              },
+              "encoding": {
+                "CompanyName": {
+                  "style": "form"
+                },
+                "Subtitle": {
+                  "style": "form"
+                },
+                "ProductOrService": {
+                  "style": "form"
+                },
+                "Email": {
+                  "style": "form"
+                },
+                "PhoneNumber": {
+                  "style": "form"
+                },
+                "FileName": {
+                  "style": "form"
+                }
+              }
+            }
+          }
+        },
+        "responses": {
+          "200": {
+            "description": "OK"
+          }
+        }
+      }
+    },
+    "/api/Purchases/get/{id}": {
+      "get": {
+        "tags": [
+          "Purchases"
+        ],
+        "parameters": [
+          {
+            "name": "id",
+            "in": "path",
+            "required": true,
+            "schema": {
+              "type": "string"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "OK"
+          }
+        }
+      }
+    },
+    "/api/Purchases/get-all": {
+      "get": {
+        "tags": [
+          "Purchases"
+        ],
+        "responses": {
+          "200": {
+            "description": "OK"
+          }
+        }
+      }
+    },
+    "/api/Purchases/update": {
+      "put": {
+        "tags": [
+          "Purchases"
+        ],
+        "requestBody": {
+          "content": {
+            "multipart/form-data": {
+              "schema": {
+                "type": "object",
+                "properties": {
+                  "Id": {
+                    "type": "string"
+                  },
+                  "CompanyName": {
+                    "type": "string"
+                  },
+                  "Subtitle": {
+                    "type": "string"
+                  },
+                  "ProductOrService": {
+                    "type": "string"
+                  },
+                  "Email": {
+                    "type": "string"
+                  },
+                  "PhoneNumber": {
+                    "type": "string"
+                  },
+                  "FileName": {
+                    "type": "string",
+                    "format": "binary"
+                  }
+                }
+              },
+              "encoding": {
+                "Id": {
+                  "style": "form"
+                },
+                "CompanyName": {
+                  "style": "form"
+                },
+                "Subtitle": {
+                  "style": "form"
+                },
+                "ProductOrService": {
+                  "style": "form"
+                },
+                "Email": {
+                  "style": "form"
+                },
+                "PhoneNumber": {
+                  "style": "form"
+                },
+                "FileName": {
+                  "style": "form"
+                }
+              }
+            }
+          }
+        },
+        "responses": {
+          "200": {
+            "description": "OK"
+          }
+        }
+      }
+    },
+    "/api/Purchases/delete/{id}": {
+      "delete": {
+        "tags": [
+          "Purchases"
+        ],
+        "parameters": [
+          {
+            "name": "id",
+            "in": "path",
+            "required": true,
+            "schema": {
+              "type": "string"
+            }
+          }
+        ],
         "responses": {
           "200": {
             "description": "OK"

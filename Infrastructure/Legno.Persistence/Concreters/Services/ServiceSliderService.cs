@@ -1,43 +1,40 @@
-﻿using Legno.Application.Abstracts.Repositories;
+﻿using Legno.Application.Absrtacts.Services;
+using Legno.Application.Abstracts.Repositories;
 using Legno.Application.Abstracts.Services;
 using Legno.Application.Dtos.ServiceSlider;
 using Legno.Application.GlobalExceptionn;
 using Legno.Domain.Entities;
 using Microsoft.AspNetCore.Http;
-using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 
 namespace Legno.Persistence.Concreters.Services
 {
-    internal class ServiceSliderService: IServiceSliderService
+    public class ServiceSliderService : IServiceSliderService
     {
         private readonly IServiceSliderReadRepository _read;
         private readonly IServiceSliderWriteRepository _write;
-        private readonly CloudinaryService _cloudinary;
+        private readonly IFileService _fileService;
 
-        public ServiceSliderService(IServiceSliderReadRepository read,
-                             IServiceSliderWriteRepository write,
-                             CloudinaryService cloudinary)
+        public ServiceSliderService(
+            IServiceSliderReadRepository read,
+            IServiceSliderWriteRepository write,
+            IFileService fileService)
         {
             _read = read;
             _write = write;
-            _cloudinary = cloudinary;
+            _fileService = fileService;
         }
 
-        public async Task<ServiceSliderDto> AddServiceSliderAsync(IFormFile ServiceSliderName)
+        public async Task<ServiceSliderDto> AddServiceSliderAsync(IFormFile image)
         {
-            if (ServiceSliderName == null || ServiceSliderName.Length == 0)
+            if (image == null || image.Length == 0)
                 throw new GlobalAppException("Şəkil faylı göndərilməyib.");
 
-            var url = await _cloudinary.UploadFileAsync(ServiceSliderName);
+            var fileName = await _fileService.UploadFile(image, "service-sliders");
 
             var entity = new ServiceSlider
             {
                 Id = Guid.NewGuid(),
-                ServiceSliderImage = url,
+                ServiceSliderImage = fileName,
                 IsDeleted = false,
                 CreatedDate = DateTime.UtcNow,
                 LastUpdatedDate = DateTime.UtcNow
@@ -49,21 +46,22 @@ namespace Legno.Persistence.Concreters.Services
             return new ServiceSliderDto { Id = entity.Id.ToString(), Image = entity.ServiceSliderImage };
         }
 
-        public async Task<ServiceSliderDto?> GetServiceSliderAsync(string ServiceSliderId)
+        public async Task<ServiceSliderDto?> GetServiceSliderAsync(string id)
         {
-            if (!Guid.TryParse(ServiceSliderId, out var id))
+            if (!Guid.TryParse(id, out var gid))
                 throw new GlobalAppException("Yanlış ID formatı.");
 
-            var entity = await _read.GetAsync(x => x.Id == id && !x.IsDeleted, EnableTraking: false);
-            if (entity == null) throw new GlobalAppException("Material tapılmadı.");
+            var entity = await _read.GetAsync(x => x.Id == gid && !x.IsDeleted, EnableTraking: false)
+                ?? throw new GlobalAppException("Slider tapılmadı.");
 
             return new ServiceSliderDto { Id = entity.Id.ToString(), Image = entity.ServiceSliderImage };
         }
 
         public async Task<List<ServiceSliderDto>> GetAllServiceSlidersAsync()
         {
-            var list = await _read.GetAllAsync(x => !x.IsDeleted, EnableTraking: false,
-                                               orderBy: q => q.OrderBy(x => x.CreatedDate));
+            var list = await _read.GetAllAsync(x => !x.IsDeleted,
+                orderBy: q => q.OrderBy(x => x.CreatedDate),
+                EnableTraking: false);
 
             return list.Select(x => new ServiceSliderDto
             {
@@ -72,16 +70,16 @@ namespace Legno.Persistence.Concreters.Services
             }).ToList();
         }
 
-        public async Task DeleteServiceSliderAsync(string ServiceSliderId)
+        public async Task DeleteServiceSliderAsync(string id)
         {
-            if (!Guid.TryParse(ServiceSliderId, out var id))
+            if (!Guid.TryParse(id, out var gid))
                 throw new GlobalAppException("Yanlış ID formatı.");
 
-            var entity = await _read.GetAsync(x => x.Id == id && !x.IsDeleted, EnableTraking: true)
-                        ?? throw new GlobalAppException("Material tapılmadı.");
+            var entity = await _read.GetAsync(x => x.Id == gid && !x.IsDeleted, EnableTraking: true)
+                ?? throw new GlobalAppException("Slider tapılmadı.");
 
             if (!string.IsNullOrWhiteSpace(entity.ServiceSliderImage))
-                await _cloudinary.DeleteFileAsync(entity.ServiceSliderImage);
+                await _fileService.DeleteFile("service-sliders", entity.ServiceSliderImage);
 
             entity.IsDeleted = true;
             entity.DeletedDate = DateTime.UtcNow;

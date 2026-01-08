@@ -16,15 +16,7 @@ public class ProjectProfile : Profile
             .ForMember(d => d.Id, o => o.MapFrom(s => s.Id.ToString()))
 
             // Category (döngünü qırmaq üçün manual, lazımi sahələr)
-            .ForMember(d => d.Category, o => o.MapFrom(s => s.Category == null
-                ? null
-                : new CategoryDto
-                {
-                    Id = s.Category.Id.ToString(),
-                    Name = s.Category.Name,
-                    NameEng = s.Category.NameEng,
-                    NameRu = s.Category.NameRu
-                }))
+      
 
             // Team (null-safe, minimal sahələr; başqa profilin varsa, sadəcə MapFrom(s => s.Team) də edə bilərsən)
             .ForMember(d => d.Team, o => o.MapFrom(s => s.Team == null
@@ -89,21 +81,17 @@ public class ProjectProfile : Profile
             .ForMember(d => d.ProjectImages, o => o.Ignore())
             .ForMember(d => d.ProjectSliderImages, o => o.Ignore())
             .ForMember(d => d.ProjectVideos, o => o.Ignore())
-            .ForMember(d => d.Category, o => o.Ignore())
+    
             .ForMember(d => d.Team, o => o.Ignore())
             .ForMember(d => d.TeamId, o => o.Ignore()) // service-də parse edilir
-            .ForMember(d => d.CategoryId, o => o.MapFrom(s => Guid.Parse(s.CategoryId)));
+          ;
 
         // Update DTO -> Entity (null olanlara toxunmamaq üçün şərt)
         CreateMap<UpdateProjectDto, Project>()
-            .ForMember(d => d.Category, o => o.Ignore())
+ 
             .ForMember(d => d.Team, o => o.Ignore())
             .ForMember(d => d.TeamId, o => o.Ignore()) // service-də parse edilir
-            .ForMember(d => d.CategoryId, o =>
-            {
-                o.PreCondition(s => !string.IsNullOrWhiteSpace(s.CategoryId));
-                o.MapFrom(s => Guid.Parse(s.CategoryId!));
-            })
+          
             // Media/Fabric kolleksiyalarını service idarə edir
             .ForMember(d => d.ProjectImages, o => o.Ignore())
             .ForMember(d => d.ProjectSliderImages, o => o.Ignore())

@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("Legno.Infrastructure")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+1f17d9290183948979d40f74bb85e5d79ada978f")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+a4106bea69d8cc024c0196db8f9768d81cf2443b")]
 [assembly: System.Reflection.AssemblyProductAttribute("Legno.Infrastructure")]
 [assembly: System.Reflection.AssemblyTitleAttribute("Legno.Infrastructure")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

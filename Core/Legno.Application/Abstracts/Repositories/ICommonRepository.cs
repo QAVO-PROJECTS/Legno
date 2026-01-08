@@ -29,5 +29,24 @@ namespace Legno.Application.Abstracts.Repositories
     public interface IProjectFabricWriteRepository : IWriteRepository<ProjectFabric> { }
 
     public interface IWorkPlanningReadRepository : IReadRepository<WorkPlanning> { }
+    public interface ICategoryImageReadRepository : IReadRepository<CategoryImage> { }
+    public interface ICategoryImageWriteRepository : IWriteRepository<CategoryImage> { }
+
     public interface IWorkPlanningWriteRepository : IWriteRepository<WorkPlanning> { }
+    public interface IPurchaseReadRepository : IReadRepository<Purchase> { }
+    public interface IPurchaseWriteRepository : IWriteRepository<Purchase> { }
+
+    public interface ICareerReadRepository : IReadRepository<Career> { }
+    public interface ICareerWriteRepository : IWriteRepository<Career> { }
+
+    public interface IArticleReadRepository : IReadRepository<Article> { }
+    public interface IArticleWriteRepository : IWriteRepository<Article> { }
+
+    public interface IArticleImageReadRepository : IReadRepository<ArticleImage> { }
+    public interface IArticleImageWriteRepository : IWriteRepository<ArticleImage> { }
+
+    public interface IAnnouncementReadRepository : IReadRepository<Announcement> { }
+    public interface IAnnouncementWriteRepository : IWriteRepository<Announcement> { }
+    public interface IMemberReadRepository : IReadRepository<Member> { }
+    public interface IMemberWriteRepository : IWriteRepository<Member> { };
 }

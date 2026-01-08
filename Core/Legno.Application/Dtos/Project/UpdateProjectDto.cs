@@ -22,7 +22,7 @@ namespace Legno.Application.Dtos.Project
         public List<string>? DeleteVideoNames { get; set; }
         public List<string>? DeleteFabricIds { get; set; }
         public List<string>? DeleteSliderImageNames { get; set; }
-        public string? CategoryId { get; set; }
+        public string? CategoryName { get; set; }
         public List<IFormFile>? ProjectImages { get; set; }
         public List<IFormFile>? ProjectSliderImages { get; set; }
         public List<string>? ProjectVideos { get; set; }

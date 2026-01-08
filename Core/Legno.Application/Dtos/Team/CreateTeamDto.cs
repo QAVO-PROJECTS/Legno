@@ -21,7 +21,7 @@ namespace Legno.Application.Dtos.Team
         public string PositionEng { get; set; }
         public string PositionRu { get; set; }
         public IFormFile CardImage { get; set; }
-        public string InstagramLink { get; set; }
-        public string LinkedInLink { get; set; }
+        public string? InstagramLink { get; set; }
+        public string? LinkedInLink { get; set; }
     }
 }

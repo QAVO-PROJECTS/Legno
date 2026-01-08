@@ -1,4 +1,5 @@
 ﻿using AutoMapper;
+using Legno.Application.Absrtacts.Services;
 using Legno.Application.Abstracts.Repositories;
 using Legno.Application.Abstracts.Repositories.ProjectImages;
 using Legno.Application.Abstracts.Repositories.Projects;
@@ -22,6 +23,7 @@ namespace Legno.Persistence.Concreters.Services
         private readonly IProjectFabricWriteRepository _fabricWrite;
         private readonly CloudinaryService _cloudinaryService;
         private readonly IMapper _mapper;
+        private readonly IFileService _fileService;
 
         public ProjectService(
             IProjectReadRepository projectRead,
@@ -32,7 +34,8 @@ namespace Legno.Persistence.Concreters.Services
             IMapper mapper,
             IProjectSliderImageWriteRepository sliderImageWrite,
             IProjectFabricReadRepository fabricRead,
-            IProjectFabricWriteRepository fabricWrite)
+            IProjectFabricWriteRepository fabricWrite,
+            IFileService fileService)
         {
             _projectRead = projectRead;
             _projectWrite = projectWrite;
@@ -43,14 +46,15 @@ namespace Legno.Persistence.Concreters.Services
             _sliderImageWrite = sliderImageWrite;
             _fabricRead = fabricRead;
             _fabricWrite = fabricWrite;
+            _fileService = fileService;
         }
 
         // CREATE
         public async Task<ProjectDto> AddProjectAsync(CreateProjectDto dto)
         {
             if (dto == null) throw new GlobalAppException("Məlumat göndərilməyib.");
-            if (string.IsNullOrWhiteSpace(dto.CategoryId) || !Guid.TryParse(dto.CategoryId, out var catId))
-                throw new GlobalAppException("Category ID formatı yanlışdır.");
+       
+
 
             // DisplayOrderId = max + 1
             var all = await _projectRead.GetAllAsync(x => !x.IsDeleted);
@@ -65,7 +69,9 @@ namespace Legno.Persistence.Concreters.Services
                 SubTitle = dto.SubTitle,
                 SubTitleEng = dto.SubTitleEng,
                 SubTitleRu = dto.SubTitleRu,
-                CategoryId = catId,
+                // Fix for CS8601: Possible null reference assignment.
+                CategoryName = dto.CategoryName ?? string.Empty,
+           
                 TeamId = Guid.TryParse(dto.TeamId, out var teamId) ? teamId : (Guid?)null,
                 DisplayOrderId = maxDisplay + 1,
                 IsDeleted = false,
@@ -74,9 +80,8 @@ namespace Legno.Persistence.Concreters.Services
             };
 
             // Card image
-            entity.CardImage = dto.CardImage != null
-                ? await _cloudinaryService.UploadFileAsync(dto.CardImage)
-                : string.Empty;
+            if (dto.CardImage != null)
+                entity.CardImage = await _fileService.UploadFile(dto.CardImage, "projects/cards");
 
             await _projectWrite.AddAsync(entity);
             if (dto.FabricIds?.Any() == true)
@@ -95,20 +100,19 @@ namespace Legno.Persistence.Concreters.Services
                     });
                 }
             }
-            // Images (IFormFile)
+            // 📂 Project Images
             if (dto.ProjectImages?.Any() == true)
             {
                 foreach (var file in dto.ProjectImages)
                 {
-                    var stored = await _cloudinaryService.UploadFileAsync(file);
+                    var fileName = await _fileService.UploadFile(file, "projects/images");
                     await _imageWrite.AddAsync(new ProjectImage
                     {
                         Id = Guid.NewGuid(),
                         ProjectId = entity.Id,
-                        Name = stored,
+                        Name = fileName,
                         CreatedDate = DateTime.UtcNow,
-                        LastUpdatedDate = DateTime.UtcNow,
-                        IsDeleted = false
+                        LastUpdatedDate = DateTime.UtcNow
                     });
                 }
             }
@@ -116,34 +120,31 @@ namespace Legno.Persistence.Concreters.Services
             {
                 foreach (var file in dto.ProjectSliderImages)
                 {
-                    var stored = await _cloudinaryService.UploadFileAsync(file);
+                    var fileName = await _fileService.UploadFile(file, "projects/sliders");
                     await _sliderImageWrite.AddAsync(new ProjectSliderImage
                     {
                         Id = Guid.NewGuid(),
                         ProjectId = entity.Id,
-                        Name = stored,
+                        Name = fileName,
                         CreatedDate = DateTime.UtcNow,
-                        LastUpdatedDate = DateTime.UtcNow,
-                        IsDeleted = false
+                        LastUpdatedDate = DateTime.UtcNow
                     });
                 }
             }
 
-            // Videos (ProjectVideoInputDto: YoutubeLink və/və ya File)
+            // 📺 Videos (sadəcə link saxlayırıq)
             if (dto.ProjectVideos?.Any() == true)
             {
                 foreach (var v in dto.ProjectVideos)
                 {
-
+                    if (string.IsNullOrWhiteSpace(v)) continue;
                     await _videoWrite.AddAsync(new ProjectVideo
                     {
                         Id = Guid.NewGuid(),
                         ProjectId = entity.Id,
-                           // varsa fayl
-                        YoutubeLink = v,      // varsa link
+                        YoutubeLink = v.Trim(),
                         CreatedDate = DateTime.UtcNow,
-                        LastUpdatedDate = DateTime.UtcNow,
-                        IsDeleted = false
+                        LastUpdatedDate = DateTime.UtcNow
                     });
                 }
             }
@@ -157,7 +158,7 @@ namespace Legno.Persistence.Concreters.Services
             var created = await _projectRead.GetAsync(
                 p => p.Id == entity.Id && !p.IsDeleted,
                 include: q => q
-                    .Include(p => p.Category)
+              
                     .Include(p => p.Team)
                     .Include(p => p.ProjectImages.Where(i => !i.IsDeleted))
                     .Include(p => p.ProjectVideos.Where(v => !v.IsDeleted)),
@@ -175,10 +176,10 @@ namespace Legno.Persistence.Concreters.Services
             var project = await _projectRead.GetAsync(
                 p => p.Id == id
                      && !p.IsDeleted
-                     && !p.Category.IsDeleted
+              
                      && (p.TeamId == null || (p.Team != null && !p.Team.IsDeleted)),
                 include: q => q
-                    .Include(p => p.Category)
+   
                     .Include(p => p.Team)
                     .Include(p => p.ProjectImages.Where(i => !i.IsDeleted))
                     .Include(p => p.ProjectSliderImages.Where(i => !i.IsDeleted))
@@ -196,10 +197,10 @@ namespace Legno.Persistence.Concreters.Services
         {
             var list = await _projectRead.GetAllAsync(
                 func: x => !x.IsDeleted
-                           && !x.Category.IsDeleted
+                        
                            && (x.TeamId == null || (x.Team != null && !x.Team.IsDeleted)),
                 include: q => q
-                    .Include(p => p.Category)
+        
                     .Include(p => p.Team)
                     .Include(p => p.ProjectImages.Where(i => !i.IsDeleted))
                     .Include(p => p.ProjectSliderImages.Where(i => !i.IsDeleted))
@@ -220,11 +221,11 @@ namespace Legno.Persistence.Concreters.Services
 
             var list = await _projectRead.GetAllAsync(
                 func: p => !p.IsDeleted
-                           && p.CategoryId == catId
-                           && !p.Category.IsDeleted
+                        
+                       
                            && (p.TeamId == null || (p.Team != null && !p.Team.IsDeleted)),
                 include: q => q
-                    .Include(p => p.Category)
+               
                     .Include(p => p.Team)
                     .Include(p => p.ProjectImages.Where(i => !i.IsDeleted))
                     .Include(p => p.ProjectSliderImages.Where(i => !i.IsDeleted))
@@ -248,7 +249,7 @@ namespace Legno.Persistence.Concreters.Services
             var entity = await _projectRead.GetAsync(
                 p => p.Id == id && !p.IsDeleted,
                 include: q => q
-                    .Include(p => p.Category)
+             
                     .Include(p => p.Team)
                     .Include(p => p.ProjectImages.Where(i => !i.IsDeleted))
                     .Include(p => p.ProjectSliderImages.Where(i => !i.IsDeleted))
@@ -263,7 +264,7 @@ namespace Legno.Persistence.Concreters.Services
                 var toDelete = entity.ProjectImages.Where(i => !i.IsDeleted && set.Contains(i.Name)).ToList();
                 foreach (var img in toDelete)
                 {
-                    await _cloudinaryService.DeleteFileAsync(img.Name);
+                    await _fileService.DeleteFile("projects/images", img.Name);
                     img.IsDeleted = true;
                     img.DeletedDate = DateTime.UtcNow;
                     img.LastUpdatedDate = DateTime.UtcNow;
@@ -278,7 +279,7 @@ namespace Legno.Persistence.Concreters.Services
                 var toDelete = entity.ProjectSliderImages.Where(i => !i.IsDeleted && set.Contains(i.Name)).ToList();
                 foreach (var img in toDelete)
                 {
-                    await _cloudinaryService.DeleteFileAsync(img.Name);
+                    await _fileService.DeleteFile("projects/sliders",img.Name);
                     img.IsDeleted = true;
                     img.DeletedDate = DateTime.UtcNow;
                     img.LastUpdatedDate = DateTime.UtcNow;
@@ -311,64 +312,59 @@ namespace Legno.Persistence.Concreters.Services
             if (dto.SubTitle != null) entity.SubTitle = dto.SubTitle;
             if (dto.SubTitleEng != null) entity.SubTitleEng = dto.SubTitleEng;
             if (dto.SubTitleRu != null) entity.SubTitleRu = dto.SubTitleRu;
+            if (dto.CategoryName != null) entity.CategoryName = dto.CategoryName;
+
 
             if (dto.CardImage != null)
             {
                 if (!string.IsNullOrWhiteSpace(entity.CardImage))
-                    await _cloudinaryService.DeleteFileAsync(entity.CardImage);
-                entity.CardImage = await _cloudinaryService.UploadFileAsync(dto.CardImage);
+                    await _fileService.DeleteFile("projects/cards", entity.CardImage);
+
+                entity.CardImage = await _fileService.UploadFile(dto.CardImage, "projects/cards");
             }
 
             // TeamId: boş string gələrsə null
             if (dto.TeamId != null)
                 entity.TeamId = Guid.TryParse(dto.TeamId, out var newTeamId) ? newTeamId : (Guid?)null;
 
-            if (!string.IsNullOrWhiteSpace(dto.CategoryId))
-            {
-                if (!Guid.TryParse(dto.CategoryId, out var newCatId))
-                    throw new GlobalAppException("Category ID formatı yanlışdır.");
-                entity.CategoryId = newCatId;
-            }
+
 
             entity.LastUpdatedDate = DateTime.UtcNow;
 
             // ADD NEW images
             if (dto.ProjectImages?.Any() == true)
             {
-                foreach (var f in dto.ProjectImages)
+                foreach (var file in dto.ProjectImages)
                 {
-                    var stored = await _cloudinaryService.UploadFileAsync(f);
+                    var fileName = await _fileService.UploadFile(file, "projects/images");
                     await _imageWrite.AddAsync(new ProjectImage
                     {
                         Id = Guid.NewGuid(),
                         ProjectId = entity.Id,
-                        Name = stored,
+                        Name = fileName,
                         CreatedDate = DateTime.UtcNow,
-                        LastUpdatedDate = DateTime.UtcNow,
-                        IsDeleted = false
+                        LastUpdatedDate = DateTime.UtcNow
                     });
                 }
             }
 
-            // ADD NEW slider images
             if (dto.ProjectSliderImages?.Any() == true)
             {
-                foreach (var f in dto.ProjectSliderImages)
+                foreach (var file in dto.ProjectSliderImages)
                 {
-                    var stored = await _cloudinaryService.UploadFileAsync(f);
+                    var fileName = await _fileService.UploadFile(file, "projects/sliders");
                     await _sliderImageWrite.AddAsync(new ProjectSliderImage
                     {
                         Id = Guid.NewGuid(),
                         ProjectId = entity.Id,
-                        Name = stored,
+                        Name = fileName,
                         CreatedDate = DateTime.UtcNow,
-                        LastUpdatedDate = DateTime.UtcNow,
-                        IsDeleted = false
+                        LastUpdatedDate = DateTime.UtcNow
                     });
                 }
             }
 
-            // ADD NEW videos (links)
+            // 📺 Yeni videolar
             if (dto.ProjectVideos?.Any() == true)
             {
                 foreach (var v in dto.ProjectVideos)
@@ -380,8 +376,7 @@ namespace Legno.Persistence.Concreters.Services
                         ProjectId = entity.Id,
                         YoutubeLink = v.Trim(),
                         CreatedDate = DateTime.UtcNow,
-                        LastUpdatedDate = DateTime.UtcNow,
-                        IsDeleted = false
+                        LastUpdatedDate = DateTime.UtcNow
                     });
                 }
             }

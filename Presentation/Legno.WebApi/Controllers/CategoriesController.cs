@@ -69,7 +69,7 @@ namespace Legno.Api.Controllers
             try
             {
                 await _service.DeleteCategoryAsync(id);
-                return Ok(new { StatusCode = 200, Message = "Silindi." });
+                return Ok(new { StatusCode = 200, Message = "Kategoriya Silindi." });
             }
             catch (GlobalAppException ex) { return BadRequest(new { StatusCode = 400, Error = ex.Message }); }
             catch (Exception ex) { return StatusCode(500, new { StatusCode = 500, Error = $"Xəta baş verdi: {ex.Message}" }); }
