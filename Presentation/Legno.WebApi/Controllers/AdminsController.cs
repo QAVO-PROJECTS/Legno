@@ -18,7 +18,7 @@ namespace Legno.WebApi.Controllers
             _adminService = adminService;
             _logger = logger;
         }
-
+   //salamSALAM
         ///<summary>
         /// Yeni admin qeydiyyatı
         /// </summary>
