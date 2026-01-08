@@ -3,7 +3,7 @@ name: Build & Deploy .NET API to Plesk
 on:
   push:
     branches:
-      - master   # branch main-dirsə master → main et
+      - master   # branch main-dirsə → master yerinə main yaz
 
 jobs:
   build:
@@ -27,46 +27,7 @@ jobs:
       - name: Publish
         run: dotnet publish Presentation/Legno.WebApi/Legno.WebApi.csproj -c Release -o ./publish
 
-      - name: Deploy to Plesk via FTP
-        uses: SamKirkland/FTP-Deploy-Action@v4.3.5
-        with:
-          server: ${{ secrets.FTP_SERVER }}
-          username: ${{ secrets.FTP_USERNAME }}
-          password: ${{ secrets.FTP_PASSWORD }}
-          server-dir: ${{ secrets.FTP_DIR }}/
-          local-dir: ./publish/
-          protocol: ftp
-          dangerous-clean-slate: false
-          name: Build & Deploy .NET API to Plesk
-
-on:
-  push:
-    branches:
-      - master   # branch main-dirsə master → main et
-
-jobs:
-  build:
-    runs-on: ubuntu-latest
-
-    steps:
-      - name: Checkout source
-        uses: actions/checkout@v4
-
-      - name: Setup .NET
-        uses: actions/setup-dotnet@v4
-        with:
-          dotnet-version: '8.0.x'   # .NET 7-dirsə → 7.0.x
-
-      - name: Restore dependencies
-        run: dotnet restore
-
-      - name: Build
-        run: dotnet build --configuration Release --no-restore
-
-      - name: Publish
-        run: dotnet publish Presentation/Legno.WebApi/Legno.WebApi.csproj -c Release -o ./publish
-
-      - name: Deploy to Plesk via FTP
+      - name: Deploy to Plesk via FTP (wwwroot protected)
         uses: SamKirkland/FTP-Deploy-Action@v4.3.5
         with:
           server: ${{ secrets.FTP_SERVER }}
