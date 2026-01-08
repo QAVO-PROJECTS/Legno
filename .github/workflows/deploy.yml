@@ -3,7 +3,7 @@ name: Build & Deploy .NET API to Plesk
 on:
   push:
     branches:
-      - master   # branch main-dirsə → master yerinə main yaz
+      - master
 
 jobs:
   build:
@@ -16,7 +16,7 @@ jobs:
       - name: Setup .NET
         uses: actions/setup-dotnet@v4
         with:
-          dotnet-version: '8.0.x'   # .NET 7-dirsə → 7.0.x
+          dotnet-version: '8.0.x'
 
       - name: Restore dependencies
         run: dotnet restore
@@ -27,7 +27,12 @@ jobs:
       - name: Publish
         run: dotnet publish Presentation/Legno.WebApi/Legno.WebApi.csproj -c Release -o ./publish
 
-      - name: Deploy to Plesk via FTP (wwwroot protected)
+      # 1️⃣ APP OFFLINE
+      - name: Put app offline
+        run: echo "Maintenance..." > ./publish/app_offline.htm
+
+      # 2️⃣ DEPLOY (wwwroot protected)
+      - name: Deploy to Plesk via FTP
         uses: SamKirkland/FTP-Deploy-Action@v4.3.5
         with:
           server: ${{ secrets.FTP_SERVER }}
@@ -39,3 +44,17 @@ jobs:
           dangerous-clean-slate: false
           exclude: |
             **/wwwroot/**
+
+      # 3️⃣ APP ONLINE
+      - name: Remove app_offline.htm
+        uses: SamKirkland/FTP-Deploy-Action@v4.3.5
+        with:
+          server: ${{ secrets.FTP_SERVER }}
+          username: ${{ secrets.FTP_USERNAME }}
+          password: ${{ secrets.FTP_PASSWORD }}
+          server-dir: ${{ secrets.FTP_DIR }}/
+          local-dir: ./empty/
+          protocol: ftp
+          dangerous-clean-slate: false
+          exclude: |
+            **/**
