@@ -27,9 +27,7 @@ jobs:
       - name: Publish
         run: dotnet publish Presentation/Legno.WebApi/Legno.WebApi.csproj -c Release -o ./publish
 
-      # 🔴 APP OFFLINE (DLL LOCK HƏLLİ)
-      - name: Put app offline
-        run: echo "Maintenance..." > ./publish/app_offline.htm
+     
 
       # 🚀 DEPLOY (wwwroot qorunur)
       - name: Deploy to Plesk via FTP
