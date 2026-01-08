@@ -3,7 +3,7 @@ name: Build & Deploy .NET API to Plesk
 on:
   push:
     branches:
-      - master   # istəsən 'main' yaz
+      - master
 
 jobs:
   build:
@@ -16,7 +16,7 @@ jobs:
       - name: Setup .NET
         uses: actions/setup-dotnet@v4
         with:
-          dotnet-version: '8.0.x'   # layihən .NET 7-dirsə 7.0.x yaz
+          dotnet-version: '8.0.x'
 
       - name: Restore dependencies
         run: dotnet restore
@@ -27,15 +27,20 @@ jobs:
       - name: Publish
         run: dotnet publish Presentation/Legno.WebApi/Legno.WebApi.csproj -c Release -o ./publish
 
+      # 🔴 APP OFFLINE (DLL LOCK HƏLLİ)
+      - name: Put app offline
+        run: echo "Maintenance..." > ./publish/app_offline.htm
+
+      # 🚀 DEPLOY (wwwroot qorunur)
       - name: Deploy to Plesk via FTP
-        uses: SamKirkland/FTP-Deploy-Action@v4
+        uses: SamKirkland/FTP-Deploy-Action@v4.3.5
         with:
           server: ${{ secrets.FTP_SERVER }}
           username: ${{ secrets.FTP_USERNAME }}
           password: ${{ secrets.FTP_PASSWORD }}
-          server-dir: ${{ secrets.FTP_DIR }}
-          local-dir: ./publish
+          server-dir: ${{ secrets.FTP_DIR }}/
+          local-dir: ./publish/
           protocol: ftp
-          log-level: standard
-          # bunu false qoyuruq ki appsettings silinməsin
           dangerous-clean-slate: false
+          exclude: |
+            **/wwwroot/**
