@@ -1,39 +1,33 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\gulco\\source\\repos\\Legno\\Infrastructure\\Legno.Persistence\\Legno.Persistence.csproj": {}
+    "/Users/gulchohrasultanova/Desktop/Legno/Infrastructure/Legno.Persistence/Legno.Persistence.csproj": {}
   },
   "projects": {
-    "C:\\Users\\gulco\\source\\repos\\Legno\\Core\\Legno.Application\\Legno.Application.csproj": {
+    "/Users/gulchohrasultanova/Desktop/Legno/Core/Legno.Application/Legno.Application.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\gulco\\source\\repos\\Legno\\Core\\Legno.Application\\Legno.Application.csproj",
+        "projectUniqueName": "/Users/gulchohrasultanova/Desktop/Legno/Core/Legno.Application/Legno.Application.csproj",
         "projectName": "Legno.Application",
-        "projectPath": "C:\\Users\\gulco\\source\\repos\\Legno\\Core\\Legno.Application\\Legno.Application.csproj",
-        "packagesPath": "C:\\Users\\gulco\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\gulco\\source\\repos\\Legno\\Core\\Legno.Application\\obj\\",
+        "projectPath": "/Users/gulchohrasultanova/Desktop/Legno/Core/Legno.Application/Legno.Application.csproj",
+        "packagesPath": "/Users/gulchohrasultanova/.nuget/packages/",
+        "outputPath": "/Users/gulchohrasultanova/Desktop/Legno/Core/Legno.Application/obj/",
         "projectStyle": "PackageReference",
-        "fallbackFolders": [
-          "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
-        ],
         "configFilePaths": [
-          "C:\\Users\\gulco\\AppData\\Roaming\\NuGet\\NuGet.Config",
-          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
-          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+          "/Users/gulchohrasultanova/.nuget/NuGet/NuGet.Config"
         ],
         "originalTargetFrameworks": [
           "net8.0"
         ],
         "sources": {
-          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
           "https://api.nuget.org/v3/index.json": {}
         },
         "frameworks": {
           "net8.0": {
             "targetAlias": "net8.0",
             "projectReferences": {
-              "C:\\Users\\gulco\\source\\repos\\Legno\\Core\\Legno.Domain\\Legno.Domain.csproj": {
-                "projectPath": "C:\\Users\\gulco\\source\\repos\\Legno\\Core\\Legno.Domain\\Legno.Domain.csproj"
+              "/Users/gulchohrasultanova/Desktop/Legno/Core/Legno.Domain/Legno.Domain.csproj": {
+                "projectPath": "/Users/gulchohrasultanova/Desktop/Legno/Core/Legno.Domain/Legno.Domain.csproj"
               }
             }
           }
@@ -47,8 +41,7 @@
           "enableAudit": "true",
           "auditLevel": "low",
           "auditMode": "direct"
-        },
-        "SdkAnalysisLevel": "9.0.200"
+        }
       },
       "frameworks": {
         "net8.0": {
@@ -131,32 +124,26 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\9.0.203/PortableRuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "/Users/gulchohrasultanova/.dotnet/sdk/8.0.416/PortableRuntimeIdentifierGraph.json"
         }
       }
     },
-    "C:\\Users\\gulco\\source\\repos\\Legno\\Core\\Legno.Domain\\Legno.Domain.csproj": {
+    "/Users/gulchohrasultanova/Desktop/Legno/Core/Legno.Domain/Legno.Domain.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\gulco\\source\\repos\\Legno\\Core\\Legno.Domain\\Legno.Domain.csproj",
+        "projectUniqueName": "/Users/gulchohrasultanova/Desktop/Legno/Core/Legno.Domain/Legno.Domain.csproj",
         "projectName": "Legno.Domain",
-        "projectPath": "C:\\Users\\gulco\\source\\repos\\Legno\\Core\\Legno.Domain\\Legno.Domain.csproj",
-        "packagesPath": "C:\\Users\\gulco\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\gulco\\source\\repos\\Legno\\Core\\Legno.Domain\\obj\\",
+        "projectPath": "/Users/gulchohrasultanova/Desktop/Legno/Core/Legno.Domain/Legno.Domain.csproj",
+        "packagesPath": "/Users/gulchohrasultanova/.nuget/packages/",
+        "outputPath": "/Users/gulchohrasultanova/Desktop/Legno/Core/Legno.Domain/obj/",
         "projectStyle": "PackageReference",
-        "fallbackFolders": [
-          "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
-        ],
         "configFilePaths": [
-          "C:\\Users\\gulco\\AppData\\Roaming\\NuGet\\NuGet.Config",
-          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
-          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+          "/Users/gulchohrasultanova/.nuget/NuGet/NuGet.Config"
         ],
         "originalTargetFrameworks": [
           "net8.0"
         ],
         "sources": {
-          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
           "https://api.nuget.org/v3/index.json": {}
         },
         "frameworks": {
@@ -174,8 +161,7 @@
           "enableAudit": "true",
           "auditLevel": "low",
           "auditMode": "direct"
-        },
-        "SdkAnalysisLevel": "9.0.200"
+        }
       },
       "frameworks": {
         "net8.0": {
@@ -258,40 +244,34 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\9.0.203/PortableRuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "/Users/gulchohrasultanova/.dotnet/sdk/8.0.416/PortableRuntimeIdentifierGraph.json"
         }
       }
     },
-    "C:\\Users\\gulco\\source\\repos\\Legno\\Infrastructure\\Legno.Infrastructure\\Legno.Infrastructure.csproj": {
+    "/Users/gulchohrasultanova/Desktop/Legno/Infrastructure/Legno.Infrastructure/Legno.Infrastructure.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\gulco\\source\\repos\\Legno\\Infrastructure\\Legno.Infrastructure\\Legno.Infrastructure.csproj",
+        "projectUniqueName": "/Users/gulchohrasultanova/Desktop/Legno/Infrastructure/Legno.Infrastructure/Legno.Infrastructure.csproj",
         "projectName": "Legno.Infrastructure",
-        "projectPath": "C:\\Users\\gulco\\source\\repos\\Legno\\Infrastructure\\Legno.Infrastructure\\Legno.Infrastructure.csproj",
-        "packagesPath": "C:\\Users\\gulco\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\gulco\\source\\repos\\Legno\\Infrastructure\\Legno.Infrastructure\\obj\\",
+        "projectPath": "/Users/gulchohrasultanova/Desktop/Legno/Infrastructure/Legno.Infrastructure/Legno.Infrastructure.csproj",
+        "packagesPath": "/Users/gulchohrasultanova/.nuget/packages/",
+        "outputPath": "/Users/gulchohrasultanova/Desktop/Legno/Infrastructure/Legno.Infrastructure/obj/",
         "projectStyle": "PackageReference",
-        "fallbackFolders": [
-          "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
-        ],
         "configFilePaths": [
-          "C:\\Users\\gulco\\AppData\\Roaming\\NuGet\\NuGet.Config",
-          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
-          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+          "/Users/gulchohrasultanova/.nuget/NuGet/NuGet.Config"
         ],
         "originalTargetFrameworks": [
           "net8.0"
         ],
         "sources": {
-          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
           "https://api.nuget.org/v3/index.json": {}
         },
         "frameworks": {
           "net8.0": {
             "targetAlias": "net8.0",
             "projectReferences": {
-              "C:\\Users\\gulco\\source\\repos\\Legno\\Core\\Legno.Application\\Legno.Application.csproj": {
-                "projectPath": "C:\\Users\\gulco\\source\\repos\\Legno\\Core\\Legno.Application\\Legno.Application.csproj"
+              "/Users/gulchohrasultanova/Desktop/Legno/Core/Legno.Application/Legno.Application.csproj": {
+                "projectPath": "/Users/gulchohrasultanova/Desktop/Legno/Core/Legno.Application/Legno.Application.csproj"
               }
             }
           }
@@ -305,8 +285,7 @@
           "enableAudit": "true",
           "auditLevel": "low",
           "auditMode": "direct"
-        },
-        "SdkAnalysisLevel": "9.0.200"
+        }
       },
       "frameworks": {
         "net8.0": {
@@ -389,43 +368,37 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\9.0.203/PortableRuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "/Users/gulchohrasultanova/.dotnet/sdk/8.0.416/PortableRuntimeIdentifierGraph.json"
         }
       }
     },
-    "C:\\Users\\gulco\\source\\repos\\Legno\\Infrastructure\\Legno.Persistence\\Legno.Persistence.csproj": {
+    "/Users/gulchohrasultanova/Desktop/Legno/Infrastructure/Legno.Persistence/Legno.Persistence.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\gulco\\source\\repos\\Legno\\Infrastructure\\Legno.Persistence\\Legno.Persistence.csproj",
+        "projectUniqueName": "/Users/gulchohrasultanova/Desktop/Legno/Infrastructure/Legno.Persistence/Legno.Persistence.csproj",
         "projectName": "Legno.Persistence",
-        "projectPath": "C:\\Users\\gulco\\source\\repos\\Legno\\Infrastructure\\Legno.Persistence\\Legno.Persistence.csproj",
-        "packagesPath": "C:\\Users\\gulco\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\gulco\\source\\repos\\Legno\\Infrastructure\\Legno.Persistence\\obj\\",
+        "projectPath": "/Users/gulchohrasultanova/Desktop/Legno/Infrastructure/Legno.Persistence/Legno.Persistence.csproj",
+        "packagesPath": "/Users/gulchohrasultanova/.nuget/packages/",
+        "outputPath": "/Users/gulchohrasultanova/Desktop/Legno/Infrastructure/Legno.Persistence/obj/",
         "projectStyle": "PackageReference",
-        "fallbackFolders": [
-          "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
-        ],
         "configFilePaths": [
-          "C:\\Users\\gulco\\AppData\\Roaming\\NuGet\\NuGet.Config",
-          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
-          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+          "/Users/gulchohrasultanova/.nuget/NuGet/NuGet.Config"
         ],
         "originalTargetFrameworks": [
           "net8.0"
         ],
         "sources": {
-          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
           "https://api.nuget.org/v3/index.json": {}
         },
         "frameworks": {
           "net8.0": {
             "targetAlias": "net8.0",
             "projectReferences": {
-              "C:\\Users\\gulco\\source\\repos\\Legno\\Core\\Legno.Application\\Legno.Application.csproj": {
-                "projectPath": "C:\\Users\\gulco\\source\\repos\\Legno\\Core\\Legno.Application\\Legno.Application.csproj"
+              "/Users/gulchohrasultanova/Desktop/Legno/Core/Legno.Application/Legno.Application.csproj": {
+                "projectPath": "/Users/gulchohrasultanova/Desktop/Legno/Core/Legno.Application/Legno.Application.csproj"
               },
-              "C:\\Users\\gulco\\source\\repos\\Legno\\Infrastructure\\Legno.Infrastructure\\Legno.Infrastructure.csproj": {
-                "projectPath": "C:\\Users\\gulco\\source\\repos\\Legno\\Infrastructure\\Legno.Infrastructure\\Legno.Infrastructure.csproj"
+              "/Users/gulchohrasultanova/Desktop/Legno/Infrastructure/Legno.Infrastructure/Legno.Infrastructure.csproj": {
+                "projectPath": "/Users/gulchohrasultanova/Desktop/Legno/Infrastructure/Legno.Infrastructure/Legno.Infrastructure.csproj"
               }
             }
           }
@@ -439,8 +412,7 @@
           "enableAudit": "true",
           "auditLevel": "low",
           "auditMode": "direct"
-        },
-        "SdkAnalysisLevel": "9.0.200"
+        }
       },
       "frameworks": {
         "net8.0": {
@@ -523,7 +495,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\9.0.203/PortableRuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "/Users/gulchohrasultanova/.dotnet/sdk/8.0.416/PortableRuntimeIdentifierGraph.json"
         }
       }
     }
