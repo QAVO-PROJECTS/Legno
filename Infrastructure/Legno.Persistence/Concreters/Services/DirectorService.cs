@@ -75,8 +75,11 @@ namespace Legno.Persistence.Concreters.Services
             var entity = await _read.GetByIdAsync(dto.Id, EnableTraking: true)
                 ?? throw new GlobalAppException("Director tapılmadı.");
 
-            _mapper.Map(dto, entity);
-
+            if (dto.Title != null) entity.Title = dto.Title;
+            if (dto.TitleEng != null) entity.TitleEng = dto.TitleEng;
+            if (dto.TitleRu != null) entity.TitleRu = dto.TitleRu;
+        
+         
             if (dto.Image != null)
             {
                 if (!string.IsNullOrWhiteSpace(entity.Image))
