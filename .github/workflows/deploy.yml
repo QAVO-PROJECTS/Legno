@@ -28,9 +28,13 @@ jobs:
       - name: Publish
         run: dotnet publish Presentation/WholeSaler.WebApi/WholeSaler.WebApi.csproj -c Release -o ./publish
 
+<<<<<<< HEAD
       # 🔴 APP OFFLINE (DLL LOCK PROBLEMİ ÜÇÜN)
       - name: Put app offline
         run: echo "Maintenance..." > ./publish/app_offline.htm
+=======
+     
+>>>>>>> 78f524e363f5b586bb71f331341416fe37f84b36
 
       # 🚀 DEPLOY TO PLESK (wwwroot QORUNUR)
       - name: Deploy to Plesk via FTP
