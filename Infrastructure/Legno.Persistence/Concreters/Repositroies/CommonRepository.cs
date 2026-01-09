@@ -58,6 +58,12 @@ namespace Legno.Persistence.Repositories
 
     public class AnnouncementWriteRepository(LegnoDbContext c): WriteRepository<Announcement>(c), IAnnouncementWriteRepository{ }
     public class MemberReadRepository(LegnoDbContext c): ReadRepository<Member>(c), IMemberReadRepository{ }
-    public class MemberWriteRepository(LegnoDbContext c) : WriteRepository<Member>(c), IMemberWriteRepository { }
+    public class MemberWriteRepository(LegnoDbContext c):WriteRepository<Member>(c),IMemberWriteRepository{};
+    public class AboutReadRepository(LegnoDbContext c) : ReadRepository<About>(c),IAboutReadRepository { }
+    public class AboutWriteRepository(LegnoDbContext c):WriteRepository<About>(c),IAboutWriteRepository{};
+    public class DirectorWriteRepository(LegnoDbContext c):WriteRepository<Director>(c),IDirectorWriteRepository{};
+    public class DirectorReadRepository(LegnoDbContext c):ReadRepository<Director>(c),IDirectorReadRepository{};
+
+
 
 }

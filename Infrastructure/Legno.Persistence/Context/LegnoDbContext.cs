@@ -1,4 +1,5 @@
 ﻿using Microsoft.AspNetCore.Identity.EntityFrameworkCore;
+
 using Microsoft.EntityFrameworkCore;
 using Legno.Domain.Entities;
 
@@ -43,6 +44,8 @@ namespace Legno.Persistence.Context
         public DbSet<ArticleImage> ArticleImages { get; set; }
         public DbSet<Announcement> Announcements { get; set; }
         public DbSet<Member> Members { get; set; }
+        public DbSet<Director>  Directors { get; set; }
+        public DbSet<About>  About { get; set; }
 
         protected override void OnModelCreating(ModelBuilder modelBuilder)
         {

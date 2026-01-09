@@ -18,7 +18,7 @@ namespace Legno.WebApi.Controllers
             _adminService = adminService;
             _logger = logger;
         }
-   //salamSALAM
+ 
         ///<summary>
         /// Yeni admin qeydiyyatı
         /// </summary>
@@ -88,7 +88,7 @@ namespace Legno.WebApi.Controllers
                     Data = result
                 });
             }
-            catch (GlobalAppException ex)
+            catch (GlobalAppException ex) 
             {
                 _logger.LogError(ex, "Admin daxil olarkən xəta baş verdi!");
                 return BadRequest(new

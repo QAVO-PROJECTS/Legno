@@ -96,6 +96,7 @@ namespace Legno.Persistence
             services.AddScoped<IProjectFabricReadRepository,ProjectFabricReadRepository>();
             services.AddScoped<IProjectFabricWriteRepository, ProjectFabricWriteRepository>();
             services.AddScoped<IMemberService, MemberService>();
+            services.AddScoped<IDirectorService,DirectorService>();
 
 
 
@@ -163,6 +164,11 @@ namespace Legno.Persistence
             //Member
             services.AddScoped<IMemberReadRepository, MemberReadRepository>();
             services.AddScoped<IMemberWriteRepository, MemberWriteRepository>();
+            services.AddScoped<IAboutWriteRepository, AboutWriteRepository>();
+            
+            services.AddScoped<IAboutReadRepository,AboutReadRepository>();
+            services.AddScoped<IDirectorWriteRepository,DirectorWriteRepository>();
+            services.AddScoped<IDirectorReadRepository,DirectorReadRepository>();
 
 
         }

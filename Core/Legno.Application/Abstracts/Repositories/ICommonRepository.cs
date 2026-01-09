@@ -49,4 +49,9 @@ namespace Legno.Application.Abstracts.Repositories
     public interface IAnnouncementWriteRepository : IWriteRepository<Announcement> { }
     public interface IMemberReadRepository : IReadRepository<Member> { }
     public interface IMemberWriteRepository : IWriteRepository<Member> { };
+    public interface IAboutReadRepository:IReadRepository<About>{};
+    public interface IDirectorReadRepository:IReadRepository<Director>{};
+
+    public interface IDirectorWriteRepository:IWriteRepository<Director>{};
+    public interface IAboutWriteRepository:IWriteRepository<About>{};
 }
