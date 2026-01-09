@@ -21,29 +21,22 @@ jobs:
       - name: Restore dependencies
         run: dotnet restore
 
-      # 🔥 QƏTİ HƏLL: Nullable + warning-lar CI-da SÖNDÜRÜLÜR
-      - name: Build (CI hard fix)
-        run: dotnet build --configuration Release --no-restore /p:Nullable=disable
+      - name: Build
+        run: dotnet build --configuration Release --no-restore
 
       - name: Publish
-        run: dotnet publish Presentation/WholeSaler.WebApi/WholeSaler.WebApi.csproj -c Release -o ./publish
+        run: dotnet publish Presentation/Legno.WebApi/Legno.WebApi.csproj -c Release -o ./publish
 
-<<<<<<< HEAD
-      # 🔴 APP OFFLINE (DLL LOCK PROBLEMİ ÜÇÜN)
-      - name: Put app offline
-        run: echo "Maintenance..." > ./publish/app_offline.htm
-=======
      
->>>>>>> 78f524e363f5b586bb71f331341416fe37f84b36
 
-      # 🚀 DEPLOY TO PLESK (wwwroot QORUNUR)
+      # 🚀 DEPLOY (wwwroot qorunur)
       - name: Deploy to Plesk via FTP
         uses: SamKirkland/FTP-Deploy-Action@v4.3.5
         with:
           server: ${{ secrets.FTP_SERVER }}
           username: ${{ secrets.FTP_USERNAME }}
           password: ${{ secrets.FTP_PASSWORD }}
-          server-dir: ${{ secrets.FTP_PATH }}/
+          server-dir: ${{ secrets.FTP_DIR }}/
           local-dir: ./publish/
           protocol: ftp
           dangerous-clean-slate: false
