@@ -10,9 +10,8 @@ namespace Legno.Persistence.Configurations
         {
             builder.Property(x => x.Title).IsRequired().HasMaxLength(200);
          
-            builder.Property(x => x.AuthorName).HasMaxLength(150);
-            builder.Property(x => x.AuthorImage).HasMaxLength(250);
-            builder.Property(x => x.CardImage).HasMaxLength(250);
+      
+    
         }
     }
 }
