@@ -202,8 +202,7 @@ namespace Legno.Persistence.Migrations
                         .HasColumnType("uniqueidentifier");
 
                     b.Property<string>("AuthorImage")
-                        .HasMaxLength(250)
-                        .HasColumnType("nvarchar(250)");
+                        .HasColumnType("nvarchar(max)");
 
                     b.Property<string>("AuthorName")
                         .IsRequired()
@@ -219,8 +218,7 @@ namespace Legno.Persistence.Migrations
                         .HasColumnType("nvarchar(max)");
 
                     b.Property<string>("CardImage")
-                        .HasMaxLength(250)
-                        .HasColumnType("nvarchar(250)");
+                        .HasColumnType("nvarchar(max)");
 
                     b.Property<DateTime>("CreatedDate")
                         .HasColumnType("datetime2");
@@ -236,8 +234,7 @@ namespace Legno.Persistence.Migrations
 
                     b.Property<string>("SubTitle")
                         .IsRequired()
-                        .HasMaxLength(300)
-                        .HasColumnType("nvarchar(300)");
+                        .HasColumnType("nvarchar(max)");
 
                     b.Property<string>("SubTitleEng")
                         .IsRequired()

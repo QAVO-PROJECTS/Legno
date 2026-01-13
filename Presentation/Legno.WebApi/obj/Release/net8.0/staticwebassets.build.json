@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "s38wAWvgA7ACVyTSHkGcIEPkzV1Mv0Z8fev84N7fajk=",
+  "Hash": "iO62xlJHpoQJFW1iobJxueDFA8djSXwCMA5gxM+JL/g=",
   "Source": "Legno.WebApi",
   "BasePath": "_content/Legno.WebApi",
   "Mode": "Default",
@@ -8,5062 +8,982 @@
   "ReferencedProjectsConfiguration": [],
   "DiscoveryPatterns": [
     {
-      "Name": "Legno.WebApi\\wwwroot",
+      "Name": "Legno.WebApi/wwwroot",
       "Source": "Legno.WebApi",
-      "ContentRoot": "C:\\Users\\gulco\\source\\repos\\Legno\\Presentation\\Legno.WebApi\\wwwroot\\",
+      "ContentRoot": "/Users/gulchohrasultanova/Desktop/Legno/Presentation/Legno.WebApi/wwwroot/",
       "BasePath": "_content/Legno.WebApi",
       "Pattern": "**"
     }
   ],
   "Assets": [
     {
-      "Identity": "C:\\Users\\gulco\\source\\repos\\Legno\\Presentation\\Legno.WebApi\\wwwroot\\files\\articles\\32482f27-ca1f-4436-880a-88af859c769a.webp",
+      "Identity": "/Users/gulchohrasultanova/Desktop/Legno/Presentation/Legno.WebApi/wwwroot/files/articles/32482f27-ca1f-4436-880a-88af859c769a.webp",
       "SourceId": "Legno.WebApi",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\gulco\\source\\repos\\Legno\\Presentation\\Legno.WebApi\\wwwroot\\",
+      "ContentRoot": "/Users/gulchohrasultanova/Desktop/Legno/Presentation/Legno.WebApi/wwwroot/",
       "BasePath": "_content/Legno.WebApi",
-      "RelativePath": "files/articles/32482f27-ca1f-4436-880a-88af859c769a#[.{fingerprint}]?.webp",
+      "RelativePath": "files/articles/32482f27-ca1f-4436-880a-88af859c769a.webp",
       "AssetKind": "All",
       "AssetMode": "All",
       "AssetRole": "Primary",
-      "AssetMergeBehavior": "",
+      "AssetMergeBehavior": "PreferTarget",
       "AssetMergeSource": "",
       "RelatedAsset": "",
       "AssetTraitName": "",
       "AssetTraitValue": "",
-      "Fingerprint": "3zpz85oway",
-      "Integrity": "wdXwOYCHad25nNs76R/C2kkO41huJh8OmlxG2ErO3Gk=",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "wwwroot\\files\\articles\\32482f27-ca1f-4436-880a-88af859c769a.webp"
+      "OriginalItemSpec": "wwwroot/files/articles/32482f27-ca1f-4436-880a-88af859c769a.webp"
     },
     {
-      "Identity": "C:\\Users\\gulco\\source\\repos\\Legno\\Presentation\\Legno.WebApi\\wwwroot\\files\\articles\\7d69c9e5-0116-4463-a04b-f2e431eb563b.webp",
+      "Identity": "/Users/gulchohrasultanova/Desktop/Legno/Presentation/Legno.WebApi/wwwroot/files/articles/7d69c9e5-0116-4463-a04b-f2e431eb563b.webp",
       "SourceId": "Legno.WebApi",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\gulco\\source\\repos\\Legno\\Presentation\\Legno.WebApi\\wwwroot\\",
+      "ContentRoot": "/Users/gulchohrasultanova/Desktop/Legno/Presentation/Legno.WebApi/wwwroot/",
       "BasePath": "_content/Legno.WebApi",
-      "RelativePath": "files/articles/7d69c9e5-0116-4463-a04b-f2e431eb563b#[.{fingerprint}]?.webp",
+      "RelativePath": "files/articles/7d69c9e5-0116-4463-a04b-f2e431eb563b.webp",
       "AssetKind": "All",
       "AssetMode": "All",
       "AssetRole": "Primary",
-      "AssetMergeBehavior": "",
+      "AssetMergeBehavior": "PreferTarget",
       "AssetMergeSource": "",
       "RelatedAsset": "",
       "AssetTraitName": "",
       "AssetTraitValue": "",
-      "Fingerprint": "ex36a9kyw3",
-      "Integrity": "nthN2pV7gMu2C9TRYIYr/pAK6CRZDxijReB6TVkSou8=",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "wwwroot\\files\\articles\\7d69c9e5-0116-4463-a04b-f2e431eb563b.webp"
+      "OriginalItemSpec": "wwwroot/files/articles/7d69c9e5-0116-4463-a04b-f2e431eb563b.webp"
     },
     {
-      "Identity": "C:\\Users\\gulco\\source\\repos\\Legno\\Presentation\\Legno.WebApi\\wwwroot\\files\\articles\\author\\68295b14-9859-4ce0-ab72-2b86442f79aa.webp",
+      "Identity": "/Users/gulchohrasultanova/Desktop/Legno/Presentation/Legno.WebApi/wwwroot/files/articles/author/68295b14-9859-4ce0-ab72-2b86442f79aa.webp",
       "SourceId": "Legno.WebApi",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\gulco\\source\\repos\\Legno\\Presentation\\Legno.WebApi\\wwwroot\\",
+      "ContentRoot": "/Users/gulchohrasultanova/Desktop/Legno/Presentation/Legno.WebApi/wwwroot/",
       "BasePath": "_content/Legno.WebApi",
-      "RelativePath": "files/articles/author/68295b14-9859-4ce0-ab72-2b86442f79aa#[.{fingerprint}]?.webp",
+      "RelativePath": "files/articles/author/68295b14-9859-4ce0-ab72-2b86442f79aa.webp",
       "AssetKind": "All",
       "AssetMode": "All",
       "AssetRole": "Primary",
-      "AssetMergeBehavior": "",
+      "AssetMergeBehavior": "PreferTarget",
       "AssetMergeSource": "",
       "RelatedAsset": "",
       "AssetTraitName": "",
       "AssetTraitValue": "",
-      "Fingerprint": "3zpz85oway",
-      "Integrity": "wdXwOYCHad25nNs76R/C2kkO41huJh8OmlxG2ErO3Gk=",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "wwwroot\\files\\articles\\author\\68295b14-9859-4ce0-ab72-2b86442f79aa.webp"
+      "OriginalItemSpec": "wwwroot/files/articles/author/68295b14-9859-4ce0-ab72-2b86442f79aa.webp"
     },
     {
-      "Identity": "C:\\Users\\gulco\\source\\repos\\Legno\\Presentation\\Legno.WebApi\\wwwroot\\files\\articles\\author\\94bbf049-bb65-49d8-a096-9baa237336e9.webp",
+      "Identity": "/Users/gulchohrasultanova/Desktop/Legno/Presentation/Legno.WebApi/wwwroot/files/articles/author/94bbf049-bb65-49d8-a096-9baa237336e9.webp",
       "SourceId": "Legno.WebApi",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\gulco\\source\\repos\\Legno\\Presentation\\Legno.WebApi\\wwwroot\\",
+      "ContentRoot": "/Users/gulchohrasultanova/Desktop/Legno/Presentation/Legno.WebApi/wwwroot/",
       "BasePath": "_content/Legno.WebApi",
-      "RelativePath": "files/articles/author/94bbf049-bb65-49d8-a096-9baa237336e9#[.{fingerprint}]?.webp",
+      "RelativePath": "files/articles/author/94bbf049-bb65-49d8-a096-9baa237336e9.webp",
       "AssetKind": "All",
       "AssetMode": "All",
       "AssetRole": "Primary",
-      "AssetMergeBehavior": "",
+      "AssetMergeBehavior": "PreferTarget",
       "AssetMergeSource": "",
       "RelatedAsset": "",
       "AssetTraitName": "",
       "AssetTraitValue": "",
-      "Fingerprint": "3zpz85oway",
-      "Integrity": "wdXwOYCHad25nNs76R/C2kkO41huJh8OmlxG2ErO3Gk=",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "wwwroot\\files\\articles\\author\\94bbf049-bb65-49d8-a096-9baa237336e9.webp"
+      "OriginalItemSpec": "wwwroot/files/articles/author/94bbf049-bb65-49d8-a096-9baa237336e9.webp"
     },
     {
-      "Identity": "C:\\Users\\gulco\\source\\repos\\Legno\\Presentation\\Legno.WebApi\\wwwroot\\files\\articles\\author\\a0f1de9a-7e12-4a10-bdf7-26f1db9f94a4.webp",
+      "Identity": "/Users/gulchohrasultanova/Desktop/Legno/Presentation/Legno.WebApi/wwwroot/files/articles/author/a0f1de9a-7e12-4a10-bdf7-26f1db9f94a4.webp",
       "SourceId": "Legno.WebApi",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\gulco\\source\\repos\\Legno\\Presentation\\Legno.WebApi\\wwwroot\\",
+      "ContentRoot": "/Users/gulchohrasultanova/Desktop/Legno/Presentation/Legno.WebApi/wwwroot/",
       "BasePath": "_content/Legno.WebApi",
-      "RelativePath": "files/articles/author/a0f1de9a-7e12-4a10-bdf7-26f1db9f94a4#[.{fingerprint}]?.webp",
+      "RelativePath": "files/articles/author/a0f1de9a-7e12-4a10-bdf7-26f1db9f94a4.webp",
       "AssetKind": "All",
       "AssetMode": "All",
       "AssetRole": "Primary",
-      "AssetMergeBehavior": "",
+      "AssetMergeBehavior": "PreferTarget",
       "AssetMergeSource": "",
       "RelatedAsset": "",
       "AssetTraitName": "",
       "AssetTraitValue": "",
-      "Fingerprint": "3zpz85oway",
-      "Integrity": "wdXwOYCHad25nNs76R/C2kkO41huJh8OmlxG2ErO3Gk=",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "wwwroot\\files\\articles\\author\\a0f1de9a-7e12-4a10-bdf7-26f1db9f94a4.webp"
+      "OriginalItemSpec": "wwwroot/files/articles/author/a0f1de9a-7e12-4a10-bdf7-26f1db9f94a4.webp"
     },
     {
-      "Identity": "C:\\Users\\gulco\\source\\repos\\Legno\\Presentation\\Legno.WebApi\\wwwroot\\files\\articles\\d680c0f5-023a-43c9-91e5-1fea17801cd2.webp",
+      "Identity": "/Users/gulchohrasultanova/Desktop/Legno/Presentation/Legno.WebApi/wwwroot/files/articles/d680c0f5-023a-43c9-91e5-1fea17801cd2.webp",
       "SourceId": "Legno.WebApi",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\gulco\\source\\repos\\Legno\\Presentation\\Legno.WebApi\\wwwroot\\",
+      "ContentRoot": "/Users/gulchohrasultanova/Desktop/Legno/Presentation/Legno.WebApi/wwwroot/",
       "BasePath": "_content/Legno.WebApi",
-      "RelativePath": "files/articles/d680c0f5-023a-43c9-91e5-1fea17801cd2#[.{fingerprint}]?.webp",
+      "RelativePath": "files/articles/d680c0f5-023a-43c9-91e5-1fea17801cd2.webp",
       "AssetKind": "All",
       "AssetMode": "All",
       "AssetRole": "Primary",
-      "AssetMergeBehavior": "",
+      "AssetMergeBehavior": "PreferTarget",
       "AssetMergeSource": "",
       "RelatedAsset": "",
       "AssetTraitName": "",
       "AssetTraitValue": "",
-      "Fingerprint": "3zpz85oway",
-      "Integrity": "wdXwOYCHad25nNs76R/C2kkO41huJh8OmlxG2ErO3Gk=",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "wwwroot\\files\\articles\\d680c0f5-023a-43c9-91e5-1fea17801cd2.webp"
+      "OriginalItemSpec": "wwwroot/files/articles/d680c0f5-023a-43c9-91e5-1fea17801cd2.webp"
     },
     {
-      "Identity": "C:\\Users\\gulco\\source\\repos\\Legno\\Presentation\\Legno.WebApi\\wwwroot\\files\\articles\\e5caa8e3-5493-429e-9fe6-6f16ea247250.webp",
+      "Identity": "/Users/gulchohrasultanova/Desktop/Legno/Presentation/Legno.WebApi/wwwroot/files/articles/e5caa8e3-5493-429e-9fe6-6f16ea247250.webp",
       "SourceId": "Legno.WebApi",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\gulco\\source\\repos\\Legno\\Presentation\\Legno.WebApi\\wwwroot\\",
+      "ContentRoot": "/Users/gulchohrasultanova/Desktop/Legno/Presentation/Legno.WebApi/wwwroot/",
       "BasePath": "_content/Legno.WebApi",
-      "RelativePath": "files/articles/e5caa8e3-5493-429e-9fe6-6f16ea247250#[.{fingerprint}]?.webp",
+      "RelativePath": "files/articles/e5caa8e3-5493-429e-9fe6-6f16ea247250.webp",
       "AssetKind": "All",
       "AssetMode": "All",
       "AssetRole": "Primary",
-      "AssetMergeBehavior": "",
+      "AssetMergeBehavior": "PreferTarget",
       "AssetMergeSource": "",
       "RelatedAsset": "",
       "AssetTraitName": "",
       "AssetTraitValue": "",
-      "Fingerprint": "3zpz85oway",
-      "Integrity": "wdXwOYCHad25nNs76R/C2kkO41huJh8OmlxG2ErO3Gk=",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "wwwroot\\files\\articles\\e5caa8e3-5493-429e-9fe6-6f16ea247250.webp"
+      "OriginalItemSpec": "wwwroot/files/articles/e5caa8e3-5493-429e-9fe6-6f16ea247250.webp"
     },
     {
-      "Identity": "C:\\Users\\gulco\\source\\repos\\Legno\\Presentation\\Legno.WebApi\\wwwroot\\files\\articles\\gallery\\52037cec-85af-4a23-b6dc-c3359143aa29.webp",
+      "Identity": "/Users/gulchohrasultanova/Desktop/Legno/Presentation/Legno.WebApi/wwwroot/files/articles/gallery/52037cec-85af-4a23-b6dc-c3359143aa29.webp",
       "SourceId": "Legno.WebApi",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\gulco\\source\\repos\\Legno\\Presentation\\Legno.WebApi\\wwwroot\\",
+      "ContentRoot": "/Users/gulchohrasultanova/Desktop/Legno/Presentation/Legno.WebApi/wwwroot/",
       "BasePath": "_content/Legno.WebApi",
-      "RelativePath": "files/articles/gallery/52037cec-85af-4a23-b6dc-c3359143aa29#[.{fingerprint}]?.webp",
+      "RelativePath": "files/articles/gallery/52037cec-85af-4a23-b6dc-c3359143aa29.webp",
       "AssetKind": "All",
       "AssetMode": "All",
       "AssetRole": "Primary",
-      "AssetMergeBehavior": "",
+      "AssetMergeBehavior": "PreferTarget",
       "AssetMergeSource": "",
       "RelatedAsset": "",
       "AssetTraitName": "",
       "AssetTraitValue": "",
-      "Fingerprint": "dfikj462zr",
-      "Integrity": "twIak32ERCbX6wo/mIedDFYbND9tnz1j+KHeEseG5wE=",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "wwwroot\\files\\articles\\gallery\\52037cec-85af-4a23-b6dc-c3359143aa29.webp"
+      "OriginalItemSpec": "wwwroot/files/articles/gallery/52037cec-85af-4a23-b6dc-c3359143aa29.webp"
     },
     {
-      "Identity": "C:\\Users\\gulco\\source\\repos\\Legno\\Presentation\\Legno.WebApi\\wwwroot\\files\\articles\\gallery\\5c9630fe-1c7b-4d2b-b264-3a61b1eee31a.webp",
+      "Identity": "/Users/gulchohrasultanova/Desktop/Legno/Presentation/Legno.WebApi/wwwroot/files/articles/gallery/5c9630fe-1c7b-4d2b-b264-3a61b1eee31a.webp",
       "SourceId": "Legno.WebApi",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\gulco\\source\\repos\\Legno\\Presentation\\Legno.WebApi\\wwwroot\\",
+      "ContentRoot": "/Users/gulchohrasultanova/Desktop/Legno/Presentation/Legno.WebApi/wwwroot/",
       "BasePath": "_content/Legno.WebApi",
-      "RelativePath": "files/articles/gallery/5c9630fe-1c7b-4d2b-b264-3a61b1eee31a#[.{fingerprint}]?.webp",
+      "RelativePath": "files/articles/gallery/5c9630fe-1c7b-4d2b-b264-3a61b1eee31a.webp",
       "AssetKind": "All",
       "AssetMode": "All",
       "AssetRole": "Primary",
-      "AssetMergeBehavior": "",
+      "AssetMergeBehavior": "PreferTarget",
       "AssetMergeSource": "",
       "RelatedAsset": "",
       "AssetTraitName": "",
       "AssetTraitValue": "",
-      "Fingerprint": "3zpz85oway",
-      "Integrity": "wdXwOYCHad25nNs76R/C2kkO41huJh8OmlxG2ErO3Gk=",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "wwwroot\\files\\articles\\gallery\\5c9630fe-1c7b-4d2b-b264-3a61b1eee31a.webp"
+      "OriginalItemSpec": "wwwroot/files/articles/gallery/5c9630fe-1c7b-4d2b-b264-3a61b1eee31a.webp"
     },
     {
-      "Identity": "C:\\Users\\gulco\\source\\repos\\Legno\\Presentation\\Legno.WebApi\\wwwroot\\files\\articles\\gallery\\9339a500-c503-44be-b741-45e4872fc182.webp",
+      "Identity": "/Users/gulchohrasultanova/Desktop/Legno/Presentation/Legno.WebApi/wwwroot/files/articles/gallery/6902363e-fbf2-476d-b833-b80b5cb05599.webp",
       "SourceId": "Legno.WebApi",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\gulco\\source\\repos\\Legno\\Presentation\\Legno.WebApi\\wwwroot\\",
+      "ContentRoot": "/Users/gulchohrasultanova/Desktop/Legno/Presentation/Legno.WebApi/wwwroot/",
       "BasePath": "_content/Legno.WebApi",
-      "RelativePath": "files/articles/gallery/9339a500-c503-44be-b741-45e4872fc182#[.{fingerprint}]?.webp",
+      "RelativePath": "files/articles/gallery/6902363e-fbf2-476d-b833-b80b5cb05599.webp",
       "AssetKind": "All",
       "AssetMode": "All",
       "AssetRole": "Primary",
-      "AssetMergeBehavior": "",
+      "AssetMergeBehavior": "PreferTarget",
       "AssetMergeSource": "",
       "RelatedAsset": "",
       "AssetTraitName": "",
       "AssetTraitValue": "",
-      "Fingerprint": "dfikj462zr",
-      "Integrity": "twIak32ERCbX6wo/mIedDFYbND9tnz1j+KHeEseG5wE=",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "wwwroot\\files\\articles\\gallery\\9339a500-c503-44be-b741-45e4872fc182.webp"
+      "OriginalItemSpec": "wwwroot/files/articles/gallery/6902363e-fbf2-476d-b833-b80b5cb05599.webp"
     },
     {
-      "Identity": "C:\\Users\\gulco\\source\\repos\\Legno\\Presentation\\Legno.WebApi\\wwwroot\\files\\articles\\gallery\\a6c35150-e945-499b-8d37-ed0753d93340.webp",
+      "Identity": "/Users/gulchohrasultanova/Desktop/Legno/Presentation/Legno.WebApi/wwwroot/files/articles/gallery/9339a500-c503-44be-b741-45e4872fc182.webp",
       "SourceId": "Legno.WebApi",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\gulco\\source\\repos\\Legno\\Presentation\\Legno.WebApi\\wwwroot\\",
+      "ContentRoot": "/Users/gulchohrasultanova/Desktop/Legno/Presentation/Legno.WebApi/wwwroot/",
       "BasePath": "_content/Legno.WebApi",
-      "RelativePath": "files/articles/gallery/a6c35150-e945-499b-8d37-ed0753d93340#[.{fingerprint}]?.webp",
+      "RelativePath": "files/articles/gallery/9339a500-c503-44be-b741-45e4872fc182.webp",
       "AssetKind": "All",
       "AssetMode": "All",
       "AssetRole": "Primary",
-      "AssetMergeBehavior": "",
+      "AssetMergeBehavior": "PreferTarget",
       "AssetMergeSource": "",
       "RelatedAsset": "",
       "AssetTraitName": "",
       "AssetTraitValue": "",
-      "Fingerprint": "3zpz85oway",
-      "Integrity": "wdXwOYCHad25nNs76R/C2kkO41huJh8OmlxG2ErO3Gk=",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "wwwroot\\files\\articles\\gallery\\a6c35150-e945-499b-8d37-ed0753d93340.webp"
+      "OriginalItemSpec": "wwwroot/files/articles/gallery/9339a500-c503-44be-b741-45e4872fc182.webp"
     },
     {
-      "Identity": "C:\\Users\\gulco\\source\\repos\\Legno\\Presentation\\Legno.WebApi\\wwwroot\\files\\assets\\legno.webp",
+      "Identity": "/Users/gulchohrasultanova/Desktop/Legno/Presentation/Legno.WebApi/wwwroot/files/articles/gallery/a6c35150-e945-499b-8d37-ed0753d93340.webp",
       "SourceId": "Legno.WebApi",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\gulco\\source\\repos\\Legno\\Presentation\\Legno.WebApi\\wwwroot\\",
+      "ContentRoot": "/Users/gulchohrasultanova/Desktop/Legno/Presentation/Legno.WebApi/wwwroot/",
       "BasePath": "_content/Legno.WebApi",
-      "RelativePath": "files/assets/legno#[.{fingerprint}]?.webp",
+      "RelativePath": "files/articles/gallery/a6c35150-e945-499b-8d37-ed0753d93340.webp",
       "AssetKind": "All",
       "AssetMode": "All",
       "AssetRole": "Primary",
-      "AssetMergeBehavior": "",
+      "AssetMergeBehavior": "PreferTarget",
       "AssetMergeSource": "",
       "RelatedAsset": "",
       "AssetTraitName": "",
       "AssetTraitValue": "",
-      "Fingerprint": "w1itefheg3",
-      "Integrity": "pPo+5XIy/PdHBGe3mM1/NLMtqiB6I5GgnYHgNRtpjlY=",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "wwwroot\\files\\assets\\legno.webp"
+      "OriginalItemSpec": "wwwroot/files/articles/gallery/a6c35150-e945-499b-8d37-ed0753d93340.webp"
     },
     {
-      "Identity": "C:\\Users\\gulco\\source\\repos\\Legno\\Presentation\\Legno.WebApi\\wwwroot\\files\\author_images\\24b4a9c1-c28a-46b2-8eb8-79ddf93bf186.webp",
+      "Identity": "/Users/gulchohrasultanova/Desktop/Legno/Presentation/Legno.WebApi/wwwroot/files/assets/legno.webp",
       "SourceId": "Legno.WebApi",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\gulco\\source\\repos\\Legno\\Presentation\\Legno.WebApi\\wwwroot\\",
+      "ContentRoot": "/Users/gulchohrasultanova/Desktop/Legno/Presentation/Legno.WebApi/wwwroot/",
       "BasePath": "_content/Legno.WebApi",
-      "RelativePath": "files/author_images/24b4a9c1-c28a-46b2-8eb8-79ddf93bf186#[.{fingerprint}]?.webp",
+      "RelativePath": "files/assets/legno.webp",
       "AssetKind": "All",
       "AssetMode": "All",
       "AssetRole": "Primary",
-      "AssetMergeBehavior": "",
+      "AssetMergeBehavior": "PreferTarget",
       "AssetMergeSource": "",
       "RelatedAsset": "",
       "AssetTraitName": "",
       "AssetTraitValue": "",
-      "Fingerprint": "ex36a9kyw3",
-      "Integrity": "nthN2pV7gMu2C9TRYIYr/pAK6CRZDxijReB6TVkSou8=",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "wwwroot\\files\\author_images\\24b4a9c1-c28a-46b2-8eb8-79ddf93bf186.webp"
+      "OriginalItemSpec": "wwwroot/files/assets/legno.webp"
     },
     {
-      "Identity": "C:\\Users\\gulco\\source\\repos\\Legno\\Presentation\\Legno.WebApi\\wwwroot\\files\\author_images\\81ebc027-092d-4c6e-bfef-e5a7f6a57ff9.webp",
+      "Identity": "/Users/gulchohrasultanova/Desktop/Legno/Presentation/Legno.WebApi/wwwroot/files/author_images/24b4a9c1-c28a-46b2-8eb8-79ddf93bf186.webp",
       "SourceId": "Legno.WebApi",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\gulco\\source\\repos\\Legno\\Presentation\\Legno.WebApi\\wwwroot\\",
+      "ContentRoot": "/Users/gulchohrasultanova/Desktop/Legno/Presentation/Legno.WebApi/wwwroot/",
       "BasePath": "_content/Legno.WebApi",
-      "RelativePath": "files/author_images/81ebc027-092d-4c6e-bfef-e5a7f6a57ff9#[.{fingerprint}]?.webp",
+      "RelativePath": "files/author_images/24b4a9c1-c28a-46b2-8eb8-79ddf93bf186.webp",
       "AssetKind": "All",
       "AssetMode": "All",
       "AssetRole": "Primary",
-      "AssetMergeBehavior": "",
+      "AssetMergeBehavior": "PreferTarget",
       "AssetMergeSource": "",
       "RelatedAsset": "",
       "AssetTraitName": "",
       "AssetTraitValue": "",
-      "Fingerprint": "ex36a9kyw3",
-      "Integrity": "nthN2pV7gMu2C9TRYIYr/pAK6CRZDxijReB6TVkSou8=",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "wwwroot\\files\\author_images\\81ebc027-092d-4c6e-bfef-e5a7f6a57ff9.webp"
+      "OriginalItemSpec": "wwwroot/files/author_images/24b4a9c1-c28a-46b2-8eb8-79ddf93bf186.webp"
     },
     {
-      "Identity": "C:\\Users\\gulco\\source\\repos\\Legno\\Presentation\\Legno.WebApi\\wwwroot\\files\\author_images\\e3d706bb-6ed6-47a2-b2b5-325443e61070.webp",
+      "Identity": "/Users/gulchohrasultanova/Desktop/Legno/Presentation/Legno.WebApi/wwwroot/files/author_images/81ebc027-092d-4c6e-bfef-e5a7f6a57ff9.webp",
       "SourceId": "Legno.WebApi",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\gulco\\source\\repos\\Legno\\Presentation\\Legno.WebApi\\wwwroot\\",
+      "ContentRoot": "/Users/gulchohrasultanova/Desktop/Legno/Presentation/Legno.WebApi/wwwroot/",
       "BasePath": "_content/Legno.WebApi",
-      "RelativePath": "files/author_images/e3d706bb-6ed6-47a2-b2b5-325443e61070#[.{fingerprint}]?.webp",
+      "RelativePath": "files/author_images/81ebc027-092d-4c6e-bfef-e5a7f6a57ff9.webp",
       "AssetKind": "All",
       "AssetMode": "All",
       "AssetRole": "Primary",
-      "AssetMergeBehavior": "",
+      "AssetMergeBehavior": "PreferTarget",
       "AssetMergeSource": "",
       "RelatedAsset": "",
       "AssetTraitName": "",
       "AssetTraitValue": "",
-      "Fingerprint": "yym08phpqa",
-      "Integrity": "ti9S9qD6lOu6bVHLRqzBepsp6pVtUi2JYtqM7qry5CE=",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "wwwroot\\files\\author_images\\e3d706bb-6ed6-47a2-b2b5-325443e61070.webp"
+      "OriginalItemSpec": "wwwroot/files/author_images/81ebc027-092d-4c6e-bfef-e5a7f6a57ff9.webp"
     },
     {
-      "Identity": "C:\\Users\\gulco\\source\\repos\\Legno\\Presentation\\Legno.WebApi\\wwwroot\\files\\blog_images\\4ad9e997-faa5-46c7-9d80-01931b855e14.webp",
+      "Identity": "/Users/gulchohrasultanova/Desktop/Legno/Presentation/Legno.WebApi/wwwroot/files/author_images/e3d706bb-6ed6-47a2-b2b5-325443e61070.webp",
       "SourceId": "Legno.WebApi",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\gulco\\source\\repos\\Legno\\Presentation\\Legno.WebApi\\wwwroot\\",
+      "ContentRoot": "/Users/gulchohrasultanova/Desktop/Legno/Presentation/Legno.WebApi/wwwroot/",
       "BasePath": "_content/Legno.WebApi",
-      "RelativePath": "files/blog_images/4ad9e997-faa5-46c7-9d80-01931b855e14#[.{fingerprint}]?.webp",
+      "RelativePath": "files/author_images/e3d706bb-6ed6-47a2-b2b5-325443e61070.webp",
       "AssetKind": "All",
       "AssetMode": "All",
       "AssetRole": "Primary",
-      "AssetMergeBehavior": "",
+      "AssetMergeBehavior": "PreferTarget",
       "AssetMergeSource": "",
       "RelatedAsset": "",
       "AssetTraitName": "",
       "AssetTraitValue": "",
-      "Fingerprint": "ex36a9kyw3",
-      "Integrity": "nthN2pV7gMu2C9TRYIYr/pAK6CRZDxijReB6TVkSou8=",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "wwwroot\\files\\blog_images\\4ad9e997-faa5-46c7-9d80-01931b855e14.webp"
+      "OriginalItemSpec": "wwwroot/files/author_images/e3d706bb-6ed6-47a2-b2b5-325443e61070.webp"
     },
     {
-      "Identity": "C:\\Users\\gulco\\source\\repos\\Legno\\Presentation\\Legno.WebApi\\wwwroot\\files\\blog_images\\8ae39001-30ea-4904-b228-a7aaa1a32aa7.webp",
+      "Identity": "/Users/gulchohrasultanova/Desktop/Legno/Presentation/Legno.WebApi/wwwroot/files/blog_images/4ad9e997-faa5-46c7-9d80-01931b855e14.webp",
       "SourceId": "Legno.WebApi",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\gulco\\source\\repos\\Legno\\Presentation\\Legno.WebApi\\wwwroot\\",
+      "ContentRoot": "/Users/gulchohrasultanova/Desktop/Legno/Presentation/Legno.WebApi/wwwroot/",
       "BasePath": "_content/Legno.WebApi",
-      "RelativePath": "files/blog_images/8ae39001-30ea-4904-b228-a7aaa1a32aa7#[.{fingerprint}]?.webp",
+      "RelativePath": "files/blog_images/4ad9e997-faa5-46c7-9d80-01931b855e14.webp",
       "AssetKind": "All",
       "AssetMode": "All",
       "AssetRole": "Primary",
-      "AssetMergeBehavior": "",
+      "AssetMergeBehavior": "PreferTarget",
       "AssetMergeSource": "",
       "RelatedAsset": "",
       "AssetTraitName": "",
       "AssetTraitValue": "",
-      "Fingerprint": "ex36a9kyw3",
-      "Integrity": "nthN2pV7gMu2C9TRYIYr/pAK6CRZDxijReB6TVkSou8=",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "wwwroot\\files\\blog_images\\8ae39001-30ea-4904-b228-a7aaa1a32aa7.webp"
+      "OriginalItemSpec": "wwwroot/files/blog_images/4ad9e997-faa5-46c7-9d80-01931b855e14.webp"
     },
     {
-      "Identity": "C:\\Users\\gulco\\source\\repos\\Legno\\Presentation\\Legno.WebApi\\wwwroot\\files\\blog_images\\c88a8bf8-b18b-4cbd-9099-4f2711d07f4b.webp",
+      "Identity": "/Users/gulchohrasultanova/Desktop/Legno/Presentation/Legno.WebApi/wwwroot/files/blog_images/8ae39001-30ea-4904-b228-a7aaa1a32aa7.webp",
       "SourceId": "Legno.WebApi",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\gulco\\source\\repos\\Legno\\Presentation\\Legno.WebApi\\wwwroot\\",
+      "ContentRoot": "/Users/gulchohrasultanova/Desktop/Legno/Presentation/Legno.WebApi/wwwroot/",
       "BasePath": "_content/Legno.WebApi",
-      "RelativePath": "files/blog_images/c88a8bf8-b18b-4cbd-9099-4f2711d07f4b#[.{fingerprint}]?.webp",
+      "RelativePath": "files/blog_images/8ae39001-30ea-4904-b228-a7aaa1a32aa7.webp",
       "AssetKind": "All",
       "AssetMode": "All",
       "AssetRole": "Primary",
-      "AssetMergeBehavior": "",
+      "AssetMergeBehavior": "PreferTarget",
       "AssetMergeSource": "",
       "RelatedAsset": "",
       "AssetTraitName": "",
       "AssetTraitValue": "",
-      "Fingerprint": "ex36a9kyw3",
-      "Integrity": "nthN2pV7gMu2C9TRYIYr/pAK6CRZDxijReB6TVkSou8=",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "wwwroot\\files\\blog_images\\c88a8bf8-b18b-4cbd-9099-4f2711d07f4b.webp"
+      "OriginalItemSpec": "wwwroot/files/blog_images/8ae39001-30ea-4904-b228-a7aaa1a32aa7.webp"
     },
     {
-      "Identity": "C:\\Users\\gulco\\source\\repos\\Legno\\Presentation\\Legno.WebApi\\wwwroot\\files\\businessservices\\9312c366-6dc3-4b0f-84cb-b69d5054b520.webp",
+      "Identity": "/Users/gulchohrasultanova/Desktop/Legno/Presentation/Legno.WebApi/wwwroot/files/blog_images/c88a8bf8-b18b-4cbd-9099-4f2711d07f4b.webp",
       "SourceId": "Legno.WebApi",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\gulco\\source\\repos\\Legno\\Presentation\\Legno.WebApi\\wwwroot\\",
+      "ContentRoot": "/Users/gulchohrasultanova/Desktop/Legno/Presentation/Legno.WebApi/wwwroot/",
       "BasePath": "_content/Legno.WebApi",
-      "RelativePath": "files/businessservices/9312c366-6dc3-4b0f-84cb-b69d5054b520#[.{fingerprint}]?.webp",
+      "RelativePath": "files/blog_images/c88a8bf8-b18b-4cbd-9099-4f2711d07f4b.webp",
       "AssetKind": "All",
       "AssetMode": "All",
       "AssetRole": "Primary",
-      "AssetMergeBehavior": "",
+      "AssetMergeBehavior": "PreferTarget",
       "AssetMergeSource": "",
       "RelatedAsset": "",
       "AssetTraitName": "",
       "AssetTraitValue": "",
-      "Fingerprint": "ex36a9kyw3",
-      "Integrity": "nthN2pV7gMu2C9TRYIYr/pAK6CRZDxijReB6TVkSou8=",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "wwwroot\\files\\businessservices\\9312c366-6dc3-4b0f-84cb-b69d5054b520.webp"
+      "OriginalItemSpec": "wwwroot/files/blog_images/c88a8bf8-b18b-4cbd-9099-4f2711d07f4b.webp"
     },
     {
-      "Identity": "C:\\Users\\gulco\\source\\repos\\Legno\\Presentation\\Legno.WebApi\\wwwroot\\files\\career\\cv\\240ac7e9-2f44-446b-a5ae-a47dd46382a1.pdf",
+      "Identity": "/Users/gulchohrasultanova/Desktop/Legno/Presentation/Legno.WebApi/wwwroot/files/businessservices/9312c366-6dc3-4b0f-84cb-b69d5054b520.webp",
       "SourceId": "Legno.WebApi",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\gulco\\source\\repos\\Legno\\Presentation\\Legno.WebApi\\wwwroot\\",
+      "ContentRoot": "/Users/gulchohrasultanova/Desktop/Legno/Presentation/Legno.WebApi/wwwroot/",
       "BasePath": "_content/Legno.WebApi",
-      "RelativePath": "files/career/cv/240ac7e9-2f44-446b-a5ae-a47dd46382a1#[.{fingerprint}]?.pdf",
+      "RelativePath": "files/businessservices/9312c366-6dc3-4b0f-84cb-b69d5054b520.webp",
       "AssetKind": "All",
       "AssetMode": "All",
       "AssetRole": "Primary",
-      "AssetMergeBehavior": "",
+      "AssetMergeBehavior": "PreferTarget",
       "AssetMergeSource": "",
       "RelatedAsset": "",
       "AssetTraitName": "",
       "AssetTraitValue": "",
-      "Fingerprint": "errc4w10p7",
-      "Integrity": "iis4pYonEf85EgicftPfhaCJcz7CjM6H6Stdc/0/Aq0=",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "wwwroot\\files\\career\\cv\\240ac7e9-2f44-446b-a5ae-a47dd46382a1.pdf"
+      "OriginalItemSpec": "wwwroot/files/businessservices/9312c366-6dc3-4b0f-84cb-b69d5054b520.webp"
     },
     {
-      "Identity": "C:\\Users\\gulco\\source\\repos\\Legno\\Presentation\\Legno.WebApi\\wwwroot\\files\\career\\cv\\79ffc22b-8ccb-477e-82e7-4dc4e867a344.pdf",
+      "Identity": "/Users/gulchohrasultanova/Desktop/Legno/Presentation/Legno.WebApi/wwwroot/files/career/cv/240ac7e9-2f44-446b-a5ae-a47dd46382a1.pdf",
       "SourceId": "Legno.WebApi",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\gulco\\source\\repos\\Legno\\Presentation\\Legno.WebApi\\wwwroot\\",
+      "ContentRoot": "/Users/gulchohrasultanova/Desktop/Legno/Presentation/Legno.WebApi/wwwroot/",
       "BasePath": "_content/Legno.WebApi",
-      "RelativePath": "files/career/cv/79ffc22b-8ccb-477e-82e7-4dc4e867a344#[.{fingerprint}]?.pdf",
+      "RelativePath": "files/career/cv/240ac7e9-2f44-446b-a5ae-a47dd46382a1.pdf",
       "AssetKind": "All",
       "AssetMode": "All",
       "AssetRole": "Primary",
-      "AssetMergeBehavior": "",
+      "AssetMergeBehavior": "PreferTarget",
       "AssetMergeSource": "",
       "RelatedAsset": "",
       "AssetTraitName": "",
       "AssetTraitValue": "",
-      "Fingerprint": "errc4w10p7",
-      "Integrity": "iis4pYonEf85EgicftPfhaCJcz7CjM6H6Stdc/0/Aq0=",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "wwwroot\\files\\career\\cv\\79ffc22b-8ccb-477e-82e7-4dc4e867a344.pdf"
+      "OriginalItemSpec": "wwwroot/files/career/cv/240ac7e9-2f44-446b-a5ae-a47dd46382a1.pdf"
     },
     {
-      "Identity": "C:\\Users\\gulco\\source\\repos\\Legno\\Presentation\\Legno.WebApi\\wwwroot\\files\\career\\cv\\812cd832-3bed-43f7-9535-5e5c1751decc.pdf",
+      "Identity": "/Users/gulchohrasultanova/Desktop/Legno/Presentation/Legno.WebApi/wwwroot/files/career/cv/79ffc22b-8ccb-477e-82e7-4dc4e867a344.pdf",
       "SourceId": "Legno.WebApi",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\gulco\\source\\repos\\Legno\\Presentation\\Legno.WebApi\\wwwroot\\",
+      "ContentRoot": "/Users/gulchohrasultanova/Desktop/Legno/Presentation/Legno.WebApi/wwwroot/",
       "BasePath": "_content/Legno.WebApi",
-      "RelativePath": "files/career/cv/812cd832-3bed-43f7-9535-5e5c1751decc#[.{fingerprint}]?.pdf",
+      "RelativePath": "files/career/cv/79ffc22b-8ccb-477e-82e7-4dc4e867a344.pdf",
       "AssetKind": "All",
       "AssetMode": "All",
       "AssetRole": "Primary",
-      "AssetMergeBehavior": "",
+      "AssetMergeBehavior": "PreferTarget",
       "AssetMergeSource": "",
       "RelatedAsset": "",
       "AssetTraitName": "",
       "AssetTraitValue": "",
-      "Fingerprint": "errc4w10p7",
-      "Integrity": "iis4pYonEf85EgicftPfhaCJcz7CjM6H6Stdc/0/Aq0=",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "wwwroot\\files\\career\\cv\\812cd832-3bed-43f7-9535-5e5c1751decc.pdf"
+      "OriginalItemSpec": "wwwroot/files/career/cv/79ffc22b-8ccb-477e-82e7-4dc4e867a344.pdf"
     },
     {
-      "Identity": "C:\\Users\\gulco\\source\\repos\\Legno\\Presentation\\Legno.WebApi\\wwwroot\\files\\career\\cv\\9b75c980-d67e-43e6-a5a8-34b7a8f3170e.pdf",
+      "Identity": "/Users/gulchohrasultanova/Desktop/Legno/Presentation/Legno.WebApi/wwwroot/files/career/cv/812cd832-3bed-43f7-9535-5e5c1751decc.pdf",
       "SourceId": "Legno.WebApi",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\gulco\\source\\repos\\Legno\\Presentation\\Legno.WebApi\\wwwroot\\",
+      "ContentRoot": "/Users/gulchohrasultanova/Desktop/Legno/Presentation/Legno.WebApi/wwwroot/",
       "BasePath": "_content/Legno.WebApi",
-      "RelativePath": "files/career/cv/9b75c980-d67e-43e6-a5a8-34b7a8f3170e#[.{fingerprint}]?.pdf",
+      "RelativePath": "files/career/cv/812cd832-3bed-43f7-9535-5e5c1751decc.pdf",
       "AssetKind": "All",
       "AssetMode": "All",
       "AssetRole": "Primary",
-      "AssetMergeBehavior": "",
+      "AssetMergeBehavior": "PreferTarget",
       "AssetMergeSource": "",
       "RelatedAsset": "",
       "AssetTraitName": "",
       "AssetTraitValue": "",
-      "Fingerprint": "errc4w10p7",
-      "Integrity": "iis4pYonEf85EgicftPfhaCJcz7CjM6H6Stdc/0/Aq0=",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "wwwroot\\files\\career\\cv\\9b75c980-d67e-43e6-a5a8-34b7a8f3170e.pdf"
+      "OriginalItemSpec": "wwwroot/files/career/cv/812cd832-3bed-43f7-9535-5e5c1751decc.pdf"
     },
     {
-      "Identity": "C:\\Users\\gulco\\source\\repos\\Legno\\Presentation\\Legno.WebApi\\wwwroot\\files\\career\\cv\\bb574369-5145-47e4-8332-eaeca2c577de.pdf",
+      "Identity": "/Users/gulchohrasultanova/Desktop/Legno/Presentation/Legno.WebApi/wwwroot/files/career/cv/9b75c980-d67e-43e6-a5a8-34b7a8f3170e.pdf",
       "SourceId": "Legno.WebApi",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\gulco\\source\\repos\\Legno\\Presentation\\Legno.WebApi\\wwwroot\\",
+      "ContentRoot": "/Users/gulchohrasultanova/Desktop/Legno/Presentation/Legno.WebApi/wwwroot/",
       "BasePath": "_content/Legno.WebApi",
-      "RelativePath": "files/career/cv/bb574369-5145-47e4-8332-eaeca2c577de#[.{fingerprint}]?.pdf",
+      "RelativePath": "files/career/cv/9b75c980-d67e-43e6-a5a8-34b7a8f3170e.pdf",
       "AssetKind": "All",
       "AssetMode": "All",
       "AssetRole": "Primary",
-      "AssetMergeBehavior": "",
+      "AssetMergeBehavior": "PreferTarget",
       "AssetMergeSource": "",
       "RelatedAsset": "",
       "AssetTraitName": "",
       "AssetTraitValue": "",
-      "Fingerprint": "errc4w10p7",
-      "Integrity": "iis4pYonEf85EgicftPfhaCJcz7CjM6H6Stdc/0/Aq0=",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "wwwroot\\files\\career\\cv\\bb574369-5145-47e4-8332-eaeca2c577de.pdf"
+      "OriginalItemSpec": "wwwroot/files/career/cv/9b75c980-d67e-43e6-a5a8-34b7a8f3170e.pdf"
     },
     {
-      "Identity": "C:\\Users\\gulco\\source\\repos\\Legno\\Presentation\\Legno.WebApi\\wwwroot\\files\\categories\\01b6e6d2-5d3f-43bf-8974-42d103a8c810.webp",
+      "Identity": "/Users/gulchohrasultanova/Desktop/Legno/Presentation/Legno.WebApi/wwwroot/files/career/cv/bb574369-5145-47e4-8332-eaeca2c577de.pdf",
       "SourceId": "Legno.WebApi",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\gulco\\source\\repos\\Legno\\Presentation\\Legno.WebApi\\wwwroot\\",
+      "ContentRoot": "/Users/gulchohrasultanova/Desktop/Legno/Presentation/Legno.WebApi/wwwroot/",
       "BasePath": "_content/Legno.WebApi",
-      "RelativePath": "files/categories/01b6e6d2-5d3f-43bf-8974-42d103a8c810#[.{fingerprint}]?.webp",
+      "RelativePath": "files/career/cv/bb574369-5145-47e4-8332-eaeca2c577de.pdf",
       "AssetKind": "All",
       "AssetMode": "All",
       "AssetRole": "Primary",
-      "AssetMergeBehavior": "",
+      "AssetMergeBehavior": "PreferTarget",
       "AssetMergeSource": "",
       "RelatedAsset": "",
       "AssetTraitName": "",
       "AssetTraitValue": "",
-      "Fingerprint": "ex36a9kyw3",
-      "Integrity": "nthN2pV7gMu2C9TRYIYr/pAK6CRZDxijReB6TVkSou8=",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "wwwroot\\files\\categories\\01b6e6d2-5d3f-43bf-8974-42d103a8c810.webp"
+      "OriginalItemSpec": "wwwroot/files/career/cv/bb574369-5145-47e4-8332-eaeca2c577de.pdf"
     },
     {
-      "Identity": "C:\\Users\\gulco\\source\\repos\\Legno\\Presentation\\Legno.WebApi\\wwwroot\\files\\category\\images\\f433b466-857b-4747-9eac-f4e1426a8f85.webp",
+      "Identity": "/Users/gulchohrasultanova/Desktop/Legno/Presentation/Legno.WebApi/wwwroot/files/categories/01b6e6d2-5d3f-43bf-8974-42d103a8c810.webp",
       "SourceId": "Legno.WebApi",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\gulco\\source\\repos\\Legno\\Presentation\\Legno.WebApi\\wwwroot\\",
+      "ContentRoot": "/Users/gulchohrasultanova/Desktop/Legno/Presentation/Legno.WebApi/wwwroot/",
       "BasePath": "_content/Legno.WebApi",
-      "RelativePath": "files/category/images/f433b466-857b-4747-9eac-f4e1426a8f85#[.{fingerprint}]?.webp",
+      "RelativePath": "files/categories/01b6e6d2-5d3f-43bf-8974-42d103a8c810.webp",
       "AssetKind": "All",
       "AssetMode": "All",
       "AssetRole": "Primary",
-      "AssetMergeBehavior": "",
+      "AssetMergeBehavior": "PreferTarget",
       "AssetMergeSource": "",
       "RelatedAsset": "",
       "AssetTraitName": "",
       "AssetTraitValue": "",
-      "Fingerprint": "3zpz85oway",
-      "Integrity": "wdXwOYCHad25nNs76R/C2kkO41huJh8OmlxG2ErO3Gk=",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "wwwroot\\files\\category\\images\\f433b466-857b-4747-9eac-f4e1426a8f85.webp"
+      "OriginalItemSpec": "wwwroot/files/categories/01b6e6d2-5d3f-43bf-8974-42d103a8c810.webp"
     },
     {
-      "Identity": "C:\\Users\\gulco\\source\\repos\\Legno\\Presentation\\Legno.WebApi\\wwwroot\\files\\designer-services\\1365af27-03fa-49fd-bc97-e137859afcf9.webp",
+      "Identity": "/Users/gulchohrasultanova/Desktop/Legno/Presentation/Legno.WebApi/wwwroot/files/category/images/f433b466-857b-4747-9eac-f4e1426a8f85.webp",
       "SourceId": "Legno.WebApi",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\gulco\\source\\repos\\Legno\\Presentation\\Legno.WebApi\\wwwroot\\",
+      "ContentRoot": "/Users/gulchohrasultanova/Desktop/Legno/Presentation/Legno.WebApi/wwwroot/",
       "BasePath": "_content/Legno.WebApi",
-      "RelativePath": "files/designer-services/1365af27-03fa-49fd-bc97-e137859afcf9#[.{fingerprint}]?.webp",
+      "RelativePath": "files/category/images/f433b466-857b-4747-9eac-f4e1426a8f85.webp",
       "AssetKind": "All",
       "AssetMode": "All",
       "AssetRole": "Primary",
-      "AssetMergeBehavior": "",
+      "AssetMergeBehavior": "PreferTarget",
       "AssetMergeSource": "",
       "RelatedAsset": "",
       "AssetTraitName": "",
       "AssetTraitValue": "",
-      "Fingerprint": "u0fv246hng",
-      "Integrity": "zs+nmgzFtLEaWSlRCZTbCPdnOFZUUgqGpf1k3ZMAi14=",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "wwwroot\\files\\designer-services\\1365af27-03fa-49fd-bc97-e137859afcf9.webp"
+      "OriginalItemSpec": "wwwroot/files/category/images/f433b466-857b-4747-9eac-f4e1426a8f85.webp"
     },
     {
-      "Identity": "C:\\Users\\gulco\\source\\repos\\Legno\\Presentation\\Legno.WebApi\\wwwroot\\files\\members\\fdd1e38e-7cf6-4bac-a524-129ad1638985.webp",
+      "Identity": "/Users/gulchohrasultanova/Desktop/Legno/Presentation/Legno.WebApi/wwwroot/files/designer-services/1365af27-03fa-49fd-bc97-e137859afcf9.webp",
       "SourceId": "Legno.WebApi",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\gulco\\source\\repos\\Legno\\Presentation\\Legno.WebApi\\wwwroot\\",
+      "ContentRoot": "/Users/gulchohrasultanova/Desktop/Legno/Presentation/Legno.WebApi/wwwroot/",
       "BasePath": "_content/Legno.WebApi",
-      "RelativePath": "files/members/fdd1e38e-7cf6-4bac-a524-129ad1638985#[.{fingerprint}]?.webp",
+      "RelativePath": "files/designer-services/1365af27-03fa-49fd-bc97-e137859afcf9.webp",
       "AssetKind": "All",
       "AssetMode": "All",
       "AssetRole": "Primary",
-      "AssetMergeBehavior": "",
+      "AssetMergeBehavior": "PreferTarget",
       "AssetMergeSource": "",
       "RelatedAsset": "",
       "AssetTraitName": "",
       "AssetTraitValue": "",
-      "Fingerprint": "dfikj462zr",
-      "Integrity": "twIak32ERCbX6wo/mIedDFYbND9tnz1j+KHeEseG5wE=",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "wwwroot\\files\\members\\fdd1e38e-7cf6-4bac-a524-129ad1638985.webp"
+      "OriginalItemSpec": "wwwroot/files/designer-services/1365af27-03fa-49fd-bc97-e137859afcf9.webp"
     },
     {
-      "Identity": "C:\\Users\\gulco\\source\\repos\\Legno\\Presentation\\Legno.WebApi\\wwwroot\\files\\project_card_images\\45467a13-607d-4bde-82da-c70810158cf5.webp",
+      "Identity": "/Users/gulchohrasultanova/Desktop/Legno/Presentation/Legno.WebApi/wwwroot/files/directors/09b6dc8c-64ea-4b63-bba1-85d103c8e771.webp",
       "SourceId": "Legno.WebApi",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\gulco\\source\\repos\\Legno\\Presentation\\Legno.WebApi\\wwwroot\\",
+      "ContentRoot": "/Users/gulchohrasultanova/Desktop/Legno/Presentation/Legno.WebApi/wwwroot/",
       "BasePath": "_content/Legno.WebApi",
-      "RelativePath": "files/project_card_images/45467a13-607d-4bde-82da-c70810158cf5#[.{fingerprint}]?.webp",
+      "RelativePath": "files/directors/09b6dc8c-64ea-4b63-bba1-85d103c8e771.webp",
       "AssetKind": "All",
       "AssetMode": "All",
       "AssetRole": "Primary",
-      "AssetMergeBehavior": "",
+      "AssetMergeBehavior": "PreferTarget",
       "AssetMergeSource": "",
       "RelatedAsset": "",
       "AssetTraitName": "",
       "AssetTraitValue": "",
-      "Fingerprint": "ex36a9kyw3",
-      "Integrity": "nthN2pV7gMu2C9TRYIYr/pAK6CRZDxijReB6TVkSou8=",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "wwwroot\\files\\project_card_images\\45467a13-607d-4bde-82da-c70810158cf5.webp"
+      "OriginalItemSpec": "wwwroot/files/directors/09b6dc8c-64ea-4b63-bba1-85d103c8e771.webp"
     },
     {
-      "Identity": "C:\\Users\\gulco\\source\\repos\\Legno\\Presentation\\Legno.WebApi\\wwwroot\\files\\project_card_images\\4d4326a2-b01b-427a-8bb1-c14dcada3042.webp",
+      "Identity": "/Users/gulchohrasultanova/Desktop/Legno/Presentation/Legno.WebApi/wwwroot/files/members/fdd1e38e-7cf6-4bac-a524-129ad1638985.webp",
       "SourceId": "Legno.WebApi",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\gulco\\source\\repos\\Legno\\Presentation\\Legno.WebApi\\wwwroot\\",
+      "ContentRoot": "/Users/gulchohrasultanova/Desktop/Legno/Presentation/Legno.WebApi/wwwroot/",
       "BasePath": "_content/Legno.WebApi",
-      "RelativePath": "files/project_card_images/4d4326a2-b01b-427a-8bb1-c14dcada3042#[.{fingerprint}]?.webp",
+      "RelativePath": "files/members/fdd1e38e-7cf6-4bac-a524-129ad1638985.webp",
       "AssetKind": "All",
       "AssetMode": "All",
       "AssetRole": "Primary",
-      "AssetMergeBehavior": "",
+      "AssetMergeBehavior": "PreferTarget",
       "AssetMergeSource": "",
       "RelatedAsset": "",
       "AssetTraitName": "",
       "AssetTraitValue": "",
-      "Fingerprint": "ex36a9kyw3",
-      "Integrity": "nthN2pV7gMu2C9TRYIYr/pAK6CRZDxijReB6TVkSou8=",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "wwwroot\\files\\project_card_images\\4d4326a2-b01b-427a-8bb1-c14dcada3042.webp"
+      "OriginalItemSpec": "wwwroot/files/members/fdd1e38e-7cf6-4bac-a524-129ad1638985.webp"
     },
     {
-      "Identity": "C:\\Users\\gulco\\source\\repos\\Legno\\Presentation\\Legno.WebApi\\wwwroot\\files\\project_images\\19b95f1b-3e6a-434f-85f6-9a307eed75a3.webp",
+      "Identity": "/Users/gulchohrasultanova/Desktop/Legno/Presentation/Legno.WebApi/wwwroot/files/project_card_images/45467a13-607d-4bde-82da-c70810158cf5.webp",
       "SourceId": "Legno.WebApi",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\gulco\\source\\repos\\Legno\\Presentation\\Legno.WebApi\\wwwroot\\",
+      "ContentRoot": "/Users/gulchohrasultanova/Desktop/Legno/Presentation/Legno.WebApi/wwwroot/",
       "BasePath": "_content/Legno.WebApi",
-      "RelativePath": "files/project_images/19b95f1b-3e6a-434f-85f6-9a307eed75a3#[.{fingerprint}]?.webp",
+      "RelativePath": "files/project_card_images/45467a13-607d-4bde-82da-c70810158cf5.webp",
       "AssetKind": "All",
       "AssetMode": "All",
       "AssetRole": "Primary",
-      "AssetMergeBehavior": "",
+      "AssetMergeBehavior": "PreferTarget",
       "AssetMergeSource": "",
       "RelatedAsset": "",
       "AssetTraitName": "",
       "AssetTraitValue": "",
-      "Fingerprint": "ex36a9kyw3",
-      "Integrity": "nthN2pV7gMu2C9TRYIYr/pAK6CRZDxijReB6TVkSou8=",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "wwwroot\\files\\project_images\\19b95f1b-3e6a-434f-85f6-9a307eed75a3.webp"
+      "OriginalItemSpec": "wwwroot/files/project_card_images/45467a13-607d-4bde-82da-c70810158cf5.webp"
     },
     {
-      "Identity": "C:\\Users\\gulco\\source\\repos\\Legno\\Presentation\\Legno.WebApi\\wwwroot\\files\\project_images\\32434b86-09f5-4948-afb2-ba9694257b31.webp",
+      "Identity": "/Users/gulchohrasultanova/Desktop/Legno/Presentation/Legno.WebApi/wwwroot/files/project_card_images/4d4326a2-b01b-427a-8bb1-c14dcada3042.webp",
       "SourceId": "Legno.WebApi",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\gulco\\source\\repos\\Legno\\Presentation\\Legno.WebApi\\wwwroot\\",
+      "ContentRoot": "/Users/gulchohrasultanova/Desktop/Legno/Presentation/Legno.WebApi/wwwroot/",
       "BasePath": "_content/Legno.WebApi",
-      "RelativePath": "files/project_images/32434b86-09f5-4948-afb2-ba9694257b31#[.{fingerprint}]?.webp",
+      "RelativePath": "files/project_card_images/4d4326a2-b01b-427a-8bb1-c14dcada3042.webp",
       "AssetKind": "All",
       "AssetMode": "All",
       "AssetRole": "Primary",
-      "AssetMergeBehavior": "",
+      "AssetMergeBehavior": "PreferTarget",
       "AssetMergeSource": "",
       "RelatedAsset": "",
       "AssetTraitName": "",
       "AssetTraitValue": "",
-      "Fingerprint": "u0fv246hng",
-      "Integrity": "zs+nmgzFtLEaWSlRCZTbCPdnOFZUUgqGpf1k3ZMAi14=",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "wwwroot\\files\\project_images\\32434b86-09f5-4948-afb2-ba9694257b31.webp"
+      "OriginalItemSpec": "wwwroot/files/project_card_images/4d4326a2-b01b-427a-8bb1-c14dcada3042.webp"
     },
     {
-      "Identity": "C:\\Users\\gulco\\source\\repos\\Legno\\Presentation\\Legno.WebApi\\wwwroot\\files\\project_images\\ff96e4fc-d0f6-4769-93c3-b05fb82c1aec.webp",
+      "Identity": "/Users/gulchohrasultanova/Desktop/Legno/Presentation/Legno.WebApi/wwwroot/files/project_images/19b95f1b-3e6a-434f-85f6-9a307eed75a3.webp",
       "SourceId": "Legno.WebApi",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\gulco\\source\\repos\\Legno\\Presentation\\Legno.WebApi\\wwwroot\\",
+      "ContentRoot": "/Users/gulchohrasultanova/Desktop/Legno/Presentation/Legno.WebApi/wwwroot/",
       "BasePath": "_content/Legno.WebApi",
-      "RelativePath": "files/project_images/ff96e4fc-d0f6-4769-93c3-b05fb82c1aec#[.{fingerprint}]?.webp",
+      "RelativePath": "files/project_images/19b95f1b-3e6a-434f-85f6-9a307eed75a3.webp",
       "AssetKind": "All",
       "AssetMode": "All",
       "AssetRole": "Primary",
-      "AssetMergeBehavior": "",
+      "AssetMergeBehavior": "PreferTarget",
       "AssetMergeSource": "",
       "RelatedAsset": "",
       "AssetTraitName": "",
       "AssetTraitValue": "",
-      "Fingerprint": "u0fv246hng",
-      "Integrity": "zs+nmgzFtLEaWSlRCZTbCPdnOFZUUgqGpf1k3ZMAi14=",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "wwwroot\\files\\project_images\\ff96e4fc-d0f6-4769-93c3-b05fb82c1aec.webp"
+      "OriginalItemSpec": "wwwroot/files/project_images/19b95f1b-3e6a-434f-85f6-9a307eed75a3.webp"
     },
     {
-      "Identity": "C:\\Users\\gulco\\source\\repos\\Legno\\Presentation\\Legno.WebApi\\wwwroot\\files\\project_videos\\5cfdbc59-d114-41fa-9fff-b6be6f941da3.webp",
+      "Identity": "/Users/gulchohrasultanova/Desktop/Legno/Presentation/Legno.WebApi/wwwroot/files/project_images/32434b86-09f5-4948-afb2-ba9694257b31.webp",
       "SourceId": "Legno.WebApi",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\gulco\\source\\repos\\Legno\\Presentation\\Legno.WebApi\\wwwroot\\",
+      "ContentRoot": "/Users/gulchohrasultanova/Desktop/Legno/Presentation/Legno.WebApi/wwwroot/",
       "BasePath": "_content/Legno.WebApi",
-      "RelativePath": "files/project_videos/5cfdbc59-d114-41fa-9fff-b6be6f941da3#[.{fingerprint}]?.webp",
+      "RelativePath": "files/project_images/32434b86-09f5-4948-afb2-ba9694257b31.webp",
       "AssetKind": "All",
       "AssetMode": "All",
       "AssetRole": "Primary",
-      "AssetMergeBehavior": "",
+      "AssetMergeBehavior": "PreferTarget",
       "AssetMergeSource": "",
       "RelatedAsset": "",
       "AssetTraitName": "",
       "AssetTraitValue": "",
-      "Fingerprint": "u0fv246hng",
-      "Integrity": "zs+nmgzFtLEaWSlRCZTbCPdnOFZUUgqGpf1k3ZMAi14=",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "wwwroot\\files\\project_videos\\5cfdbc59-d114-41fa-9fff-b6be6f941da3.webp"
+      "OriginalItemSpec": "wwwroot/files/project_images/32434b86-09f5-4948-afb2-ba9694257b31.webp"
     },
     {
-      "Identity": "C:\\Users\\gulco\\source\\repos\\Legno\\Presentation\\Legno.WebApi\\wwwroot\\files\\project_videos\\71eda501-f46c-4d28-b83f-86d212c15ba7.webp",
+      "Identity": "/Users/gulchohrasultanova/Desktop/Legno/Presentation/Legno.WebApi/wwwroot/files/project_images/ff96e4fc-d0f6-4769-93c3-b05fb82c1aec.webp",
       "SourceId": "Legno.WebApi",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\gulco\\source\\repos\\Legno\\Presentation\\Legno.WebApi\\wwwroot\\",
+      "ContentRoot": "/Users/gulchohrasultanova/Desktop/Legno/Presentation/Legno.WebApi/wwwroot/",
       "BasePath": "_content/Legno.WebApi",
-      "RelativePath": "files/project_videos/71eda501-f46c-4d28-b83f-86d212c15ba7#[.{fingerprint}]?.webp",
+      "RelativePath": "files/project_images/ff96e4fc-d0f6-4769-93c3-b05fb82c1aec.webp",
       "AssetKind": "All",
       "AssetMode": "All",
       "AssetRole": "Primary",
-      "AssetMergeBehavior": "",
+      "AssetMergeBehavior": "PreferTarget",
       "AssetMergeSource": "",
       "RelatedAsset": "",
       "AssetTraitName": "",
       "AssetTraitValue": "",
-      "Fingerprint": "u0fv246hng",
-      "Integrity": "zs+nmgzFtLEaWSlRCZTbCPdnOFZUUgqGpf1k3ZMAi14=",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "wwwroot\\files\\project_videos\\71eda501-f46c-4d28-b83f-86d212c15ba7.webp"
+      "OriginalItemSpec": "wwwroot/files/project_images/ff96e4fc-d0f6-4769-93c3-b05fb82c1aec.webp"
     },
     {
-      "Identity": "C:\\Users\\gulco\\source\\repos\\Legno\\Presentation\\Legno.WebApi\\wwwroot\\files\\projects\\cards\\72bbd8c8-5d74-42ae-8945-8ddd3bb5c9d4.webp",
+      "Identity": "/Users/gulchohrasultanova/Desktop/Legno/Presentation/Legno.WebApi/wwwroot/files/project_videos/5cfdbc59-d114-41fa-9fff-b6be6f941da3.webp",
       "SourceId": "Legno.WebApi",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\gulco\\source\\repos\\Legno\\Presentation\\Legno.WebApi\\wwwroot\\",
+      "ContentRoot": "/Users/gulchohrasultanova/Desktop/Legno/Presentation/Legno.WebApi/wwwroot/",
       "BasePath": "_content/Legno.WebApi",
-      "RelativePath": "files/projects/cards/72bbd8c8-5d74-42ae-8945-8ddd3bb5c9d4#[.{fingerprint}]?.webp",
+      "RelativePath": "files/project_videos/5cfdbc59-d114-41fa-9fff-b6be6f941da3.webp",
       "AssetKind": "All",
       "AssetMode": "All",
       "AssetRole": "Primary",
-      "AssetMergeBehavior": "",
+      "AssetMergeBehavior": "PreferTarget",
       "AssetMergeSource": "",
       "RelatedAsset": "",
       "AssetTraitName": "",
       "AssetTraitValue": "",
-      "Fingerprint": "it5nul5ul2",
-      "Integrity": "ymCLdcSXdaLkcOfJyE4Hs8QXO3y3XGiDSwC9XM3Ouw0=",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "wwwroot\\files\\projects\\cards\\72bbd8c8-5d74-42ae-8945-8ddd3bb5c9d4.webp"
+      "OriginalItemSpec": "wwwroot/files/project_videos/5cfdbc59-d114-41fa-9fff-b6be6f941da3.webp"
     },
     {
-      "Identity": "C:\\Users\\gulco\\source\\repos\\Legno\\Presentation\\Legno.WebApi\\wwwroot\\files\\projects\\cards\\8b73a0cb-df75-4ed2-b84c-e7262b425492.webp",
+      "Identity": "/Users/gulchohrasultanova/Desktop/Legno/Presentation/Legno.WebApi/wwwroot/files/project_videos/71eda501-f46c-4d28-b83f-86d212c15ba7.webp",
       "SourceId": "Legno.WebApi",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\gulco\\source\\repos\\Legno\\Presentation\\Legno.WebApi\\wwwroot\\",
+      "ContentRoot": "/Users/gulchohrasultanova/Desktop/Legno/Presentation/Legno.WebApi/wwwroot/",
       "BasePath": "_content/Legno.WebApi",
-      "RelativePath": "files/projects/cards/8b73a0cb-df75-4ed2-b84c-e7262b425492#[.{fingerprint}]?.webp",
+      "RelativePath": "files/project_videos/71eda501-f46c-4d28-b83f-86d212c15ba7.webp",
       "AssetKind": "All",
       "AssetMode": "All",
       "AssetRole": "Primary",
-      "AssetMergeBehavior": "",
+      "AssetMergeBehavior": "PreferTarget",
       "AssetMergeSource": "",
       "RelatedAsset": "",
       "AssetTraitName": "",
       "AssetTraitValue": "",
-      "Fingerprint": "3zpz85oway",
-      "Integrity": "wdXwOYCHad25nNs76R/C2kkO41huJh8OmlxG2ErO3Gk=",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "wwwroot\\files\\projects\\cards\\8b73a0cb-df75-4ed2-b84c-e7262b425492.webp"
+      "OriginalItemSpec": "wwwroot/files/project_videos/71eda501-f46c-4d28-b83f-86d212c15ba7.webp"
     },
     {
-      "Identity": "C:\\Users\\gulco\\source\\repos\\Legno\\Presentation\\Legno.WebApi\\wwwroot\\files\\projects\\cards\\a825b7f0-7106-4b63-a85f-882a87091680.webp",
+      "Identity": "/Users/gulchohrasultanova/Desktop/Legno/Presentation/Legno.WebApi/wwwroot/files/projects/cards/72bbd8c8-5d74-42ae-8945-8ddd3bb5c9d4.webp",
       "SourceId": "Legno.WebApi",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\gulco\\source\\repos\\Legno\\Presentation\\Legno.WebApi\\wwwroot\\",
+      "ContentRoot": "/Users/gulchohrasultanova/Desktop/Legno/Presentation/Legno.WebApi/wwwroot/",
       "BasePath": "_content/Legno.WebApi",
-      "RelativePath": "files/projects/cards/a825b7f0-7106-4b63-a85f-882a87091680#[.{fingerprint}]?.webp",
+      "RelativePath": "files/projects/cards/72bbd8c8-5d74-42ae-8945-8ddd3bb5c9d4.webp",
       "AssetKind": "All",
       "AssetMode": "All",
       "AssetRole": "Primary",
-      "AssetMergeBehavior": "",
+      "AssetMergeBehavior": "PreferTarget",
       "AssetMergeSource": "",
       "RelatedAsset": "",
       "AssetTraitName": "",
       "AssetTraitValue": "",
-      "Fingerprint": "it5nul5ul2",
-      "Integrity": "ymCLdcSXdaLkcOfJyE4Hs8QXO3y3XGiDSwC9XM3Ouw0=",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "wwwroot\\files\\projects\\cards\\a825b7f0-7106-4b63-a85f-882a87091680.webp"
+      "OriginalItemSpec": "wwwroot/files/projects/cards/72bbd8c8-5d74-42ae-8945-8ddd3bb5c9d4.webp"
     },
     {
-      "Identity": "C:\\Users\\gulco\\source\\repos\\Legno\\Presentation\\Legno.WebApi\\wwwroot\\files\\projects\\images\\7c6966b2-ace8-49c5-b531-fc731b5ba676.webp",
+      "Identity": "/Users/gulchohrasultanova/Desktop/Legno/Presentation/Legno.WebApi/wwwroot/files/projects/cards/8b73a0cb-df75-4ed2-b84c-e7262b425492.webp",
       "SourceId": "Legno.WebApi",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\gulco\\source\\repos\\Legno\\Presentation\\Legno.WebApi\\wwwroot\\",
+      "ContentRoot": "/Users/gulchohrasultanova/Desktop/Legno/Presentation/Legno.WebApi/wwwroot/",
       "BasePath": "_content/Legno.WebApi",
-      "RelativePath": "files/projects/images/7c6966b2-ace8-49c5-b531-fc731b5ba676#[.{fingerprint}]?.webp",
+      "RelativePath": "files/projects/cards/8b73a0cb-df75-4ed2-b84c-e7262b425492.webp",
       "AssetKind": "All",
       "AssetMode": "All",
       "AssetRole": "Primary",
-      "AssetMergeBehavior": "",
+      "AssetMergeBehavior": "PreferTarget",
       "AssetMergeSource": "",
       "RelatedAsset": "",
       "AssetTraitName": "",
       "AssetTraitValue": "",
-      "Fingerprint": "3zpz85oway",
-      "Integrity": "wdXwOYCHad25nNs76R/C2kkO41huJh8OmlxG2ErO3Gk=",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "wwwroot\\files\\projects\\images\\7c6966b2-ace8-49c5-b531-fc731b5ba676.webp"
+      "OriginalItemSpec": "wwwroot/files/projects/cards/8b73a0cb-df75-4ed2-b84c-e7262b425492.webp"
     },
     {
-      "Identity": "C:\\Users\\gulco\\source\\repos\\Legno\\Presentation\\Legno.WebApi\\wwwroot\\files\\projects\\images\\88c97d25-3850-4c42-b582-4797aee873ae.webp",
+      "Identity": "/Users/gulchohrasultanova/Desktop/Legno/Presentation/Legno.WebApi/wwwroot/files/projects/cards/a825b7f0-7106-4b63-a85f-882a87091680.webp",
       "SourceId": "Legno.WebApi",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\gulco\\source\\repos\\Legno\\Presentation\\Legno.WebApi\\wwwroot\\",
+      "ContentRoot": "/Users/gulchohrasultanova/Desktop/Legno/Presentation/Legno.WebApi/wwwroot/",
       "BasePath": "_content/Legno.WebApi",
-      "RelativePath": "files/projects/images/88c97d25-3850-4c42-b582-4797aee873ae#[.{fingerprint}]?.webp",
+      "RelativePath": "files/projects/cards/a825b7f0-7106-4b63-a85f-882a87091680.webp",
       "AssetKind": "All",
       "AssetMode": "All",
       "AssetRole": "Primary",
-      "AssetMergeBehavior": "",
+      "AssetMergeBehavior": "PreferTarget",
       "AssetMergeSource": "",
       "RelatedAsset": "",
       "AssetTraitName": "",
       "AssetTraitValue": "",
-      "Fingerprint": "3zpz85oway",
-      "Integrity": "wdXwOYCHad25nNs76R/C2kkO41huJh8OmlxG2ErO3Gk=",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "wwwroot\\files\\projects\\images\\88c97d25-3850-4c42-b582-4797aee873ae.webp"
+      "OriginalItemSpec": "wwwroot/files/projects/cards/a825b7f0-7106-4b63-a85f-882a87091680.webp"
     },
     {
-      "Identity": "C:\\Users\\gulco\\source\\repos\\Legno\\Presentation\\Legno.WebApi\\wwwroot\\files\\projects\\images\\cc4751bf-094a-4a35-9fcc-35af9561443b.webp",
+      "Identity": "/Users/gulchohrasultanova/Desktop/Legno/Presentation/Legno.WebApi/wwwroot/files/projects/images/7c6966b2-ace8-49c5-b531-fc731b5ba676.webp",
       "SourceId": "Legno.WebApi",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\gulco\\source\\repos\\Legno\\Presentation\\Legno.WebApi\\wwwroot\\",
+      "ContentRoot": "/Users/gulchohrasultanova/Desktop/Legno/Presentation/Legno.WebApi/wwwroot/",
       "BasePath": "_content/Legno.WebApi",
-      "RelativePath": "files/projects/images/cc4751bf-094a-4a35-9fcc-35af9561443b#[.{fingerprint}]?.webp",
+      "RelativePath": "files/projects/images/7c6966b2-ace8-49c5-b531-fc731b5ba676.webp",
       "AssetKind": "All",
       "AssetMode": "All",
       "AssetRole": "Primary",
-      "AssetMergeBehavior": "",
+      "AssetMergeBehavior": "PreferTarget",
       "AssetMergeSource": "",
       "RelatedAsset": "",
       "AssetTraitName": "",
       "AssetTraitValue": "",
-      "Fingerprint": "it5nul5ul2",
-      "Integrity": "ymCLdcSXdaLkcOfJyE4Hs8QXO3y3XGiDSwC9XM3Ouw0=",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "wwwroot\\files\\projects\\images\\cc4751bf-094a-4a35-9fcc-35af9561443b.webp"
+      "OriginalItemSpec": "wwwroot/files/projects/images/7c6966b2-ace8-49c5-b531-fc731b5ba676.webp"
     },
     {
-      "Identity": "C:\\Users\\gulco\\source\\repos\\Legno\\Presentation\\Legno.WebApi\\wwwroot\\files\\projects\\images\\e3fa487f-0c3c-47b5-b165-41556dff3e95.webp",
+      "Identity": "/Users/gulchohrasultanova/Desktop/Legno/Presentation/Legno.WebApi/wwwroot/files/projects/images/88c97d25-3850-4c42-b582-4797aee873ae.webp",
       "SourceId": "Legno.WebApi",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\gulco\\source\\repos\\Legno\\Presentation\\Legno.WebApi\\wwwroot\\",
+      "ContentRoot": "/Users/gulchohrasultanova/Desktop/Legno/Presentation/Legno.WebApi/wwwroot/",
       "BasePath": "_content/Legno.WebApi",
-      "RelativePath": "files/projects/images/e3fa487f-0c3c-47b5-b165-41556dff3e95#[.{fingerprint}]?.webp",
+      "RelativePath": "files/projects/images/88c97d25-3850-4c42-b582-4797aee873ae.webp",
       "AssetKind": "All",
       "AssetMode": "All",
       "AssetRole": "Primary",
-      "AssetMergeBehavior": "",
+      "AssetMergeBehavior": "PreferTarget",
       "AssetMergeSource": "",
       "RelatedAsset": "",
       "AssetTraitName": "",
       "AssetTraitValue": "",
-      "Fingerprint": "it5nul5ul2",
-      "Integrity": "ymCLdcSXdaLkcOfJyE4Hs8QXO3y3XGiDSwC9XM3Ouw0=",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "wwwroot\\files\\projects\\images\\e3fa487f-0c3c-47b5-b165-41556dff3e95.webp"
+      "OriginalItemSpec": "wwwroot/files/projects/images/88c97d25-3850-4c42-b582-4797aee873ae.webp"
     },
     {
-      "Identity": "C:\\Users\\gulco\\source\\repos\\Legno\\Presentation\\Legno.WebApi\\wwwroot\\files\\projects\\sliders\\48910144-9b73-4c9d-8a8d-818edd174f35.webp",
+      "Identity": "/Users/gulchohrasultanova/Desktop/Legno/Presentation/Legno.WebApi/wwwroot/files/projects/images/cc4751bf-094a-4a35-9fcc-35af9561443b.webp",
       "SourceId": "Legno.WebApi",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\gulco\\source\\repos\\Legno\\Presentation\\Legno.WebApi\\wwwroot\\",
+      "ContentRoot": "/Users/gulchohrasultanova/Desktop/Legno/Presentation/Legno.WebApi/wwwroot/",
       "BasePath": "_content/Legno.WebApi",
-      "RelativePath": "files/projects/sliders/48910144-9b73-4c9d-8a8d-818edd174f35#[.{fingerprint}]?.webp",
+      "RelativePath": "files/projects/images/cc4751bf-094a-4a35-9fcc-35af9561443b.webp",
       "AssetKind": "All",
       "AssetMode": "All",
       "AssetRole": "Primary",
-      "AssetMergeBehavior": "",
+      "AssetMergeBehavior": "PreferTarget",
       "AssetMergeSource": "",
       "RelatedAsset": "",
       "AssetTraitName": "",
       "AssetTraitValue": "",
-      "Fingerprint": "3zpz85oway",
-      "Integrity": "wdXwOYCHad25nNs76R/C2kkO41huJh8OmlxG2ErO3Gk=",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "wwwroot\\files\\projects\\sliders\\48910144-9b73-4c9d-8a8d-818edd174f35.webp"
+      "OriginalItemSpec": "wwwroot/files/projects/images/cc4751bf-094a-4a35-9fcc-35af9561443b.webp"
     },
     {
-      "Identity": "C:\\Users\\gulco\\source\\repos\\Legno\\Presentation\\Legno.WebApi\\wwwroot\\files\\projects\\sliders\\66f99c0d-b66e-402b-9193-9dc9c6a5821c.webp",
+      "Identity": "/Users/gulchohrasultanova/Desktop/Legno/Presentation/Legno.WebApi/wwwroot/files/projects/images/e3fa487f-0c3c-47b5-b165-41556dff3e95.webp",
       "SourceId": "Legno.WebApi",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\gulco\\source\\repos\\Legno\\Presentation\\Legno.WebApi\\wwwroot\\",
+      "ContentRoot": "/Users/gulchohrasultanova/Desktop/Legno/Presentation/Legno.WebApi/wwwroot/",
       "BasePath": "_content/Legno.WebApi",
-      "RelativePath": "files/projects/sliders/66f99c0d-b66e-402b-9193-9dc9c6a5821c#[.{fingerprint}]?.webp",
+      "RelativePath": "files/projects/images/e3fa487f-0c3c-47b5-b165-41556dff3e95.webp",
       "AssetKind": "All",
       "AssetMode": "All",
       "AssetRole": "Primary",
-      "AssetMergeBehavior": "",
+      "AssetMergeBehavior": "PreferTarget",
       "AssetMergeSource": "",
       "RelatedAsset": "",
       "AssetTraitName": "",
       "AssetTraitValue": "",
-      "Fingerprint": "it5nul5ul2",
-      "Integrity": "ymCLdcSXdaLkcOfJyE4Hs8QXO3y3XGiDSwC9XM3Ouw0=",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "wwwroot\\files\\projects\\sliders\\66f99c0d-b66e-402b-9193-9dc9c6a5821c.webp"
+      "OriginalItemSpec": "wwwroot/files/projects/images/e3fa487f-0c3c-47b5-b165-41556dff3e95.webp"
     },
     {
-      "Identity": "C:\\Users\\gulco\\source\\repos\\Legno\\Presentation\\Legno.WebApi\\wwwroot\\files\\projects\\sliders\\71a6e07b-d109-46c4-a429-696204623355.webp",
+      "Identity": "/Users/gulchohrasultanova/Desktop/Legno/Presentation/Legno.WebApi/wwwroot/files/projects/sliders/48910144-9b73-4c9d-8a8d-818edd174f35.webp",
       "SourceId": "Legno.WebApi",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\gulco\\source\\repos\\Legno\\Presentation\\Legno.WebApi\\wwwroot\\",
+      "ContentRoot": "/Users/gulchohrasultanova/Desktop/Legno/Presentation/Legno.WebApi/wwwroot/",
       "BasePath": "_content/Legno.WebApi",
-      "RelativePath": "files/projects/sliders/71a6e07b-d109-46c4-a429-696204623355#[.{fingerprint}]?.webp",
+      "RelativePath": "files/projects/sliders/48910144-9b73-4c9d-8a8d-818edd174f35.webp",
       "AssetKind": "All",
       "AssetMode": "All",
       "AssetRole": "Primary",
-      "AssetMergeBehavior": "",
+      "AssetMergeBehavior": "PreferTarget",
       "AssetMergeSource": "",
       "RelatedAsset": "",
       "AssetTraitName": "",
       "AssetTraitValue": "",
-      "Fingerprint": "it5nul5ul2",
-      "Integrity": "ymCLdcSXdaLkcOfJyE4Hs8QXO3y3XGiDSwC9XM3Ouw0=",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "wwwroot\\files\\projects\\sliders\\71a6e07b-d109-46c4-a429-696204623355.webp"
+      "OriginalItemSpec": "wwwroot/files/projects/sliders/48910144-9b73-4c9d-8a8d-818edd174f35.webp"
     },
     {
-      "Identity": "C:\\Users\\gulco\\source\\repos\\Legno\\Presentation\\Legno.WebApi\\wwwroot\\files\\purchase\\files\\c236dc22-0ec0-4ece-b4ac-6dc0a5555e05.pdf",
+      "Identity": "/Users/gulchohrasultanova/Desktop/Legno/Presentation/Legno.WebApi/wwwroot/files/projects/sliders/66f99c0d-b66e-402b-9193-9dc9c6a5821c.webp",
       "SourceId": "Legno.WebApi",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\gulco\\source\\repos\\Legno\\Presentation\\Legno.WebApi\\wwwroot\\",
+      "ContentRoot": "/Users/gulchohrasultanova/Desktop/Legno/Presentation/Legno.WebApi/wwwroot/",
       "BasePath": "_content/Legno.WebApi",
-      "RelativePath": "files/purchase/files/c236dc22-0ec0-4ece-b4ac-6dc0a5555e05#[.{fingerprint}]?.pdf",
+      "RelativePath": "files/projects/sliders/66f99c0d-b66e-402b-9193-9dc9c6a5821c.webp",
       "AssetKind": "All",
       "AssetMode": "All",
       "AssetRole": "Primary",
-      "AssetMergeBehavior": "",
+      "AssetMergeBehavior": "PreferTarget",
       "AssetMergeSource": "",
       "RelatedAsset": "",
       "AssetTraitName": "",
       "AssetTraitValue": "",
-      "Fingerprint": "errc4w10p7",
-      "Integrity": "iis4pYonEf85EgicftPfhaCJcz7CjM6H6Stdc/0/Aq0=",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "wwwroot\\files\\purchase\\files\\c236dc22-0ec0-4ece-b4ac-6dc0a5555e05.pdf"
+      "OriginalItemSpec": "wwwroot/files/projects/sliders/66f99c0d-b66e-402b-9193-9dc9c6a5821c.webp"
     },
     {
-      "Identity": "C:\\Users\\gulco\\source\\repos\\Legno\\Presentation\\Legno.WebApi\\wwwroot\\files\\team_card_images\\8cf3fed4-0306-441b-bca5-a657373c7419.webp",
+      "Identity": "/Users/gulchohrasultanova/Desktop/Legno/Presentation/Legno.WebApi/wwwroot/files/projects/sliders/71a6e07b-d109-46c4-a429-696204623355.webp",
       "SourceId": "Legno.WebApi",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\gulco\\source\\repos\\Legno\\Presentation\\Legno.WebApi\\wwwroot\\",
+      "ContentRoot": "/Users/gulchohrasultanova/Desktop/Legno/Presentation/Legno.WebApi/wwwroot/",
       "BasePath": "_content/Legno.WebApi",
-      "RelativePath": "files/team_card_images/8cf3fed4-0306-441b-bca5-a657373c7419#[.{fingerprint}]?.webp",
+      "RelativePath": "files/projects/sliders/71a6e07b-d109-46c4-a429-696204623355.webp",
       "AssetKind": "All",
       "AssetMode": "All",
       "AssetRole": "Primary",
-      "AssetMergeBehavior": "",
+      "AssetMergeBehavior": "PreferTarget",
       "AssetMergeSource": "",
       "RelatedAsset": "",
       "AssetTraitName": "",
       "AssetTraitValue": "",
-      "Fingerprint": "ex36a9kyw3",
-      "Integrity": "nthN2pV7gMu2C9TRYIYr/pAK6CRZDxijReB6TVkSou8=",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "wwwroot\\files\\team_card_images\\8cf3fed4-0306-441b-bca5-a657373c7419.webp"
+      "OriginalItemSpec": "wwwroot/files/projects/sliders/71a6e07b-d109-46c4-a429-696204623355.webp"
     },
     {
-      "Identity": "C:\\Users\\gulco\\source\\repos\\Legno\\Presentation\\Legno.WebApi\\wwwroot\\files\\team_card_images\\bfe16dec-a241-4a20-bc99-b86d495b570e.webp",
+      "Identity": "/Users/gulchohrasultanova/Desktop/Legno/Presentation/Legno.WebApi/wwwroot/files/purchase/files/c236dc22-0ec0-4ece-b4ac-6dc0a5555e05.pdf",
       "SourceId": "Legno.WebApi",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\gulco\\source\\repos\\Legno\\Presentation\\Legno.WebApi\\wwwroot\\",
+      "ContentRoot": "/Users/gulchohrasultanova/Desktop/Legno/Presentation/Legno.WebApi/wwwroot/",
       "BasePath": "_content/Legno.WebApi",
-      "RelativePath": "files/team_card_images/bfe16dec-a241-4a20-bc99-b86d495b570e#[.{fingerprint}]?.webp",
+      "RelativePath": "files/purchase/files/c236dc22-0ec0-4ece-b4ac-6dc0a5555e05.pdf",
       "AssetKind": "All",
       "AssetMode": "All",
       "AssetRole": "Primary",
-      "AssetMergeBehavior": "",
+      "AssetMergeBehavior": "PreferTarget",
       "AssetMergeSource": "",
       "RelatedAsset": "",
       "AssetTraitName": "",
       "AssetTraitValue": "",
-      "Fingerprint": "ex36a9kyw3",
-      "Integrity": "nthN2pV7gMu2C9TRYIYr/pAK6CRZDxijReB6TVkSou8=",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "wwwroot\\files\\team_card_images\\bfe16dec-a241-4a20-bc99-b86d495b570e.webp"
+      "OriginalItemSpec": "wwwroot/files/purchase/files/c236dc22-0ec0-4ece-b4ac-6dc0a5555e05.pdf"
     },
     {
-      "Identity": "C:\\Users\\gulco\\source\\repos\\Legno\\Presentation\\Legno.WebApi\\wwwroot\\files\\user_projects\\58fe1844-7d53-4168-b9c0-d80742359a58.webp",
+      "Identity": "/Users/gulchohrasultanova/Desktop/Legno/Presentation/Legno.WebApi/wwwroot/files/team_card_images/8cf3fed4-0306-441b-bca5-a657373c7419.webp",
       "SourceId": "Legno.WebApi",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\gulco\\source\\repos\\Legno\\Presentation\\Legno.WebApi\\wwwroot\\",
+      "ContentRoot": "/Users/gulchohrasultanova/Desktop/Legno/Presentation/Legno.WebApi/wwwroot/",
       "BasePath": "_content/Legno.WebApi",
-      "RelativePath": "files/user_projects/58fe1844-7d53-4168-b9c0-d80742359a58#[.{fingerprint}]?.webp",
+      "RelativePath": "files/team_card_images/8cf3fed4-0306-441b-bca5-a657373c7419.webp",
       "AssetKind": "All",
       "AssetMode": "All",
       "AssetRole": "Primary",
-      "AssetMergeBehavior": "",
+      "AssetMergeBehavior": "PreferTarget",
       "AssetMergeSource": "",
       "RelatedAsset": "",
       "AssetTraitName": "",
       "AssetTraitValue": "",
-      "Fingerprint": "yl9k6odnc3",
-      "Integrity": "WtxkCvQlexvQLbe0nQk4jDh/m3l61TDlrHsoeOtxfG0=",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "wwwroot\\files\\user_projects\\58fe1844-7d53-4168-b9c0-d80742359a58.webp"
-    }
-  ],
-  "Endpoints": [
-    {
-      "Route": "files/articles/32482f27-ca1f-4436-880a-88af859c769a.3zpz85oway.webp",
-      "AssetFile": "C:\\Users\\gulco\\source\\repos\\Legno\\Presentation\\Legno.WebApi\\wwwroot\\files\\articles\\32482f27-ca1f-4436-880a-88af859c769a.webp",
-      "Selectors": [],
-      "ResponseHeaders": [
-        {
-          "Name": "Accept-Ranges",
-          "Value": "bytes"
-        },
-        {
-          "Name": "Content-Length",
-          "Value": "11618"
-        },
-        {
-          "Name": "Content-Type",
-          "Value": "image/webp"
-        },
-        {
-          "Name": "ETag",
-          "Value": "\"wdXwOYCHad25nNs76R/C2kkO41huJh8OmlxG2ErO3Gk=\""
-        },
-        {
-          "Name": "Last-Modified",
-          "Value": "Sat, 27 Dec 2025 12:38:32 GMT"
-        },
-        {
-          "Name": "Cache-Control",
-          "Value": "max-age=31536000, immutable"
-        }
-      ],
-      "EndpointProperties": [
-        {
-          "Name": "fingerprint",
-          "Value": "3zpz85oway"
-        },
-        {
-          "Name": "label",
-          "Value": "files/articles/32482f27-ca1f-4436-880a-88af859c769a.webp"
-        },
-        {
-          "Name": "integrity",
-          "Value": "sha256-wdXwOYCHad25nNs76R/C2kkO41huJh8OmlxG2ErO3Gk="
-        }
-      ]
-    },
-    {
-      "Route": "files/articles/32482f27-ca1f-4436-880a-88af859c769a.webp",
-      "AssetFile": "C:\\Users\\gulco\\source\\repos\\Legno\\Presentation\\Legno.WebApi\\wwwroot\\files\\articles\\32482f27-ca1f-4436-880a-88af859c769a.webp",
-      "Selectors": [],
-      "ResponseHeaders": [
-        {
-          "Name": "Accept-Ranges",
-          "Value": "bytes"
-        },
-        {
-          "Name": "Content-Length",
-          "Value": "11618"
-        },
-        {
-          "Name": "Content-Type",
-          "Value": "image/webp"
-        },
-        {
-          "Name": "ETag",
-          "Value": "\"wdXwOYCHad25nNs76R/C2kkO41huJh8OmlxG2ErO3Gk=\""
-        },
-        {
-          "Name": "Last-Modified",
-          "Value": "Sat, 27 Dec 2025 12:38:32 GMT"
-        },
-        {
-          "Name": "Cache-Control",
-          "Value": "max-age=3600, must-revalidate"
-        }
-      ],
-      "EndpointProperties": [
-        {
-          "Name": "integrity",
-          "Value": "sha256-wdXwOYCHad25nNs76R/C2kkO41huJh8OmlxG2ErO3Gk="
-        }
-      ]
-    },
-    {
-      "Route": "files/articles/7d69c9e5-0116-4463-a04b-f2e431eb563b.ex36a9kyw3.webp",
-      "AssetFile": "C:\\Users\\gulco\\source\\repos\\Legno\\Presentation\\Legno.WebApi\\wwwroot\\files\\articles\\7d69c9e5-0116-4463-a04b-f2e431eb563b.webp",
-      "Selectors": [],
-      "ResponseHeaders": [
-        {
-          "Name": "Accept-Ranges",
-          "Value": "bytes"
-        },
-        {
-          "Name": "Content-Length",
-          "Value": "79888"
-        },
-        {
-          "Name": "Content-Type",
-          "Value": "image/webp"
-        },
-        {
-          "Name": "ETag",
-          "Value": "\"nthN2pV7gMu2C9TRYIYr/pAK6CRZDxijReB6TVkSou8=\""
-        },
-        {
-          "Name": "Last-Modified",
-          "Value": "Fri, 26 Dec 2025 10:39:12 GMT"
-        },
-        {
-          "Name": "Cache-Control",
-          "Value": "max-age=31536000, immutable"
-        }
-      ],
-      "EndpointProperties": [
-        {
-          "Name": "fingerprint",
-          "Value": "ex36a9kyw3"
-        },
-        {
-          "Name": "label",
-          "Value": "files/articles/7d69c9e5-0116-4463-a04b-f2e431eb563b.webp"
-        },
-        {
-          "Name": "integrity",
-          "Value": "sha256-nthN2pV7gMu2C9TRYIYr/pAK6CRZDxijReB6TVkSou8="
-        }
-      ]
-    },
-    {
-      "Route": "files/articles/7d69c9e5-0116-4463-a04b-f2e431eb563b.webp",
-      "AssetFile": "C:\\Users\\gulco\\source\\repos\\Legno\\Presentation\\Legno.WebApi\\wwwroot\\files\\articles\\7d69c9e5-0116-4463-a04b-f2e431eb563b.webp",
-      "Selectors": [],
-      "ResponseHeaders": [
-        {
-          "Name": "Accept-Ranges",
-          "Value": "bytes"
-        },
-        {
-          "Name": "Content-Length",
-          "Value": "79888"
-        },
-        {
-          "Name": "Content-Type",
-          "Value": "image/webp"
-        },
-        {
-          "Name": "ETag",
-          "Value": "\"nthN2pV7gMu2C9TRYIYr/pAK6CRZDxijReB6TVkSou8=\""
-        },
-        {
-          "Name": "Last-Modified",
-          "Value": "Fri, 26 Dec 2025 10:39:12 GMT"
-        },
-        {
-          "Name": "Cache-Control",
-          "Value": "max-age=3600, must-revalidate"
-        }
-      ],
-      "EndpointProperties": [
-        {
-          "Name": "integrity",
-          "Value": "sha256-nthN2pV7gMu2C9TRYIYr/pAK6CRZDxijReB6TVkSou8="
-        }
-      ]
-    },
-    {
-      "Route": "files/articles/author/68295b14-9859-4ce0-ab72-2b86442f79aa.3zpz85oway.webp",
-      "AssetFile": "C:\\Users\\gulco\\source\\repos\\Legno\\Presentation\\Legno.WebApi\\wwwroot\\files\\articles\\author\\68295b14-9859-4ce0-ab72-2b86442f79aa.webp",
-      "Selectors": [],
-      "ResponseHeaders": [
-        {
-          "Name": "Accept-Ranges",
-          "Value": "bytes"
-        },
-        {
-          "Name": "Content-Length",
-          "Value": "11618"
-        },
-        {
-          "Name": "Content-Type",
-          "Value": "image/webp"
-        },
-        {
-          "Name": "ETag",
-          "Value": "\"wdXwOYCHad25nNs76R/C2kkO41huJh8OmlxG2ErO3Gk=\""
-        },
-        {
-          "Name": "Last-Modified",
-          "Value": "Tue, 06 Jan 2026 11:55:57 GMT"
-        },
-        {
-          "Name": "Cache-Control",
-          "Value": "max-age=31536000, immutable"
-        }
-      ],
-      "EndpointProperties": [
-        {
-          "Name": "fingerprint",
-          "Value": "3zpz85oway"
-        },
-        {
-          "Name": "label",
-          "Value": "files/articles/author/68295b14-9859-4ce0-ab72-2b86442f79aa.webp"
-        },
-        {
-          "Name": "integrity",
-          "Value": "sha256-wdXwOYCHad25nNs76R/C2kkO41huJh8OmlxG2ErO3Gk="
-        }
-      ]
-    },
-    {
-      "Route": "files/articles/author/68295b14-9859-4ce0-ab72-2b86442f79aa.webp",
-      "AssetFile": "C:\\Users\\gulco\\source\\repos\\Legno\\Presentation\\Legno.WebApi\\wwwroot\\files\\articles\\author\\68295b14-9859-4ce0-ab72-2b86442f79aa.webp",
-      "Selectors": [],
-      "ResponseHeaders": [
-        {
-          "Name": "Accept-Ranges",
-          "Value": "bytes"
-        },
-        {
-          "Name": "Content-Length",
-          "Value": "11618"
-        },
-        {
-          "Name": "Content-Type",
-          "Value": "image/webp"
-        },
-        {
-          "Name": "ETag",
-          "Value": "\"wdXwOYCHad25nNs76R/C2kkO41huJh8OmlxG2ErO3Gk=\""
-        },
-        {
-          "Name": "Last-Modified",
-          "Value": "Tue, 06 Jan 2026 11:55:57 GMT"
-        },
-        {
-          "Name": "Cache-Control",
-          "Value": "max-age=3600, must-revalidate"
-        }
-      ],
-      "EndpointProperties": [
-        {
-          "Name": "integrity",
-          "Value": "sha256-wdXwOYCHad25nNs76R/C2kkO41huJh8OmlxG2ErO3Gk="
-        }
-      ]
-    },
-    {
-      "Route": "files/articles/author/94bbf049-bb65-49d8-a096-9baa237336e9.3zpz85oway.webp",
-      "AssetFile": "C:\\Users\\gulco\\source\\repos\\Legno\\Presentation\\Legno.WebApi\\wwwroot\\files\\articles\\author\\94bbf049-bb65-49d8-a096-9baa237336e9.webp",
-      "Selectors": [],
-      "ResponseHeaders": [
-        {
-          "Name": "Accept-Ranges",
-          "Value": "bytes"
-        },
-        {
-          "Name": "Content-Length",
-          "Value": "11618"
-        },
-        {
-          "Name": "Content-Type",
-          "Value": "image/webp"
-        },
-        {
-          "Name": "ETag",
-          "Value": "\"wdXwOYCHad25nNs76R/C2kkO41huJh8OmlxG2ErO3Gk=\""
-        },
-        {
-          "Name": "Last-Modified",
-          "Value": "Tue, 06 Jan 2026 12:11:15 GMT"
-        },
-        {
-          "Name": "Cache-Control",
-          "Value": "max-age=31536000, immutable"
-        }
-      ],
-      "EndpointProperties": [
-        {
-          "Name": "fingerprint",
-          "Value": "3zpz85oway"
-        },
-        {
-          "Name": "label",
-          "Value": "files/articles/author/94bbf049-bb65-49d8-a096-9baa237336e9.webp"
-        },
-        {
-          "Name": "integrity",
-          "Value": "sha256-wdXwOYCHad25nNs76R/C2kkO41huJh8OmlxG2ErO3Gk="
-        }
-      ]
-    },
-    {
-      "Route": "files/articles/author/94bbf049-bb65-49d8-a096-9baa237336e9.webp",
-      "AssetFile": "C:\\Users\\gulco\\source\\repos\\Legno\\Presentation\\Legno.WebApi\\wwwroot\\files\\articles\\author\\94bbf049-bb65-49d8-a096-9baa237336e9.webp",
-      "Selectors": [],
-      "ResponseHeaders": [
-        {
-          "Name": "Accept-Ranges",
-          "Value": "bytes"
-        },
-        {
-          "Name": "Content-Length",
-          "Value": "11618"
-        },
-        {
-          "Name": "Content-Type",
-          "Value": "image/webp"
-        },
-        {
-          "Name": "ETag",
-          "Value": "\"wdXwOYCHad25nNs76R/C2kkO41huJh8OmlxG2ErO3Gk=\""
-        },
-        {
-          "Name": "Last-Modified",
-          "Value": "Tue, 06 Jan 2026 12:11:15 GMT"
-        },
-        {
-          "Name": "Cache-Control",
-          "Value": "max-age=3600, must-revalidate"
-        }
-      ],
-      "EndpointProperties": [
-        {
-          "Name": "integrity",
-          "Value": "sha256-wdXwOYCHad25nNs76R/C2kkO41huJh8OmlxG2ErO3Gk="
-        }
-      ]
-    },
-    {
-      "Route": "files/articles/author/a0f1de9a-7e12-4a10-bdf7-26f1db9f94a4.3zpz85oway.webp",
-      "AssetFile": "C:\\Users\\gulco\\source\\repos\\Legno\\Presentation\\Legno.WebApi\\wwwroot\\files\\articles\\author\\a0f1de9a-7e12-4a10-bdf7-26f1db9f94a4.webp",
-      "Selectors": [],
-      "ResponseHeaders": [
-        {
-          "Name": "Accept-Ranges",
-          "Value": "bytes"
-        },
-        {
-          "Name": "Content-Length",
-          "Value": "11618"
-        },
-        {
-          "Name": "Content-Type",
-          "Value": "image/webp"
-        },
-        {
-          "Name": "ETag",
-          "Value": "\"wdXwOYCHad25nNs76R/C2kkO41huJh8OmlxG2ErO3Gk=\""
-        },
-        {
-          "Name": "Last-Modified",
-          "Value": "Tue, 06 Jan 2026 11:54:57 GMT"
-        },
-        {
-          "Name": "Cache-Control",
-          "Value": "max-age=31536000, immutable"
-        }
-      ],
-      "EndpointProperties": [
-        {
-          "Name": "fingerprint",
-          "Value": "3zpz85oway"
-        },
-        {
-          "Name": "label",
-          "Value": "files/articles/author/a0f1de9a-7e12-4a10-bdf7-26f1db9f94a4.webp"
-        },
-        {
-          "Name": "integrity",
-          "Value": "sha256-wdXwOYCHad25nNs76R/C2kkO41huJh8OmlxG2ErO3Gk="
-        }
-      ]
-    },
-    {
-      "Route": "files/articles/author/a0f1de9a-7e12-4a10-bdf7-26f1db9f94a4.webp",
-      "AssetFile": "C:\\Users\\gulco\\source\\repos\\Legno\\Presentation\\Legno.WebApi\\wwwroot\\files\\articles\\author\\a0f1de9a-7e12-4a10-bdf7-26f1db9f94a4.webp",
-      "Selectors": [],
-      "ResponseHeaders": [
-        {
-          "Name": "Accept-Ranges",
-          "Value": "bytes"
-        },
-        {
-          "Name": "Content-Length",
-          "Value": "11618"
-        },
-        {
-          "Name": "Content-Type",
-          "Value": "image/webp"
-        },
-        {
-          "Name": "ETag",
-          "Value": "\"wdXwOYCHad25nNs76R/C2kkO41huJh8OmlxG2ErO3Gk=\""
-        },
-        {
-          "Name": "Last-Modified",
-          "Value": "Tue, 06 Jan 2026 11:54:57 GMT"
-        },
-        {
-          "Name": "Cache-Control",
-          "Value": "max-age=3600, must-revalidate"
-        }
-      ],
-      "EndpointProperties": [
-        {
-          "Name": "integrity",
-          "Value": "sha256-wdXwOYCHad25nNs76R/C2kkO41huJh8OmlxG2ErO3Gk="
-        }
-      ]
-    },
-    {
-      "Route": "files/articles/d680c0f5-023a-43c9-91e5-1fea17801cd2.3zpz85oway.webp",
-      "AssetFile": "C:\\Users\\gulco\\source\\repos\\Legno\\Presentation\\Legno.WebApi\\wwwroot\\files\\articles\\d680c0f5-023a-43c9-91e5-1fea17801cd2.webp",
-      "Selectors": [],
-      "ResponseHeaders": [
-        {
-          "Name": "Accept-Ranges",
-          "Value": "bytes"
-        },
-        {
-          "Name": "Content-Length",
-          "Value": "11618"
-        },
-        {
-          "Name": "Content-Type",
-          "Value": "image/webp"
-        },
-        {
-          "Name": "ETag",
-          "Value": "\"wdXwOYCHad25nNs76R/C2kkO41huJh8OmlxG2ErO3Gk=\""
-        },
-        {
-          "Name": "Last-Modified",
-          "Value": "Tue, 06 Jan 2026 11:54:56 GMT"
-        },
-        {
-          "Name": "Cache-Control",
-          "Value": "max-age=31536000, immutable"
-        }
-      ],
-      "EndpointProperties": [
-        {
-          "Name": "fingerprint",
-          "Value": "3zpz85oway"
-        },
-        {
-          "Name": "label",
-          "Value": "files/articles/d680c0f5-023a-43c9-91e5-1fea17801cd2.webp"
-        },
-        {
-          "Name": "integrity",
-          "Value": "sha256-wdXwOYCHad25nNs76R/C2kkO41huJh8OmlxG2ErO3Gk="
-        }
-      ]
-    },
-    {
-      "Route": "files/articles/d680c0f5-023a-43c9-91e5-1fea17801cd2.webp",
-      "AssetFile": "C:\\Users\\gulco\\source\\repos\\Legno\\Presentation\\Legno.WebApi\\wwwroot\\files\\articles\\d680c0f5-023a-43c9-91e5-1fea17801cd2.webp",
-      "Selectors": [],
-      "ResponseHeaders": [
-        {
-          "Name": "Accept-Ranges",
-          "Value": "bytes"
-        },
-        {
-          "Name": "Content-Length",
-          "Value": "11618"
-        },
-        {
-          "Name": "Content-Type",
-          "Value": "image/webp"
-        },
-        {
-          "Name": "ETag",
-          "Value": "\"wdXwOYCHad25nNs76R/C2kkO41huJh8OmlxG2ErO3Gk=\""
-        },
-        {
-          "Name": "Last-Modified",
-          "Value": "Tue, 06 Jan 2026 11:54:56 GMT"
-        },
-        {
-          "Name": "Cache-Control",
-          "Value": "max-age=3600, must-revalidate"
-        }
-      ],
-      "EndpointProperties": [
-        {
-          "Name": "integrity",
-          "Value": "sha256-wdXwOYCHad25nNs76R/C2kkO41huJh8OmlxG2ErO3Gk="
-        }
-      ]
-    },
-    {
-      "Route": "files/articles/e5caa8e3-5493-429e-9fe6-6f16ea247250.3zpz85oway.webp",
-      "AssetFile": "C:\\Users\\gulco\\source\\repos\\Legno\\Presentation\\Legno.WebApi\\wwwroot\\files\\articles\\e5caa8e3-5493-429e-9fe6-6f16ea247250.webp",
-      "Selectors": [],
-      "ResponseHeaders": [
-        {
-          "Name": "Accept-Ranges",
-          "Value": "bytes"
-        },
-        {
-          "Name": "Content-Length",
-          "Value": "11618"
-        },
-        {
-          "Name": "Content-Type",
-          "Value": "image/webp"
-        },
-        {
-          "Name": "ETag",
-          "Value": "\"wdXwOYCHad25nNs76R/C2kkO41huJh8OmlxG2ErO3Gk=\""
-        },
-        {
-          "Name": "Last-Modified",
-          "Value": "Tue, 06 Jan 2026 12:11:14 GMT"
-        },
-        {
-          "Name": "Cache-Control",
-          "Value": "max-age=31536000, immutable"
-        }
-      ],
-      "EndpointProperties": [
-        {
-          "Name": "fingerprint",
-          "Value": "3zpz85oway"
-        },
-        {
-          "Name": "label",
-          "Value": "files/articles/e5caa8e3-5493-429e-9fe6-6f16ea247250.webp"
-        },
-        {
-          "Name": "integrity",
-          "Value": "sha256-wdXwOYCHad25nNs76R/C2kkO41huJh8OmlxG2ErO3Gk="
-        }
-      ]
-    },
-    {
-      "Route": "files/articles/e5caa8e3-5493-429e-9fe6-6f16ea247250.webp",
-      "AssetFile": "C:\\Users\\gulco\\source\\repos\\Legno\\Presentation\\Legno.WebApi\\wwwroot\\files\\articles\\e5caa8e3-5493-429e-9fe6-6f16ea247250.webp",
-      "Selectors": [],
-      "ResponseHeaders": [
-        {
-          "Name": "Accept-Ranges",
-          "Value": "bytes"
-        },
-        {
-          "Name": "Content-Length",
-          "Value": "11618"
-        },
-        {
-          "Name": "Content-Type",
-          "Value": "image/webp"
-        },
-        {
-          "Name": "ETag",
-          "Value": "\"wdXwOYCHad25nNs76R/C2kkO41huJh8OmlxG2ErO3Gk=\""
-        },
-        {
-          "Name": "Last-Modified",
-          "Value": "Tue, 06 Jan 2026 12:11:14 GMT"
-        },
-        {
-          "Name": "Cache-Control",
-          "Value": "max-age=3600, must-revalidate"
-        }
-      ],
-      "EndpointProperties": [
-        {
-          "Name": "integrity",
-          "Value": "sha256-wdXwOYCHad25nNs76R/C2kkO41huJh8OmlxG2ErO3Gk="
-        }
-      ]
-    },
-    {
-      "Route": "files/articles/gallery/52037cec-85af-4a23-b6dc-c3359143aa29.dfikj462zr.webp",
-      "AssetFile": "C:\\Users\\gulco\\source\\repos\\Legno\\Presentation\\Legno.WebApi\\wwwroot\\files\\articles\\gallery\\52037cec-85af-4a23-b6dc-c3359143aa29.webp",
-      "Selectors": [],
-      "ResponseHeaders": [
-        {
-          "Name": "Accept-Ranges",
-          "Value": "bytes"
-        },
-        {
-          "Name": "Content-Length",
-          "Value": "17280"
-        },
-        {
-          "Name": "Content-Type",
-          "Value": "image/webp"
-        },
-        {
-          "Name": "ETag",
-          "Value": "\"twIak32ERCbX6wo/mIedDFYbND9tnz1j+KHeEseG5wE=\""
-        },
-        {
-          "Name": "Last-Modified",
-          "Value": "Wed, 07 Jan 2026 05:53:51 GMT"
-        },
-        {
-          "Name": "Cache-Control",
-          "Value": "max-age=31536000, immutable"
-        }
-      ],
-      "EndpointProperties": [
-        {
-          "Name": "fingerprint",
-          "Value": "dfikj462zr"
-        },
-        {
-          "Name": "label",
-          "Value": "files/articles/gallery/52037cec-85af-4a23-b6dc-c3359143aa29.webp"
-        },
-        {
-          "Name": "integrity",
-          "Value": "sha256-twIak32ERCbX6wo/mIedDFYbND9tnz1j+KHeEseG5wE="
-        }
-      ]
-    },
-    {
-      "Route": "files/articles/gallery/52037cec-85af-4a23-b6dc-c3359143aa29.webp",
-      "AssetFile": "C:\\Users\\gulco\\source\\repos\\Legno\\Presentation\\Legno.WebApi\\wwwroot\\files\\articles\\gallery\\52037cec-85af-4a23-b6dc-c3359143aa29.webp",
-      "Selectors": [],
-      "ResponseHeaders": [
-        {
-          "Name": "Accept-Ranges",
-          "Value": "bytes"
-        },
-        {
-          "Name": "Content-Length",
-          "Value": "17280"
-        },
-        {
-          "Name": "Content-Type",
-          "Value": "image/webp"
-        },
-        {
-          "Name": "ETag",
-          "Value": "\"twIak32ERCbX6wo/mIedDFYbND9tnz1j+KHeEseG5wE=\""
-        },
-        {
-          "Name": "Last-Modified",
-          "Value": "Wed, 07 Jan 2026 05:53:51 GMT"
-        },
-        {
-          "Name": "Cache-Control",
-          "Value": "max-age=3600, must-revalidate"
-        }
-      ],
-      "EndpointProperties": [
-        {
-          "Name": "integrity",
-          "Value": "sha256-twIak32ERCbX6wo/mIedDFYbND9tnz1j+KHeEseG5wE="
-        }
-      ]
-    },
-    {
-      "Route": "files/articles/gallery/5c9630fe-1c7b-4d2b-b264-3a61b1eee31a.3zpz85oway.webp",
-      "AssetFile": "C:\\Users\\gulco\\source\\repos\\Legno\\Presentation\\Legno.WebApi\\wwwroot\\files\\articles\\gallery\\5c9630fe-1c7b-4d2b-b264-3a61b1eee31a.webp",
-      "Selectors": [],
-      "ResponseHeaders": [
-        {
-          "Name": "Accept-Ranges",
-          "Value": "bytes"
-        },
-        {
-          "Name": "Content-Length",
-          "Value": "11618"
-        },
-        {
-          "Name": "Content-Type",
-          "Value": "image/webp"
-        },
-        {
-          "Name": "ETag",
-          "Value": "\"wdXwOYCHad25nNs76R/C2kkO41huJh8OmlxG2ErO3Gk=\""
-        },
-        {
-          "Name": "Last-Modified",
-          "Value": "Tue, 06 Jan 2026 11:54:57 GMT"
-        },
-        {
-          "Name": "Cache-Control",
-          "Value": "max-age=31536000, immutable"
-        }
-      ],
-      "EndpointProperties": [
-        {
-          "Name": "fingerprint",
-          "Value": "3zpz85oway"
-        },
-        {
-          "Name": "label",
-          "Value": "files/articles/gallery/5c9630fe-1c7b-4d2b-b264-3a61b1eee31a.webp"
-        },
-        {
-          "Name": "integrity",
-          "Value": "sha256-wdXwOYCHad25nNs76R/C2kkO41huJh8OmlxG2ErO3Gk="
-        }
-      ]
-    },
-    {
-      "Route": "files/articles/gallery/5c9630fe-1c7b-4d2b-b264-3a61b1eee31a.webp",
-      "AssetFile": "C:\\Users\\gulco\\source\\repos\\Legno\\Presentation\\Legno.WebApi\\wwwroot\\files\\articles\\gallery\\5c9630fe-1c7b-4d2b-b264-3a61b1eee31a.webp",
-      "Selectors": [],
-      "ResponseHeaders": [
-        {
-          "Name": "Accept-Ranges",
-          "Value": "bytes"
-        },
-        {
-          "Name": "Content-Length",
-          "Value": "11618"
-        },
-        {
-          "Name": "Content-Type",
-          "Value": "image/webp"
-        },
-        {
-          "Name": "ETag",
-          "Value": "\"wdXwOYCHad25nNs76R/C2kkO41huJh8OmlxG2ErO3Gk=\""
-        },
-        {
-          "Name": "Last-Modified",
-          "Value": "Tue, 06 Jan 2026 11:54:57 GMT"
-        },
-        {
-          "Name": "Cache-Control",
-          "Value": "max-age=3600, must-revalidate"
-        }
-      ],
-      "EndpointProperties": [
-        {
-          "Name": "integrity",
-          "Value": "sha256-wdXwOYCHad25nNs76R/C2kkO41huJh8OmlxG2ErO3Gk="
-        }
-      ]
-    },
-    {
-      "Route": "files/articles/gallery/9339a500-c503-44be-b741-45e4872fc182.dfikj462zr.webp",
-      "AssetFile": "C:\\Users\\gulco\\source\\repos\\Legno\\Presentation\\Legno.WebApi\\wwwroot\\files\\articles\\gallery\\9339a500-c503-44be-b741-45e4872fc182.webp",
-      "Selectors": [],
-      "ResponseHeaders": [
-        {
-          "Name": "Accept-Ranges",
-          "Value": "bytes"
-        },
-        {
-          "Name": "Content-Length",
-          "Value": "17280"
-        },
-        {
-          "Name": "Content-Type",
-          "Value": "image/webp"
-        },
-        {
-          "Name": "ETag",
-          "Value": "\"twIak32ERCbX6wo/mIedDFYbND9tnz1j+KHeEseG5wE=\""
-        },
-        {
-          "Name": "Last-Modified",
-          "Value": "Wed, 07 Jan 2026 06:01:48 GMT"
-        },
-        {
-          "Name": "Cache-Control",
-          "Value": "max-age=31536000, immutable"
-        }
-      ],
-      "EndpointProperties": [
-        {
-          "Name": "fingerprint",
-          "Value": "dfikj462zr"
-        },
-        {
-          "Name": "label",
-          "Value": "files/articles/gallery/9339a500-c503-44be-b741-45e4872fc182.webp"
-        },
-        {
-          "Name": "integrity",
-          "Value": "sha256-twIak32ERCbX6wo/mIedDFYbND9tnz1j+KHeEseG5wE="
-        }
-      ]
-    },
-    {
-      "Route": "files/articles/gallery/9339a500-c503-44be-b741-45e4872fc182.webp",
-      "AssetFile": "C:\\Users\\gulco\\source\\repos\\Legno\\Presentation\\Legno.WebApi\\wwwroot\\files\\articles\\gallery\\9339a500-c503-44be-b741-45e4872fc182.webp",
-      "Selectors": [],
-      "ResponseHeaders": [
-        {
-          "Name": "Accept-Ranges",
-          "Value": "bytes"
-        },
-        {
-          "Name": "Content-Length",
-          "Value": "17280"
-        },
-        {
-          "Name": "Content-Type",
-          "Value": "image/webp"
-        },
-        {
-          "Name": "ETag",
-          "Value": "\"twIak32ERCbX6wo/mIedDFYbND9tnz1j+KHeEseG5wE=\""
-        },
-        {
-          "Name": "Last-Modified",
-          "Value": "Wed, 07 Jan 2026 06:01:48 GMT"
-        },
-        {
-          "Name": "Cache-Control",
-          "Value": "max-age=3600, must-revalidate"
-        }
-      ],
-      "EndpointProperties": [
-        {
-          "Name": "integrity",
-          "Value": "sha256-twIak32ERCbX6wo/mIedDFYbND9tnz1j+KHeEseG5wE="
-        }
-      ]
-    },
-    {
-      "Route": "files/articles/gallery/a6c35150-e945-499b-8d37-ed0753d93340.3zpz85oway.webp",
-      "AssetFile": "C:\\Users\\gulco\\source\\repos\\Legno\\Presentation\\Legno.WebApi\\wwwroot\\files\\articles\\gallery\\a6c35150-e945-499b-8d37-ed0753d93340.webp",
-      "Selectors": [],
-      "ResponseHeaders": [
-        {
-          "Name": "Accept-Ranges",
-          "Value": "bytes"
-        },
-        {
-          "Name": "Content-Length",
-          "Value": "11618"
-        },
-        {
-          "Name": "Content-Type",
-          "Value": "image/webp"
-        },
-        {
-          "Name": "ETag",
-          "Value": "\"wdXwOYCHad25nNs76R/C2kkO41huJh8OmlxG2ErO3Gk=\""
-        },
-        {
-          "Name": "Last-Modified",
-          "Value": "Sat, 27 Dec 2025 12:38:32 GMT"
-        },
-        {
-          "Name": "Cache-Control",
-          "Value": "max-age=31536000, immutable"
-        }
-      ],
-      "EndpointProperties": [
-        {
-          "Name": "fingerprint",
-          "Value": "3zpz85oway"
-        },
-        {
-          "Name": "label",
-          "Value": "files/articles/gallery/a6c35150-e945-499b-8d37-ed0753d93340.webp"
-        },
-        {
-          "Name": "integrity",
-          "Value": "sha256-wdXwOYCHad25nNs76R/C2kkO41huJh8OmlxG2ErO3Gk="
-        }
-      ]
-    },
-    {
-      "Route": "files/articles/gallery/a6c35150-e945-499b-8d37-ed0753d93340.webp",
-      "AssetFile": "C:\\Users\\gulco\\source\\repos\\Legno\\Presentation\\Legno.WebApi\\wwwroot\\files\\articles\\gallery\\a6c35150-e945-499b-8d37-ed0753d93340.webp",
-      "Selectors": [],
-      "ResponseHeaders": [
-        {
-          "Name": "Accept-Ranges",
-          "Value": "bytes"
-        },
-        {
-          "Name": "Content-Length",
-          "Value": "11618"
-        },
-        {
-          "Name": "Content-Type",
-          "Value": "image/webp"
-        },
-        {
-          "Name": "ETag",
-          "Value": "\"wdXwOYCHad25nNs76R/C2kkO41huJh8OmlxG2ErO3Gk=\""
-        },
-        {
-          "Name": "Last-Modified",
-          "Value": "Sat, 27 Dec 2025 12:38:32 GMT"
-        },
-        {
-          "Name": "Cache-Control",
-          "Value": "max-age=3600, must-revalidate"
-        }
-      ],
-      "EndpointProperties": [
-        {
-          "Name": "integrity",
-          "Value": "sha256-wdXwOYCHad25nNs76R/C2kkO41huJh8OmlxG2ErO3Gk="
-        }
-      ]
-    },
-    {
-      "Route": "files/assets/legno.w1itefheg3.webp",
-      "AssetFile": "C:\\Users\\gulco\\source\\repos\\Legno\\Presentation\\Legno.WebApi\\wwwroot\\files\\assets\\legno.webp",
-      "Selectors": [],
-      "ResponseHeaders": [
-        {
-          "Name": "Accept-Ranges",
-          "Value": "bytes"
-        },
-        {
-          "Name": "Content-Length",
-          "Value": "4518"
-        },
-        {
-          "Name": "Content-Type",
-          "Value": "image/webp"
-        },
-        {
-          "Name": "ETag",
-          "Value": "\"pPo+5XIy/PdHBGe3mM1/NLMtqiB6I5GgnYHgNRtpjlY=\""
-        },
-        {
-          "Name": "Last-Modified",
-          "Value": "Mon, 06 Oct 2025 09:11:13 GMT"
-        },
-        {
-          "Name": "Cache-Control",
-          "Value": "max-age=31536000, immutable"
-        }
-      ],
-      "EndpointProperties": [
-        {
-          "Name": "fingerprint",
-          "Value": "w1itefheg3"
-        },
-        {
-          "Name": "label",
-          "Value": "files/assets/legno.webp"
-        },
-        {
-          "Name": "integrity",
-          "Value": "sha256-pPo+5XIy/PdHBGe3mM1/NLMtqiB6I5GgnYHgNRtpjlY="
-        }
-      ]
-    },
-    {
-      "Route": "files/assets/legno.webp",
-      "AssetFile": "C:\\Users\\gulco\\source\\repos\\Legno\\Presentation\\Legno.WebApi\\wwwroot\\files\\assets\\legno.webp",
-      "Selectors": [],
-      "ResponseHeaders": [
-        {
-          "Name": "Accept-Ranges",
-          "Value": "bytes"
-        },
-        {
-          "Name": "Content-Length",
-          "Value": "4518"
-        },
-        {
-          "Name": "Content-Type",
-          "Value": "image/webp"
-        },
-        {
-          "Name": "ETag",
-          "Value": "\"pPo+5XIy/PdHBGe3mM1/NLMtqiB6I5GgnYHgNRtpjlY=\""
-        },
-        {
-          "Name": "Last-Modified",
-          "Value": "Mon, 06 Oct 2025 09:11:13 GMT"
-        },
-        {
-          "Name": "Cache-Control",
-          "Value": "max-age=3600, must-revalidate"
-        }
-      ],
-      "EndpointProperties": [
-        {
-          "Name": "integrity",
-          "Value": "sha256-pPo+5XIy/PdHBGe3mM1/NLMtqiB6I5GgnYHgNRtpjlY="
-        }
-      ]
-    },
-    {
-      "Route": "files/author_images/24b4a9c1-c28a-46b2-8eb8-79ddf93bf186.ex36a9kyw3.webp",
-      "AssetFile": "C:\\Users\\gulco\\source\\repos\\Legno\\Presentation\\Legno.WebApi\\wwwroot\\files\\author_images\\24b4a9c1-c28a-46b2-8eb8-79ddf93bf186.webp",
-      "Selectors": [],
-      "ResponseHeaders": [
-        {
-          "Name": "Accept-Ranges",
-          "Value": "bytes"
-        },
-        {
-          "Name": "Content-Length",
-          "Value": "79888"
-        },
-        {
-          "Name": "Content-Type",
-          "Value": "image/webp"
-        },
-        {
-          "Name": "ETag",
-          "Value": "\"nthN2pV7gMu2C9TRYIYr/pAK6CRZDxijReB6TVkSou8=\""
-        },
-        {
-          "Name": "Last-Modified",
-          "Value": "Mon, 18 Aug 2025 11:02:16 GMT"
-        },
-        {
-          "Name": "Cache-Control",
-          "Value": "max-age=31536000, immutable"
-        }
-      ],
-      "EndpointProperties": [
-        {
-          "Name": "fingerprint",
-          "Value": "ex36a9kyw3"
-        },
-        {
-          "Name": "label",
-          "Value": "files/author_images/24b4a9c1-c28a-46b2-8eb8-79ddf93bf186.webp"
-        },
-        {
-          "Name": "integrity",
-          "Value": "sha256-nthN2pV7gMu2C9TRYIYr/pAK6CRZDxijReB6TVkSou8="
-        }
-      ]
-    },
-    {
-      "Route": "files/author_images/24b4a9c1-c28a-46b2-8eb8-79ddf93bf186.webp",
-      "AssetFile": "C:\\Users\\gulco\\source\\repos\\Legno\\Presentation\\Legno.WebApi\\wwwroot\\files\\author_images\\24b4a9c1-c28a-46b2-8eb8-79ddf93bf186.webp",
-      "Selectors": [],
-      "ResponseHeaders": [
-        {
-          "Name": "Accept-Ranges",
-          "Value": "bytes"
-        },
-        {
-          "Name": "Content-Length",
-          "Value": "79888"
-        },
-        {
-          "Name": "Content-Type",
-          "Value": "image/webp"
-        },
-        {
-          "Name": "ETag",
-          "Value": "\"nthN2pV7gMu2C9TRYIYr/pAK6CRZDxijReB6TVkSou8=\""
-        },
-        {
-          "Name": "Last-Modified",
-          "Value": "Mon, 18 Aug 2025 11:02:16 GMT"
-        },
-        {
-          "Name": "Cache-Control",
-          "Value": "max-age=3600, must-revalidate"
-        }
-      ],
-      "EndpointProperties": [
-        {
-          "Name": "integrity",
-          "Value": "sha256-nthN2pV7gMu2C9TRYIYr/pAK6CRZDxijReB6TVkSou8="
-        }
-      ]
-    },
-    {
-      "Route": "files/author_images/81ebc027-092d-4c6e-bfef-e5a7f6a57ff9.ex36a9kyw3.webp",
-      "AssetFile": "C:\\Users\\gulco\\source\\repos\\Legno\\Presentation\\Legno.WebApi\\wwwroot\\files\\author_images\\81ebc027-092d-4c6e-bfef-e5a7f6a57ff9.webp",
-      "Selectors": [],
-      "ResponseHeaders": [
-        {
-          "Name": "Accept-Ranges",
-          "Value": "bytes"
-        },
-        {
-          "Name": "Content-Length",
-          "Value": "79888"
-        },
-        {
-          "Name": "Content-Type",
-          "Value": "image/webp"
-        },
-        {
-          "Name": "ETag",
-          "Value": "\"nthN2pV7gMu2C9TRYIYr/pAK6CRZDxijReB6TVkSou8=\""
-        },
-        {
-          "Name": "Last-Modified",
-          "Value": "Mon, 18 Aug 2025 11:22:27 GMT"
-        },
-        {
-          "Name": "Cache-Control",
-          "Value": "max-age=31536000, immutable"
-        }
-      ],
-      "EndpointProperties": [
-        {
-          "Name": "fingerprint",
-          "Value": "ex36a9kyw3"
-        },
-        {
-          "Name": "label",
-          "Value": "files/author_images/81ebc027-092d-4c6e-bfef-e5a7f6a57ff9.webp"
-        },
-        {
-          "Name": "integrity",
-          "Value": "sha256-nthN2pV7gMu2C9TRYIYr/pAK6CRZDxijReB6TVkSou8="
-        }
-      ]
-    },
-    {
-      "Route": "files/author_images/81ebc027-092d-4c6e-bfef-e5a7f6a57ff9.webp",
-      "AssetFile": "C:\\Users\\gulco\\source\\repos\\Legno\\Presentation\\Legno.WebApi\\wwwroot\\files\\author_images\\81ebc027-092d-4c6e-bfef-e5a7f6a57ff9.webp",
-      "Selectors": [],
-      "ResponseHeaders": [
-        {
-          "Name": "Accept-Ranges",
-          "Value": "bytes"
-        },
-        {
-          "Name": "Content-Length",
-          "Value": "79888"
-        },
-        {
-          "Name": "Content-Type",
-          "Value": "image/webp"
-        },
-        {
-          "Name": "ETag",
-          "Value": "\"nthN2pV7gMu2C9TRYIYr/pAK6CRZDxijReB6TVkSou8=\""
-        },
-        {
-          "Name": "Last-Modified",
-          "Value": "Mon, 18 Aug 2025 11:22:27 GMT"
-        },
-        {
-          "Name": "Cache-Control",
-          "Value": "max-age=3600, must-revalidate"
-        }
-      ],
-      "EndpointProperties": [
-        {
-          "Name": "integrity",
-          "Value": "sha256-nthN2pV7gMu2C9TRYIYr/pAK6CRZDxijReB6TVkSou8="
-        }
-      ]
-    },
-    {
-      "Route": "files/author_images/e3d706bb-6ed6-47a2-b2b5-325443e61070.webp",
-      "AssetFile": "C:\\Users\\gulco\\source\\repos\\Legno\\Presentation\\Legno.WebApi\\wwwroot\\files\\author_images\\e3d706bb-6ed6-47a2-b2b5-325443e61070.webp",
-      "Selectors": [],
-      "ResponseHeaders": [
-        {
-          "Name": "Accept-Ranges",
-          "Value": "bytes"
-        },
-        {
-          "Name": "Content-Length",
-          "Value": "16600"
-        },
-        {
-          "Name": "Content-Type",
-          "Value": "image/webp"
-        },
-        {
-          "Name": "ETag",
-          "Value": "\"ti9S9qD6lOu6bVHLRqzBepsp6pVtUi2JYtqM7qry5CE=\""
-        },
-        {
-          "Name": "Last-Modified",
-          "Value": "Mon, 18 Aug 2025 11:19:08 GMT"
-        },
-        {
-          "Name": "Cache-Control",
-          "Value": "max-age=3600, must-revalidate"
-        }
-      ],
-      "EndpointProperties": [
-        {
-          "Name": "integrity",
-          "Value": "sha256-ti9S9qD6lOu6bVHLRqzBepsp6pVtUi2JYtqM7qry5CE="
-        }
-      ]
-    },
-    {
-      "Route": "files/author_images/e3d706bb-6ed6-47a2-b2b5-325443e61070.yym08phpqa.webp",
-      "AssetFile": "C:\\Users\\gulco\\source\\repos\\Legno\\Presentation\\Legno.WebApi\\wwwroot\\files\\author_images\\e3d706bb-6ed6-47a2-b2b5-325443e61070.webp",
-      "Selectors": [],
-      "ResponseHeaders": [
-        {
-          "Name": "Accept-Ranges",
-          "Value": "bytes"
-        },
-        {
-          "Name": "Content-Length",
-          "Value": "16600"
-        },
-        {
-          "Name": "Content-Type",
-          "Value": "image/webp"
-        },
-        {
-          "Name": "ETag",
-          "Value": "\"ti9S9qD6lOu6bVHLRqzBepsp6pVtUi2JYtqM7qry5CE=\""
-        },
-        {
-          "Name": "Last-Modified",
-          "Value": "Mon, 18 Aug 2025 11:19:08 GMT"
-        },
-        {
-          "Name": "Cache-Control",
-          "Value": "max-age=31536000, immutable"
-        }
-      ],
-      "EndpointProperties": [
-        {
-          "Name": "fingerprint",
-          "Value": "yym08phpqa"
-        },
-        {
-          "Name": "label",
-          "Value": "files/author_images/e3d706bb-6ed6-47a2-b2b5-325443e61070.webp"
-        },
-        {
-          "Name": "integrity",
-          "Value": "sha256-ti9S9qD6lOu6bVHLRqzBepsp6pVtUi2JYtqM7qry5CE="
-        }
-      ]
-    },
-    {
-      "Route": "files/blog_images/4ad9e997-faa5-46c7-9d80-01931b855e14.ex36a9kyw3.webp",
-      "AssetFile": "C:\\Users\\gulco\\source\\repos\\Legno\\Presentation\\Legno.WebApi\\wwwroot\\files\\blog_images\\4ad9e997-faa5-46c7-9d80-01931b855e14.webp",
-      "Selectors": [],
-      "ResponseHeaders": [
-        {
-          "Name": "Accept-Ranges",
-          "Value": "bytes"
-        },
-        {
-          "Name": "Content-Length",
-          "Value": "79888"
-        },
-        {
-          "Name": "Content-Type",
-          "Value": "image/webp"
-        },
-        {
-          "Name": "ETag",
-          "Value": "\"nthN2pV7gMu2C9TRYIYr/pAK6CRZDxijReB6TVkSou8=\""
-        },
-        {
-          "Name": "Last-Modified",
-          "Value": "Mon, 18 Aug 2025 11:22:26 GMT"
-        },
-        {
-          "Name": "Cache-Control",
-          "Value": "max-age=31536000, immutable"
-        }
-      ],
-      "EndpointProperties": [
-        {
-          "Name": "fingerprint",
-          "Value": "ex36a9kyw3"
-        },
-        {
-          "Name": "label",
-          "Value": "files/blog_images/4ad9e997-faa5-46c7-9d80-01931b855e14.webp"
-        },
-        {
-          "Name": "integrity",
-          "Value": "sha256-nthN2pV7gMu2C9TRYIYr/pAK6CRZDxijReB6TVkSou8="
-        }
-      ]
-    },
-    {
-      "Route": "files/blog_images/4ad9e997-faa5-46c7-9d80-01931b855e14.webp",
-      "AssetFile": "C:\\Users\\gulco\\source\\repos\\Legno\\Presentation\\Legno.WebApi\\wwwroot\\files\\blog_images\\4ad9e997-faa5-46c7-9d80-01931b855e14.webp",
-      "Selectors": [],
-      "ResponseHeaders": [
-        {
-          "Name": "Accept-Ranges",
-          "Value": "bytes"
-        },
-        {
-          "Name": "Content-Length",
-          "Value": "79888"
-        },
-        {
-          "Name": "Content-Type",
-          "Value": "image/webp"
-        },
-        {
-          "Name": "ETag",
-          "Value": "\"nthN2pV7gMu2C9TRYIYr/pAK6CRZDxijReB6TVkSou8=\""
-        },
-        {
-          "Name": "Last-Modified",
-          "Value": "Mon, 18 Aug 2025 11:22:26 GMT"
-        },
-        {
-          "Name": "Cache-Control",
-          "Value": "max-age=3600, must-revalidate"
-        }
-      ],
-      "EndpointProperties": [
-        {
-          "Name": "integrity",
-          "Value": "sha256-nthN2pV7gMu2C9TRYIYr/pAK6CRZDxijReB6TVkSou8="
-        }
-      ]
-    },
-    {
-      "Route": "files/blog_images/8ae39001-30ea-4904-b228-a7aaa1a32aa7.ex36a9kyw3.webp",
-      "AssetFile": "C:\\Users\\gulco\\source\\repos\\Legno\\Presentation\\Legno.WebApi\\wwwroot\\files\\blog_images\\8ae39001-30ea-4904-b228-a7aaa1a32aa7.webp",
-      "Selectors": [],
-      "ResponseHeaders": [
-        {
-          "Name": "Accept-Ranges",
-          "Value": "bytes"
-        },
-        {
-          "Name": "Content-Length",
-          "Value": "79888"
-        },
-        {
-          "Name": "Content-Type",
-          "Value": "image/webp"
-        },
-        {
-          "Name": "ETag",
-          "Value": "\"nthN2pV7gMu2C9TRYIYr/pAK6CRZDxijReB6TVkSou8=\""
-        },
-        {
-          "Name": "Last-Modified",
-          "Value": "Mon, 18 Aug 2025 11:02:16 GMT"
-        },
-        {
-          "Name": "Cache-Control",
-          "Value": "max-age=31536000, immutable"
-        }
-      ],
-      "EndpointProperties": [
-        {
-          "Name": "fingerprint",
-          "Value": "ex36a9kyw3"
-        },
-        {
-          "Name": "label",
-          "Value": "files/blog_images/8ae39001-30ea-4904-b228-a7aaa1a32aa7.webp"
-        },
-        {
-          "Name": "integrity",
-          "Value": "sha256-nthN2pV7gMu2C9TRYIYr/pAK6CRZDxijReB6TVkSou8="
-        }
-      ]
-    },
-    {
-      "Route": "files/blog_images/8ae39001-30ea-4904-b228-a7aaa1a32aa7.webp",
-      "AssetFile": "C:\\Users\\gulco\\source\\repos\\Legno\\Presentation\\Legno.WebApi\\wwwroot\\files\\blog_images\\8ae39001-30ea-4904-b228-a7aaa1a32aa7.webp",
-      "Selectors": [],
-      "ResponseHeaders": [
-        {
-          "Name": "Accept-Ranges",
-          "Value": "bytes"
-        },
-        {
-          "Name": "Content-Length",
-          "Value": "79888"
-        },
-        {
-          "Name": "Content-Type",
-          "Value": "image/webp"
-        },
-        {
-          "Name": "ETag",
-          "Value": "\"nthN2pV7gMu2C9TRYIYr/pAK6CRZDxijReB6TVkSou8=\""
-        },
-        {
-          "Name": "Last-Modified",
-          "Value": "Mon, 18 Aug 2025 11:02:16 GMT"
-        },
-        {
-          "Name": "Cache-Control",
-          "Value": "max-age=3600, must-revalidate"
-        }
-      ],
-      "EndpointProperties": [
-        {
-          "Name": "integrity",
-          "Value": "sha256-nthN2pV7gMu2C9TRYIYr/pAK6CRZDxijReB6TVkSou8="
-        }
-      ]
-    },
-    {
-      "Route": "files/blog_images/c88a8bf8-b18b-4cbd-9099-4f2711d07f4b.ex36a9kyw3.webp",
-      "AssetFile": "C:\\Users\\gulco\\source\\repos\\Legno\\Presentation\\Legno.WebApi\\wwwroot\\files\\blog_images\\c88a8bf8-b18b-4cbd-9099-4f2711d07f4b.webp",
-      "Selectors": [],
-      "ResponseHeaders": [
-        {
-          "Name": "Accept-Ranges",
-          "Value": "bytes"
-        },
-        {
-          "Name": "Content-Length",
-          "Value": "79888"
-        },
-        {
-          "Name": "Content-Type",
-          "Value": "image/webp"
-        },
-        {
-          "Name": "ETag",
-          "Value": "\"nthN2pV7gMu2C9TRYIYr/pAK6CRZDxijReB6TVkSou8=\""
-        },
-        {
-          "Name": "Last-Modified",
-          "Value": "Mon, 18 Aug 2025 11:19:07 GMT"
-        },
-        {
-          "Name": "Cache-Control",
-          "Value": "max-age=31536000, immutable"
-        }
-      ],
-      "EndpointProperties": [
-        {
-          "Name": "fingerprint",
-          "Value": "ex36a9kyw3"
-        },
-        {
-          "Name": "label",
-          "Value": "files/blog_images/c88a8bf8-b18b-4cbd-9099-4f2711d07f4b.webp"
-        },
-        {
-          "Name": "integrity",
-          "Value": "sha256-nthN2pV7gMu2C9TRYIYr/pAK6CRZDxijReB6TVkSou8="
-        }
-      ]
-    },
-    {
-      "Route": "files/blog_images/c88a8bf8-b18b-4cbd-9099-4f2711d07f4b.webp",
-      "AssetFile": "C:\\Users\\gulco\\source\\repos\\Legno\\Presentation\\Legno.WebApi\\wwwroot\\files\\blog_images\\c88a8bf8-b18b-4cbd-9099-4f2711d07f4b.webp",
-      "Selectors": [],
-      "ResponseHeaders": [
-        {
-          "Name": "Accept-Ranges",
-          "Value": "bytes"
-        },
-        {
-          "Name": "Content-Length",
-          "Value": "79888"
-        },
-        {
-          "Name": "Content-Type",
-          "Value": "image/webp"
-        },
-        {
-          "Name": "ETag",
-          "Value": "\"nthN2pV7gMu2C9TRYIYr/pAK6CRZDxijReB6TVkSou8=\""
-        },
-        {
-          "Name": "Last-Modified",
-          "Value": "Mon, 18 Aug 2025 11:19:07 GMT"
-        },
-        {
-          "Name": "Cache-Control",
-          "Value": "max-age=3600, must-revalidate"
-        }
-      ],
-      "EndpointProperties": [
-        {
-          "Name": "integrity",
-          "Value": "sha256-nthN2pV7gMu2C9TRYIYr/pAK6CRZDxijReB6TVkSou8="
-        }
-      ]
-    },
-    {
-      "Route": "files/businessservices/9312c366-6dc3-4b0f-84cb-b69d5054b520.ex36a9kyw3.webp",
-      "AssetFile": "C:\\Users\\gulco\\source\\repos\\Legno\\Presentation\\Legno.WebApi\\wwwroot\\files\\businessservices\\9312c366-6dc3-4b0f-84cb-b69d5054b520.webp",
-      "Selectors": [],
-      "ResponseHeaders": [
-        {
-          "Name": "Accept-Ranges",
-          "Value": "bytes"
-        },
-        {
-          "Name": "Content-Length",
-          "Value": "79888"
-        },
-        {
-          "Name": "Content-Type",
-          "Value": "image/webp"
-        },
-        {
-          "Name": "ETag",
-          "Value": "\"nthN2pV7gMu2C9TRYIYr/pAK6CRZDxijReB6TVkSou8=\""
-        },
-        {
-          "Name": "Last-Modified",
-          "Value": "Mon, 06 Oct 2025 08:55:57 GMT"
-        },
-        {
-          "Name": "Cache-Control",
-          "Value": "max-age=31536000, immutable"
-        }
-      ],
-      "EndpointProperties": [
-        {
-          "Name": "fingerprint",
-          "Value": "ex36a9kyw3"
-        },
-        {
-          "Name": "label",
-          "Value": "files/businessservices/9312c366-6dc3-4b0f-84cb-b69d5054b520.webp"
-        },
-        {
-          "Name": "integrity",
-          "Value": "sha256-nthN2pV7gMu2C9TRYIYr/pAK6CRZDxijReB6TVkSou8="
-        }
-      ]
-    },
-    {
-      "Route": "files/businessservices/9312c366-6dc3-4b0f-84cb-b69d5054b520.webp",
-      "AssetFile": "C:\\Users\\gulco\\source\\repos\\Legno\\Presentation\\Legno.WebApi\\wwwroot\\files\\businessservices\\9312c366-6dc3-4b0f-84cb-b69d5054b520.webp",
-      "Selectors": [],
-      "ResponseHeaders": [
-        {
-          "Name": "Accept-Ranges",
-          "Value": "bytes"
-        },
-        {
-          "Name": "Content-Length",
-          "Value": "79888"
-        },
-        {
-          "Name": "Content-Type",
-          "Value": "image/webp"
-        },
-        {
-          "Name": "ETag",
-          "Value": "\"nthN2pV7gMu2C9TRYIYr/pAK6CRZDxijReB6TVkSou8=\""
-        },
-        {
-          "Name": "Last-Modified",
-          "Value": "Mon, 06 Oct 2025 08:55:57 GMT"
-        },
-        {
-          "Name": "Cache-Control",
-          "Value": "max-age=3600, must-revalidate"
-        }
-      ],
-      "EndpointProperties": [
-        {
-          "Name": "integrity",
-          "Value": "sha256-nthN2pV7gMu2C9TRYIYr/pAK6CRZDxijReB6TVkSou8="
-        }
-      ]
-    },
-    {
-      "Route": "files/career/cv/240ac7e9-2f44-446b-a5ae-a47dd46382a1.errc4w10p7.pdf",
-      "AssetFile": "C:\\Users\\gulco\\source\\repos\\Legno\\Presentation\\Legno.WebApi\\wwwroot\\files\\career\\cv\\240ac7e9-2f44-446b-a5ae-a47dd46382a1.pdf",
-      "Selectors": [],
-      "ResponseHeaders": [
-        {
-          "Name": "Accept-Ranges",
-          "Value": "bytes"
-        },
-        {
-          "Name": "Content-Length",
-          "Value": "109130"
-        },
-        {
-          "Name": "Content-Type",
-          "Value": "application/pdf"
-        },
-        {
-          "Name": "ETag",
-          "Value": "\"iis4pYonEf85EgicftPfhaCJcz7CjM6H6Stdc/0/Aq0=\""
-        },
-        {
-          "Name": "Last-Modified",
-          "Value": "Fri, 26 Dec 2025 11:42:47 GMT"
-        },
-        {
-          "Name": "Cache-Control",
-          "Value": "max-age=31536000, immutable"
-        }
-      ],
-      "EndpointProperties": [
-        {
-          "Name": "fingerprint",
-          "Value": "errc4w10p7"
-        },
-        {
-          "Name": "label",
-          "Value": "files/career/cv/240ac7e9-2f44-446b-a5ae-a47dd46382a1.pdf"
-        },
-        {
-          "Name": "integrity",
-          "Value": "sha256-iis4pYonEf85EgicftPfhaCJcz7CjM6H6Stdc/0/Aq0="
-        }
-      ]
-    },
-    {
-      "Route": "files/career/cv/240ac7e9-2f44-446b-a5ae-a47dd46382a1.pdf",
-      "AssetFile": "C:\\Users\\gulco\\source\\repos\\Legno\\Presentation\\Legno.WebApi\\wwwroot\\files\\career\\cv\\240ac7e9-2f44-446b-a5ae-a47dd46382a1.pdf",
-      "Selectors": [],
-      "ResponseHeaders": [
-        {
-          "Name": "Accept-Ranges",
-          "Value": "bytes"
-        },
-        {
-          "Name": "Content-Length",
-          "Value": "109130"
-        },
-        {
-          "Name": "Content-Type",
-          "Value": "application/pdf"
-        },
-        {
-          "Name": "ETag",
-          "Value": "\"iis4pYonEf85EgicftPfhaCJcz7CjM6H6Stdc/0/Aq0=\""
-        },
-        {
-          "Name": "Last-Modified",
-          "Value": "Fri, 26 Dec 2025 11:42:47 GMT"
-        },
-        {
-          "Name": "Cache-Control",
-          "Value": "no-cache"
-        }
-      ],
-      "EndpointProperties": [
-        {
-          "Name": "integrity",
-          "Value": "sha256-iis4pYonEf85EgicftPfhaCJcz7CjM6H6Stdc/0/Aq0="
-        }
-      ]
-    },
-    {
-      "Route": "files/career/cv/79ffc22b-8ccb-477e-82e7-4dc4e867a344.errc4w10p7.pdf",
-      "AssetFile": "C:\\Users\\gulco\\source\\repos\\Legno\\Presentation\\Legno.WebApi\\wwwroot\\files\\career\\cv\\79ffc22b-8ccb-477e-82e7-4dc4e867a344.pdf",
-      "Selectors": [],
-      "ResponseHeaders": [
-        {
-          "Name": "Accept-Ranges",
-          "Value": "bytes"
-        },
-        {
-          "Name": "Content-Length",
-          "Value": "109130"
-        },
-        {
-          "Name": "Content-Type",
-          "Value": "application/pdf"
-        },
-        {
-          "Name": "ETag",
-          "Value": "\"iis4pYonEf85EgicftPfhaCJcz7CjM6H6Stdc/0/Aq0=\""
-        },
-        {
-          "Name": "Last-Modified",
-          "Value": "Fri, 26 Dec 2025 11:46:29 GMT"
-        },
-        {
-          "Name": "Cache-Control",
-          "Value": "max-age=31536000, immutable"
-        }
-      ],
-      "EndpointProperties": [
-        {
-          "Name": "fingerprint",
-          "Value": "errc4w10p7"
-        },
-        {
-          "Name": "label",
-          "Value": "files/career/cv/79ffc22b-8ccb-477e-82e7-4dc4e867a344.pdf"
-        },
-        {
-          "Name": "integrity",
-          "Value": "sha256-iis4pYonEf85EgicftPfhaCJcz7CjM6H6Stdc/0/Aq0="
-        }
-      ]
-    },
-    {
-      "Route": "files/career/cv/79ffc22b-8ccb-477e-82e7-4dc4e867a344.pdf",
-      "AssetFile": "C:\\Users\\gulco\\source\\repos\\Legno\\Presentation\\Legno.WebApi\\wwwroot\\files\\career\\cv\\79ffc22b-8ccb-477e-82e7-4dc4e867a344.pdf",
-      "Selectors": [],
-      "ResponseHeaders": [
-        {
-          "Name": "Accept-Ranges",
-          "Value": "bytes"
-        },
-        {
-          "Name": "Content-Length",
-          "Value": "109130"
-        },
-        {
-          "Name": "Content-Type",
-          "Value": "application/pdf"
-        },
-        {
-          "Name": "ETag",
-          "Value": "\"iis4pYonEf85EgicftPfhaCJcz7CjM6H6Stdc/0/Aq0=\""
-        },
-        {
-          "Name": "Last-Modified",
-          "Value": "Fri, 26 Dec 2025 11:46:29 GMT"
-        },
-        {
-          "Name": "Cache-Control",
-          "Value": "no-cache"
-        }
-      ],
-      "EndpointProperties": [
-        {
-          "Name": "integrity",
-          "Value": "sha256-iis4pYonEf85EgicftPfhaCJcz7CjM6H6Stdc/0/Aq0="
-        }
-      ]
-    },
-    {
-      "Route": "files/career/cv/812cd832-3bed-43f7-9535-5e5c1751decc.errc4w10p7.pdf",
-      "AssetFile": "C:\\Users\\gulco\\source\\repos\\Legno\\Presentation\\Legno.WebApi\\wwwroot\\files\\career\\cv\\812cd832-3bed-43f7-9535-5e5c1751decc.pdf",
-      "Selectors": [],
-      "ResponseHeaders": [
-        {
-          "Name": "Accept-Ranges",
-          "Value": "bytes"
-        },
-        {
-          "Name": "Content-Length",
-          "Value": "109130"
-        },
-        {
-          "Name": "Content-Type",
-          "Value": "application/pdf"
-        },
-        {
-          "Name": "ETag",
-          "Value": "\"iis4pYonEf85EgicftPfhaCJcz7CjM6H6Stdc/0/Aq0=\""
-        },
-        {
-          "Name": "Last-Modified",
-          "Value": "Fri, 26 Dec 2025 11:36:04 GMT"
-        },
-        {
-          "Name": "Cache-Control",
-          "Value": "max-age=31536000, immutable"
-        }
-      ],
-      "EndpointProperties": [
-        {
-          "Name": "fingerprint",
-          "Value": "errc4w10p7"
-        },
-        {
-          "Name": "label",
-          "Value": "files/career/cv/812cd832-3bed-43f7-9535-5e5c1751decc.pdf"
-        },
-        {
-          "Name": "integrity",
-          "Value": "sha256-iis4pYonEf85EgicftPfhaCJcz7CjM6H6Stdc/0/Aq0="
-        }
-      ]
-    },
-    {
-      "Route": "files/career/cv/812cd832-3bed-43f7-9535-5e5c1751decc.pdf",
-      "AssetFile": "C:\\Users\\gulco\\source\\repos\\Legno\\Presentation\\Legno.WebApi\\wwwroot\\files\\career\\cv\\812cd832-3bed-43f7-9535-5e5c1751decc.pdf",
-      "Selectors": [],
-      "ResponseHeaders": [
-        {
-          "Name": "Accept-Ranges",
-          "Value": "bytes"
-        },
-        {
-          "Name": "Content-Length",
-          "Value": "109130"
-        },
-        {
-          "Name": "Content-Type",
-          "Value": "application/pdf"
-        },
-        {
-          "Name": "ETag",
-          "Value": "\"iis4pYonEf85EgicftPfhaCJcz7CjM6H6Stdc/0/Aq0=\""
-        },
-        {
-          "Name": "Last-Modified",
-          "Value": "Fri, 26 Dec 2025 11:36:04 GMT"
-        },
-        {
-          "Name": "Cache-Control",
-          "Value": "no-cache"
-        }
-      ],
-      "EndpointProperties": [
-        {
-          "Name": "integrity",
-          "Value": "sha256-iis4pYonEf85EgicftPfhaCJcz7CjM6H6Stdc/0/Aq0="
-        }
-      ]
-    },
-    {
-      "Route": "files/career/cv/9b75c980-d67e-43e6-a5a8-34b7a8f3170e.errc4w10p7.pdf",
-      "AssetFile": "C:\\Users\\gulco\\source\\repos\\Legno\\Presentation\\Legno.WebApi\\wwwroot\\files\\career\\cv\\9b75c980-d67e-43e6-a5a8-34b7a8f3170e.pdf",
-      "Selectors": [],
-      "ResponseHeaders": [
-        {
-          "Name": "Accept-Ranges",
-          "Value": "bytes"
-        },
-        {
-          "Name": "Content-Length",
-          "Value": "109130"
-        },
-        {
-          "Name": "Content-Type",
-          "Value": "application/pdf"
-        },
-        {
-          "Name": "ETag",
-          "Value": "\"iis4pYonEf85EgicftPfhaCJcz7CjM6H6Stdc/0/Aq0=\""
-        },
-        {
-          "Name": "Last-Modified",
-          "Value": "Fri, 26 Dec 2025 11:06:20 GMT"
-        },
-        {
-          "Name": "Cache-Control",
-          "Value": "max-age=31536000, immutable"
-        }
-      ],
-      "EndpointProperties": [
-        {
-          "Name": "fingerprint",
-          "Value": "errc4w10p7"
-        },
-        {
-          "Name": "label",
-          "Value": "files/career/cv/9b75c980-d67e-43e6-a5a8-34b7a8f3170e.pdf"
-        },
-        {
-          "Name": "integrity",
-          "Value": "sha256-iis4pYonEf85EgicftPfhaCJcz7CjM6H6Stdc/0/Aq0="
-        }
-      ]
-    },
-    {
-      "Route": "files/career/cv/9b75c980-d67e-43e6-a5a8-34b7a8f3170e.pdf",
-      "AssetFile": "C:\\Users\\gulco\\source\\repos\\Legno\\Presentation\\Legno.WebApi\\wwwroot\\files\\career\\cv\\9b75c980-d67e-43e6-a5a8-34b7a8f3170e.pdf",
-      "Selectors": [],
-      "ResponseHeaders": [
-        {
-          "Name": "Accept-Ranges",
-          "Value": "bytes"
-        },
-        {
-          "Name": "Content-Length",
-          "Value": "109130"
-        },
-        {
-          "Name": "Content-Type",
-          "Value": "application/pdf"
-        },
-        {
-          "Name": "ETag",
-          "Value": "\"iis4pYonEf85EgicftPfhaCJcz7CjM6H6Stdc/0/Aq0=\""
-        },
-        {
-          "Name": "Last-Modified",
-          "Value": "Fri, 26 Dec 2025 11:06:20 GMT"
-        },
-        {
-          "Name": "Cache-Control",
-          "Value": "no-cache"
-        }
-      ],
-      "EndpointProperties": [
-        {
-          "Name": "integrity",
-          "Value": "sha256-iis4pYonEf85EgicftPfhaCJcz7CjM6H6Stdc/0/Aq0="
-        }
-      ]
-    },
-    {
-      "Route": "files/career/cv/bb574369-5145-47e4-8332-eaeca2c577de.errc4w10p7.pdf",
-      "AssetFile": "C:\\Users\\gulco\\source\\repos\\Legno\\Presentation\\Legno.WebApi\\wwwroot\\files\\career\\cv\\bb574369-5145-47e4-8332-eaeca2c577de.pdf",
-      "Selectors": [],
-      "ResponseHeaders": [
-        {
-          "Name": "Accept-Ranges",
-          "Value": "bytes"
-        },
-        {
-          "Name": "Content-Length",
-          "Value": "109130"
-        },
-        {
-          "Name": "Content-Type",
-          "Value": "application/pdf"
-        },
-        {
-          "Name": "ETag",
-          "Value": "\"iis4pYonEf85EgicftPfhaCJcz7CjM6H6Stdc/0/Aq0=\""
-        },
-        {
-          "Name": "Last-Modified",
-          "Value": "Fri, 26 Dec 2025 11:33:04 GMT"
-        },
-        {
-          "Name": "Cache-Control",
-          "Value": "max-age=31536000, immutable"
-        }
-      ],
-      "EndpointProperties": [
-        {
-          "Name": "fingerprint",
-          "Value": "errc4w10p7"
-        },
-        {
-          "Name": "label",
-          "Value": "files/career/cv/bb574369-5145-47e4-8332-eaeca2c577de.pdf"
-        },
-        {
-          "Name": "integrity",
-          "Value": "sha256-iis4pYonEf85EgicftPfhaCJcz7CjM6H6Stdc/0/Aq0="
-        }
-      ]
-    },
-    {
-      "Route": "files/career/cv/bb574369-5145-47e4-8332-eaeca2c577de.pdf",
-      "AssetFile": "C:\\Users\\gulco\\source\\repos\\Legno\\Presentation\\Legno.WebApi\\wwwroot\\files\\career\\cv\\bb574369-5145-47e4-8332-eaeca2c577de.pdf",
-      "Selectors": [],
-      "ResponseHeaders": [
-        {
-          "Name": "Accept-Ranges",
-          "Value": "bytes"
-        },
-        {
-          "Name": "Content-Length",
-          "Value": "109130"
-        },
-        {
-          "Name": "Content-Type",
-          "Value": "application/pdf"
-        },
-        {
-          "Name": "ETag",
-          "Value": "\"iis4pYonEf85EgicftPfhaCJcz7CjM6H6Stdc/0/Aq0=\""
-        },
-        {
-          "Name": "Last-Modified",
-          "Value": "Fri, 26 Dec 2025 11:33:04 GMT"
-        },
-        {
-          "Name": "Cache-Control",
-          "Value": "no-cache"
-        }
-      ],
-      "EndpointProperties": [
-        {
-          "Name": "integrity",
-          "Value": "sha256-iis4pYonEf85EgicftPfhaCJcz7CjM6H6Stdc/0/Aq0="
-        }
-      ]
-    },
-    {
-      "Route": "files/categories/01b6e6d2-5d3f-43bf-8974-42d103a8c810.ex36a9kyw3.webp",
-      "AssetFile": "C:\\Users\\gulco\\source\\repos\\Legno\\Presentation\\Legno.WebApi\\wwwroot\\files\\categories\\01b6e6d2-5d3f-43bf-8974-42d103a8c810.webp",
-      "Selectors": [],
-      "ResponseHeaders": [
-        {
-          "Name": "Accept-Ranges",
-          "Value": "bytes"
-        },
-        {
-          "Name": "Content-Length",
-          "Value": "79888"
-        },
-        {
-          "Name": "Content-Type",
-          "Value": "image/webp"
-        },
-        {
-          "Name": "ETag",
-          "Value": "\"nthN2pV7gMu2C9TRYIYr/pAK6CRZDxijReB6TVkSou8=\""
-        },
-        {
-          "Name": "Last-Modified",
-          "Value": "Mon, 06 Oct 2025 08:56:16 GMT"
-        },
-        {
-          "Name": "Cache-Control",
-          "Value": "max-age=31536000, immutable"
-        }
-      ],
-      "EndpointProperties": [
-        {
-          "Name": "fingerprint",
-          "Value": "ex36a9kyw3"
-        },
-        {
-          "Name": "label",
-          "Value": "files/categories/01b6e6d2-5d3f-43bf-8974-42d103a8c810.webp"
-        },
-        {
-          "Name": "integrity",
-          "Value": "sha256-nthN2pV7gMu2C9TRYIYr/pAK6CRZDxijReB6TVkSou8="
-        }
-      ]
-    },
-    {
-      "Route": "files/categories/01b6e6d2-5d3f-43bf-8974-42d103a8c810.webp",
-      "AssetFile": "C:\\Users\\gulco\\source\\repos\\Legno\\Presentation\\Legno.WebApi\\wwwroot\\files\\categories\\01b6e6d2-5d3f-43bf-8974-42d103a8c810.webp",
-      "Selectors": [],
-      "ResponseHeaders": [
-        {
-          "Name": "Accept-Ranges",
-          "Value": "bytes"
-        },
-        {
-          "Name": "Content-Length",
-          "Value": "79888"
-        },
-        {
-          "Name": "Content-Type",
-          "Value": "image/webp"
-        },
-        {
-          "Name": "ETag",
-          "Value": "\"nthN2pV7gMu2C9TRYIYr/pAK6CRZDxijReB6TVkSou8=\""
-        },
-        {
-          "Name": "Last-Modified",
-          "Value": "Mon, 06 Oct 2025 08:56:16 GMT"
-        },
-        {
-          "Name": "Cache-Control",
-          "Value": "max-age=3600, must-revalidate"
-        }
-      ],
-      "EndpointProperties": [
-        {
-          "Name": "integrity",
-          "Value": "sha256-nthN2pV7gMu2C9TRYIYr/pAK6CRZDxijReB6TVkSou8="
-        }
-      ]
-    },
-    {
-      "Route": "files/category/images/f433b466-857b-4747-9eac-f4e1426a8f85.3zpz85oway.webp",
-      "AssetFile": "C:\\Users\\gulco\\source\\repos\\Legno\\Presentation\\Legno.WebApi\\wwwroot\\files\\category\\images\\f433b466-857b-4747-9eac-f4e1426a8f85.webp",
-      "Selectors": [],
-      "ResponseHeaders": [
-        {
-          "Name": "Accept-Ranges",
-          "Value": "bytes"
-        },
-        {
-          "Name": "Content-Length",
-          "Value": "11618"
-        },
-        {
-          "Name": "Content-Type",
-          "Value": "image/webp"
-        },
-        {
-          "Name": "ETag",
-          "Value": "\"wdXwOYCHad25nNs76R/C2kkO41huJh8OmlxG2ErO3Gk=\""
-        },
-        {
-          "Name": "Last-Modified",
-          "Value": "Fri, 26 Dec 2025 07:41:04 GMT"
-        },
-        {
-          "Name": "Cache-Control",
-          "Value": "max-age=31536000, immutable"
-        }
-      ],
-      "EndpointProperties": [
-        {
-          "Name": "fingerprint",
-          "Value": "3zpz85oway"
-        },
-        {
-          "Name": "label",
-          "Value": "files/category/images/f433b466-857b-4747-9eac-f4e1426a8f85.webp"
-        },
-        {
-          "Name": "integrity",
-          "Value": "sha256-wdXwOYCHad25nNs76R/C2kkO41huJh8OmlxG2ErO3Gk="
-        }
-      ]
-    },
-    {
-      "Route": "files/category/images/f433b466-857b-4747-9eac-f4e1426a8f85.webp",
-      "AssetFile": "C:\\Users\\gulco\\source\\repos\\Legno\\Presentation\\Legno.WebApi\\wwwroot\\files\\category\\images\\f433b466-857b-4747-9eac-f4e1426a8f85.webp",
-      "Selectors": [],
-      "ResponseHeaders": [
-        {
-          "Name": "Accept-Ranges",
-          "Value": "bytes"
-        },
-        {
-          "Name": "Content-Length",
-          "Value": "11618"
-        },
-        {
-          "Name": "Content-Type",
-          "Value": "image/webp"
-        },
-        {
-          "Name": "ETag",
-          "Value": "\"wdXwOYCHad25nNs76R/C2kkO41huJh8OmlxG2ErO3Gk=\""
-        },
-        {
-          "Name": "Last-Modified",
-          "Value": "Fri, 26 Dec 2025 07:41:04 GMT"
-        },
-        {
-          "Name": "Cache-Control",
-          "Value": "max-age=3600, must-revalidate"
-        }
-      ],
-      "EndpointProperties": [
-        {
-          "Name": "integrity",
-          "Value": "sha256-wdXwOYCHad25nNs76R/C2kkO41huJh8OmlxG2ErO3Gk="
-        }
-      ]
-    },
-    {
-      "Route": "files/designer-services/1365af27-03fa-49fd-bc97-e137859afcf9.u0fv246hng.webp",
-      "AssetFile": "C:\\Users\\gulco\\source\\repos\\Legno\\Presentation\\Legno.WebApi\\wwwroot\\files\\designer-services\\1365af27-03fa-49fd-bc97-e137859afcf9.webp",
-      "Selectors": [],
-      "ResponseHeaders": [
-        {
-          "Name": "Accept-Ranges",
-          "Value": "bytes"
-        },
-        {
-          "Name": "Content-Length",
-          "Value": "81600"
-        },
-        {
-          "Name": "Content-Type",
-          "Value": "image/webp"
-        },
-        {
-          "Name": "ETag",
-          "Value": "\"zs+nmgzFtLEaWSlRCZTbCPdnOFZUUgqGpf1k3ZMAi14=\""
-        },
-        {
-          "Name": "Last-Modified",
-          "Value": "Mon, 06 Oct 2025 08:56:58 GMT"
-        },
-        {
-          "Name": "Cache-Control",
-          "Value": "max-age=31536000, immutable"
-        }
-      ],
-      "EndpointProperties": [
-        {
-          "Name": "fingerprint",
-          "Value": "u0fv246hng"
-        },
-        {
-          "Name": "label",
-          "Value": "files/designer-services/1365af27-03fa-49fd-bc97-e137859afcf9.webp"
-        },
-        {
-          "Name": "integrity",
-          "Value": "sha256-zs+nmgzFtLEaWSlRCZTbCPdnOFZUUgqGpf1k3ZMAi14="
-        }
-      ]
-    },
-    {
-      "Route": "files/designer-services/1365af27-03fa-49fd-bc97-e137859afcf9.webp",
-      "AssetFile": "C:\\Users\\gulco\\source\\repos\\Legno\\Presentation\\Legno.WebApi\\wwwroot\\files\\designer-services\\1365af27-03fa-49fd-bc97-e137859afcf9.webp",
-      "Selectors": [],
-      "ResponseHeaders": [
-        {
-          "Name": "Accept-Ranges",
-          "Value": "bytes"
-        },
-        {
-          "Name": "Content-Length",
-          "Value": "81600"
-        },
-        {
-          "Name": "Content-Type",
-          "Value": "image/webp"
-        },
-        {
-          "Name": "ETag",
-          "Value": "\"zs+nmgzFtLEaWSlRCZTbCPdnOFZUUgqGpf1k3ZMAi14=\""
-        },
-        {
-          "Name": "Last-Modified",
-          "Value": "Mon, 06 Oct 2025 08:56:58 GMT"
-        },
-        {
-          "Name": "Cache-Control",
-          "Value": "max-age=3600, must-revalidate"
-        }
-      ],
-      "EndpointProperties": [
-        {
-          "Name": "integrity",
-          "Value": "sha256-zs+nmgzFtLEaWSlRCZTbCPdnOFZUUgqGpf1k3ZMAi14="
-        }
-      ]
-    },
-    {
-      "Route": "files/members/fdd1e38e-7cf6-4bac-a524-129ad1638985.dfikj462zr.webp",
-      "AssetFile": "C:\\Users\\gulco\\source\\repos\\Legno\\Presentation\\Legno.WebApi\\wwwroot\\files\\members\\fdd1e38e-7cf6-4bac-a524-129ad1638985.webp",
-      "Selectors": [],
-      "ResponseHeaders": [
-        {
-          "Name": "Accept-Ranges",
-          "Value": "bytes"
-        },
-        {
-          "Name": "Content-Length",
-          "Value": "17280"
-        },
-        {
-          "Name": "Content-Type",
-          "Value": "image/webp"
-        },
-        {
-          "Name": "ETag",
-          "Value": "\"twIak32ERCbX6wo/mIedDFYbND9tnz1j+KHeEseG5wE=\""
-        },
-        {
-          "Name": "Last-Modified",
-          "Value": "Wed, 07 Jan 2026 09:43:32 GMT"
-        },
-        {
-          "Name": "Cache-Control",
-          "Value": "max-age=31536000, immutable"
-        }
-      ],
-      "EndpointProperties": [
-        {
-          "Name": "fingerprint",
-          "Value": "dfikj462zr"
-        },
-        {
-          "Name": "label",
-          "Value": "files/members/fdd1e38e-7cf6-4bac-a524-129ad1638985.webp"
-        },
-        {
-          "Name": "integrity",
-          "Value": "sha256-twIak32ERCbX6wo/mIedDFYbND9tnz1j+KHeEseG5wE="
-        }
-      ]
-    },
-    {
-      "Route": "files/members/fdd1e38e-7cf6-4bac-a524-129ad1638985.webp",
-      "AssetFile": "C:\\Users\\gulco\\source\\repos\\Legno\\Presentation\\Legno.WebApi\\wwwroot\\files\\members\\fdd1e38e-7cf6-4bac-a524-129ad1638985.webp",
-      "Selectors": [],
-      "ResponseHeaders": [
-        {
-          "Name": "Accept-Ranges",
-          "Value": "bytes"
-        },
-        {
-          "Name": "Content-Length",
-          "Value": "17280"
-        },
-        {
-          "Name": "Content-Type",
-          "Value": "image/webp"
-        },
-        {
-          "Name": "ETag",
-          "Value": "\"twIak32ERCbX6wo/mIedDFYbND9tnz1j+KHeEseG5wE=\""
-        },
-        {
-          "Name": "Last-Modified",
-          "Value": "Wed, 07 Jan 2026 09:43:32 GMT"
-        },
-        {
-          "Name": "Cache-Control",
-          "Value": "max-age=3600, must-revalidate"
-        }
-      ],
-      "EndpointProperties": [
-        {
-          "Name": "integrity",
-          "Value": "sha256-twIak32ERCbX6wo/mIedDFYbND9tnz1j+KHeEseG5wE="
-        }
-      ]
-    },
-    {
-      "Route": "files/project_card_images/45467a13-607d-4bde-82da-c70810158cf5.ex36a9kyw3.webp",
-      "AssetFile": "C:\\Users\\gulco\\source\\repos\\Legno\\Presentation\\Legno.WebApi\\wwwroot\\files\\project_card_images\\45467a13-607d-4bde-82da-c70810158cf5.webp",
-      "Selectors": [],
-      "ResponseHeaders": [
-        {
-          "Name": "Accept-Ranges",
-          "Value": "bytes"
-        },
-        {
-          "Name": "Content-Length",
-          "Value": "79888"
-        },
-        {
-          "Name": "Content-Type",
-          "Value": "image/webp"
-        },
-        {
-          "Name": "ETag",
-          "Value": "\"nthN2pV7gMu2C9TRYIYr/pAK6CRZDxijReB6TVkSou8=\""
-        },
-        {
-          "Name": "Last-Modified",
-          "Value": "Mon, 25 Aug 2025 08:15:55 GMT"
-        },
-        {
-          "Name": "Cache-Control",
-          "Value": "max-age=31536000, immutable"
-        }
-      ],
-      "EndpointProperties": [
-        {
-          "Name": "fingerprint",
-          "Value": "ex36a9kyw3"
-        },
-        {
-          "Name": "label",
-          "Value": "files/project_card_images/45467a13-607d-4bde-82da-c70810158cf5.webp"
-        },
-        {
-          "Name": "integrity",
-          "Value": "sha256-nthN2pV7gMu2C9TRYIYr/pAK6CRZDxijReB6TVkSou8="
-        }
-      ]
-    },
-    {
-      "Route": "files/project_card_images/45467a13-607d-4bde-82da-c70810158cf5.webp",
-      "AssetFile": "C:\\Users\\gulco\\source\\repos\\Legno\\Presentation\\Legno.WebApi\\wwwroot\\files\\project_card_images\\45467a13-607d-4bde-82da-c70810158cf5.webp",
-      "Selectors": [],
-      "ResponseHeaders": [
-        {
-          "Name": "Accept-Ranges",
-          "Value": "bytes"
-        },
-        {
-          "Name": "Content-Length",
-          "Value": "79888"
-        },
-        {
-          "Name": "Content-Type",
-          "Value": "image/webp"
-        },
-        {
-          "Name": "ETag",
-          "Value": "\"nthN2pV7gMu2C9TRYIYr/pAK6CRZDxijReB6TVkSou8=\""
-        },
-        {
-          "Name": "Last-Modified",
-          "Value": "Mon, 25 Aug 2025 08:15:55 GMT"
-        },
-        {
-          "Name": "Cache-Control",
-          "Value": "max-age=3600, must-revalidate"
-        }
-      ],
-      "EndpointProperties": [
-        {
-          "Name": "integrity",
-          "Value": "sha256-nthN2pV7gMu2C9TRYIYr/pAK6CRZDxijReB6TVkSou8="
-        }
-      ]
-    },
-    {
-      "Route": "files/project_card_images/4d4326a2-b01b-427a-8bb1-c14dcada3042.ex36a9kyw3.webp",
-      "AssetFile": "C:\\Users\\gulco\\source\\repos\\Legno\\Presentation\\Legno.WebApi\\wwwroot\\files\\project_card_images\\4d4326a2-b01b-427a-8bb1-c14dcada3042.webp",
-      "Selectors": [],
-      "ResponseHeaders": [
-        {
-          "Name": "Accept-Ranges",
-          "Value": "bytes"
-        },
-        {
-          "Name": "Content-Length",
-          "Value": "79888"
-        },
-        {
-          "Name": "Content-Type",
-          "Value": "image/webp"
-        },
-        {
-          "Name": "ETag",
-          "Value": "\"nthN2pV7gMu2C9TRYIYr/pAK6CRZDxijReB6TVkSou8=\""
-        },
-        {
-          "Name": "Last-Modified",
-          "Value": "Tue, 19 Aug 2025 06:58:37 GMT"
-        },
-        {
-          "Name": "Cache-Control",
-          "Value": "max-age=31536000, immutable"
-        }
-      ],
-      "EndpointProperties": [
-        {
-          "Name": "fingerprint",
-          "Value": "ex36a9kyw3"
-        },
-        {
-          "Name": "label",
-          "Value": "files/project_card_images/4d4326a2-b01b-427a-8bb1-c14dcada3042.webp"
-        },
-        {
-          "Name": "integrity",
-          "Value": "sha256-nthN2pV7gMu2C9TRYIYr/pAK6CRZDxijReB6TVkSou8="
-        }
-      ]
-    },
-    {
-      "Route": "files/project_card_images/4d4326a2-b01b-427a-8bb1-c14dcada3042.webp",
-      "AssetFile": "C:\\Users\\gulco\\source\\repos\\Legno\\Presentation\\Legno.WebApi\\wwwroot\\files\\project_card_images\\4d4326a2-b01b-427a-8bb1-c14dcada3042.webp",
-      "Selectors": [],
-      "ResponseHeaders": [
-        {
-          "Name": "Accept-Ranges",
-          "Value": "bytes"
-        },
-        {
-          "Name": "Content-Length",
-          "Value": "79888"
-        },
-        {
-          "Name": "Content-Type",
-          "Value": "image/webp"
-        },
-        {
-          "Name": "ETag",
-          "Value": "\"nthN2pV7gMu2C9TRYIYr/pAK6CRZDxijReB6TVkSou8=\""
-        },
-        {
-          "Name": "Last-Modified",
-          "Value": "Tue, 19 Aug 2025 06:58:37 GMT"
-        },
-        {
-          "Name": "Cache-Control",
-          "Value": "max-age=3600, must-revalidate"
-        }
-      ],
-      "EndpointProperties": [
-        {
-          "Name": "integrity",
-          "Value": "sha256-nthN2pV7gMu2C9TRYIYr/pAK6CRZDxijReB6TVkSou8="
-        }
-      ]
-    },
-    {
-      "Route": "files/project_images/19b95f1b-3e6a-434f-85f6-9a307eed75a3.ex36a9kyw3.webp",
-      "AssetFile": "C:\\Users\\gulco\\source\\repos\\Legno\\Presentation\\Legno.WebApi\\wwwroot\\files\\project_images\\19b95f1b-3e6a-434f-85f6-9a307eed75a3.webp",
-      "Selectors": [],
-      "ResponseHeaders": [
-        {
-          "Name": "Accept-Ranges",
-          "Value": "bytes"
-        },
-        {
-          "Name": "Content-Length",
-          "Value": "79888"
-        },
-        {
-          "Name": "Content-Type",
-          "Value": "image/webp"
-        },
-        {
-          "Name": "ETag",
-          "Value": "\"nthN2pV7gMu2C9TRYIYr/pAK6CRZDxijReB6TVkSou8=\""
-        },
-        {
-          "Name": "Last-Modified",
-          "Value": "Tue, 19 Aug 2025 07:04:29 GMT"
-        },
-        {
-          "Name": "Cache-Control",
-          "Value": "max-age=31536000, immutable"
-        }
-      ],
-      "EndpointProperties": [
-        {
-          "Name": "fingerprint",
-          "Value": "ex36a9kyw3"
-        },
-        {
-          "Name": "label",
-          "Value": "files/project_images/19b95f1b-3e6a-434f-85f6-9a307eed75a3.webp"
-        },
-        {
-          "Name": "integrity",
-          "Value": "sha256-nthN2pV7gMu2C9TRYIYr/pAK6CRZDxijReB6TVkSou8="
-        }
-      ]
-    },
-    {
-      "Route": "files/project_images/19b95f1b-3e6a-434f-85f6-9a307eed75a3.webp",
-      "AssetFile": "C:\\Users\\gulco\\source\\repos\\Legno\\Presentation\\Legno.WebApi\\wwwroot\\files\\project_images\\19b95f1b-3e6a-434f-85f6-9a307eed75a3.webp",
-      "Selectors": [],
-      "ResponseHeaders": [
-        {
-          "Name": "Accept-Ranges",
-          "Value": "bytes"
-        },
-        {
-          "Name": "Content-Length",
-          "Value": "79888"
-        },
-        {
-          "Name": "Content-Type",
-          "Value": "image/webp"
-        },
-        {
-          "Name": "ETag",
-          "Value": "\"nthN2pV7gMu2C9TRYIYr/pAK6CRZDxijReB6TVkSou8=\""
-        },
-        {
-          "Name": "Last-Modified",
-          "Value": "Tue, 19 Aug 2025 07:04:29 GMT"
-        },
-        {
-          "Name": "Cache-Control",
-          "Value": "max-age=3600, must-revalidate"
-        }
-      ],
-      "EndpointProperties": [
-        {
-          "Name": "integrity",
-          "Value": "sha256-nthN2pV7gMu2C9TRYIYr/pAK6CRZDxijReB6TVkSou8="
-        }
-      ]
-    },
-    {
-      "Route": "files/project_images/32434b86-09f5-4948-afb2-ba9694257b31.u0fv246hng.webp",
-      "AssetFile": "C:\\Users\\gulco\\source\\repos\\Legno\\Presentation\\Legno.WebApi\\wwwroot\\files\\project_images\\32434b86-09f5-4948-afb2-ba9694257b31.webp",
-      "Selectors": [],
-      "ResponseHeaders": [
-        {
-          "Name": "Accept-Ranges",
-          "Value": "bytes"
-        },
-        {
-          "Name": "Content-Length",
-          "Value": "81600"
-        },
-        {
-          "Name": "Content-Type",
-          "Value": "image/webp"
-        },
-        {
-          "Name": "ETag",
-          "Value": "\"zs+nmgzFtLEaWSlRCZTbCPdnOFZUUgqGpf1k3ZMAi14=\""
-        },
-        {
-          "Name": "Last-Modified",
-          "Value": "Mon, 25 Aug 2025 08:15:56 GMT"
-        },
-        {
-          "Name": "Cache-Control",
-          "Value": "max-age=31536000, immutable"
-        }
-      ],
-      "EndpointProperties": [
-        {
-          "Name": "fingerprint",
-          "Value": "u0fv246hng"
-        },
-        {
-          "Name": "label",
-          "Value": "files/project_images/32434b86-09f5-4948-afb2-ba9694257b31.webp"
-        },
-        {
-          "Name": "integrity",
-          "Value": "sha256-zs+nmgzFtLEaWSlRCZTbCPdnOFZUUgqGpf1k3ZMAi14="
-        }
-      ]
-    },
-    {
-      "Route": "files/project_images/32434b86-09f5-4948-afb2-ba9694257b31.webp",
-      "AssetFile": "C:\\Users\\gulco\\source\\repos\\Legno\\Presentation\\Legno.WebApi\\wwwroot\\files\\project_images\\32434b86-09f5-4948-afb2-ba9694257b31.webp",
-      "Selectors": [],
-      "ResponseHeaders": [
-        {
-          "Name": "Accept-Ranges",
-          "Value": "bytes"
-        },
-        {
-          "Name": "Content-Length",
-          "Value": "81600"
-        },
-        {
-          "Name": "Content-Type",
-          "Value": "image/webp"
-        },
-        {
-          "Name": "ETag",
-          "Value": "\"zs+nmgzFtLEaWSlRCZTbCPdnOFZUUgqGpf1k3ZMAi14=\""
-        },
-        {
-          "Name": "Last-Modified",
-          "Value": "Mon, 25 Aug 2025 08:15:56 GMT"
-        },
-        {
-          "Name": "Cache-Control",
-          "Value": "max-age=3600, must-revalidate"
-        }
-      ],
-      "EndpointProperties": [
-        {
-          "Name": "integrity",
-          "Value": "sha256-zs+nmgzFtLEaWSlRCZTbCPdnOFZUUgqGpf1k3ZMAi14="
-        }
-      ]
-    },
-    {
-      "Route": "files/project_images/ff96e4fc-d0f6-4769-93c3-b05fb82c1aec.u0fv246hng.webp",
-      "AssetFile": "C:\\Users\\gulco\\source\\repos\\Legno\\Presentation\\Legno.WebApi\\wwwroot\\files\\project_images\\ff96e4fc-d0f6-4769-93c3-b05fb82c1aec.webp",
-      "Selectors": [],
-      "ResponseHeaders": [
-        {
-          "Name": "Accept-Ranges",
-          "Value": "bytes"
-        },
-        {
-          "Name": "Content-Length",
-          "Value": "81600"
-        },
-        {
-          "Name": "Content-Type",
-          "Value": "image/webp"
-        },
-        {
-          "Name": "ETag",
-          "Value": "\"zs+nmgzFtLEaWSlRCZTbCPdnOFZUUgqGpf1k3ZMAi14=\""
-        },
-        {
-          "Name": "Last-Modified",
-          "Value": "Tue, 19 Aug 2025 06:58:37 GMT"
-        },
-        {
-          "Name": "Cache-Control",
-          "Value": "max-age=31536000, immutable"
-        }
-      ],
-      "EndpointProperties": [
-        {
-          "Name": "fingerprint",
-          "Value": "u0fv246hng"
-        },
-        {
-          "Name": "label",
-          "Value": "files/project_images/ff96e4fc-d0f6-4769-93c3-b05fb82c1aec.webp"
-        },
-        {
-          "Name": "integrity",
-          "Value": "sha256-zs+nmgzFtLEaWSlRCZTbCPdnOFZUUgqGpf1k3ZMAi14="
-        }
-      ]
-    },
-    {
-      "Route": "files/project_images/ff96e4fc-d0f6-4769-93c3-b05fb82c1aec.webp",
-      "AssetFile": "C:\\Users\\gulco\\source\\repos\\Legno\\Presentation\\Legno.WebApi\\wwwroot\\files\\project_images\\ff96e4fc-d0f6-4769-93c3-b05fb82c1aec.webp",
-      "Selectors": [],
-      "ResponseHeaders": [
-        {
-          "Name": "Accept-Ranges",
-          "Value": "bytes"
-        },
-        {
-          "Name": "Content-Length",
-          "Value": "81600"
-        },
-        {
-          "Name": "Content-Type",
-          "Value": "image/webp"
-        },
-        {
-          "Name": "ETag",
-          "Value": "\"zs+nmgzFtLEaWSlRCZTbCPdnOFZUUgqGpf1k3ZMAi14=\""
-        },
-        {
-          "Name": "Last-Modified",
-          "Value": "Tue, 19 Aug 2025 06:58:37 GMT"
-        },
-        {
-          "Name": "Cache-Control",
-          "Value": "max-age=3600, must-revalidate"
-        }
-      ],
-      "EndpointProperties": [
-        {
-          "Name": "integrity",
-          "Value": "sha256-zs+nmgzFtLEaWSlRCZTbCPdnOFZUUgqGpf1k3ZMAi14="
-        }
-      ]
-    },
-    {
-      "Route": "files/project_videos/5cfdbc59-d114-41fa-9fff-b6be6f941da3.u0fv246hng.webp",
-      "AssetFile": "C:\\Users\\gulco\\source\\repos\\Legno\\Presentation\\Legno.WebApi\\wwwroot\\files\\project_videos\\5cfdbc59-d114-41fa-9fff-b6be6f941da3.webp",
-      "Selectors": [],
-      "ResponseHeaders": [
-        {
-          "Name": "Accept-Ranges",
-          "Value": "bytes"
-        },
-        {
-          "Name": "Content-Length",
-          "Value": "81600"
-        },
-        {
-          "Name": "Content-Type",
-          "Value": "image/webp"
-        },
-        {
-          "Name": "ETag",
-          "Value": "\"zs+nmgzFtLEaWSlRCZTbCPdnOFZUUgqGpf1k3ZMAi14=\""
-        },
-        {
-          "Name": "Last-Modified",
-          "Value": "Mon, 25 Aug 2025 08:15:56 GMT"
-        },
-        {
-          "Name": "Cache-Control",
-          "Value": "max-age=31536000, immutable"
-        }
-      ],
-      "EndpointProperties": [
-        {
-          "Name": "fingerprint",
-          "Value": "u0fv246hng"
-        },
-        {
-          "Name": "label",
-          "Value": "files/project_videos/5cfdbc59-d114-41fa-9fff-b6be6f941da3.webp"
-        },
-        {
-          "Name": "integrity",
-          "Value": "sha256-zs+nmgzFtLEaWSlRCZTbCPdnOFZUUgqGpf1k3ZMAi14="
-        }
-      ]
-    },
-    {
-      "Route": "files/project_videos/5cfdbc59-d114-41fa-9fff-b6be6f941da3.webp",
-      "AssetFile": "C:\\Users\\gulco\\source\\repos\\Legno\\Presentation\\Legno.WebApi\\wwwroot\\files\\project_videos\\5cfdbc59-d114-41fa-9fff-b6be6f941da3.webp",
-      "Selectors": [],
-      "ResponseHeaders": [
-        {
-          "Name": "Accept-Ranges",
-          "Value": "bytes"
-        },
-        {
-          "Name": "Content-Length",
-          "Value": "81600"
-        },
-        {
-          "Name": "Content-Type",
-          "Value": "image/webp"
-        },
-        {
-          "Name": "ETag",
-          "Value": "\"zs+nmgzFtLEaWSlRCZTbCPdnOFZUUgqGpf1k3ZMAi14=\""
-        },
-        {
-          "Name": "Last-Modified",
-          "Value": "Mon, 25 Aug 2025 08:15:56 GMT"
-        },
-        {
-          "Name": "Cache-Control",
-          "Value": "max-age=3600, must-revalidate"
-        }
-      ],
-      "EndpointProperties": [
-        {
-          "Name": "integrity",
-          "Value": "sha256-zs+nmgzFtLEaWSlRCZTbCPdnOFZUUgqGpf1k3ZMAi14="
-        }
-      ]
-    },
-    {
-      "Route": "files/project_videos/71eda501-f46c-4d28-b83f-86d212c15ba7.u0fv246hng.webp",
-      "AssetFile": "C:\\Users\\gulco\\source\\repos\\Legno\\Presentation\\Legno.WebApi\\wwwroot\\files\\project_videos\\71eda501-f46c-4d28-b83f-86d212c15ba7.webp",
-      "Selectors": [],
-      "ResponseHeaders": [
-        {
-          "Name": "Accept-Ranges",
-          "Value": "bytes"
-        },
-        {
-          "Name": "Content-Length",
-          "Value": "81600"
-        },
-        {
-          "Name": "Content-Type",
-          "Value": "image/webp"
-        },
-        {
-          "Name": "ETag",
-          "Value": "\"zs+nmgzFtLEaWSlRCZTbCPdnOFZUUgqGpf1k3ZMAi14=\""
-        },
-        {
-          "Name": "Last-Modified",
-          "Value": "Tue, 19 Aug 2025 07:04:30 GMT"
-        },
-        {
-          "Name": "Cache-Control",
-          "Value": "max-age=31536000, immutable"
-        }
-      ],
-      "EndpointProperties": [
-        {
-          "Name": "fingerprint",
-          "Value": "u0fv246hng"
-        },
-        {
-          "Name": "label",
-          "Value": "files/project_videos/71eda501-f46c-4d28-b83f-86d212c15ba7.webp"
-        },
-        {
-          "Name": "integrity",
-          "Value": "sha256-zs+nmgzFtLEaWSlRCZTbCPdnOFZUUgqGpf1k3ZMAi14="
-        }
-      ]
-    },
-    {
-      "Route": "files/project_videos/71eda501-f46c-4d28-b83f-86d212c15ba7.webp",
-      "AssetFile": "C:\\Users\\gulco\\source\\repos\\Legno\\Presentation\\Legno.WebApi\\wwwroot\\files\\project_videos\\71eda501-f46c-4d28-b83f-86d212c15ba7.webp",
-      "Selectors": [],
-      "ResponseHeaders": [
-        {
-          "Name": "Accept-Ranges",
-          "Value": "bytes"
-        },
-        {
-          "Name": "Content-Length",
-          "Value": "81600"
-        },
-        {
-          "Name": "Content-Type",
-          "Value": "image/webp"
-        },
-        {
-          "Name": "ETag",
-          "Value": "\"zs+nmgzFtLEaWSlRCZTbCPdnOFZUUgqGpf1k3ZMAi14=\""
-        },
-        {
-          "Name": "Last-Modified",
-          "Value": "Tue, 19 Aug 2025 07:04:30 GMT"
-        },
-        {
-          "Name": "Cache-Control",
-          "Value": "max-age=3600, must-revalidate"
-        }
-      ],
-      "EndpointProperties": [
-        {
-          "Name": "integrity",
-          "Value": "sha256-zs+nmgzFtLEaWSlRCZTbCPdnOFZUUgqGpf1k3ZMAi14="
-        }
-      ]
-    },
-    {
-      "Route": "files/projects/cards/72bbd8c8-5d74-42ae-8945-8ddd3bb5c9d4.it5nul5ul2.webp",
-      "AssetFile": "C:\\Users\\gulco\\source\\repos\\Legno\\Presentation\\Legno.WebApi\\wwwroot\\files\\projects\\cards\\72bbd8c8-5d74-42ae-8945-8ddd3bb5c9d4.webp",
-      "Selectors": [],
-      "ResponseHeaders": [
-        {
-          "Name": "Accept-Ranges",
-          "Value": "bytes"
-        },
-        {
-          "Name": "Content-Length",
-          "Value": "47472"
-        },
-        {
-          "Name": "Content-Type",
-          "Value": "image/webp"
-        },
-        {
-          "Name": "ETag",
-          "Value": "\"ymCLdcSXdaLkcOfJyE4Hs8QXO3y3XGiDSwC9XM3Ouw0=\""
-        },
-        {
-          "Name": "Last-Modified",
-          "Value": "Mon, 13 Oct 2025 07:27:43 GMT"
-        },
-        {
-          "Name": "Cache-Control",
-          "Value": "max-age=31536000, immutable"
-        }
-      ],
-      "EndpointProperties": [
-        {
-          "Name": "fingerprint",
-          "Value": "it5nul5ul2"
-        },
-        {
-          "Name": "label",
-          "Value": "files/projects/cards/72bbd8c8-5d74-42ae-8945-8ddd3bb5c9d4.webp"
-        },
-        {
-          "Name": "integrity",
-          "Value": "sha256-ymCLdcSXdaLkcOfJyE4Hs8QXO3y3XGiDSwC9XM3Ouw0="
-        }
-      ]
-    },
-    {
-      "Route": "files/projects/cards/72bbd8c8-5d74-42ae-8945-8ddd3bb5c9d4.webp",
-      "AssetFile": "C:\\Users\\gulco\\source\\repos\\Legno\\Presentation\\Legno.WebApi\\wwwroot\\files\\projects\\cards\\72bbd8c8-5d74-42ae-8945-8ddd3bb5c9d4.webp",
-      "Selectors": [],
-      "ResponseHeaders": [
-        {
-          "Name": "Accept-Ranges",
-          "Value": "bytes"
-        },
-        {
-          "Name": "Content-Length",
-          "Value": "47472"
-        },
-        {
-          "Name": "Content-Type",
-          "Value": "image/webp"
-        },
-        {
-          "Name": "ETag",
-          "Value": "\"ymCLdcSXdaLkcOfJyE4Hs8QXO3y3XGiDSwC9XM3Ouw0=\""
-        },
-        {
-          "Name": "Last-Modified",
-          "Value": "Mon, 13 Oct 2025 07:27:43 GMT"
-        },
-        {
-          "Name": "Cache-Control",
-          "Value": "max-age=3600, must-revalidate"
-        }
-      ],
-      "EndpointProperties": [
-        {
-          "Name": "integrity",
-          "Value": "sha256-ymCLdcSXdaLkcOfJyE4Hs8QXO3y3XGiDSwC9XM3Ouw0="
-        }
-      ]
-    },
-    {
-      "Route": "files/projects/cards/8b73a0cb-df75-4ed2-b84c-e7262b425492.3zpz85oway.webp",
-      "AssetFile": "C:\\Users\\gulco\\source\\repos\\Legno\\Presentation\\Legno.WebApi\\wwwroot\\files\\projects\\cards\\8b73a0cb-df75-4ed2-b84c-e7262b425492.webp",
-      "Selectors": [],
-      "ResponseHeaders": [
-        {
-          "Name": "Accept-Ranges",
-          "Value": "bytes"
-        },
-        {
-          "Name": "Content-Length",
-          "Value": "11618"
-        },
-        {
-          "Name": "Content-Type",
-          "Value": "image/webp"
-        },
-        {
-          "Name": "ETag",
-          "Value": "\"wdXwOYCHad25nNs76R/C2kkO41huJh8OmlxG2ErO3Gk=\""
-        },
-        {
-          "Name": "Last-Modified",
-          "Value": "Fri, 26 Dec 2025 07:53:29 GMT"
-        },
-        {
-          "Name": "Cache-Control",
-          "Value": "max-age=31536000, immutable"
-        }
-      ],
-      "EndpointProperties": [
-        {
-          "Name": "fingerprint",
-          "Value": "3zpz85oway"
-        },
-        {
-          "Name": "label",
-          "Value": "files/projects/cards/8b73a0cb-df75-4ed2-b84c-e7262b425492.webp"
-        },
-        {
-          "Name": "integrity",
-          "Value": "sha256-wdXwOYCHad25nNs76R/C2kkO41huJh8OmlxG2ErO3Gk="
-        }
-      ]
-    },
-    {
-      "Route": "files/projects/cards/8b73a0cb-df75-4ed2-b84c-e7262b425492.webp",
-      "AssetFile": "C:\\Users\\gulco\\source\\repos\\Legno\\Presentation\\Legno.WebApi\\wwwroot\\files\\projects\\cards\\8b73a0cb-df75-4ed2-b84c-e7262b425492.webp",
-      "Selectors": [],
-      "ResponseHeaders": [
-        {
-          "Name": "Accept-Ranges",
-          "Value": "bytes"
-        },
-        {
-          "Name": "Content-Length",
-          "Value": "11618"
-        },
-        {
-          "Name": "Content-Type",
-          "Value": "image/webp"
-        },
-        {
-          "Name": "ETag",
-          "Value": "\"wdXwOYCHad25nNs76R/C2kkO41huJh8OmlxG2ErO3Gk=\""
-        },
-        {
-          "Name": "Last-Modified",
-          "Value": "Fri, 26 Dec 2025 07:53:29 GMT"
-        },
-        {
-          "Name": "Cache-Control",
-          "Value": "max-age=3600, must-revalidate"
-        }
-      ],
-      "EndpointProperties": [
-        {
-          "Name": "integrity",
-          "Value": "sha256-wdXwOYCHad25nNs76R/C2kkO41huJh8OmlxG2ErO3Gk="
-        }
-      ]
-    },
-    {
-      "Route": "files/projects/cards/a825b7f0-7106-4b63-a85f-882a87091680.it5nul5ul2.webp",
-      "AssetFile": "C:\\Users\\gulco\\source\\repos\\Legno\\Presentation\\Legno.WebApi\\wwwroot\\files\\projects\\cards\\a825b7f0-7106-4b63-a85f-882a87091680.webp",
-      "Selectors": [],
-      "ResponseHeaders": [
-        {
-          "Name": "Accept-Ranges",
-          "Value": "bytes"
-        },
-        {
-          "Name": "Content-Length",
-          "Value": "47472"
-        },
-        {
-          "Name": "Content-Type",
-          "Value": "image/webp"
-        },
-        {
-          "Name": "ETag",
-          "Value": "\"ymCLdcSXdaLkcOfJyE4Hs8QXO3y3XGiDSwC9XM3Ouw0=\""
-        },
-        {
-          "Name": "Last-Modified",
-          "Value": "Mon, 13 Oct 2025 05:39:32 GMT"
-        },
-        {
-          "Name": "Cache-Control",
-          "Value": "max-age=31536000, immutable"
-        }
-      ],
-      "EndpointProperties": [
-        {
-          "Name": "fingerprint",
-          "Value": "it5nul5ul2"
-        },
-        {
-          "Name": "label",
-          "Value": "files/projects/cards/a825b7f0-7106-4b63-a85f-882a87091680.webp"
-        },
-        {
-          "Name": "integrity",
-          "Value": "sha256-ymCLdcSXdaLkcOfJyE4Hs8QXO3y3XGiDSwC9XM3Ouw0="
-        }
-      ]
-    },
-    {
-      "Route": "files/projects/cards/a825b7f0-7106-4b63-a85f-882a87091680.webp",
-      "AssetFile": "C:\\Users\\gulco\\source\\repos\\Legno\\Presentation\\Legno.WebApi\\wwwroot\\files\\projects\\cards\\a825b7f0-7106-4b63-a85f-882a87091680.webp",
-      "Selectors": [],
-      "ResponseHeaders": [
-        {
-          "Name": "Accept-Ranges",
-          "Value": "bytes"
-        },
-        {
-          "Name": "Content-Length",
-          "Value": "47472"
-        },
-        {
-          "Name": "Content-Type",
-          "Value": "image/webp"
-        },
-        {
-          "Name": "ETag",
-          "Value": "\"ymCLdcSXdaLkcOfJyE4Hs8QXO3y3XGiDSwC9XM3Ouw0=\""
-        },
-        {
-          "Name": "Last-Modified",
-          "Value": "Mon, 13 Oct 2025 05:39:32 GMT"
-        },
-        {
-          "Name": "Cache-Control",
-          "Value": "max-age=3600, must-revalidate"
-        }
-      ],
-      "EndpointProperties": [
-        {
-          "Name": "integrity",
-          "Value": "sha256-ymCLdcSXdaLkcOfJyE4Hs8QXO3y3XGiDSwC9XM3Ouw0="
-        }
-      ]
-    },
-    {
-      "Route": "files/projects/images/7c6966b2-ace8-49c5-b531-fc731b5ba676.3zpz85oway.webp",
-      "AssetFile": "C:\\Users\\gulco\\source\\repos\\Legno\\Presentation\\Legno.WebApi\\wwwroot\\files\\projects\\images\\7c6966b2-ace8-49c5-b531-fc731b5ba676.webp",
-      "Selectors": [],
-      "ResponseHeaders": [
-        {
-          "Name": "Accept-Ranges",
-          "Value": "bytes"
-        },
-        {
-          "Name": "Content-Length",
-          "Value": "11618"
-        },
-        {
-          "Name": "Content-Type",
-          "Value": "image/webp"
-        },
-        {
-          "Name": "ETag",
-          "Value": "\"wdXwOYCHad25nNs76R/C2kkO41huJh8OmlxG2ErO3Gk=\""
-        },
-        {
-          "Name": "Last-Modified",
-          "Value": "Fri, 26 Dec 2025 07:53:29 GMT"
-        },
-        {
-          "Name": "Cache-Control",
-          "Value": "max-age=31536000, immutable"
-        }
-      ],
-      "EndpointProperties": [
-        {
-          "Name": "fingerprint",
-          "Value": "3zpz85oway"
-        },
-        {
-          "Name": "label",
-          "Value": "files/projects/images/7c6966b2-ace8-49c5-b531-fc731b5ba676.webp"
-        },
-        {
-          "Name": "integrity",
-          "Value": "sha256-wdXwOYCHad25nNs76R/C2kkO41huJh8OmlxG2ErO3Gk="
-        }
-      ]
-    },
-    {
-      "Route": "files/projects/images/7c6966b2-ace8-49c5-b531-fc731b5ba676.webp",
-      "AssetFile": "C:\\Users\\gulco\\source\\repos\\Legno\\Presentation\\Legno.WebApi\\wwwroot\\files\\projects\\images\\7c6966b2-ace8-49c5-b531-fc731b5ba676.webp",
-      "Selectors": [],
-      "ResponseHeaders": [
-        {
-          "Name": "Accept-Ranges",
-          "Value": "bytes"
-        },
-        {
-          "Name": "Content-Length",
-          "Value": "11618"
-        },
-        {
-          "Name": "Content-Type",
-          "Value": "image/webp"
-        },
-        {
-          "Name": "ETag",
-          "Value": "\"wdXwOYCHad25nNs76R/C2kkO41huJh8OmlxG2ErO3Gk=\""
-        },
-        {
-          "Name": "Last-Modified",
-          "Value": "Fri, 26 Dec 2025 07:53:29 GMT"
-        },
-        {
-          "Name": "Cache-Control",
-          "Value": "max-age=3600, must-revalidate"
-        }
-      ],
-      "EndpointProperties": [
-        {
-          "Name": "integrity",
-          "Value": "sha256-wdXwOYCHad25nNs76R/C2kkO41huJh8OmlxG2ErO3Gk="
-        }
-      ]
-    },
-    {
-      "Route": "files/projects/images/88c97d25-3850-4c42-b582-4797aee873ae.3zpz85oway.webp",
-      "AssetFile": "C:\\Users\\gulco\\source\\repos\\Legno\\Presentation\\Legno.WebApi\\wwwroot\\files\\projects\\images\\88c97d25-3850-4c42-b582-4797aee873ae.webp",
-      "Selectors": [],
-      "ResponseHeaders": [
-        {
-          "Name": "Accept-Ranges",
-          "Value": "bytes"
-        },
-        {
-          "Name": "Content-Length",
-          "Value": "11618"
-        },
-        {
-          "Name": "Content-Type",
-          "Value": "image/webp"
-        },
-        {
-          "Name": "ETag",
-          "Value": "\"wdXwOYCHad25nNs76R/C2kkO41huJh8OmlxG2ErO3Gk=\""
-        },
-        {
-          "Name": "Last-Modified",
-          "Value": "Fri, 26 Dec 2025 07:42:01 GMT"
-        },
-        {
-          "Name": "Cache-Control",
-          "Value": "max-age=31536000, immutable"
-        }
-      ],
-      "EndpointProperties": [
-        {
-          "Name": "fingerprint",
-          "Value": "3zpz85oway"
-        },
-        {
-          "Name": "label",
-          "Value": "files/projects/images/88c97d25-3850-4c42-b582-4797aee873ae.webp"
-        },
-        {
-          "Name": "integrity",
-          "Value": "sha256-wdXwOYCHad25nNs76R/C2kkO41huJh8OmlxG2ErO3Gk="
-        }
-      ]
-    },
-    {
-      "Route": "files/projects/images/88c97d25-3850-4c42-b582-4797aee873ae.webp",
-      "AssetFile": "C:\\Users\\gulco\\source\\repos\\Legno\\Presentation\\Legno.WebApi\\wwwroot\\files\\projects\\images\\88c97d25-3850-4c42-b582-4797aee873ae.webp",
-      "Selectors": [],
-      "ResponseHeaders": [
-        {
-          "Name": "Accept-Ranges",
-          "Value": "bytes"
-        },
-        {
-          "Name": "Content-Length",
-          "Value": "11618"
-        },
-        {
-          "Name": "Content-Type",
-          "Value": "image/webp"
-        },
-        {
-          "Name": "ETag",
-          "Value": "\"wdXwOYCHad25nNs76R/C2kkO41huJh8OmlxG2ErO3Gk=\""
-        },
-        {
-          "Name": "Last-Modified",
-          "Value": "Fri, 26 Dec 2025 07:42:01 GMT"
-        },
-        {
-          "Name": "Cache-Control",
-          "Value": "max-age=3600, must-revalidate"
-        }
-      ],
-      "EndpointProperties": [
-        {
-          "Name": "integrity",
-          "Value": "sha256-wdXwOYCHad25nNs76R/C2kkO41huJh8OmlxG2ErO3Gk="
-        }
-      ]
-    },
-    {
-      "Route": "files/projects/images/cc4751bf-094a-4a35-9fcc-35af9561443b.it5nul5ul2.webp",
-      "AssetFile": "C:\\Users\\gulco\\source\\repos\\Legno\\Presentation\\Legno.WebApi\\wwwroot\\files\\projects\\images\\cc4751bf-094a-4a35-9fcc-35af9561443b.webp",
-      "Selectors": [],
-      "ResponseHeaders": [
-        {
-          "Name": "Accept-Ranges",
-          "Value": "bytes"
-        },
-        {
-          "Name": "Content-Length",
-          "Value": "47472"
-        },
-        {
-          "Name": "Content-Type",
-          "Value": "image/webp"
-        },
-        {
-          "Name": "ETag",
-          "Value": "\"ymCLdcSXdaLkcOfJyE4Hs8QXO3y3XGiDSwC9XM3Ouw0=\""
-        },
-        {
-          "Name": "Last-Modified",
-          "Value": "Mon, 13 Oct 2025 07:27:43 GMT"
-        },
-        {
-          "Name": "Cache-Control",
-          "Value": "max-age=31536000, immutable"
-        }
-      ],
-      "EndpointProperties": [
-        {
-          "Name": "fingerprint",
-          "Value": "it5nul5ul2"
-        },
-        {
-          "Name": "label",
-          "Value": "files/projects/images/cc4751bf-094a-4a35-9fcc-35af9561443b.webp"
-        },
-        {
-          "Name": "integrity",
-          "Value": "sha256-ymCLdcSXdaLkcOfJyE4Hs8QXO3y3XGiDSwC9XM3Ouw0="
-        }
-      ]
-    },
-    {
-      "Route": "files/projects/images/cc4751bf-094a-4a35-9fcc-35af9561443b.webp",
-      "AssetFile": "C:\\Users\\gulco\\source\\repos\\Legno\\Presentation\\Legno.WebApi\\wwwroot\\files\\projects\\images\\cc4751bf-094a-4a35-9fcc-35af9561443b.webp",
-      "Selectors": [],
-      "ResponseHeaders": [
-        {
-          "Name": "Accept-Ranges",
-          "Value": "bytes"
-        },
-        {
-          "Name": "Content-Length",
-          "Value": "47472"
-        },
-        {
-          "Name": "Content-Type",
-          "Value": "image/webp"
-        },
-        {
-          "Name": "ETag",
-          "Value": "\"ymCLdcSXdaLkcOfJyE4Hs8QXO3y3XGiDSwC9XM3Ouw0=\""
-        },
-        {
-          "Name": "Last-Modified",
-          "Value": "Mon, 13 Oct 2025 07:27:43 GMT"
-        },
-        {
-          "Name": "Cache-Control",
-          "Value": "max-age=3600, must-revalidate"
-        }
-      ],
-      "EndpointProperties": [
-        {
-          "Name": "integrity",
-          "Value": "sha256-ymCLdcSXdaLkcOfJyE4Hs8QXO3y3XGiDSwC9XM3Ouw0="
-        }
-      ]
-    },
-    {
-      "Route": "files/projects/images/e3fa487f-0c3c-47b5-b165-41556dff3e95.it5nul5ul2.webp",
-      "AssetFile": "C:\\Users\\gulco\\source\\repos\\Legno\\Presentation\\Legno.WebApi\\wwwroot\\files\\projects\\images\\e3fa487f-0c3c-47b5-b165-41556dff3e95.webp",
-      "Selectors": [],
-      "ResponseHeaders": [
-        {
-          "Name": "Accept-Ranges",
-          "Value": "bytes"
-        },
-        {
-          "Name": "Content-Length",
-          "Value": "47472"
-        },
-        {
-          "Name": "Content-Type",
-          "Value": "image/webp"
-        },
-        {
-          "Name": "ETag",
-          "Value": "\"ymCLdcSXdaLkcOfJyE4Hs8QXO3y3XGiDSwC9XM3Ouw0=\""
-        },
-        {
-          "Name": "Last-Modified",
-          "Value": "Mon, 13 Oct 2025 05:39:33 GMT"
-        },
-        {
-          "Name": "Cache-Control",
-          "Value": "max-age=31536000, immutable"
-        }
-      ],
-      "EndpointProperties": [
-        {
-          "Name": "fingerprint",
-          "Value": "it5nul5ul2"
-        },
-        {
-          "Name": "label",
-          "Value": "files/projects/images/e3fa487f-0c3c-47b5-b165-41556dff3e95.webp"
-        },
-        {
-          "Name": "integrity",
-          "Value": "sha256-ymCLdcSXdaLkcOfJyE4Hs8QXO3y3XGiDSwC9XM3Ouw0="
-        }
-      ]
-    },
-    {
-      "Route": "files/projects/images/e3fa487f-0c3c-47b5-b165-41556dff3e95.webp",
-      "AssetFile": "C:\\Users\\gulco\\source\\repos\\Legno\\Presentation\\Legno.WebApi\\wwwroot\\files\\projects\\images\\e3fa487f-0c3c-47b5-b165-41556dff3e95.webp",
-      "Selectors": [],
-      "ResponseHeaders": [
-        {
-          "Name": "Accept-Ranges",
-          "Value": "bytes"
-        },
-        {
-          "Name": "Content-Length",
-          "Value": "47472"
-        },
-        {
-          "Name": "Content-Type",
-          "Value": "image/webp"
-        },
-        {
-          "Name": "ETag",
-          "Value": "\"ymCLdcSXdaLkcOfJyE4Hs8QXO3y3XGiDSwC9XM3Ouw0=\""
-        },
-        {
-          "Name": "Last-Modified",
-          "Value": "Mon, 13 Oct 2025 05:39:33 GMT"
-        },
-        {
-          "Name": "Cache-Control",
-          "Value": "max-age=3600, must-revalidate"
-        }
-      ],
-      "EndpointProperties": [
-        {
-          "Name": "integrity",
-          "Value": "sha256-ymCLdcSXdaLkcOfJyE4Hs8QXO3y3XGiDSwC9XM3Ouw0="
-        }
-      ]
-    },
-    {
-      "Route": "files/projects/sliders/48910144-9b73-4c9d-8a8d-818edd174f35.3zpz85oway.webp",
-      "AssetFile": "C:\\Users\\gulco\\source\\repos\\Legno\\Presentation\\Legno.WebApi\\wwwroot\\files\\projects\\sliders\\48910144-9b73-4c9d-8a8d-818edd174f35.webp",
-      "Selectors": [],
-      "ResponseHeaders": [
-        {
-          "Name": "Accept-Ranges",
-          "Value": "bytes"
-        },
-        {
-          "Name": "Content-Length",
-          "Value": "11618"
-        },
-        {
-          "Name": "Content-Type",
-          "Value": "image/webp"
-        },
-        {
-          "Name": "ETag",
-          "Value": "\"wdXwOYCHad25nNs76R/C2kkO41huJh8OmlxG2ErO3Gk=\""
-        },
-        {
-          "Name": "Last-Modified",
-          "Value": "Fri, 26 Dec 2025 07:53:30 GMT"
-        },
-        {
-          "Name": "Cache-Control",
-          "Value": "max-age=31536000, immutable"
-        }
-      ],
-      "EndpointProperties": [
-        {
-          "Name": "fingerprint",
-          "Value": "3zpz85oway"
-        },
-        {
-          "Name": "label",
-          "Value": "files/projects/sliders/48910144-9b73-4c9d-8a8d-818edd174f35.webp"
-        },
-        {
-          "Name": "integrity",
-          "Value": "sha256-wdXwOYCHad25nNs76R/C2kkO41huJh8OmlxG2ErO3Gk="
-        }
-      ]
-    },
-    {
-      "Route": "files/projects/sliders/48910144-9b73-4c9d-8a8d-818edd174f35.webp",
-      "AssetFile": "C:\\Users\\gulco\\source\\repos\\Legno\\Presentation\\Legno.WebApi\\wwwroot\\files\\projects\\sliders\\48910144-9b73-4c9d-8a8d-818edd174f35.webp",
-      "Selectors": [],
-      "ResponseHeaders": [
-        {
-          "Name": "Accept-Ranges",
-          "Value": "bytes"
-        },
-        {
-          "Name": "Content-Length",
-          "Value": "11618"
-        },
-        {
-          "Name": "Content-Type",
-          "Value": "image/webp"
-        },
-        {
-          "Name": "ETag",
-          "Value": "\"wdXwOYCHad25nNs76R/C2kkO41huJh8OmlxG2ErO3Gk=\""
-        },
-        {
-          "Name": "Last-Modified",
-          "Value": "Fri, 26 Dec 2025 07:53:30 GMT"
-        },
-        {
-          "Name": "Cache-Control",
-          "Value": "max-age=3600, must-revalidate"
-        }
-      ],
-      "EndpointProperties": [
-        {
-          "Name": "integrity",
-          "Value": "sha256-wdXwOYCHad25nNs76R/C2kkO41huJh8OmlxG2ErO3Gk="
-        }
-      ]
-    },
-    {
-      "Route": "files/projects/sliders/66f99c0d-b66e-402b-9193-9dc9c6a5821c.it5nul5ul2.webp",
-      "AssetFile": "C:\\Users\\gulco\\source\\repos\\Legno\\Presentation\\Legno.WebApi\\wwwroot\\files\\projects\\sliders\\66f99c0d-b66e-402b-9193-9dc9c6a5821c.webp",
-      "Selectors": [],
-      "ResponseHeaders": [
-        {
-          "Name": "Accept-Ranges",
-          "Value": "bytes"
-        },
-        {
-          "Name": "Content-Length",
-          "Value": "47472"
-        },
-        {
-          "Name": "Content-Type",
-          "Value": "image/webp"
-        },
-        {
-          "Name": "ETag",
-          "Value": "\"ymCLdcSXdaLkcOfJyE4Hs8QXO3y3XGiDSwC9XM3Ouw0=\""
-        },
-        {
-          "Name": "Last-Modified",
-          "Value": "Mon, 13 Oct 2025 05:39:34 GMT"
-        },
-        {
-          "Name": "Cache-Control",
-          "Value": "max-age=31536000, immutable"
-        }
-      ],
-      "EndpointProperties": [
-        {
-          "Name": "fingerprint",
-          "Value": "it5nul5ul2"
-        },
-        {
-          "Name": "label",
-          "Value": "files/projects/sliders/66f99c0d-b66e-402b-9193-9dc9c6a5821c.webp"
-        },
-        {
-          "Name": "integrity",
-          "Value": "sha256-ymCLdcSXdaLkcOfJyE4Hs8QXO3y3XGiDSwC9XM3Ouw0="
-        }
-      ]
-    },
-    {
-      "Route": "files/projects/sliders/66f99c0d-b66e-402b-9193-9dc9c6a5821c.webp",
-      "AssetFile": "C:\\Users\\gulco\\source\\repos\\Legno\\Presentation\\Legno.WebApi\\wwwroot\\files\\projects\\sliders\\66f99c0d-b66e-402b-9193-9dc9c6a5821c.webp",
-      "Selectors": [],
-      "ResponseHeaders": [
-        {
-          "Name": "Accept-Ranges",
-          "Value": "bytes"
-        },
-        {
-          "Name": "Content-Length",
-          "Value": "47472"
-        },
-        {
-          "Name": "Content-Type",
-          "Value": "image/webp"
-        },
-        {
-          "Name": "ETag",
-          "Value": "\"ymCLdcSXdaLkcOfJyE4Hs8QXO3y3XGiDSwC9XM3Ouw0=\""
-        },
-        {
-          "Name": "Last-Modified",
-          "Value": "Mon, 13 Oct 2025 05:39:34 GMT"
-        },
-        {
-          "Name": "Cache-Control",
-          "Value": "max-age=3600, must-revalidate"
-        }
-      ],
-      "EndpointProperties": [
-        {
-          "Name": "integrity",
-          "Value": "sha256-ymCLdcSXdaLkcOfJyE4Hs8QXO3y3XGiDSwC9XM3Ouw0="
-        }
-      ]
-    },
-    {
-      "Route": "files/projects/sliders/71a6e07b-d109-46c4-a429-696204623355.it5nul5ul2.webp",
-      "AssetFile": "C:\\Users\\gulco\\source\\repos\\Legno\\Presentation\\Legno.WebApi\\wwwroot\\files\\projects\\sliders\\71a6e07b-d109-46c4-a429-696204623355.webp",
-      "Selectors": [],
-      "ResponseHeaders": [
-        {
-          "Name": "Accept-Ranges",
-          "Value": "bytes"
-        },
-        {
-          "Name": "Content-Length",
-          "Value": "47472"
-        },
-        {
-          "Name": "Content-Type",
-          "Value": "image/webp"
-        },
-        {
-          "Name": "ETag",
-          "Value": "\"ymCLdcSXdaLkcOfJyE4Hs8QXO3y3XGiDSwC9XM3Ouw0=\""
-        },
-        {
-          "Name": "Last-Modified",
-          "Value": "Mon, 13 Oct 2025 07:27:44 GMT"
-        },
-        {
-          "Name": "Cache-Control",
-          "Value": "max-age=31536000, immutable"
-        }
-      ],
-      "EndpointProperties": [
-        {
-          "Name": "fingerprint",
-          "Value": "it5nul5ul2"
-        },
-        {
-          "Name": "label",
-          "Value": "files/projects/sliders/71a6e07b-d109-46c4-a429-696204623355.webp"
-        },
-        {
-          "Name": "integrity",
-          "Value": "sha256-ymCLdcSXdaLkcOfJyE4Hs8QXO3y3XGiDSwC9XM3Ouw0="
-        }
-      ]
-    },
-    {
-      "Route": "files/projects/sliders/71a6e07b-d109-46c4-a429-696204623355.webp",
-      "AssetFile": "C:\\Users\\gulco\\source\\repos\\Legno\\Presentation\\Legno.WebApi\\wwwroot\\files\\projects\\sliders\\71a6e07b-d109-46c4-a429-696204623355.webp",
-      "Selectors": [],
-      "ResponseHeaders": [
-        {
-          "Name": "Accept-Ranges",
-          "Value": "bytes"
-        },
-        {
-          "Name": "Content-Length",
-          "Value": "47472"
-        },
-        {
-          "Name": "Content-Type",
-          "Value": "image/webp"
-        },
-        {
-          "Name": "ETag",
-          "Value": "\"ymCLdcSXdaLkcOfJyE4Hs8QXO3y3XGiDSwC9XM3Ouw0=\""
-        },
-        {
-          "Name": "Last-Modified",
-          "Value": "Mon, 13 Oct 2025 07:27:44 GMT"
-        },
-        {
-          "Name": "Cache-Control",
-          "Value": "max-age=3600, must-revalidate"
-        }
-      ],
-      "EndpointProperties": [
-        {
-          "Name": "integrity",
-          "Value": "sha256-ymCLdcSXdaLkcOfJyE4Hs8QXO3y3XGiDSwC9XM3Ouw0="
-        }
-      ]
-    },
-    {
-      "Route": "files/purchase/files/c236dc22-0ec0-4ece-b4ac-6dc0a5555e05.errc4w10p7.pdf",
-      "AssetFile": "C:\\Users\\gulco\\source\\repos\\Legno\\Presentation\\Legno.WebApi\\wwwroot\\files\\purchase\\files\\c236dc22-0ec0-4ece-b4ac-6dc0a5555e05.pdf",
-      "Selectors": [],
-      "ResponseHeaders": [
-        {
-          "Name": "Accept-Ranges",
-          "Value": "bytes"
-        },
-        {
-          "Name": "Content-Length",
-          "Value": "109130"
-        },
-        {
-          "Name": "Content-Type",
-          "Value": "application/pdf"
-        },
-        {
-          "Name": "ETag",
-          "Value": "\"iis4pYonEf85EgicftPfhaCJcz7CjM6H6Stdc/0/Aq0=\""
-        },
-        {
-          "Name": "Last-Modified",
-          "Value": "Fri, 26 Dec 2025 11:57:24 GMT"
-        },
-        {
-          "Name": "Cache-Control",
-          "Value": "max-age=31536000, immutable"
-        }
-      ],
-      "EndpointProperties": [
-        {
-          "Name": "fingerprint",
-          "Value": "errc4w10p7"
-        },
-        {
-          "Name": "label",
-          "Value": "files/purchase/files/c236dc22-0ec0-4ece-b4ac-6dc0a5555e05.pdf"
-        },
-        {
-          "Name": "integrity",
-          "Value": "sha256-iis4pYonEf85EgicftPfhaCJcz7CjM6H6Stdc/0/Aq0="
-        }
-      ]
-    },
-    {
-      "Route": "files/purchase/files/c236dc22-0ec0-4ece-b4ac-6dc0a5555e05.pdf",
-      "AssetFile": "C:\\Users\\gulco\\source\\repos\\Legno\\Presentation\\Legno.WebApi\\wwwroot\\files\\purchase\\files\\c236dc22-0ec0-4ece-b4ac-6dc0a5555e05.pdf",
-      "Selectors": [],
-      "ResponseHeaders": [
-        {
-          "Name": "Accept-Ranges",
-          "Value": "bytes"
-        },
-        {
-          "Name": "Content-Length",
-          "Value": "109130"
-        },
-        {
-          "Name": "Content-Type",
-          "Value": "application/pdf"
-        },
-        {
-          "Name": "ETag",
-          "Value": "\"iis4pYonEf85EgicftPfhaCJcz7CjM6H6Stdc/0/Aq0=\""
-        },
-        {
-          "Name": "Last-Modified",
-          "Value": "Fri, 26 Dec 2025 11:57:24 GMT"
-        },
-        {
-          "Name": "Cache-Control",
-          "Value": "no-cache"
-        }
-      ],
-      "EndpointProperties": [
-        {
-          "Name": "integrity",
-          "Value": "sha256-iis4pYonEf85EgicftPfhaCJcz7CjM6H6Stdc/0/Aq0="
-        }
-      ]
-    },
-    {
-      "Route": "files/team_card_images/8cf3fed4-0306-441b-bca5-a657373c7419.ex36a9kyw3.webp",
-      "AssetFile": "C:\\Users\\gulco\\source\\repos\\Legno\\Presentation\\Legno.WebApi\\wwwroot\\files\\team_card_images\\8cf3fed4-0306-441b-bca5-a657373c7419.webp",
-      "Selectors": [],
-      "ResponseHeaders": [
-        {
-          "Name": "Accept-Ranges",
-          "Value": "bytes"
-        },
-        {
-          "Name": "Content-Length",
-          "Value": "79888"
-        },
-        {
-          "Name": "Content-Type",
-          "Value": "image/webp"
-        },
-        {
-          "Name": "ETag",
-          "Value": "\"nthN2pV7gMu2C9TRYIYr/pAK6CRZDxijReB6TVkSou8=\""
-        },
-        {
-          "Name": "Last-Modified",
-          "Value": "Mon, 18 Aug 2025 10:16:10 GMT"
-        },
-        {
-          "Name": "Cache-Control",
-          "Value": "max-age=31536000, immutable"
-        }
-      ],
-      "EndpointProperties": [
-        {
-          "Name": "fingerprint",
-          "Value": "ex36a9kyw3"
-        },
-        {
-          "Name": "label",
-          "Value": "files/team_card_images/8cf3fed4-0306-441b-bca5-a657373c7419.webp"
-        },
-        {
-          "Name": "integrity",
-          "Value": "sha256-nthN2pV7gMu2C9TRYIYr/pAK6CRZDxijReB6TVkSou8="
-        }
-      ]
-    },
-    {
-      "Route": "files/team_card_images/8cf3fed4-0306-441b-bca5-a657373c7419.webp",
-      "AssetFile": "C:\\Users\\gulco\\source\\repos\\Legno\\Presentation\\Legno.WebApi\\wwwroot\\files\\team_card_images\\8cf3fed4-0306-441b-bca5-a657373c7419.webp",
-      "Selectors": [],
-      "ResponseHeaders": [
-        {
-          "Name": "Accept-Ranges",
-          "Value": "bytes"
-        },
-        {
-          "Name": "Content-Length",
-          "Value": "79888"
-        },
-        {
-          "Name": "Content-Type",
-          "Value": "image/webp"
-        },
-        {
-          "Name": "ETag",
-          "Value": "\"nthN2pV7gMu2C9TRYIYr/pAK6CRZDxijReB6TVkSou8=\""
-        },
-        {
-          "Name": "Last-Modified",
-          "Value": "Mon, 18 Aug 2025 10:16:10 GMT"
-        },
-        {
-          "Name": "Cache-Control",
-          "Value": "max-age=3600, must-revalidate"
-        }
-      ],
-      "EndpointProperties": [
-        {
-          "Name": "integrity",
-          "Value": "sha256-nthN2pV7gMu2C9TRYIYr/pAK6CRZDxijReB6TVkSou8="
-        }
-      ]
-    },
-    {
-      "Route": "files/team_card_images/bfe16dec-a241-4a20-bc99-b86d495b570e.ex36a9kyw3.webp",
-      "AssetFile": "C:\\Users\\gulco\\source\\repos\\Legno\\Presentation\\Legno.WebApi\\wwwroot\\files\\team_card_images\\bfe16dec-a241-4a20-bc99-b86d495b570e.webp",
-      "Selectors": [],
-      "ResponseHeaders": [
-        {
-          "Name": "Accept-Ranges",
-          "Value": "bytes"
-        },
-        {
-          "Name": "Content-Length",
-          "Value": "79888"
-        },
-        {
-          "Name": "Content-Type",
-          "Value": "image/webp"
-        },
-        {
-          "Name": "ETag",
-          "Value": "\"nthN2pV7gMu2C9TRYIYr/pAK6CRZDxijReB6TVkSou8=\""
-        },
-        {
-          "Name": "Last-Modified",
-          "Value": "Mon, 18 Aug 2025 10:16:17 GMT"
-        },
-        {
-          "Name": "Cache-Control",
-          "Value": "max-age=31536000, immutable"
-        }
-      ],
-      "EndpointProperties": [
-        {
-          "Name": "fingerprint",
-          "Value": "ex36a9kyw3"
-        },
-        {
-          "Name": "label",
-          "Value": "files/team_card_images/bfe16dec-a241-4a20-bc99-b86d495b570e.webp"
-        },
-        {
-          "Name": "integrity",
-          "Value": "sha256-nthN2pV7gMu2C9TRYIYr/pAK6CRZDxijReB6TVkSou8="
-        }
-      ]
-    },
-    {
-      "Route": "files/team_card_images/bfe16dec-a241-4a20-bc99-b86d495b570e.webp",
-      "AssetFile": "C:\\Users\\gulco\\source\\repos\\Legno\\Presentation\\Legno.WebApi\\wwwroot\\files\\team_card_images\\bfe16dec-a241-4a20-bc99-b86d495b570e.webp",
-      "Selectors": [],
-      "ResponseHeaders": [
-        {
-          "Name": "Accept-Ranges",
-          "Value": "bytes"
-        },
-        {
-          "Name": "Content-Length",
-          "Value": "79888"
-        },
-        {
-          "Name": "Content-Type",
-          "Value": "image/webp"
-        },
-        {
-          "Name": "ETag",
-          "Value": "\"nthN2pV7gMu2C9TRYIYr/pAK6CRZDxijReB6TVkSou8=\""
-        },
-        {
-          "Name": "Last-Modified",
-          "Value": "Mon, 18 Aug 2025 10:16:17 GMT"
-        },
-        {
-          "Name": "Cache-Control",
-          "Value": "max-age=3600, must-revalidate"
-        }
-      ],
-      "EndpointProperties": [
-        {
-          "Name": "integrity",
-          "Value": "sha256-nthN2pV7gMu2C9TRYIYr/pAK6CRZDxijReB6TVkSou8="
-        }
-      ]
-    },
-    {
-      "Route": "files/user_projects/58fe1844-7d53-4168-b9c0-d80742359a58.webp",
-      "AssetFile": "C:\\Users\\gulco\\source\\repos\\Legno\\Presentation\\Legno.WebApi\\wwwroot\\files\\user_projects\\58fe1844-7d53-4168-b9c0-d80742359a58.webp",
-      "Selectors": [],
-      "ResponseHeaders": [
-        {
-          "Name": "Accept-Ranges",
-          "Value": "bytes"
-        },
-        {
-          "Name": "Content-Length",
-          "Value": "142736"
-        },
-        {
-          "Name": "Content-Type",
-          "Value": "image/webp"
-        },
-        {
-          "Name": "ETag",
-          "Value": "\"WtxkCvQlexvQLbe0nQk4jDh/m3l61TDlrHsoeOtxfG0=\""
-        },
-        {
-          "Name": "Last-Modified",
-          "Value": "Mon, 18 Aug 2025 11:48:51 GMT"
-        },
-        {
-          "Name": "Cache-Control",
-          "Value": "max-age=3600, must-revalidate"
-        }
-      ],
-      "EndpointProperties": [
-        {
-          "Name": "integrity",
-          "Value": "sha256-WtxkCvQlexvQLbe0nQk4jDh/m3l61TDlrHsoeOtxfG0="
-        }
-      ]
-    },
-    {
-      "Route": "files/user_projects/58fe1844-7d53-4168-b9c0-d80742359a58.yl9k6odnc3.webp",
-      "AssetFile": "C:\\Users\\gulco\\source\\repos\\Legno\\Presentation\\Legno.WebApi\\wwwroot\\files\\user_projects\\58fe1844-7d53-4168-b9c0-d80742359a58.webp",
-      "Selectors": [],
-      "ResponseHeaders": [
-        {
-          "Name": "Accept-Ranges",
-          "Value": "bytes"
-        },
-        {
-          "Name": "Content-Length",
-          "Value": "142736"
-        },
-        {
-          "Name": "Content-Type",
-          "Value": "image/webp"
-        },
-        {
-          "Name": "ETag",
-          "Value": "\"WtxkCvQlexvQLbe0nQk4jDh/m3l61TDlrHsoeOtxfG0=\""
-        },
-        {
-          "Name": "Last-Modified",
-          "Value": "Mon, 18 Aug 2025 11:48:51 GMT"
-        },
-        {
-          "Name": "Cache-Control",
-          "Value": "max-age=31536000, immutable"
-        }
-      ],
-      "EndpointProperties": [
-        {
-          "Name": "fingerprint",
-          "Value": "yl9k6odnc3"
-        },
-        {
-          "Name": "label",
-          "Value": "files/user_projects/58fe1844-7d53-4168-b9c0-d80742359a58.webp"
-        },
-        {
-          "Name": "integrity",
-          "Value": "sha256-WtxkCvQlexvQLbe0nQk4jDh/m3l61TDlrHsoeOtxfG0="
-        }
-      ]
+      "OriginalItemSpec": "wwwroot/files/team_card_images/8cf3fed4-0306-441b-bca5-a657373c7419.webp"
+    },
+    {
+      "Identity": "/Users/gulchohrasultanova/Desktop/Legno/Presentation/Legno.WebApi/wwwroot/files/team_card_images/bfe16dec-a241-4a20-bc99-b86d495b570e.webp",
+      "SourceId": "Legno.WebApi",
+      "SourceType": "Discovered",
+      "ContentRoot": "/Users/gulchohrasultanova/Desktop/Legno/Presentation/Legno.WebApi/wwwroot/",
+      "BasePath": "_content/Legno.WebApi",
+      "RelativePath": "files/team_card_images/bfe16dec-a241-4a20-bc99-b86d495b570e.webp",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "PreferTarget",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot/files/team_card_images/bfe16dec-a241-4a20-bc99-b86d495b570e.webp"
+    },
+    {
+      "Identity": "/Users/gulchohrasultanova/Desktop/Legno/Presentation/Legno.WebApi/wwwroot/files/user_projects/58fe1844-7d53-4168-b9c0-d80742359a58.webp",
+      "SourceId": "Legno.WebApi",
+      "SourceType": "Discovered",
+      "ContentRoot": "/Users/gulchohrasultanova/Desktop/Legno/Presentation/Legno.WebApi/wwwroot/",
+      "BasePath": "_content/Legno.WebApi",
+      "RelativePath": "files/user_projects/58fe1844-7d53-4168-b9c0-d80742359a58.webp",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "PreferTarget",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot/files/user_projects/58fe1844-7d53-4168-b9c0-d80742359a58.webp"
     }
   ]
 }
