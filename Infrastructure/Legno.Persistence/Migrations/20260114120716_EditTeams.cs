@@ -37,7 +37,7 @@ namespace Legno.Persistence.Migrations
                 oldType: "nvarchar(150)",
                 oldMaxLength: 150);
         }
-
+//salam
         /// <inheritdoc />
         protected override void Down(MigrationBuilder migrationBuilder)
         {
