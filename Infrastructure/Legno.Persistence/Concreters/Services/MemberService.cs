@@ -104,6 +104,7 @@ namespace Legno.Persistence.Concreters.Services
             if (dto.JobTitle != null) entity.JobTitle = dto.JobTitle;
             if (dto.JobTitleEng != null) entity.JobTitleEng = dto.JobTitleEng;
             if (dto.JobTitleRu != null) entity.JobTitleRu = dto.JobTitleRu;
+            if (dto.InstagramLink != null) entity.InstagramLink = dto.InstagramLink;
 
             entity.LastUpdatedDate = DateTime.UtcNow;
 

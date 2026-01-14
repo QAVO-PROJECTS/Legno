@@ -17,5 +17,6 @@ namespace Legno.Application.Dtos.Member
         public string? JobTitleEng { get; set; }
         public string? JobTitleRu { get; set; }
         public int DisplayOrderId { get; set; }
+        public string? InstagramLink { get; set; }
     }
 }

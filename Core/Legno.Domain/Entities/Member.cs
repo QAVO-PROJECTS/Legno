@@ -16,6 +16,7 @@ namespace Legno.Domain.Entities
         public string? JobTitle { get; set; }
         public string? JobTitleEng { get; set; }
         public string? JobTitleRu { get; set; }
+        public string? InstagramLink { get; set; }
         public int DisplayOrderId { get; set; } = 1;
     }
 }
