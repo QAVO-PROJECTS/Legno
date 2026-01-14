@@ -55,7 +55,7 @@ namespace Legno.Persistence.Concreters.Services
 
             return _mapper.Map<MemberDto>(entity);
         }
-
+//salam
         public async Task<MemberDto?> GetMemberAsync(string id)
         {
             if (!Guid.TryParse(id, out var guid))
