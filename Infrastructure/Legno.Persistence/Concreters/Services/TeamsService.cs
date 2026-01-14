@@ -74,7 +74,7 @@ namespace Legno.Persistence.Concreters.Services
 
             return _mapper.Map<List<TeamDto>>(list);
         }
-//salams
+
         public async Task<TeamDto> UpdateTeamAsync(UpdateTeamDto dto)
         {
             if (string.IsNullOrWhiteSpace(dto.Id))
