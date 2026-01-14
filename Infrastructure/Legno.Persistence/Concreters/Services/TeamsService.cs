@@ -134,7 +134,7 @@ namespace Legno.Persistence.Concreters.Services
                     throw new GlobalAppException($"Yanlış ID: {o.TeamId}");
                 idMap[gid] = o.DisplayOrderId;
             }
-
+//salam
             var teams = await _read.GetAllAsync(t => idMap.Keys.Contains(t.Id) && !t.IsDeleted, EnableTraking: true);
             foreach (var t in teams)
             {
