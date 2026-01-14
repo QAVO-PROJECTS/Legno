@@ -105,6 +105,27 @@ namespace Legno.WebApi.Controllers
             }
         }
 
+        
+        [Authorize(Roles = "Admin")]
+
+        // ✅ Toplu reorder: TeamId + DisplayOrderId siyahısı ilə sıralama dəyiş
+        [HttpPut("reorder-teams")]
+        public async Task<IActionResult> ReorderTeams([FromBody] List<MemberOrderUpdateDto> orders)
+        {
+            try
+            {
+                await _service.ReorderMembersAsync(orders);
+                return Ok(new { StatusCode = 200, Message = "Sıralama yeniləndi." });
+            }
+            catch (GlobalAppException ex)
+            {
+                return BadRequest(new { StatusCode = 400, Error = ex.Message });
+            }
+            catch (Exception ex)
+            {
+                return StatusCode(500, new { StatusCode = 500, Error = $"Xəta baş verdi: {ex.Message}" });
+            }
+        }
 
         // ================= DELETE =================
         [Authorize(Roles = "Admin")]

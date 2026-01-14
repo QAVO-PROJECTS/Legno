@@ -14,5 +14,8 @@ namespace Legno.Application.Dtos.Member
         public string? Title { get; set; }
         public string? TitleEng { get; set; }
         public string? TitleRu { get; set; }
+        public string? JobTitle { get; set; }
+        public string? JobTitleEng { get; set; }
+        public string? JobTitleRu { get; set; }
     }
 }

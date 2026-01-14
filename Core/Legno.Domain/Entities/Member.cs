@@ -13,5 +13,9 @@ namespace Legno.Domain.Entities
         public string Title { get; set; }
         public string? TitleEng {  get; set; }
         public string? TitleRu { get; set; }
+        public string? JobTitle { get; set; }
+        public string? JobTitleEng { get; set; }
+        public string? JobTitleRu { get; set; }
+        public int DisplayOrderId { get; set; } = 1;
     }
 }

@@ -14,5 +14,6 @@ namespace Legno.Application.Abstracts.Services
         Task<List<MemberDto>> GetAllMembersAsync();
         Task<MemberDto> UpdateMemberAsync(UpdateMemberDto dto);
         Task DeleteMemberAsync(string id);
+        Task ReorderMembersAsync(List<MemberOrderUpdateDto> orders);
     }
 }
