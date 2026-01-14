@@ -31,14 +31,24 @@ namespace Legno.Persistence.Concreters.Services
 
         public async Task<MemberDto> AddMemberAsync(CreateMemberDto dto)
         {
+            if (dto == null)
+                throw new GlobalAppException("Məlumat göndərilməyib.");
+
             if (dto.Image == null)
                 throw new GlobalAppException("Şəkil daxil edilməlidir!");
 
-            var entity = _mapper.Map<Member>(dto);
+            // sonuncu order-i tapırıq
+            var all = await _read.GetAllAsync(m => !m.IsDeleted);
+            var maxOrder = all.Any() ? all.Max(m => m.DisplayOrderId) : 0;
 
-            entity.Image = await _file.UploadFile(dto.Image, "members");
+            var entity = _mapper.Map<Member>(dto);
+            entity.Id = Guid.NewGuid();
+            entity.DisplayOrderId = maxOrder + 1;
             entity.CreatedDate = DateTime.UtcNow;
             entity.LastUpdatedDate = DateTime.UtcNow;
+            entity.IsDeleted = false;
+
+            entity.Image = await _file.UploadFile(dto.Image, "members");
 
             await _write.AddAsync(entity);
             await _write.CommitAsync();
