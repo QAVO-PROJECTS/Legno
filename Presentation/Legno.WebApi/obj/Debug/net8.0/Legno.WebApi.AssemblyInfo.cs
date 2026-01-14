@@ -13,7 +13,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("Legno.WebApi")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+80e10df81dd2381269f7d4487203bf5490a9720a")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+40a1df8f197f977c732b87a3a54410968e7c4839")]
 [assembly: System.Reflection.AssemblyProductAttribute("Legno.WebApi")]
 [assembly: System.Reflection.AssemblyTitleAttribute("Legno.WebApi")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

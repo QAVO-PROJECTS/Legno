@@ -23,9 +23,7 @@ namespace Legno.Persistence.Configurations
             builder.Property(x => x.SurnameEng).IsRequired().HasMaxLength(100);
             builder.Property(x => x.SurnameRu).IsRequired().HasMaxLength(100);
 
-            builder.Property(x => x.Position).IsRequired().HasMaxLength(150);
-            builder.Property(x => x.PositionEng).IsRequired().HasMaxLength(150);
-            builder.Property(x => x.PositionRu).IsRequired().HasMaxLength(150);
+         
 
             builder.Property(x => x.CardImage).IsRequired().HasMaxLength(300);
             builder.Property(x => x.InstagramLink).HasMaxLength(300);
