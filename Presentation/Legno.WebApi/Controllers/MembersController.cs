@@ -2,6 +2,7 @@
 using Legno.Application.Dtos.Member;
 using Legno.Application.GlobalExceptionn;
 using Microsoft.AspNetCore.Authorization;
+using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
 
 namespace Legno.WebApi.Controllers
@@ -25,7 +26,7 @@ namespace Legno.WebApi.Controllers
             try
             {
                 var created = await _service.AddMemberAsync(dto);
-                return Ok(new { StatusCode = 201, Data = created });
+                return StatusCode(StatusCodes.Status201Created, new { StatusCode = 201, Data = created });
             }
             catch (GlobalAppException ex)
             {
@@ -33,10 +34,9 @@ namespace Legno.WebApi.Controllers
             }
             catch (Exception ex)
             {
-                return StatusCode(500, new { Error = ex.Message });
+                return StatusCode(500, new { StatusCode = 500, Error = $"Xəta baş verdi: {ex.Message}" });
             }
         }
-
 
         // ================= GET ONE =================
         [HttpGet("get/{id}")]
@@ -57,10 +57,9 @@ namespace Legno.WebApi.Controllers
             }
             catch (Exception ex)
             {
-                return StatusCode(500, new { Error = ex.Message });
+                return StatusCode(500, new { StatusCode = 500, Error = $"Xəta baş verdi: {ex.Message}" });
             }
         }
-
 
         // ================= GET ALL =================
         [HttpGet("get-all")]
@@ -77,10 +76,9 @@ namespace Legno.WebApi.Controllers
             }
             catch (Exception ex)
             {
-                return StatusCode(500, new { Error = ex.Message });
+                return StatusCode(500, new { StatusCode = 500, Error = $"Xəta baş verdi: {ex.Message}" });
             }
         }
-
 
         // ================= UPDATE =================
         [Authorize(Roles = "Admin")]
@@ -89,6 +87,10 @@ namespace Legno.WebApi.Controllers
         {
             try
             {
+                // ✅ Swagger form-data boş dəyərləri bəzən göndərmir
+                // ✅ Göndəribsə, amma boşdursa => "" eləyirik
+                ApplyEmptyStrings(dto);
+
                 var updated = await _service.UpdateMemberAsync(dto);
                 return Ok(new { StatusCode = 200, Data = updated });
             }
@@ -101,16 +103,14 @@ namespace Legno.WebApi.Controllers
             }
             catch (Exception ex)
             {
-                return StatusCode(500, new { Error = ex.Message });
+                return StatusCode(500, new { StatusCode = 500, Error = $"Xəta baş verdi: {ex.Message}" });
             }
         }
 
-        
+        // ================= REORDER =================
         [Authorize(Roles = "Admin")]
-
-        // ✅ Toplu reorder: TeamId + DisplayOrderId siyahısı ilə sıralama dəyiş
-        [HttpPut("reorder-teams")]
-        public async Task<IActionResult> ReorderTeams([FromBody] List<MemberOrderUpdateDto> orders)
+        [HttpPut("reorder")]
+        public async Task<IActionResult> Reorder([FromBody] List<MemberOrderUpdateDto> orders)
         {
             try
             {
@@ -146,8 +146,43 @@ namespace Legno.WebApi.Controllers
             }
             catch (Exception ex)
             {
-                return StatusCode(500, new { Error = ex.Message });
+                return StatusCode(500, new { StatusCode = 500, Error = $"Xəta baş verdi: {ex.Message}" });
             }
+        }
+
+        // ================= HELPERS =================
+
+        private void ApplyEmptyStrings(UpdateMemberDto dto)
+        {
+            var form = Request.Form;
+
+            // ⚠️ Burada key adları UpdateMemberDto-nun property adları ilə
+            // tam eyni olmalıdır (Swagger/Postman belə göndərir)
+
+      
+            dto.TitleEng = FixEmpty(form, "TitleEng", dto.TitleEng);
+            dto.TitleRu = FixEmpty(form, "TitleRu", dto.TitleRu);
+
+            dto.JobTitle = FixEmpty(form, "JobTitle", dto.JobTitle);
+            dto.JobTitleEng = FixEmpty(form, "JobTitleEng", dto.JobTitleEng);
+            dto.JobTitleRu = FixEmpty(form, "JobTitleRu", dto.JobTitleRu);
+
+            dto.InstagramLink = FixEmpty(form, "InstagramLink", dto.InstagramLink);
+        }
+
+        private string? FixEmpty(IFormCollection form, string key, string? currentValue)
+        {
+            // field ümumiyyətlə gəlməyibsə => null qalsın => əvvəlki dəyər DB-də qalacaq
+            if (!form.ContainsKey(key))
+                return currentValue;
+
+            var value = form[key].ToString();
+
+            // field gəlibsə amma boşdursa / boşluqdursa => DB-də empty string olsun
+            if (string.IsNullOrWhiteSpace(value))
+                return "";
+
+            return value;
         }
     }
 }

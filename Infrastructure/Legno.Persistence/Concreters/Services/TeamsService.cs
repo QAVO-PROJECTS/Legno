@@ -74,6 +74,35 @@ namespace Legno.Persistence.Concreters.Services
 
             return _mapper.Map<List<TeamDto>>(list);
         }
+        private static void NormalizeUpdateTeamDto(UpdateTeamDto dto)
+        {
+            dto.Name = Normalize(dto.Name);
+            dto.NameRu = Normalize(dto.NameRu);
+            dto.NameEng = Normalize(dto.NameEng);
+
+            dto.Surname = Normalize(dto.Surname);
+            dto.SurnameRu = Normalize(dto.SurnameRu);
+            dto.SurnameEng = Normalize(dto.SurnameEng);
+
+            dto.Position = Normalize(dto.Position);
+            dto.PositionRu = Normalize(dto.PositionRu);
+            dto.PositionEng = Normalize(dto.PositionEng);
+
+            dto.InstagramLink = Normalize(dto.InstagramLink);
+            dto.LinkedInLink = Normalize(dto.LinkedInLink);
+        }
+
+        private static string? Normalize(string? value)
+        {
+            // null gəlirsə -> toxunma
+            if (value == null) return null;
+
+            // boşluqdursa və ya boşdursa -> empty string et
+            if (string.IsNullOrWhiteSpace(value)) return "";
+
+            return value;
+        }
+
 
         public async Task<TeamDto> UpdateTeamAsync(UpdateTeamDto dto)
         {
@@ -81,7 +110,11 @@ namespace Legno.Persistence.Concreters.Services
                 throw new GlobalAppException("Id tələb olunur.");
 
             var entity = await _read.GetByIdAsync(dto.Id, EnableTraking: true)
-                ?? throw new GlobalAppException("Komanda tapılmadı.");
+                         ?? throw new GlobalAppException("Komanda tapılmadı.");
+
+            // ✅ null qalır -> ignore
+            // ✅ "" və ya "   " -> ""
+            NormalizeUpdateTeamDto(dto);
 
             _mapper.Map(dto, entity);
 
@@ -99,6 +132,8 @@ namespace Legno.Persistence.Concreters.Services
 
             return _mapper.Map<TeamDto>(entity);
         }
+
+
 
         public async Task DeleteTeamAsync(string id)
         {

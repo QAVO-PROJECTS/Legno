@@ -74,14 +74,51 @@ namespace Legno.Api.Controllers
                 return StatusCode(500, new { StatusCode = 500, Error = $"Xəta baş verdi: {ex.Message}" });
             }
         }
+        private void ApplyEmptyStrings(UpdateTeamDto dto)
+        {
+            var form = Request.Form;
+
+        
+            dto.NameRu = FixEmpty(form, "NameRu", dto.NameRu);
+            dto.NameEng = FixEmpty(form, "NameEng", dto.NameEng);
+
+           
+            dto.SurnameRu = FixEmpty(form, "SurnameRu", dto.SurnameRu);
+            dto.SurnameEng = FixEmpty(form, "SurnameEng", dto.SurnameEng);
+
+            dto.Position = FixEmpty(form, "Position", dto.Position);
+            dto.PositionRu = FixEmpty(form, "PositionRu", dto.PositionRu);
+            dto.PositionEng = FixEmpty(form, "PositionEng", dto.PositionEng);
+
+            dto.InstagramLink = FixEmpty(form, "InstagramLink", dto.InstagramLink);
+            dto.LinkedInLink = FixEmpty(form, "LinkedInLink", dto.LinkedInLink);
+        }
+
+        private string? FixEmpty(IFormCollection form, string key, string? currentValue)
+        {
+            // ✅ field request-də ümumiyyətlə yoxdursa => ignore (null qalsın)
+            if (!form.ContainsKey(key))
+                return currentValue;
+
+            // ✅ field gəlibsə:
+            var value = form[key].ToString();
+
+            // input boşdursa və ya boşluqlardan ibarətdirsə => sıfırla
+            if (string.IsNullOrWhiteSpace(value))
+                return "";
+
+            return value;
+        }
 
         [Authorize(Roles = "Admin")]
-        // ✅ Team üzvünü yenilə (UpdateTeamDto daxilində Id olmalıdır)
         [HttpPut("update-team")]
         public async Task<IActionResult> UpdateTeam([FromForm] UpdateTeamDto dto)
         {
             try
             {
+                // ✅ Swagger / FormData boş field problemlərini həll edirik
+                ApplyEmptyStrings(dto);
+
                 var updated = await _teamService.UpdateTeamAsync(dto);
                 return Ok(new { StatusCode = 200, Data = updated });
             }
@@ -94,6 +131,7 @@ namespace Legno.Api.Controllers
                 return StatusCode(500, new { StatusCode = 500, Error = $"Xəta baş verdi: {ex.Message}" });
             }
         }
+
         [Authorize(Roles = "Admin")]
         // ✅ Team üzvünü sil (soft delete)
         [HttpDelete("delete-team/{teamId}")]
