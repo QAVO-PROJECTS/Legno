@@ -100,7 +100,7 @@ namespace Legno.Persistence
             services.AddScoped<ISettingService,SettingService>();
             services.AddScoped<IContactBranchService, ContactBranchService>();
 
-
+//salam
 
             // Contacts
             services.AddScoped<IContactReadRepository, ContactReadRepository>();
