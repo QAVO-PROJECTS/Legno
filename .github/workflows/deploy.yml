@@ -16,7 +16,7 @@ jobs:
       - name: Setup .NET
         uses: actions/setup-dotnet@v4
         with:
-          dotnet-version: '8.0.x'
+          dotnet-version: "8.0.x"
 
       - name: Restore dependencies
         run: dotnet restore
@@ -27,37 +27,27 @@ jobs:
       - name: Publish
         run: dotnet publish Presentation/Legno.WebApi/Legno.WebApi.csproj -c Release -o ./publish
 
-      # ✅ Maintenance ON (IIS unlock)
+      # ✅ IIS unlock üçün maintenance (app_offline)
       - name: Create app_offline.htm
         run: |
           echo "<html><body><h2>Maintenance</h2><p>Deploy edilir...</p></body></html>" > ./publish/app_offline.htm
 
-      - name: Deploy to Plesk via FTP (Maintenance ON)
+      # ✅ Serverdə wwwroot xaric hamısını sil + publish upload et
+      - name: Clean & Deploy to Plesk via FTP (keep wwwroot)
         uses: SamKirkland/FTP-Deploy-Action@v4.3.5
         with:
           server: ${{ secrets.FTP_SERVER }}
           username: ${{ secrets.FTP_USERNAME }}
           password: ${{ secrets.FTP_PASSWORD }}
-          server-dir: ${{ secrets.FTP_DIR }}/
+
+          # ✅ sən dedin: httpdocs/
+          server-dir: /httpdocs/
           local-dir: ./publish/
           protocol: ftp
-          dangerous-clean-slate: false
-          exclude: |
-            **/wwwroot/**
 
-      # ✅ Maintenance OFF
-      - name: Remove app_offline.htm locally
-        run: rm -f ./publish/app_offline.htm
+          # 🔥 bütün faylları siləcək
+          dangerous-clean-slate: true
 
-      - name: Deploy to Plesk via FTP (Maintenance OFF)
-        uses: SamKirkland/FTP-Deploy-Action@v4.3.5
-        with:
-          server: ${{ secrets.FTP_SERVER }}
-          username: ${{ secrets.FTP_USERNAME }}
-          password: ${{ secrets.FTP_PASSWORD }}
-          server-dir: ${{ secrets.FTP_DIR }}/
-          local-dir: ./publish/
-          protocol: ftp
-          dangerous-clean-slate: false
+          # ✅ wwwroot toxunulmaz qalacaq və publishdən də upload edilməyəcək
           exclude: |
             **/wwwroot/**
