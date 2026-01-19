@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "iO62xlJHpoQJFW1iobJxueDFA8djSXwCMA5gxM+JL/g=",
+  "Hash": "xLOqFcNJ2st/PS7VaayEG6uoZycBkbqem6DBftOjLUE=",
   "Source": "Legno.WebApi",
   "BasePath": "_content/Legno.WebApi",
   "Mode": "Default",
@@ -568,6 +568,25 @@
       "OriginalItemSpec": "wwwroot/files/directors/09b6dc8c-64ea-4b63-bba1-85d103c8e771.webp"
     },
     {
+      "Identity": "/Users/gulchohrasultanova/Desktop/Legno/Presentation/Legno.WebApi/wwwroot/files/members/cceab0a3-a903-43b4-a062-9fcc1cdf7933.webp",
+      "SourceId": "Legno.WebApi",
+      "SourceType": "Discovered",
+      "ContentRoot": "/Users/gulchohrasultanova/Desktop/Legno/Presentation/Legno.WebApi/wwwroot/",
+      "BasePath": "_content/Legno.WebApi",
+      "RelativePath": "files/members/cceab0a3-a903-43b4-a062-9fcc1cdf7933.webp",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "PreferTarget",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot/files/members/cceab0a3-a903-43b4-a062-9fcc1cdf7933.webp"
+    },
+    {
       "Identity": "/Users/gulchohrasultanova/Desktop/Legno/Presentation/Legno.WebApi/wwwroot/files/members/fdd1e38e-7cf6-4bac-a524-129ad1638985.webp",
       "SourceId": "Legno.WebApi",
       "SourceType": "Discovered",
@@ -927,6 +946,25 @@
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot/files/purchase/files/c236dc22-0ec0-4ece-b4ac-6dc0a5555e05.pdf"
+    },
+    {
+      "Identity": "/Users/gulchohrasultanova/Desktop/Legno/Presentation/Legno.WebApi/wwwroot/files/settings/6e795215-aac2-4ef3-ad34-c0e7f59d9631.webp",
+      "SourceId": "Legno.WebApi",
+      "SourceType": "Discovered",
+      "ContentRoot": "/Users/gulchohrasultanova/Desktop/Legno/Presentation/Legno.WebApi/wwwroot/",
+      "BasePath": "_content/Legno.WebApi",
+      "RelativePath": "files/settings/6e795215-aac2-4ef3-ad34-c0e7f59d9631.webp",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "PreferTarget",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot/files/settings/6e795215-aac2-4ef3-ad34-c0e7f59d9631.webp"
     },
     {
       "Identity": "/Users/gulchohrasultanova/Desktop/Legno/Presentation/Legno.WebApi/wwwroot/files/team_card_images/8cf3fed4-0306-441b-bca5-a657373c7419.webp",

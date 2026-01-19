@@ -9,6 +9,7 @@ namespace Legno.Application.Dtos.Project
     public class ProjectReorderDto
     {
         public string Id { get; set; }
+        
         public int DisplayOrderId { get; set; }
     }
 }

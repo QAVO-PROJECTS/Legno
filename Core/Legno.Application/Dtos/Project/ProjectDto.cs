@@ -24,6 +24,7 @@ namespace Legno.Application.Dtos.Project
         public int DisplayOrderId { get; set; }
         public TeamDto Team { get; set; }
         public string? CategoryName { get; set; }
+        public string? EmployeeImage { get; set; }
         public List<string>? ProjectImageNames { get; set; }
         public List<string>? ProjectSliderImages { get; set; }
         public List<string>? ProjectVideoNames { get; set; }

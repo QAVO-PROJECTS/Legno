@@ -19,6 +19,7 @@ namespace Legno.Application.Dtos.Project
         public IFormFile CardImage { get; set; }
         public string? TeamId { get; set; }
         public string? CategoryName { get; set; }
+        public IFormFile? EmployeeImage { get; set; }
         public List<IFormFile>? ProjectImages { get; set; }
         public List<IFormFile>? ProjectSliderImages { get; set; }
         public List<string>? ProjectVideos { get; set; }

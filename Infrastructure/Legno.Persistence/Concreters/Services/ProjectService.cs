@@ -82,6 +82,8 @@ namespace Legno.Persistence.Concreters.Services
             // Card image
             if (dto.CardImage != null)
                 entity.CardImage = await _fileService.UploadFile(dto.CardImage, "projects/cards");
+            if (dto.EmployeeImage != null)
+                entity.EmployeeImage = await _fileService.UploadFile(dto.EmployeeImage, "projects/employees");
 
             await _projectWrite.AddAsync(entity);
             if (dto.FabricIds?.Any() == true)
@@ -321,6 +323,14 @@ namespace Legno.Persistence.Concreters.Services
                     await _fileService.DeleteFile("projects/cards", entity.CardImage);
 
                 entity.CardImage = await _fileService.UploadFile(dto.CardImage, "projects/cards");
+            }
+
+            if (dto.EmployeeImage != null)
+            {
+
+                await _fileService.DeleteFile("projects/employees", entity.EmployeeImage);
+
+                entity.EmployeeImage = await _fileService.UploadFile(dto.EmployeeImage, "projects/employees");
             }
 
             // TeamId: boş string gələrsə null

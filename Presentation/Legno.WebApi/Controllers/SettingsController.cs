@@ -60,6 +60,27 @@ namespace Legno.WebApi.Controllers
                 return StatusCode(500, new { StatusCode = 500, Error = $"Xəta baş verdi: {ex.Message}" });
             }
         }
+        [HttpGet("get-by-key/{key}")]
+        public async Task<IActionResult> GetByKey(string key)
+        {
+            try
+            {
+                var setting = await _service.GetSettingForSettingKeyAsync(key);
+
+                if (setting == null)
+                    return NotFound(new { StatusCode = 404, Error = "Setting tapılmadı!" });
+
+                return Ok(new { StatusCode = 200, Data = setting });
+            }
+            catch (GlobalAppException ex)
+            {
+                return BadRequest(new { StatusCode = 400, Error = ex.Message });
+            }
+            catch (Exception ex)
+            {
+                return StatusCode(500, new { StatusCode = 500, Error = $"Xəta baş verdi: {ex.Message}" });
+            }
+        }
 
         // ================= GET ALL =================
         [HttpGet("get-all")]

@@ -10,4 +10,5 @@ public interface ISettingService
     Task<SettingDto> UpdateSettingAsync(UpdateSettingDto updateSettingDto);
    
     Task DeleteSettingAsync(string settingId);
+    Task<SettingDto?> GetSettingForSettingKeyAsync(string settingKey);
 }

@@ -71,7 +71,15 @@ namespace Legno.Persistence.Concreters.Services
             var entity = await _read.GetAsync(x => x.Id == guid && !x.IsDeleted);
             return entity == null ? null : _mapper.Map<SettingDto>(entity);
         }
+        public async Task<SettingDto?> GetSettingForSettingKeyAsync(string settingKey)
+        {
+  
 
+            var entity = await _read.GetAsync(x => x.Key==settingKey && !x.IsDeleted);
+            return entity == null ? null : _mapper.Map<SettingDto>(entity);
+        }
+
+  
         public async Task<List<SettingDto>> GetAllSettingsAsync()
         {
             var list = await _read.GetAllAsync(x => !x.IsDeleted, EnableTraking: false);

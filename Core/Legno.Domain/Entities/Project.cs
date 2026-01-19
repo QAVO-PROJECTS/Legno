@@ -16,7 +16,7 @@ namespace Legno.Domain.Entities
         public string? SubTitleEng { get; set; }
         public string? SubTitleRu { get; set; }
         public string CardImage { get; set; }
-
+        public string? EmployeeImage { get; set; }
         public int DisplayOrderId { get; set; } = 1;
         public Guid? TeamId { get; set; }
         public Team? Team { get; set; }
