@@ -14,6 +14,8 @@ namespace Legno.Domain.Entities
         public string Email { get; set; }
         public string PhoneNumber { get; set; }
         public string Description { get; set; }
+        public Guid? ContactBranchId { get; set; }
+        public ContactBranch? ContactBranch { get; set; }
 
 
     }

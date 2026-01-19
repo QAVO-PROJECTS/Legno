@@ -19,6 +19,10 @@ namespace Legno.Persistence.Configurations
             builder.Property(x => x.Description).HasMaxLength(400);
 
             builder.HasQueryFilter(x => !x.IsDeleted);
+            builder.HasOne(x => x.ContactBranch)
+                .WithMany(x => x.Contacts)
+                .HasForeignKey(x => x.ContactBranchId)
+                .OnDelete(DeleteBehavior.Restrict);
         }
     }
 }

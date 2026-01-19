@@ -54,4 +54,9 @@ namespace Legno.Application.Abstracts.Repositories
 
     public interface IDirectorWriteRepository:IWriteRepository<Director>{};
     public interface IAboutWriteRepository:IWriteRepository<About>{};
+    public interface ISettingWriteRepository:IWriteRepository<Setting>{};
+    public interface ISettingReadRepository:IReadRepository<Setting>{};
+    public interface IContactBranchReadRepository:IReadRepository<ContactBranch>{};
+    public interface IContactBranchWriteRepository:IWriteRepository<ContactBranch>{};
+    
 }

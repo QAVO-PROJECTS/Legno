@@ -197,6 +197,10 @@
       "PackagePath": "staticwebassets/files/purchase/files/c236dc22-0ec0-4ece-b4ac-6dc0a5555e05.pdf"
     },
     {
+      "Id": "/Users/gulchohrasultanova/Desktop/Legno/Presentation/Legno.WebApi/wwwroot/files/settings/6e795215-aac2-4ef3-ad34-c0e7f59d9631.webp",
+      "PackagePath": "staticwebassets/files/settings/6e795215-aac2-4ef3-ad34-c0e7f59d9631.webp"
+    },
+    {
       "Id": "/Users/gulchohrasultanova/Desktop/Legno/Presentation/Legno.WebApi/wwwroot/files/team_card_images/8cf3fed4-0306-441b-bca5-a657373c7419.webp",
       "PackagePath": "staticwebassets/files/team_card_images/8cf3fed4-0306-441b-bca5-a657373c7419.webp"
     },

@@ -22,6 +22,7 @@ namespace Legno.Persistence.Context
         public DbSet<Team> Teams { get; set; }
         public DbSet<UserProject> UserProjects { get; set; }
         public DbSet<FAQ> FAQs { get; set; }
+        public DbSet<Setting> Settings { get; set; }    
 
         // Yeni DbSet-lər
         public DbSet<B2BService> B2BServices { get; set; }
@@ -46,6 +47,7 @@ namespace Legno.Persistence.Context
         public DbSet<Member> Members { get; set; }
         public DbSet<Director>  Directors { get; set; }
         public DbSet<About>  About { get; set; }
+        public DbSet<ContactBranch> ContactBranches { get; set; }
 
         protected override void OnModelCreating(ModelBuilder modelBuilder)
         {

@@ -63,6 +63,11 @@ namespace Legno.Persistence.Repositories
     public class AboutWriteRepository(LegnoDbContext c):WriteRepository<About>(c),IAboutWriteRepository{};
     public class DirectorWriteRepository(LegnoDbContext c):WriteRepository<Director>(c),IDirectorWriteRepository{};
     public class DirectorReadRepository(LegnoDbContext c):ReadRepository<Director>(c),IDirectorReadRepository{};
+    public class SettingReadRepository(LegnoDbContext c):ReadRepository<Setting>(c),ISettingReadRepository{};
+    public class SettingWriteRepository(LegnoDbContext c):WriteRepository<Setting>(c),ISettingWriteRepository{};
+    public class ContactBranchWriteRepository(LegnoDbContext c):WriteRepository<ContactBranch>(c),IContactBranchWriteRepository{};
+    public class ContactBranchReadRepository(LegnoDbContext c):ReadRepository<ContactBranch>(c),IContactBranchReadRepository{};
+
 
 
 

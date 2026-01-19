@@ -1,16 +1,13 @@
-﻿using Microsoft.Extensions.Configuration;
-using Microsoft.Extensions.Options;
-
-using Legno.Application.Absrtacts.Services;
+﻿using Legno.Application.Absrtacts.Services;
+using Legno.Application.Abstracts.Repositories.Contacts;
 using Legno.Application.Dtos.Contact;
+using Legno.Application.Dtos.ContactBranch;
 using Legno.Application.GlobalExceptionn;
 using Legno.Domain.Entities;
 using Legno.Domain.HelperEntities;
-using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Threading.Tasks;
-using Legno.Application.Abstracts.Repositories.Contacts;
+using Microsoft.EntityFrameworkCore;
+using Microsoft.Extensions.Configuration;
+using Microsoft.Extensions.Options;
 
 namespace Legno.Persistence.Concreters.Services
 {
@@ -19,7 +16,6 @@ namespace Legno.Persistence.Concreters.Services
         private readonly IContactReadRepository _contactReadRepository;
         private readonly IContactWriteRepository _contactWriteRepository;
         private readonly IMailService _mailService;
-        private string _adminEmail = "";
         private readonly IConfiguration _configuration;
 
         public ContactService(
@@ -32,133 +28,103 @@ namespace Legno.Persistence.Concreters.Services
             _contactReadRepository = contactReadRepository;
             _contactWriteRepository = contactWriteRepository;
             _mailService = mailService;
-            
             _configuration = configuration;
         }
 
         public async Task<ContactDto> CreateUserInfoAsync(CreateContactDto userDto)
         {
-            
+            if (userDto == null)
+                throw new GlobalAppException("Məlumat göndərilməyib.");
+
             if (string.IsNullOrWhiteSpace(userDto.Name) ||
                 string.IsNullOrWhiteSpace(userDto.Surname) ||
-             string.IsNullOrWhiteSpace(userDto.Email) ||
-            string.IsNullOrWhiteSpace(userDto.PhoneNumber) ||
-                 string.IsNullOrWhiteSpace(userDto.Description))
+                string.IsNullOrWhiteSpace(userDto.Email) ||
+                string.IsNullOrWhiteSpace(userDto.PhoneNumber) ||
+                string.IsNullOrWhiteSpace(userDto.Description))
             {
                 throw new GlobalAppException("Bütün inputlar doldurulmalıdır.");
             }
 
-            // **Artıq "mövcud email" yoxlamasını tamamilə çıxarırıq.**
+            Guid? branchId = null;
 
-            // 1) Yeni Contact obyekti yaradıb bazaya əlavə edirik:
+            // ContactBranchId optional gəlir
+            if (!string.IsNullOrWhiteSpace(userDto.ContactBranchId))
+            {
+                if (!Guid.TryParse(userDto.ContactBranchId, out var parsed))
+                    throw new GlobalAppException("ContactBranchId formatı yanlışdır!");
+
+                branchId = parsed;
+            }
+
             var newUser = new Contact
             {
+                Id = Guid.NewGuid(),
                 Name = userDto.Name,
                 Surname = userDto.Surname,
                 Email = userDto.Email,
                 PhoneNumber = userDto.PhoneNumber,
                 Description = userDto.Description,
-                CreatedDate = DateTime.UtcNow
+                ContactBranchId = branchId, // Guid? olmalıdır entity-də
+                CreatedDate = DateTime.UtcNow,
+                LastUpdatedDate = DateTime.UtcNow,
+                IsDeleted = false
             };
 
             await _contactWriteRepository.AddAsync(newUser);
             await _contactWriteRepository.CommitAsync();
 
-            // 2) Adminə göndəriləcək email məzmunu (birinci emailBody):
+            // Admin email body
             string emailBody = $@"
 <!doctype html>
 <html lang='az'>
 <head>
   <meta charset='UTF-8'>
   <title>Yeni Müraciət</title>
-  <style>
-    body {{
-      font-family: Arial, sans-serif;
-      background-color: #f8f9fa;
-      margin: 0;
-      padding: 0;
-    }}
-    .email-container {{
-      max-width: 600px;
-      margin: 40px auto;
-      background-color: #ffffff;
-      border: 1px solid #ddd;
-      border-radius: 8px;
-      overflow: hidden;
-    }}
-    .header {{
-     background: #707070;
-      padding: 20px;
-      text-align: center;
-    }}
-    .header img {{
-      height: 60px;
-    }}
-    .content {{
-      padding: 30px;
-      text-align: center;
-    }}
-    .content img {{
-      width: 100px;
-      margin-bottom: 20px;
-    }}
-    .content h2 {{
-      color: #333;
-      margin-bottom: 20px;
-    }}
-    .info {{
-      text-align: left;
-      font-size: 16px;
-      color: #555;
-      margin-bottom: 15px;
-    }}
-    .info strong {{
-      color: #000;
-    }}
-    .footer {{
-      padding: 20px;
-      text-align: center;
-      background-color: #f0f0f0;
-      font-size: 14px;
-      color: #777;
-    }}
-  </style>
 </head>
 <body>
-  <div class='email-container'>
-    <div class='header'>
-      <img src='https://legnoback.online/files/assets/legno.webp' alt='Logo'>
-    </div>
-    <div class='content'>
-      <img src='https://cdn-icons-png.flaticon.com/512/1827/1827392.png
-' alt='Notification'>
-      <h2>Yeni müraciət daxil olub</h2>
-      <div class='info'><strong>Ad:</strong> {userDto.Name}</div>
-      <div class='info'><strong>Soyad:</strong> {userDto.Surname}</div>
-      <div class='info'><strong>Email:</strong> <a href='mailto:{userDto.Email}'>{userDto.Email}</a></div>
-      <div class='info'><strong>Telefon:</strong> <a href='tel:{userDto.PhoneNumber}'>{userDto.PhoneNumber}</a></div>
-      <div class='info'><strong>Müraciət:</strong> {userDto.Description}</div>
-    </div>
-    <div class='footer'>
-      Bu mesaj Legno tərəfindən avtomatik göndərilmişdir.
-    </div>
-  </div>
+  <h2>Yeni müraciət daxil oldu</h2>
+  <p><strong>Ad:</strong> {userDto.Name}</p>
+  <p><strong>Soyad:</strong> {userDto.Surname}</p>
+  <p><strong>Email:</strong> {userDto.Email}</p>
+  <p><strong>Telefon:</strong> {userDto.PhoneNumber}</p>
+  <p><strong>Müraciət:</strong> {userDto.Description}</p>
 </body>
 </html>
 ";
 
-
-
-            //3) Adminə email göndər:
             var mailRequest = new MailRequest
             {
                 ToEmail = "info@legno.az",
                 Subject = "Yeni Əlaqə Məlumatları",
                 Body = emailBody
             };
+
             await _mailService.SendFromInfoAsync(mailRequest);
 
-            // 4) Cavab olaraq yeni yaradılmış `ContactDto` qaytarırıq:
+            // Branch data da qaytarmaq üçün
+            ContactBranchDto? branchDto = null;
+
+            if (branchId.HasValue)
+            {
+                // Read repo Include edirsə ideal olar.
+                // Yoxdursa GetById ilə branch repository yazıb çəkə bilərik.
+                var saved = await _contactReadRepository.GetAsync(
+                    x => x.Id == newUser.Id,
+                    include: q => q.Include(x => x.ContactBranch)
+                );
+
+                if (saved?.ContactBranch != null)
+                {
+                    branchDto = new ContactBranchDto
+                    {
+                        Id = saved.ContactBranch.Id.ToString(),
+                        Name = saved.ContactBranch.Name,
+                        Address = saved.ContactBranch.Address,
+                        Phone = saved.ContactBranch.Phone
+                    };
+                }
+            }
+
             return new ContactDto
             {
                 Id = newUser.Id.ToString(),
@@ -166,15 +132,25 @@ namespace Legno.Persistence.Concreters.Services
                 Surname = newUser.Surname,
                 Email = newUser.Email,
                 PhoneNumber = newUser.PhoneNumber,
-                Description = newUser.Description
+                Description = newUser.Description,
+                ContactBranch = branchDto
             };
         }
+
         public async Task<ContactDto> GetByIdAsync(string id)
         {
             if (string.IsNullOrWhiteSpace(id))
                 throw new GlobalAppException("Id boş ola bilməz.");
 
-            var contact = await _contactReadRepository.GetByIdAsync(id);
+            if (!Guid.TryParse(id, out var guid))
+                throw new GlobalAppException("Yanlış ID formatı!");
+
+            // include branch
+            var contact = await _contactReadRepository.GetAsync(
+                x => x.Id == guid,
+                include: q => q.Include(x => x.ContactBranch)
+            );
+
             if (contact == null)
                 throw new GlobalAppException("Məlumat tapılmadı.");
 
@@ -185,26 +161,39 @@ namespace Legno.Persistence.Concreters.Services
                 Surname = contact.Surname,
                 Email = contact.Email,
                 PhoneNumber = contact.PhoneNumber,
-                Description = contact.Description
+                Description = contact.Description,
+                ContactBranch = contact.ContactBranch == null ? null : new ContactBranchDto
+                {
+                    Id = contact.ContactBranch.Id.ToString(),
+                    Name = contact.ContactBranch.Name,
+                    Address = contact.ContactBranch.Address,
+                    Phone = contact.ContactBranch.Phone
+                }
             };
         }
 
-
         public async Task<List<ContactDto>> GetAllUsersAsync()
         {
-            var users = await _contactReadRepository.GetAllAsync();
+            var users = await _contactReadRepository.GetAllAsync(
+                include: q => q.Include(x => x.ContactBranch)
+            );
 
-            var userDtos = users.Select(u => new ContactDto
+            return users.Select(u => new ContactDto
             {
                 Id = u.Id.ToString(),
                 Name = u.Name,
                 Surname = u.Surname,
                 Email = u.Email,
                 PhoneNumber = u.PhoneNumber,
-                Description = u.Description
+                Description = u.Description,
+                ContactBranch = u.ContactBranch == null ? null : new ContactBranchDto
+                {
+                    Id = u.ContactBranch.Id.ToString(),
+                    Name = u.ContactBranch.Name,
+                    Address = u.ContactBranch.Address,
+                    Phone = u.ContactBranch.Phone
+                }
             }).ToList();
-
-            return userDtos;
         }
     }
 }

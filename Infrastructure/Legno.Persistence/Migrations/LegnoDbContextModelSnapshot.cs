@@ -612,6 +612,9 @@ namespace Legno.Persistence.Migrations
                         .ValueGeneratedOnAdd()
                         .HasColumnType("uniqueidentifier");
 
+                    b.Property<Guid?>("ContactBranchId")
+                        .HasColumnType("uniqueidentifier");
+
                     b.Property<DateTime>("CreatedDate")
                         .HasColumnType("datetime2");
 
@@ -651,7 +654,45 @@ namespace Legno.Persistence.Migrations
 
                     b.HasKey("Id");
 
+                    b.HasIndex("ContactBranchId");
+
                     b.ToTable("Contacts", (string)null);
+                });
+
+            modelBuilder.Entity("Legno.Domain.Entities.ContactBranch", b =>
+                {
+                    b.Property<Guid>("Id")
+                        .ValueGeneratedOnAdd()
+                        .HasColumnType("uniqueidentifier");
+
+                    b.Property<string>("Address")
+                        .HasMaxLength(256)
+                        .HasColumnType("nvarchar(256)");
+
+                    b.Property<DateTime>("CreatedDate")
+                        .HasColumnType("datetime2");
+
+                    b.Property<DateTime>("DeletedDate")
+                        .HasColumnType("datetime2");
+
+                    b.Property<bool>("IsDeleted")
+                        .HasColumnType("bit");
+
+                    b.Property<DateTime>("LastUpdatedDate")
+                        .HasColumnType("datetime2");
+
+                    b.Property<string>("Name")
+                        .IsRequired()
+                        .HasMaxLength(128)
+                        .HasColumnType("nvarchar(128)");
+
+                    b.Property<string>("Phone")
+                        .HasMaxLength(32)
+                        .HasColumnType("nvarchar(32)");
+
+                    b.HasKey("Id");
+
+                    b.ToTable("ContactBranches", (string)null);
                 });
 
             modelBuilder.Entity("Legno.Domain.Entities.DesignerCommonService", b =>
@@ -1279,6 +1320,57 @@ namespace Legno.Persistence.Migrations
                     b.ToTable("ServiceSliders", (string)null);
                 });
 
+            modelBuilder.Entity("Legno.Domain.Entities.Setting", b =>
+                {
+                    b.Property<Guid>("Id")
+                        .ValueGeneratedOnAdd()
+                        .HasColumnType("uniqueidentifier");
+
+                    b.Property<DateTime>("CreatedDate")
+                        .HasColumnType("datetime2");
+
+                    b.Property<DateTime>("DeletedDate")
+                        .HasColumnType("datetime2");
+
+                    b.Property<string>("ImageOne")
+                        .HasColumnType("nvarchar(max)");
+
+                    b.Property<string>("ImageTwo")
+                        .HasColumnType("nvarchar(max)");
+
+                    b.Property<bool>("IsDeleted")
+                        .HasColumnType("bit");
+
+                    b.Property<string>("Key")
+                        .IsRequired()
+                        .HasMaxLength(32)
+                        .HasColumnType("nvarchar(32)");
+
+                    b.Property<DateTime>("LastUpdatedDate")
+                        .HasColumnType("datetime2");
+
+                    b.Property<string>("Name")
+                        .IsRequired()
+                        .HasMaxLength(64)
+                        .HasColumnType("nvarchar(64)");
+
+                    b.Property<string>("Value")
+                        .HasColumnType("nvarchar(max)");
+
+                    b.Property<string>("ValueEng")
+                        .HasColumnType("nvarchar(max)");
+
+                    b.Property<string>("ValueRu")
+                        .HasColumnType("nvarchar(max)");
+
+                    b.HasKey("Id");
+
+                    b.HasIndex("Key")
+                        .IsUnique();
+
+                    b.ToTable("Settings", (string)null);
+                });
+
             modelBuilder.Entity("Legno.Domain.Entities.Subscriber", b =>
                 {
                     b.Property<Guid>("Id")
@@ -1617,6 +1709,16 @@ namespace Legno.Persistence.Migrations
                     b.Navigation("Category");
                 });
 
+            modelBuilder.Entity("Legno.Domain.Entities.Contact", b =>
+                {
+                    b.HasOne("Legno.Domain.Entities.ContactBranch", "ContactBranch")
+                        .WithMany("Contacts")
+                        .HasForeignKey("ContactBranchId")
+                        .OnDelete(DeleteBehavior.Restrict);
+
+                    b.Navigation("ContactBranch");
+                });
+
             modelBuilder.Entity("Legno.Domain.Entities.Project", b =>
                 {
                     b.HasOne("Legno.Domain.Entities.Team", "Team")
@@ -1738,6 +1840,11 @@ namespace Legno.Persistence.Migrations
             modelBuilder.Entity("Legno.Domain.Entities.Category", b =>
                 {
                     b.Navigation("CategorySliderImages");
+                });
+
+            modelBuilder.Entity("Legno.Domain.Entities.ContactBranch", b =>
+                {
+                    b.Navigation("Contacts");
                 });
 
             modelBuilder.Entity("Legno.Domain.Entities.Fabric", b =>
